@@ -11,7 +11,7 @@ gem "hoptoad_notifier"
 gem 'i18n_generators'
 gem 'haml'
 gem 'fastercsv'
-gem 'whenever', '0.4.2'
+gem 'whenever', '0.6.7'
 gem 'delayed_job'
 gem 'rack-google-analytics', '0.6.1'
 gem 'will_paginate'
