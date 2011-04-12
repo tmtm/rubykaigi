@@ -11,7 +11,7 @@ Rubykaigi::Application.configure do
   # config.logger = SyslogLogger.new
 
   # Full error reports are disabled and caching is turned on
-  config.action_controller.consider_all_requests_local = false
+  config.consider_all_requests_local = false
   config.action_controller.perform_caching             = true
 
   # Use a different cache store in production
