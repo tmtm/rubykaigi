@@ -37,4 +37,6 @@ Rubykaigi::Application.configure do
 
   ActionController::Base.perform_caching = true
   ActionController::Base.cache_store = :file_store, File.join(Rails.root, 'tmp', 'rails-cache')
+
+  config.active_support.deprecation = :notify
 end

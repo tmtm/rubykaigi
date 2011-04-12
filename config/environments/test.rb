@@ -23,4 +23,6 @@ Rubykaigi::Application.configure do
 
   config.logger = Logger.new("#{Rails.root}/log/#{Rails.env}.log", 50, 1048576)
   require 'pp'
+
+  config.active_support.deprecation = :stderr 
 end

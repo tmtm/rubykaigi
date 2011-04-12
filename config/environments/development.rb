@@ -17,4 +17,6 @@ Rubykaigi::Application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   require 'pp'
+
+  config.active_support.deprecation = :log
 end
