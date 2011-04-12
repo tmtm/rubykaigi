@@ -34,8 +34,8 @@ group :development do
 end
 
 group :test, :cucumber do
-  gem 'rspec', '1.3.1'
-  gem 'rspec-rails', '1.3.2'
+  gem 'rspec', '2.5.0'
+  gem 'rspec-rails', '2.5.0', :group => :development
   gem 'rr'
   gem 'machinist', :require => 'machinist/active_record'
   gem 'faker'
