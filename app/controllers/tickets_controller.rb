@@ -15,7 +15,7 @@ class TicketsController < ApplicationController
 #       return
 #     end
     unless @ticket
-      render :status => '404', :file => 'public/404.html'
+      render :status => '404', :file => 'public/404.html', :layout => false
       return
     end
     @title = "[Edit] #{@ticket.ticket_code}, #{I18n.t(@ticket.ticket_type)}"
@@ -28,7 +28,7 @@ class TicketsController < ApplicationController
 #       return
 #     end
     unless @ticket
-      render :status => '404', :file => 'public/404.html'
+      render :status => '404', :file => 'public/404.html', :layout => false
       return
     end
     @ticket.name = params[:ticket][:name]
@@ -45,7 +45,7 @@ class TicketsController < ApplicationController
     I18n.locale = 'en'
     @ticket = Ticket.find_by_code4url(params[:id])
     unless @ticket
-      render :status => '404', :file => 'public/404.html'
+      render :status => '404', :file => 'public/404.html', :layout => false
       return
     end
     @title = "#{@ticket.ticket_code}, #{I18n.t(@ticket.ticket_type)}"
@@ -54,7 +54,7 @@ class TicketsController < ApplicationController
   def regenerate_permalink
     @ticket = Ticket.find_by_code4url(params[:id])
     unless @ticket
-      render :status => '404', :file => 'public/404.html'
+      render :status => '404', :file => 'public/404.html', :layout => false
     end
     @ticket.update_attribute(:code4url, Ticket.generate_code4url)
     redirect_to ticket_path(@ticket)

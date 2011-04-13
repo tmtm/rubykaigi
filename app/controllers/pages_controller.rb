@@ -20,7 +20,7 @@ class PagesController < LocaleBaseController
           begin
             render :template => File.join('pages', params[:year], page)
           rescue ActionView::MissingTemplate => e
-            render :file => "public/404.html", :status => 404
+            render :file => "public/404.html", :status => 404 , :layout => false
           end
         end
       end
@@ -29,7 +29,7 @@ class PagesController < LocaleBaseController
       begin
         render :template => "pages/2011/#{params[:page_name]}", :layout => "simple"
       rescue ActionView::MissingTemplate => e
-        render :file => "public/404.html", :status => 404
+        render :file => "public/404.html", :status => 404, :layout => false
       end
       return
     end
@@ -61,7 +61,7 @@ class PagesController < LocaleBaseController
     if (year = params[:year].to_i) < 2009
       redirect_to "http://jp.rubyist.net/RubyKaigi#{year}"
     elsif 2011 < year
-      render :file => "public/404.html", :status => 404
+      render :file => "public/404.html", :status => 404, :layout => false
     else
       true
     end
