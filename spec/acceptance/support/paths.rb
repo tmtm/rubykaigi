@@ -6,4 +6,4 @@ module NavigationHelpers
   end
 end
 
-Spec::Runner.configuration.include(NavigationHelpers)
+RSpec.configuration.include(NavigationHelpers)
