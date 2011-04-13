@@ -9,20 +9,12 @@ class PagesController < LocaleBaseController
 
   def show
     case params[:year]
-    when "2009"
-      render :file => "public/#{params[:year]}/#{params[:locale]}/index.html"
-      return
-    when "2010"
-      @headlines = HeadlineEntry.recent(I18n.locale, 5)
-      page = params[:page_name].blank? ? 'index' : params[:page_name]
-      respond_to do |f|
-        f.html do
-          begin
-            render :template => File.join('pages', params[:year], page)
-          rescue ActionView::MissingTemplate => e
-            render :file => "public/404.html", :status => 404
-          end
-        end
+    when '2009', '2010'
+      # XXX: existing static pages should be handled before
+      if params[:page_name] == 'index'
+        render :file => "public/#{params[:year]}/#{params[:locale]}.html"
+      else
+        render :file => 'public/404.html', :status => 404
       end
       return
     when "2011"
