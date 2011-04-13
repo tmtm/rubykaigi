@@ -36,7 +36,7 @@ GEM
     arel (2.0.9)
     autotest-rails (4.1.0)
       ZenTest
-    builder (3.0.0)
+    builder (2.1.2)
     capistrano (2.5.19)
       highline
       net-scp (>= 1.0.0)
@@ -228,7 +228,7 @@ DEPENDENCIES
   gettext (< 2)
   god
   haml
-  hoptoad_notifier
+  hoptoad_notifier (= 2.4.5)
   i18n_generators
   machinist
   moro-miso

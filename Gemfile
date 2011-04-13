@@ -7,7 +7,7 @@ gem 'mysql'
 gem 'configatron'
 gem "ambethia-smtp-tls", :require => "smtp-tls"
 gem "fastercsv"
-gem "hoptoad_notifier"
+gem "hoptoad_notifier", '2.4.5'
 gem 'i18n_generators'
 gem 'haml'
 gem 'fastercsv'
