@@ -24,4 +24,14 @@ describe PagesController do
       end
     end
   end
+
+  context 'static page exists' do
+    it 'should render static file' do
+      %w{2009 2010}.each do |year|
+        get :show, {:year => year, :page_name => 'index', :locale => 'ja'}
+        response.status.should == '200 OK'
+        response.should render_template("public/#{year}/ja/index.html")
+      end
+    end
+  end
 end
