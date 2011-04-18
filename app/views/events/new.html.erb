@@ -1,7 +1,18 @@
 <h1>New event</h1>
 
 <% form_for(@event) do |f| %>
-  <%= f.error_messages %>
+  <% if @event.errors.any? %>
+    <div id="errorExplanation" class="errorExplanation">
+    <h2><%= pluralize(@event.errors.count, "error") %> prohibited this event from being saved:</h2>
+    <p><%= t(:body, :scope => 'activerecord.errors.template') %></p>
+    <ul>
+      <% @event.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+
+    <div>
+  <% end %>
 
   <p>
     <%= f.label :title_en %><br />

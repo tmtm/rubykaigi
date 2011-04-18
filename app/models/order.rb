@@ -14,13 +14,11 @@ class Order < ActiveRecord::Base
     end
   end # engenclass
 
-  def before_create
+  before_create do
     self.invoice_code = Order.generate_invoice_code
   end
 
-  def before_save
-    calculate_price
-  end
+  before_save :calculate_price
 
   def add_line_item_from_cart(cart)
     cart.items.each do |item|

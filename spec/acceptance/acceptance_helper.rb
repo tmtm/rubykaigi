@@ -2,7 +2,7 @@ require File.dirname(__FILE__) + "/../spec_helper"
 require "steak"
 require 'capybara/rails'
 
-Spec::Runner.configure do |config|
+RSpec.configure do |config|
   config.include Capybara
 end
 

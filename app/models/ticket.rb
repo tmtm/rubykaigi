@@ -68,7 +68,7 @@ class Ticket < ActiveRecord::Base
     code4url
   end
 
-  def before_save
+  before_save do
     self.email = "N / A" if self.email.blank?
   end
 end

@@ -2,16 +2,16 @@
 source :rubygems
 source 'http://gems.github.com'
 
-gem 'rails', '2.3.8', :require => nil
+gem 'rails', '3.0.6', :require => nil
 gem 'mysql'
 gem 'configatron'
 gem "ambethia-smtp-tls", :require => "smtp-tls"
 gem "fastercsv"
-gem "hoptoad_notifier"
+gem "hoptoad_notifier", '2.4.5'
 gem 'i18n_generators'
 gem 'haml'
 gem 'fastercsv'
-gem 'whenever', '0.6.7'
+gem 'whenever', '0.6.7', :require => false
 gem 'delayed_job'
 gem 'rack-google-analytics', '0.6.1'
 gem 'will_paginate'
@@ -34,8 +34,8 @@ group :development do
 end
 
 group :test, :cucumber do
-  gem 'rspec', '1.3.1'
-  gem 'rspec-rails', '1.3.2'
+  gem 'rspec', '2.5.0'
+  gem 'rspec-rails', '2.5.0', :group => :development
   gem 'rr'
   gem 'machinist', :require => 'machinist/active_record'
   gem 'faker'
@@ -43,12 +43,12 @@ group :test, :cucumber do
   gem 'autotest-rails'
 #  gem 'autotest-growl'
   gem 'daemons'
-  gem 'spork'
+  gem 'spork', :group => :development
   gem 'cucumber-rails', '~>0.3.2'
   gem 'webrat'
   gem 'moro-miso'
   gem 'database_cleaner'
   gem 'nokogiri'
-  gem 'steak', :require => nil
-  gem 'capybara'
+  gem 'steak', :group => :development
+  gem 'capybara', :group => :development
 end

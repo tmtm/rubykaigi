@@ -3,7 +3,7 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 describe PagesController do
   context "page does not found" do
-    integrate_views
+    render_views
 
     it 'should not raise missing template exception' do
       %w{2009 2010}.each do |year|
@@ -19,7 +19,7 @@ describe PagesController do
       %w{2009 2010}.each do |year|
         %w{ja en}.each do |locale|
           get :show, {:year => year, :page_name => 'page_does_not_exists', :locale => locale}
-          response.status.should == '404 Not Found'
+          response.status.should == 404
         end
       end
     end

@@ -1,4 +1,10 @@
-!= form.error_messages
+-if @rubyist.errors.any?
+  #errorExplanation.errorExplanation
+    %h2= "#{pluralize(@rubyist.errors.count, "error")} prohibited this account from being saved:"
+    %p= t(:body, :scope => 'activerecord.errors.template')#:scope => [:activerecord, :errors, :template])
+    %ul
+      - @rubyist.errors.full_messages.each do |msg|
+        %li= msg
 
 %dl
   %dt!= form.label :username

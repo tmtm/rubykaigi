@@ -3,7 +3,7 @@ class HeadlineEntry < ActiveRecord::Base
 
   LANGS = Hash.new('en').merge('ja' => 'ja')
 
-  named_scope :recent, proc {|lang, limit| {:conditions => {:language => LANGS[lang.to_s]}, :order => 'time DESC', :limit => limit} }
+  scope :recent, proc {|lang, limit| {:conditions => {:language => LANGS[lang.to_s]}, :order => 'time DESC', :limit => limit} }
 
   def self.crawl(feed_uri, category)
     require 'rss'

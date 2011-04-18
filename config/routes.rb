@@ -1,47 +1,66 @@
-ActionController::Routing::Routes.draw do |map|
-  map.timetable ":year/:locale/timetable",
-    :controller => 'events', :action => 'timetable',
-    :requirements => {:year => /2\d{3}/, :locale => /en|ja/}
+Rubykaigi::Application.routes.draw do
+  match ":year/:locale/timetable",
+    :to => 'events#timetable',
+    :as => 'timetable',
+    :constraints => {:year => /2\d{3}/, :locale => /en|ja/}
 
-  map.resources :events, :path_prefix => ":year/:locale", :requirements => {:year => /2\d{3}/, :locale => /en|ja/}, :only => %w(index show)
-
-  map.signin "/signin", :controller => 'sessions', :action => 'new'
-  map.signout "/signout", :controller => 'sessions', :action => 'destroy', :conditions => {:method => :delete}
-  map.my_tickets "my_tickets", :controller => 'tickets', :action => 'index'
-
-  map.resource :sessions, :collection => {:unauthenticated => :get}
-  map.resource :account
-  map.resources :rubyists
-
-  map.resources :carts, :collection => {
-    :add_item => :post, :remove_item => :delete
-  }
-  map.resources :orders, :collection => {
-    :confirm => :get, :thanks => :get, :individual_sponsor_option => :get
-  }
-
-  map.resources :tickets, :member => {
-    :regenerate_permalink => :put
-  }
-
-  map.paypal_ipn "/paypal/instant_payment_notification",
-    :controller => 'paypal', :action => 'instant_payment_notification'
-  map.dashboard("/dashboard",
-    :controller => 'dashboard', :action => 'index')
-
-   map.registrations(":year/:locale/Registration",
-     :controller => 'registrations', :action => 'index',
-     :requirements => {:year => /2\d{3}/, :locale => /en|ja/})
-
-  map.with_options( :controller => "pages", :action => "show",
-                    :defaults => {:page_name => "index"} ) do |pr|
-    pr.page ":year/:locale/:page_name", :requirements => {:year => /2\d{3}/, :locale => /en|ja/ }
-    pr.page ":year/:locale/:page_name.:format", :requirements => {:year => /2\d{3}/, :locale => /en|ja/ }
-    pr.connect     ":year/:page_name", :requirements => {:year => /2\d{3}/}
+  scope '/:year/:locale' do
+    resources :events,
+      :constraints => {:year => /2\d{3}/, :locale => /en|ja/},
+      :only => %w(index show)
   end
 
-  map.root :controller => 'welcome'
+  match 'signin', :to => 'sessions#new', :as => 'signin'
+  delete 'signout', :to => 'sessions#destroy', :as => 'signout'
+  match 'my_tickets', :to => 'tickets#index', :as => "my_tickets"
 
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
+  resource :sessions do
+    collection do
+      get :unauthenticated
+    end
+  end
+  resource :account
+  resources :rubyists
+
+  resources :carts do
+    collection do
+      post :add_item
+      delete :remove_item
+    end
+  end
+  resources :orders do
+    collection do
+      get :confirm
+      get :thanks
+      get :individual_sponsor_option
+    end
+  end
+  resources :tickets do
+    member do
+      put :regenerate_permalink
+    end
+  end
+
+  match "/paypal/instant_payment_notification",
+    :to => 'paypal#instant_payment_notification',
+    :as => 'paypal_ipn'
+  match 'dashboard',
+    :to => 'dashboard#index',
+    :as => 'dashboard'
+  match ':year/:locale/Registration',
+    :to => 'registrations#index',
+    :as => 'registrations',
+    :constraints => {:year => /2\d{3}/, :locale => /en|ja/}
+
+  scope ':year', :to => 'pages#show', :defaults => {:page_name => "index"} do
+    match ':locale(/:page_name)',
+      :as => 'page',
+      :constraints => {:year => /2\d{3}/, :locale => /en|ja/ }
+    match '(/:page_name)',
+      :constraints => {:year => /2\d{3}/}
+  end
+
+  root :to => 'welcome#index'
+
+  match ':controller(/:action(/:id))'
 end

@@ -30,13 +30,13 @@ describe AccountsController do
   end
 
   describe 'POST /account' do
+
+    def post_create_account_with_mock
+      mock(controller).user = is_a(Rubyist)
+      post :create, :rubyist => Rubyist.plan
+    end
+
     shared_examples_for 'Signed up successfully' do
-      before do
-        mock(controller).user = is_a(Rubyist)
-
-        post :create, :rubyist => Rubyist.plan
-      end
-
       it { session[:params_from_authenticator].should be_nil }
     end
 
@@ -46,22 +46,12 @@ describe AccountsController do
     end
 
     shared_examples_for 'Signed up successfully with return_to' do
-      before do
-        session[:return_to] = 'http://example.com/return_to'
-      end
-
       it_should_behave_like 'Signed up successfully'
       it { response.should redirect_to('http://example.com/return_to') }
       it { session[:return_to].should be_nil }
     end
 
     shared_examples_for 'Signed up failed' do
-      before do
-        dont_allow(controller).user = anything
-
-        post :create, :rubyist => Rubyist.plan(:invalid)
-      end
-
       it { response.should be_success }
       it { response.should render_template(:new) }
     end
@@ -72,16 +62,30 @@ describe AccountsController do
       end
 
       context 'saved' do
+        before do
+          post_create_account_with_mock
+        end
+
         it_should_behave_like 'Signed up successfully without return_to'
         it { assigns[:rubyist].twitter_user_id.should == 4567 }
       end
 
       context 'saved with return_to' do
+        before do
+          session[:return_to] = 'http://example.com/return_to'
+          post_create_account_with_mock
+        end
+        
         it_should_behave_like 'Signed up successfully with return_to'
         it { assigns[:rubyist].twitter_user_id.should == 4567 }
       end
 
       context 'failed' do
+        before do
+          dont_allow(controller).user = anything
+          post :create, :rubyist => Rubyist.plan(:invalid)
+        end
+        
         it_should_behave_like 'Signed up failed'
         it { session[:params_from_authenticator][:twitter_user_id].should == 4567 }
       end
@@ -93,16 +97,30 @@ describe AccountsController do
       end
 
       context 'saved' do
+        before do
+          post_create_account_with_mock
+        end
+
         it_should_behave_like 'Signed up successfully without return_to'
         it { assigns[:rubyist].identity_url.should == 'http://ursm.jp/' }
       end
 
       context 'saved with return URL' do
+        before do
+          session[:return_to] = 'http://example.com/return_to'
+          post_create_account_with_mock
+        end
+
         it_should_behave_like 'Signed up successfully with return_to'
         it { assigns[:rubyist].identity_url.should == 'http://ursm.jp/' }
       end
 
       context 'failed' do
+        before do
+          dont_allow(controller).user = anything
+          post :create, :rubyist => Rubyist.plan(:invalid)
+        end
+        
         it_should_behave_like 'Signed up failed'
         it { session[:params_from_authenticator][:identity_url].should == 'http://ursm.jp/' }
       end
