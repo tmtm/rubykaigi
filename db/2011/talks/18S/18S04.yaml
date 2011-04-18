@@ -1,23 +1,28 @@
 --- 
 name: 
-  en: ucnv
-  ja: ""
+  en: Makoto Inoue
+  ja: "井上真"
 affilization: 
-  en: Independent
-  ja: "無所属"
+  en: New Bamboo
+  ja: New Bamboo
 bio: 
-  en: ucnv is a web developer, visual artist based in Tokyo. In 2009, he developed the Ruby library to make broken videos, named AviGlitch. He spends a lot of time to destroy images or videos. And using those broken stuffs he makes visual live performances, VJs and music videos.
-  ja: "ウェブプログラマー、グリッチ映像なども作ります。"
-title: 
-  en: Visual Glitch, using Ruby
-  ja: ""
-abstract: 
   en: |-
-    The "visual glitch" is an artifact view of corrupted image/video data.
-    Some art people say that "true" glitch cannot be reproducible, but I think they are just unlearned about how computer works.
-    We, programmers, can learn about file format specs, binary compositions, and can make reproducible glitches with programming.
-    In this talk, with examples, some Ruby snippets and my library AviGlitch will show you how to generate glitched images/videos.
-  ja: "グリッチ、特に画像や映像におけるヴィジュアル・グリッチについて紹介します。\r\n\
-    グリッチを生成するいくつかのRubyスクリプトと、動画をグリッチするRubyライブラリ AviGlitch を用いつつ、\r\n\
-    グリッチとは何か、どのようにしてつくられるのか、を実例を示しながら解説します。"
-language: Japanese
+    Rubyist living in London since 2004 (though did not know about Ruby when I was in Japan. Sorry..) 
+    ex-DBA(Sybase). Gave a talk "Building real time web" at RubyKaigi 2010 . Working under translation team of http://sinsai.info , earthquake information mapping site.  Currently translating dRuby book into English (due to be published under pragpub)
+  ja: "井上真(New Bamboo) \r\n\
+    2004年からロンドンに在住中の逆輸入Rubyist（日本にいる時はRubyのこと知りませんでした。すみません）。元DBA(Sybase)。2010のRubyKaigiでは「リアルタイムウェブができるまで」というトピックで発表。http://sinsai.info という震災情報サイトでは翻訳班として活動中。赤い王子様の本を英訳中。「Railsで目指せ、情熱エンジニア」というタイトルで@ITでも執筆中\r\n"
+title: 
+  en: 3/11 and  what can we do as a Rubyist ?
+  ja: "3/11 そしてRubyistとしてできること"
+abstract: 
+  en: |
+    The earthquake and tsunami in March 11th  caused devastating impact on the entire Japan. However, there were 
+    numerous activity among Japanese hackers to help the distaster areas.  
+    Throughout this talk, I will explain what kind of activities occurred right after the earthquake, and will 
+    discuss what we can do  as a Rubyist to help the disaster area.
+
+  ja: "2011年３月11日におきた東日本大震災と津波によって東日本の各地において過去に例がないほどの多大な被害をうけましたが、それと同時に\r\n\
+    インターネットやソーシャルメディアを通じて様々な活動がボランティアの手によっておこなわれてきましたし、現在もおこなわれています。\r\n\
+    このトークでは地震発生直後にどのような活動が行われたか、現在どのような活動が行われているか、そして我々Rubyistがどのような形で\r\n\
+    関わっていく事ができるかについて一緒に考えていく場としたいと思います。"
+language: English
