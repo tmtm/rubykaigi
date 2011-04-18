@@ -1,17 +1,17 @@
 --- 
 name: 
-  en: CJ Kihlbom
+  en: Paul Elliott
   ja: ""
 affilization: 
-  en: Elabs
+  en: Hashrocket
   ja: ""
 bio: 
-  en: "CJ Kihlbom is the founder of Elabs, an agile web development and design shop in Sweden, and the organizer of Nordic Ruby. He switched to Ruby in 2004 when Rails came along, and he hasn’t looked back since."
+  en: Ruby developer, Rails Consultant, Rocketeer @ Hashrocket, co-host of the Ruby5 podcast, maintainer of mongoid, and creator of fabrication.
   ja: ""
 title: 
-  en: Getting Started With JavaScript Testing
+  en: Everyday Mongoid
   ja: ""
 abstract: 
-  en: While most Ruby developers are very familiar with testing their code, JavaScript testing is still a new frontier for many. This talk will show you how to easily write and run JavaScript integration tests with Capybara and Cucumber, and unit tests with Evergreen and Jasmine. The goal is to inspire you to get started with JavaScript testing, and point you in the right direction to go do it!
+  en: Mongoid has quickly become the most popular ODM for using MongoDB with Ruby. Mongoid makes it very easy to model certain kinds of data in a much more natural way, but it requires you to look at your data and your application very differently. Using a Document datastore poses a unique set of challenges and this talk will give you the tools you need to understand what it entails and how to interact efficiently with mongoid.
   ja: ""
 language: English
