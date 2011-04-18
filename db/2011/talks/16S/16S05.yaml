@@ -1,0 +1,34 @@
+--- 
+name: 
+  en: nari
+  ja: nari
+affilization: 
+  en: Network Applied Communication Laboratory
+  ja: "株式会社ネットワーク応用通信研究所"
+bio: 
+  en: |
+    I'm GC lover and Ruby commiter. 
+    I'm good at developing GC with RubyKaigi Driven Development(RDD).
+    My fearful words are "Please revert".
+
+  ja: "GC好きのRubyコミッタ。\r\n\
+    RubyKaigi Driven Development(RDD)によるGC開発が得意。\r\n\
+    怖い言葉は「Revertしてください」"
+title: 
+  en: Parallel world of CRuby's GC
+  ja: "CRubyGCの並列世界"
+abstract: 
+  en: |
+    CRuby adopts Mark Sweep GC Algorithm now.
+    In my presentation, I talk about Parallel Mark Algorithm that improves Mark.
+    Parallel mark divides a mark phase into a plurality of threads and it parallely execute.
+    Recentlly, 8 core computers are not rare.
+    In such an enviroment, GC will be speed up, if it distribute tasks to each core.
+    In my presentation, I talk Parallel Mark Algorithm and Implemention, Resutl of benchmark.
+
+  ja: "CRubyは現在マーク・スイープという方式のGCを採用しています。\r\n\
+    発表では、そのうちのマークを、並列マークというアルゴリズムに改良した話をします。\r\n\
+    並列マークというのは簡単に言えば、今までのマークフェーズを複数個のスレッドに分割して、並列的に実行するものです。\r\n\
+    近年はCPUを8個積んだPCも珍しくなく、そのようなPCでは、複数のコアに処理をばらまくことでGCの高速化が期待できます。\r\n\
+    今回の発表では、並列マークのアルゴリズムの説明、実装の解説、ベンチマーク結果を述べます。\r\n"
+language: Japanese

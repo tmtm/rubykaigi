@@ -1,0 +1,17 @@
+--- 
+name: 
+  en: Lightweight Ruby Development Team
+  ja: "軽量Ruby開発チーム"
+affilization: 
+  en: Fukuoka CSK / Network Applied Communication Laboratory / Kyushu Institute of Technology
+  ja: "福岡CSK / ネットワーク応用通信研究所 / 九州工業大学"
+bio: 
+  en: Developers of Lightweight Ruby and Ruby chip for embedded systems
+  ja: "組込みシステムのための軽量RubyやRubyチップの開発者"
+title: 
+  en: Lightweight Ruby
+  ja: "軽量Ruby"
+abstract: 
+  en: We introduce current status of development in Lightweight Ruby and Ruby chip focused on embedded systems.
+  ja: "組込みシステムでの活用を想定した軽量RubyやRubyチップの開発の現状を紹介する．"
+language: Japanese

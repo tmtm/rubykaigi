@@ -1,0 +1,31 @@
+--- 
+name: 
+  en: Shota Fukumori (sora_h)
+  ja: ""
+affilization: 
+  en: Team Pasra
+  ja: ""
+bio: 
+  en: Youngest Ruby Committer who don't know ruby-core, Junior High School 3rd grade (the 9th grade) part-time student who is interested in Ruby. Running Online.sg that workshops in Ustream and Lingr. Detail at http://sorah.cosmio.net/
+  ja: "3代目Rubyのコアをもっとも知らない新米Rubyコミッター。中学3年不登校。Online.sgというオンライン上のUstream&Lingrを活用した勉強会を定期開催している。詳細は http://sorah.cosmio.net/"
+title: 
+  en: Ruby, that community and me.
+  ja: "Rubyとそのコミュニティと中学生の私"
+abstract: 
+  en: |
+    Talk about Ruby and Ruby communities from Junior High School and High School
+    students eye, how I was seeing Ruby communities when I'm not joining to
+    community, guess why the students aren't in the communities and describe why
+    they should join to the communities.
+
+  ja: "Rubyコミッタとなった自分が昔コミュニティをどう見てい\r\n\
+    たか、そして自分がRubyコミュニティに参加しどう自分が\r\n\
+    変わったか、なぜ中高生がたくさんコミュニティに\r\n\
+    いないのかをふつうの中高生の視点から、解決案を提案し\r\n\
+    ます。\r\n\
+    \r\n\
+    また、中高生がコミュニティに積極的に参加すべき理由な\r\n\
+    どを中高生の目線から考えます。\r\n\
+    \r\n\
+    テーマ: 中高生から見たRuby界隈\r\n"
+language: Japanese

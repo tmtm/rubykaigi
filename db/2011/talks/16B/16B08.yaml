@@ -1,0 +1,26 @@
+--- 
+name: 
+  en: MayumiI EMORI(emorima)
+  ja: "江森 真由美(emorima)"
+affilization: 
+  en: KCS Carrot Corp. / Asakusa.rb
+  ja: "株式会社 ケーシーエスキャロット / 浅草.rb"
+bio: 
+  en: Unit Manager of Development Department, KCS Carrot Corp.
+  ja: "株式会社ケーシーエスキャロット ユニットマネージャ\r\n\
+    2004年にRubyを使い始め、CGIKitを経て、2005年 Railsを使い始めました。\r\n\
+    ここ数年は\"mission critical\"なシステム開発をRubyで行っています。\r\n"
+title: 
+  en: Earthquake disaster prevention system implemented in Ruby
+  ja: "Rubyで作った地震防災システムについて"
+abstract: 
+  en: |
+    In this lecture, I will introduce the effective points
+    and the problems which I'd been in the face of,
+    while implementing mission-critical system 
+    like earthquake disaster prevention system in Ruby.
+
+  ja: "\"mission critical\"な地震防災システムを\r\n\
+    Rubyで実装する中で、効果的だと感じた点、\r\n\
+    また直面した問題点を説明します。"
+language: Japanese

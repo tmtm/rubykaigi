@@ -1,0 +1,17 @@
+--- 
+name: 
+  en: CJ Kihlbom
+  ja: ""
+affilization: 
+  en: Elabs
+  ja: ""
+bio: 
+  en: "CJ Kihlbom is the founder of Elabs, an agile web development and design shop in Sweden, and the organizer of Nordic Ruby. He switched to Ruby in 2004 when Rails came along, and he hasn’t looked back since."
+  ja: ""
+title: 
+  en: Getting Started With JavaScript Testing
+  ja: ""
+abstract: 
+  en: While most Ruby developers are very familiar with testing their code, JavaScript testing is still a new frontier for many. This talk will show you how to easily write and run JavaScript integration tests with Capybara and Cucumber, and unit tests with Evergreen and Jasmine. The goal is to inspire you to get started with JavaScript testing, and point you in the right direction to go do it!
+  ja: ""
+language: English

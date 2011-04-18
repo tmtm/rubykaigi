@@ -1,0 +1,23 @@
+--- 
+name: 
+  en: Kouhei Sutou
+  ja: "須藤功平"
+affilization: 
+  en: ClearCode Inc. / COZMIXNG
+  ja: "株式会社クリアコード / COZMIXNG"
+bio: 
+  en: He is the president of ClearCode Inc. And he is a developer of RSS Parser, Rabbit, rcairo, Ruby-GNOME2, test-unit 2.x, rroonga, rurema-search, ActiveLdap, ActiveSambaLdap, Ruby and more free softwares.
+  ja: "株式会社クリアコード代表取締役。RSS ParserとRabbitとrcairoとRuby-GNOME2とtest-unit 2.xとrroongaとるりまサーチとActiveLdapとActiveSambaLdapとRubyなどのフリーソフトウェア開発者。"
+title: 
+  en: How to create a testing framework
+  ja: "テスティングフレームワークの作り方"
+abstract: 
+  en: |
+    This talk is about design decisions on creating a testing framework. It is based on talker's experience by creating a few testing frameworks.
+    
+    This talk will not be useful for many people. But some people who create a library may be useful. A testing framework is also a library. Design decisions about a testing framework will be able to be applied other libraries.
+
+  ja: "いくつかテスティングフレームワークを作ってきた経験から、テスティングフレームワークを作る場合の設計判断について話します。\r\n\
+    \r\n\
+    多くの人はテスティングフレームワークを作ることはないはずなので、あまり役に立たないと思うかもしれません。実際、多くの人にとってはそうでしょう。しかし、ライブラリを作る人には役立つかもしれません。テスティングフレームワークも「ユーザが開発者」であるライブラリの一種です。テスティングフレームワークがユーザである開発者をどう捉えていて、どのように支援したいかと考えることは多くのライブラリでも重要な問題です。"
+language: Japanese

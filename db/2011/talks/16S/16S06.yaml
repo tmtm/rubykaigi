@@ -1,0 +1,19 @@
+--- 
+name: 
+  en: Koichi Sasada
+  ja: "ささだこういち"
+affilization: 
+  en: Graduate School of Infomation Science and Technologies, The University of Tokyo
+  ja: "東京大学大学院情報理工学系研究科"
+bio: 
+  en: |
+    CRuby Commiter (VM).
+
+  ja: "CRubyコミッタ（VM関連）．"
+title: 
+  en: Ruby Interpreters in the Parallel Worlds
+  ja: "並列世界のRuby処理系"
+abstract: 
+  en: If you are in the parallel world, it is possible that there is another version of Ruby interpreter.  In this presentation, I will show the such "different Ruby interpreters".  Moreover, I will introduce the suitable world, and Ruby interpreter for me.
+  ja: "ちょっと違った世界には，こんな Ruby 処理系があったかもしれません．本発表では，そんなちょっと違った Ruby 処理系の可能性について紹介します．そして，自分としてはこんな世界がいいな， Ruby 処理系があるといいな，というような話をしたいと思います．"
+language: Japanese

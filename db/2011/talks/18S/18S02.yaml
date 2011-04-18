@@ -1,0 +1,17 @@
+--- 
+name: 
+  en: Masatoshi SEKI
+  ja: "関将俊"
+affilization: 
+  en: druby.org
+  ja: ""
+bio: 
+  en: Programmer. Author of ERB, dRuby and Rinda.
+  ja: "プログラマ。ERB, dRuby, Rindaの作者。ポケモンWCS2010栃木県代表(カード部門)。\r\n"
+title: 
+  en: persistent tuple space and stream
+  ja: "永続化されたタプルスペースとストリーム"
+abstract: 
+  en: tasukete me!
+  ja: "永続版タプルスペースとストリーム指向のストレージ／同期メカニズムを紹介する"
+language: Japanese

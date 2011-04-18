@@ -1,0 +1,20 @@
+--- 
+name: 
+  en: Keiju Ishitsuka
+  ja: "石塚圭樹"
+affilization: 
+  en: Penta Advanced Laboratories, Inc
+  ja: "ペンタアドバンストラボラトリーズ"
+bio: 
+  en: |-
+    Ruby's Godfather.
+    Author of Irb
+  ja: "Rubyの名付け親。\r\n\
+    Irbの作者。"
+title: 
+  en: About New Version of DeepConnect for Distributed Object Environment
+  ja: "分散オブジェクト環境DeepConnectの新バージョンについて"
+abstract: 
+  en: TBD.
+  ja: "２０１０年１０月に公開された分散オブジェクト環境のDeepConnectの新しいインターフェースについて紹介します。"
+language: Japanese

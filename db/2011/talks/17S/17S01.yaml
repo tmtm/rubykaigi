@@ -1,0 +1,21 @@
+--- 
+name: 
+  en: Elise Huard
+  ja: ""
+affilization: 
+  en: Jabberwocky
+  ja: ""
+bio: 
+  en: "In the last 11 years, Elise’s been rolling through jobs in C, C++, Java, a master in AI, before falling in love with Ruby and going freelance. Her experience in software development have helped her get a firm understanding on what works, what doesn’t, and what will make you cry bloody tears on nights before deadlines.\r\n\
+    \r\n\
+    She’s a jack of all trades, loves reading, tinkering, food, travel, learning, and people out of the ordinary."
+  ja: ""
+title: 
+  en: Actors on stage
+  ja: ""
+abstract: 
+  en: |-
+    In view of the recent hardware developments , programmers should start focusing on enabling their programs for parallel execution.  The actor model is one promising model to handle concurrency and parallellism easily.
+    This talk discusses several options to use actors in Ruby.
+  ja: ""
+language: English

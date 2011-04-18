@@ -1,0 +1,25 @@
+--- 
+name: 
+  en: Ayumu AIZAWA
+  ja: "相澤 歩"
+affilization: 
+  en: Accenture Technology Solutions Corp.
+  ja: "アクセンチュア・テクノロジー・ソリューションズ株式会社"
+bio: 
+  en: "英訳helpお願いします。"
+  ja: "外資コンサルティングファーム系列SIer所属のシステムアナリスト"
+title: 
+  en: "Issues of Enterprise Rubyist"
+  ja: "SierのなかのRubyistが考えるべきこと"
+abstract: 
+  en: "英訳helpお願いします。"
+  ja: "近年、業務システムソリューションとしてRuby on Railsの採用が検討されることは\r\n\
+    珍しくなくなってきている。それは大手システムインテグレーターが手がける開発\r\n\
+    案件であっても例外ではない。\r\n \r\n\
+    SIerがRailsを採用する背景には、高い生産性と業務の変化に追随する柔軟性に対す\r\n\
+    る期待がある。しかしRailsを採用したシステム開発プロジェクトで大手SIerにおい\r\n\
+    て期待される成果をあげるためには、技術的な側面だけではなく、マネジメント的\r\n\
+    な側面を含めて考慮すべきことがおおい。\r\n\
+    \r\n\
+    本セッションでは、アクセンチュアにおけるRails開発案件の事例をベースに、SIerの中の開発者とプロジェクトマネジャーの両方の視点から、プロジェクトを成功に導くために考えるべきことがらについて述べる。"
+language: Japanese

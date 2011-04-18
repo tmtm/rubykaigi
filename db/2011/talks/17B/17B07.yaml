@@ -1,0 +1,17 @@
+--- 
+name: 
+  en: Chris Kowalik
+  ja: ""
+affilization: 
+  en: Developer at Cubox
+  ja: ""
+bio: 
+  en: "Chris is Polish developer, Open Source contributor, BSD and Arch Linux enthusiast and inline-skating addict. He works with Ruby, Python and C++ for many years, he plays with *nix systems since got the first computer, and he is typical optimization monster. Currently he live in Montevideo (Uruguay) and work for the Cubox company at Ruby, Rails and C++ stuff. "
+  ja: ""
+title: 
+  en: Efficient JavaScript integration testing with Ruby and V8 engine.
+  ja: ""
+abstract: 
+  en: This presentation will introduce you V8 JavaScript engine and the fresh Mustang gem, which brings most of V8's features into Ruby world. V8 is open source, high performance JavaScript engine written in C++, used i.a. by Google Chrome and Node.JS. V8 enables any C/C++ application to expose its own objects and functions to JavaScript code. Thanks to this we could build our own, efficient, headless browser for testing purposes. This presentation for sure will change your life by showing you how easy and fast can be integration testing thanks to V8 and Mustang goodies.
+  ja: ""
+language: English

@@ -1,0 +1,21 @@
+--- 
+name: 
+  en: Takahiro Sunaga
+  ja: "須永高浩"
+affilization: 
+  en: The University of Tokyo
+  ja: "東京大学大学院"
+bio: 
+  en: |
+    Takahiro Sunaga had studied about Logic and Prolog in undergraduate years.He is in master's course of the University of Tokyo now.
+
+  ja: "学部時代は論理学やProlog関係の研究を行う。東京大学大学院の修士課程在学中。"
+title: 
+  en: "The Real-time Profiler for Ruby "
+  ja: "Ruby用のリアルタイムプロファイラ"
+abstract: 
+  en: |
+    We developed a real-time execution profiler for Ruby.This profiler is able to get information associating with context informationand only few overheads. In this presentation, we introduce our profiler, and explain the design and implementation.
+
+  ja: "Ruby用のリアルタイム実行時間プロファイラを開発した。本プロファイラはコンテキスト情報を含めて取得でき、かつ低いオーバーヘッドで得ることができる。本プレゼンテーションではプロファイラの紹介とともにその実装について詳しく紹介する。\r\n"
+language: Japanese
