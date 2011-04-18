@@ -43,12 +43,12 @@ group :test, :cucumber do
   gem 'autotest-rails'
 #  gem 'autotest-growl'
   gem 'daemons'
-  gem 'spork'
+  gem 'spork', :group => :development
   gem 'cucumber-rails', '~>0.3.2'
   gem 'webrat'
   gem 'moro-miso'
   gem 'database_cleaner'
   gem 'nokogiri'
-  gem 'steak', :require => nil
-  gem 'capybara'
+  gem 'steak', :group => :development
+  gem 'capybara', :group => :development
 end
