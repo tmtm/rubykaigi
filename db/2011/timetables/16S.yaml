@@ -6,35 +6,35 @@ timeslots:
       2011-07-16T10:00:00+09:00
     end: &slot1
       2011-07-16T11:00:00+09:00
-    talks:
-      - 16S01
-      - 16S02
+    talk_ids:
+      - 16S/16S01
+      - 16S/16S02
   - start: *slot1
     end:   &slot2
       2011-07-16T12:00:00+09:00
-    talks: 
-      - 16S03
-      - 16S04
+    talk_ids: 
+      - 16S/16S03
+      - 16S/16S04
   - start: *slot2
     end:   &slot3
       2011-07-16T12:20:00+09:00
     interval: true
-    talks: []
+    talk_ids: []
   - start: *slot3
     end:   &slot4
       2011-07-16T13:20:00+09:00
-    talks: 
-      - 16S05
-      - 16S06
+    talk_ids: 
+      - 16S/16S05
+      - 16S/16S06
   - start: *slot4
     end:   &slot5
       2011-07-16T13:30:00+09:00
     interval: true
-    talks: []
+    talk_ids: []
   - start: *slot5
     end:   &slot6
       2011-07-16T14:30:00+09:00
-    talks:
-      - 16S07
-      - 16S08
+    talk_ids:
+      - 16S/16S07
+      - 16S/16S08
       
