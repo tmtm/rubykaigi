@@ -12,10 +12,10 @@ class Schedule < OpenStruct
   end
 
   def hold_on?(time)
-    start <= time && self.end > time
+    self.start <= time && self.end > time
   end
 
-  def interval?
-    !!interval
+  def break?
+    !!self.break
   end
 end

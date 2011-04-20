@@ -3,11 +3,11 @@
 require 'yaml'
 require 'enumerator'
 
-require './models/timetable'
+require File.join(File.dirname(__FILE__), 'models/timetable')
 
-Dir["timetables/**/*.yaml"].map do |path|
+Dir[File.join(File.dirname(__FILE__), "timetables/**/*.yaml")].map do |path|
   Timetable.find(path)
-end.sort_by(&:date).group_by(&:date).each do |date, timetables|
+end.group_by(&:date).each do |date, timetables|
   periods = timetables.inject([]) {|times, timetable| times + timetable.periods }.uniq.sort
 
   p timetables.map(&:room)
@@ -20,8 +20,10 @@ end.sort_by(&:date).group_by(&:date).each do |date, timetables|
     timetables.each do |timetable|
       
       schedule = timetable.schedule_at(s)
+
+      row << '-' and next unless schedule 
       
-      if schedule.interval?
+      if schedule.break?
         row << 'Break' 
       else
         row << schedule.talks.map {|t| t.name["en"] }
