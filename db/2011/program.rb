@@ -9,7 +9,7 @@ Dir["timetables/**/*.yaml"].each do |path|
       timetable["date"].strftime("%Y/%m/%d"),
       timetable["room"],
       %w(start end).map {|k| timeslot[k].strftime("%H:%M") },
-      timeslot["talks"]
+      timeslot["talk_ids"]
     ]
   end
 end
