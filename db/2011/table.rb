@@ -20,11 +20,13 @@ end.sort_by(&:date).group_by(&:date).each do |date, timetables|
     timetables.each do |timetable|
       
       schedule = timetable.schedule_at(s)
-
-      #timetable.schedules.each do |schedule|
+      
+      if schedule.interval?
+        row << 'Break' 
+      else
         row << schedule.talks.map {|t| t.name["en"] }
-        row << '|' unless schedule.end_at?(e)
-      #end
+      end
+      row << '|' unless schedule.end_at?(e)
     end
 
     p row

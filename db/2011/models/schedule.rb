@@ -15,4 +15,7 @@ class Schedule < OpenStruct
     start <= time && self.end > time
   end
 
+  def interval?
+    !!interval
+  end
 end
