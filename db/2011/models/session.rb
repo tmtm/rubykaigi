@@ -1,7 +1,7 @@
 require "ostruct"
 require File.join(File.dirname(__FILE__), "talk")
 
-class Schedule < OpenStruct
+class Session < OpenStruct
   
   def end_at?(time)
     self.end <= time

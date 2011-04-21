@@ -19,16 +19,16 @@ timetable.days.each do |date|
 
     room_timetables.each do |room_timetable|
       
-      schedule = room_timetable.schedule_at(s)
+      session = room_timetable.session_at(s)
 
-      row << '-' and next unless schedule 
+      row << '-' and next unless session 
       
-      if schedule.break?
+      if session.break?
         row << 'Break' 
       else
-        row << schedule.talks.map {|t| t.title["en"] }
+        row << session.talks.map {|t| t.title["en"] }
       end
-      row << '|' unless schedule.end_at?(e)
+      row << '|' unless session.end_at?(e)
     end
 
     p row
