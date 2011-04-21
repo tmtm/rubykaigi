@@ -22,11 +22,11 @@ timetable.days.each do |date|
       session = room_timetable.session_at(s)
 
       row << '-' and next unless session 
-      
-      if session.break?
-        row << 'Break' 
-      else
+     
+      if session.normal_session?
         row << session.talks.map {|t| t.title["en"] }
+      else
+        row << session.event_type.to_s.capitalize
       end
       row << '|' unless session.end_at?(e)
     end
