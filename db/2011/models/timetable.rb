@@ -17,4 +17,14 @@ class Timetable
     room_timetables_on(date).map(&:periods).flatten.uniq.sort
   end
 
+  def to_hash
+    hash = {}
+
+    days.each do |date|
+      hash[date.strftime("%Y-%m-%d")] = room_timetables_on(date).map(&:"to_hash")
+    end
+
+    {:timetable => hash}
+  end
+
 end

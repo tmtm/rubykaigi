@@ -19,4 +19,13 @@ class Session < OpenStruct
     normal_session? && talks.empty?
   end
 
+  def to_hash
+    hash = @table.dup
+
+    hash.delete(:talk_ids)
+    hash[:talks] = talks.map(&:"to_hash")
+  
+    hash
+  end
+
 end

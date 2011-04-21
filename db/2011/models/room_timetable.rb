@@ -17,4 +17,14 @@ class RoomTimetable < Base
   def session_at(time)
     sessions.detect {|s| s.hold_on?(time) }
   end
+  
+  def to_hash
+    hash = @table.dup
+
+    hash.delete(:timeslots)
+    hash[:sessions] = sessions.map(&:to_hash)
+
+    hash
+  end
+
 end
