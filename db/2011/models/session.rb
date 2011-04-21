@@ -18,4 +18,9 @@ class Session < OpenStruct
   def normal_session?
     !self.event_type
   end
+
+  def empty?
+    normal_session? && talks.empty?
+  end
+
 end

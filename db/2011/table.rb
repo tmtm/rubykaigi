@@ -21,7 +21,7 @@ timetable.days.each do |date|
       
       session = room_timetable.session_at(s)
 
-      row << '-' and next unless session 
+      row << '-' and next if !session || session.empty?
      
       if session.normal_session?
         row << session.talks.map {|t| t.title["en"] }
