@@ -6,7 +6,7 @@ timeslots:
       2011-07-18T09:30:00+09:00
     end: &end_of_slot1
       2011-07-18T09:50:00+09:00
-    talk_ids: []
+    event_type: :open
   - start: *end_of_slot1
     end:   &end_of_slot2
       2011-07-18T10:50:00+09:00
@@ -15,8 +15,7 @@ timeslots:
   - start: *end_of_slot2
     end:   &end_of_slot3
       2011-07-18T11:00:00+09:00
-    break: true
-    talk_ids: []
+    event_type: :break
   - start: *end_of_slot3
     end:   &end_of_slot4
       2011-07-18T12:00:00+09:00
@@ -26,8 +25,7 @@ timeslots:
   - start: *end_of_slot4
     end:   &end_of_slot5
       2011-07-18T13:30:00+09:00
-    break: true
-    talk_ids: []
+    event_type: :lanch
   - start: *end_of_slot5
     end:   &end_of_slot6
       2011-07-18T14:30:00+09:00
@@ -37,8 +35,7 @@ timeslots:
   - start: *end_of_slot6
     end:   &end_of_slot7
       2011-07-18T14:40:00+09:00
-    break: true
-    talk_ids: []
+    event_type: :break
   - start: *end_of_slot7
     end:   &end_of_slot8
       2011-07-18T15:40:00+09:00
@@ -48,18 +45,15 @@ timeslots:
   - start: *end_of_slot8
     end:   &end_of_slot9
       2011-07-18T16:10:00+09:00
-    break: true
-    talk_ids: []
+    event_type: :break
   - start: *end_of_slot9
     end:   &end_of_slot10
       2011-07-18T17:10:00+09:00
-    lightning_talks: true
-    talk_ids: []
+    event_type: :lightning_talks
   - start: *end_of_slot10
     end:   &end_of_slot11
       2011-07-18T17:20:00+09:00
-    break: true
-    talk_ids: []
+    event_type: :break
   - start: *end_of_slot11
     end:   &end_of_slot12
       2011-07-18T18:30:00+09:00
