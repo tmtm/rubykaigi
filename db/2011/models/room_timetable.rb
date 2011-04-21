@@ -1,7 +1,9 @@
-require File.join(File.dirname(__FILE__), "base")
+require File.join(File.dirname(__FILE__), "yaml_loader")
 require File.join(File.dirname(__FILE__), "session")
 
-class RoomTimetable < Base
+class RoomTimetable < OpenStruct
+  extend YamlLoader
+
 
   base_dir File.join(File.dirname(__FILE__), "../room_timetables/")
   # base_dir Rails.root.join("db/2011/talks")
