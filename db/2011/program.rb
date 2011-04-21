@@ -2,15 +2,19 @@
 
 require 'yaml'
 
-Dir["timetables/**/*.yaml"].each do |path|
-  timetable = YAML.load_file(path)
-  timetable["timeslots"].each do |timeslot|
+require File.join(File.dirname(__FILE__), "models/timetable")
+
+timetable = Timetable.new
+
+timetable.room_timetables.each do |room_timetable|
+
+  room_timetable.sessions.each do |session|
     p [
-      timetable["date"].strftime("%Y/%m/%d"),
-      timetable["room"],
-      %w(start end).map {|k| timeslot[k].strftime("%H:%M") },
-      timeslot["talk_ids"]
+      room_timetable.date.strftime("%Y/%m/%d"),
+      room_timetable.room,
+      %w(start end).map {|k| session.send(k).strftime("%H:%M") },
+      session.talk_ids
     ]
   end
-end
 
+end
