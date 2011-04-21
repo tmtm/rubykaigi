@@ -3,8 +3,8 @@ require File.join(File.dirname(__FILE__), "schedule")
 
 class RoomTimetable < Base
 
-  load_path File.join(File.dirname(__FILE__), "../room_timetables/")
-  #load_path Rails.root.join("db/2011/talks")
+  base_dir File.join(File.dirname(__FILE__), "../room_timetables/")
+  # base_dir Rails.root.join("db/2011/talks")
 
   def schedules
     @schedules ||= timeslots.map {|t| Schedule.new(t) }

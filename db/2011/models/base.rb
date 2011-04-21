@@ -5,16 +5,16 @@ class Base < OpenStruct
 
   class << self
 
-    def load_path(path = nil)
+    def base_dir(path = nil)
       if path
-        @load_path = path
+        @base_dir = path
       else  
-        @load_path
+        @base_dir
       end
     end
 
     def get(id)
-      find(File.join(load_path, id))
+      find(File.join(base_dir, id))
     end
 
     def find(path)
@@ -22,7 +22,7 @@ class Base < OpenStruct
     end
 
     def all
-      Dir[File.join(load_path, "**/*.yaml")].map {|path| find(path) }
+      Dir[File.join(base_dir, "**/*.yaml")].map {|path| find(path) }
     end
 
     def load(path)
