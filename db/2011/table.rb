@@ -10,11 +10,9 @@ timetable = Timetable.new
 timetable.days.each do |date|
   room_timetables = timetable.room_timetables_on(date)
 
-  periods = room_timetables.inject([]) {|times, room_timetable| times + room_timetable.periods }.uniq.sort
-
   p room_timetables.map(&:room)
 
-  periods.each_cons(2) do |s, e|
+  timetable.periods_on(date).each_cons(2) do |s, e|
 
     row = []
     row << [s, e].map {|t| t.strftime("%H:%M") }.join('|')

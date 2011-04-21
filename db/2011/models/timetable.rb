@@ -1,4 +1,3 @@
-
 require File.join(File.dirname(__FILE__), "room_timetable")
 
 class Timetable
@@ -12,6 +11,10 @@ class Timetable
 
   def room_timetables_on(date)
     room_timetables.select {|r| r.date == date }
+  end
+
+  def periods_on(date)
+    room_timetables_on(date).map(&:periods).flatten.uniq.sort
   end
 
 end
