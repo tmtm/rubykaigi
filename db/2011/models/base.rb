@@ -21,6 +21,10 @@ class Base < OpenStruct
       new(load(path))
     end
 
+    def all
+      Dir[File.join(load_path, "**/*.yaml")].map {|path| find(path) }
+    end
+
     def load(path)
       path = path + ".yaml" if File.extname(path).empty?
       YAML.load_file(path)

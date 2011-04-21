@@ -3,11 +3,13 @@
 require 'yaml'
 require 'enumerator'
 
-require File.join(File.dirname(__FILE__), 'models/room_timetable')
+require File.join(File.dirname(__FILE__), 'models/timetable')
 
-Dir[File.join(File.dirname(__FILE__), "room_timetables/**/*.yaml")].map do |path|
-  RoomTimetable.find(path)
-end.group_by(&:date).each do |date, room_timetables|
+timetable = Timetable.new
+
+timetable.days.each do |date|
+  room_timetables = timetable.room_timetables_on(date)
+
   periods = room_timetables.inject([]) {|times, room_timetable| times + room_timetable.periods }.uniq.sort
 
   p room_timetables.map(&:room)
