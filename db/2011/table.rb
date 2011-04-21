@@ -18,9 +18,7 @@ timetable.days.each do |date|
     row << [s, e].map {|t| t.strftime("%H:%M") }.join('|')
 
     room_timetables.each do |room_timetable|
-      
       session = room_timetable.session_at(s)
-
       row << '-' and next if !session || session.empty?
      
       if session.normal_session?
@@ -28,7 +26,6 @@ timetable.days.each do |date|
       else
         row << session.event_type.to_s.capitalize
       end
-      row << '|' unless session.end_at?(e)
     end
 
     p row

@@ -3,10 +3,6 @@ require File.join(File.dirname(__FILE__), "talk")
 
 class Session < OpenStruct
   
-  def end_at?(time)
-    self.end <= time
-  end
-
   def talks
     @talks ||= talk_ids ? talk_ids.map {|id| Talk.get(id) } : []
   end
