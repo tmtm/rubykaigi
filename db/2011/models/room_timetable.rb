@@ -1,9 +1,9 @@
 require File.join(File.dirname(__FILE__), "base")
 require File.join(File.dirname(__FILE__), "schedule")
 
-class Timetable < Base
+class RoomTimetable < Base
 
-  load_path File.join(File.dirname(__FILE__), "../timetables/")
+  load_path File.join(File.dirname(__FILE__), "../room_timetables/")
   #load_path Rails.root.join("db/2011/talks")
 
   def schedules
