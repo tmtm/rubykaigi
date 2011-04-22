@@ -6,8 +6,8 @@ require 'json'
 require File.join(File.dirname(__FILE__), 'models/timetable')
 
 class Time
-  def to_s
-    strftime("%Y-%m-%dT%H:%M:%S+09:00")
+  def to_json(*a)
+    strftime("%Y-%m-%dT%H:%M:%S+09:00").to_json(*a)
   end
 end
 
