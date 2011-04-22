@@ -11,7 +11,22 @@ class Time
   end
 end
 
+class TimetableJSON
+
+  def render
+    Timetable.new.to_hash.to_json
+  end
+  
+  def call(env)
+    header = {"Content-Type" => "application/json;charset=utf-8"}
+    body = [Timetable.new.to_hash.to_json]
+    [200, header, render]
+  end
+
+end
+
 if $0 == __FILE__
-   p Timetable.new.to_hash.to_json
+  $KCODE = 'u'
+  puts TimetableJSON.new.render
 end
 
