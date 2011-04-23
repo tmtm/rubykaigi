@@ -23,13 +23,12 @@
               - if !session || session.empty?
                 = '-'
               - else
-                - if session.normal_session?
-                  - session.talks.each do |talk|
-                    = talk.title['en']
-                    %br
-                    = talk.name['en']
-                    %br
-                    = talk.affilization['en']
-                - else
-                  = session.event_type.to_s.capitalize
+                - session.talks.each do |talk|
+                  = talk.title['en']
+                  %br
+                  = talk.name['en']
+                  %br
+                  = talk.affilization['en']
+                - session.special_events.each do |event|
+                  = event.name
 

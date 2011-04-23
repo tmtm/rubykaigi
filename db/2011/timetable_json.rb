@@ -3,7 +3,9 @@
 require 'rubygems'
 require 'json'
 
-require File.join(File.dirname(__FILE__), 'models/timetable')
+Dir[File.join(File.dirname(__FILE__), 'models/*.rb')].each do |path|
+  require path
+end
 
 class Time
   def to_json(*a)

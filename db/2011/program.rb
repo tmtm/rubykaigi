@@ -13,7 +13,7 @@ timetable.room_timetables.each do |room_timetable|
       room_timetable.date.strftime("%Y/%m/%d"),
       room_timetable.room,
       %w(start end).map {|k| session.send(k).strftime("%H:%M") },
-      session.talk_ids
+      session.event_ids
     ]
   end
 

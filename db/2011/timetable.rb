@@ -4,6 +4,9 @@ require 'yaml'
 require 'enumerator'
 
 require File.join(File.dirname(__FILE__), 'models/timetable')
+Dir[File.join(File.dirname(__FILE__), 'models/*.rb')].each do |path|
+  require path
+end
 
 timetable = Timetable.new
 
@@ -20,12 +23,8 @@ timetable.days.each do |date|
     room_timetables.each do |room_timetable|
       session = room_timetable.session_at(s)
       row << '-' and next if !session || session.empty?
-     
-      if session.normal_session?
-        row << session.talks.map {|t| t.title["en"] }
-      else
-        row << session.event_type.to_s.capitalize
-      end
+    
+      row << session.talks.map {|t| t.title["en"] } + session.special_events.map {|e| e.name }
     end
 
     p row
