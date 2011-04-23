@@ -6,7 +6,7 @@ class SpecialEvent
 
   handle :break
   handle :open
-  handle :launch
+  handle :lunch
   handle :dinner
   handle :party
   handle :transit_time
