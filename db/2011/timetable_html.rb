@@ -5,7 +5,7 @@ require 'enumerator'
 require 'rubygems'
 require 'haml'
 
-Dir[File.join(File.dirname(__FILE__), 'models/*.rb')].each do |path|
+Dir[File.join(File.dirname(__FILE__), '../../lib/ruby_kaigi2011/*.rb')].each do |path|
   require path
 end
 
@@ -13,7 +13,7 @@ class TimetableHTML
 
   def render
     template = File.join(File.dirname(__FILE__), 'views/timetable.html.haml')
-    Haml::Engine.new(File.read(template)).render(Timetable.new)
+    Haml::Engine.new(File.read(template)).render(RubyKaigi2011::Timetable.new)
   end
 
   def call(env)

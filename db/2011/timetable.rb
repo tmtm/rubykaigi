@@ -3,13 +3,12 @@
 require 'yaml'
 require 'enumerator'
 
-require File.join(File.dirname(__FILE__), 'models/timetable')
-Dir[File.join(File.dirname(__FILE__), 'models/*.rb')].each do |path|
+Dir[File.join(File.dirname(__FILE__), '../../lib/ruby_kaigi2011/*.rb')].each do |path|
   require path
 end
 
-timetable = Timetable.new
-rooms = Room.all
+timetable = RubyKaigi2011::Timetable.new
+rooms = RubyKaigi2011::Room.all
 room_ids = rooms.map(&:room_id)
 locale = 'en'
 

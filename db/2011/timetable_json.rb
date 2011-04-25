@@ -3,7 +3,7 @@
 require 'rubygems'
 require 'json'
 
-Dir[File.join(File.dirname(__FILE__), 'models/*.rb')].each do |path|
+Dir[File.join(File.dirname(__FILE__), '../../lib/ruby_kaigi2011/*.rb')].each do |path|
   require path
 end
 
@@ -16,12 +16,11 @@ end
 class TimetableJSON
 
   def render
-    Timetable.new.to_hash.to_json
+    RubyKaigi2011::Timetable.new.to_hash.to_json
   end
   
   def call(env)
     header = {"Content-Type" => "application/json;charset=utf-8"}
-    body = [Timetable.new.to_hash.to_json]
     [200, header, render]
   end
 

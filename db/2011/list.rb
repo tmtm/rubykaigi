@@ -2,7 +2,7 @@
 
 require 'yaml'
 
-Dir['talks/**/*.yaml'].each do |path|
+Dir['events/**/*.yaml'].each do |path|
   talk = YAML.load_file(path)
-  p [path, talk['title']['en'], talk['name']['en']]
+  p [path, (talk['title'] || {})['en'], (talk['name'] || {})['en']]
 end

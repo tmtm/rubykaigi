@@ -4,7 +4,7 @@ require 'yaml'
 
 require File.join(File.dirname(__FILE__), "models/timetable")
 
-timetable = Timetable.new
+timetable = RubyKaigi201::1Timetable.new
 
 timetable.room_timetables.each do |room_timetable|
 
