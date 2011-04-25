@@ -1,6 +1,8 @@
 %h1
   タイムテーブル
 
+- rooms = Room.all
+- locale = 'en'
 - days.each do |date|
   %h2
     = date.strftime('%Y年%m月%d日')
@@ -9,23 +11,26 @@
     %thead
       %tr
         %th
-        - room_timetables_on(date).each do |room_timetable|
+        - rooms.each do |room|
+          - room_timetable = room_timetable_at(date, room.room_id)
+
           %th
-            = room_timetable.room
+            = room.name[locale]
         
     %tbody
       - periods_on(date).each_cons(2) do |s, e|
         %tr
           %td
             = [s, e].map {|t| t.strftime("%H:%M") }.join('|')
-          - room_timetables_on(date).map {|r| r.session_at(s) }.each do |session|
+
+          - rooms.each do |room|
+            - session = room_timetable_at(date, room.room_id).session_at(s)
             %td
               - if !session || session.empty?
                 = '-'
               - else
-                - locale = 'en'
-                - session.events.each do |talk|
-                  = (talk.title || {})[locale]
-                  = (talk.name || {})[locale]
-                  = (talk.affilization || {})[locale]
+                - session.events.each do |event|
+                  = (event.title || {})[locale]
+                  = (event.name || {})[locale]
+                  = (event.affilization || {})[locale]
                   %br
