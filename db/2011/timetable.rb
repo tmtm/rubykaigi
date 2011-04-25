@@ -23,8 +23,8 @@ timetable.days.each do |date|
     room_timetables.each do |room_timetable|
       session = room_timetable.session_at(s)
       row << '-' and next if !session || session.empty?
-    
-      row << session.talks.map {|t| t.title["en"] } + session.special_events.map {|e| e.name }
+ 
+      row << session.talks.map {|t| t.title["en"] }
     end
 
     p row

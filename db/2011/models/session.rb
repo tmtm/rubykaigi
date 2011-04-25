@@ -1,19 +1,15 @@
 require "ostruct"
 require File.join(File.dirname(__FILE__), "talk")
-require File.join(File.dirname(__FILE__), "event_resource")
 
 class Session < OpenStruct
 
   def talks
-    events.select {|e| e.is_a?(Talk) }
+    events
   end
 
+  # TODO remove me
   def events
-    @events ||= event_ids ? event_ids.map {|id| EventResource.get(id) } : []
-  end
-
-  def special_events
-    events.reject {|e| e.is_a?(Talk) }
+    @events ||= event_ids ? event_ids.map {|id| Talk.get(id) } : []
   end
 
   def hold_on?(time)
@@ -31,7 +27,7 @@ class Session < OpenStruct
   def to_hash
     hash = @table.dup
 
-    hash.delete(:talk_ids)
+    hash.delete(:event_ids)
     hash[:talks] = talks.map(&:"to_hash")
   
     hash

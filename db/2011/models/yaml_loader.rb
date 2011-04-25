@@ -12,7 +12,7 @@ module YamlLoader
   end
 
   def get(id)
-    find(File.join(base_dir, id))
+    find(File.join(base_dir, id.to_s))
   end
 
   def find(path)

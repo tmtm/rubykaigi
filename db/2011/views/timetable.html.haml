@@ -23,12 +23,9 @@
               - if !session || session.empty?
                 = '-'
               - else
+                - locale = 'en'
                 - session.talks.each do |talk|
-                  = talk.title['en']
+                  = (talk.title || {})[locale]
+                  = (talk.name || {})[locale]
+                  = (talk.affilization || {})[locale]
                   %br
-                  = talk.name['en']
-                  %br
-                  = talk.affilization['en']
-                - session.special_events.each do |event|
-                  = event.name
-
