@@ -22,10 +22,13 @@
         %tr
           %td
             = [s, e].map {|t| t.strftime("%H:%M") }.join('|')
-
-          - rooms.each do |room|
-            - session = room_timetable_at(date, room.room_id).session_at(s)
-            %td
+          - sessions = rooms.map {|room|
+          -   room_timetable_at(date, room.room_id).session_at(s)
+          - }
+          - sessions.each_with_index do |session, index|
+            - next if index != 0 && sessions[index - 1] == session
+            - count = sessions.select {|ses| ses == session }.count
+            %td{:colspan => count}
               - if !session || session.empty?
                 = '-'
               - else
