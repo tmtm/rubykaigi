@@ -1,15 +1,10 @@
 require "ostruct"
-require File.join(File.dirname(__FILE__), "talk")
+require File.join(File.dirname(__FILE__), "event")
 
 class Session < OpenStruct
 
-  def talks
-    events
-  end
-
-  # TODO remove me
   def events
-    @events ||= event_ids ? event_ids.map {|id| Talk.get(id) } : []
+    @events ||= event_ids ? event_ids.map {|id| Event.get(id) } : []
   end
 
   def hold_on?(time)
@@ -20,15 +15,11 @@ class Session < OpenStruct
     events.empty?
   end
 
-  def normal_session?
-    !talks.empty?
-  end
-
   def to_hash
     hash = @table.dup
 
     hash.delete(:event_ids)
-    hash[:talks] = talks.map(&:"to_hash")
+    hash[:events] = events.map(&:"to_hash")
   
     hash
   end

@@ -24,7 +24,7 @@
                 = '-'
               - else
                 - locale = 'en'
-                - session.talks.each do |talk|
+                - session.events.each do |talk|
                   = (talk.title || {})[locale]
                   = (talk.name || {})[locale]
                   = (talk.affilization || {})[locale]

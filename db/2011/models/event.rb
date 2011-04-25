@@ -1,13 +1,13 @@
 require File.join(File.dirname(__FILE__), "yaml_loader")
 
-class Talk < OpenStruct
+class Event < OpenStruct
   extend YamlLoader
 
-  base_dir File.join(File.dirname(__FILE__), "../talks/")
+  base_dir File.join(File.dirname(__FILE__), "../events/")
   # base_dir Rails.root.join("db/2011/talks")
 
   def talks
-    @talks ||= talk_ids ? talk_ids.map {|id| Talk.get(id) } : []
+    @talks ||= talk_ids ? talk_ids.map {|id| Event.get(id) } : []
   end
 
   def to_hash
