@@ -12,12 +12,8 @@ module RubyKaigi2011
 
     def to_hash
       hash = @table.dup
-
-      if talk_ids
-        hash.delete(:talk_ids)
-        hash[:talks] = talks.map(&:to_hash)
-      end
-
+      hash.delete(:talk_ids)
+      hash[:talks] = talks.map(&:to_hash) unless talks.empty?
       hash
     end
 
