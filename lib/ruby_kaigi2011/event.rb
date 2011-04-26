@@ -8,7 +8,7 @@ module RubyKaigi2011
     # base_dir Rails.root.join("db/2011/events")
 
     def talks
-      @talks ||= talk_ids ? talk_ids.map {|id| Event.get(id) } : []
+      @talks ||= talk_ids ? talk_ids.map {|id| Event.find(id) } : []
     end
 
     def to_hash

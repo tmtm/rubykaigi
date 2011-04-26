@@ -5,7 +5,7 @@ module RubyKaigi2011
   class Session < OpenStruct
 
     def events
-      @events ||= event_ids ? event_ids.map {|id| Event.get(id) } : []
+      @events ||= event_ids ? event_ids.map {|id| Event.find(id) } : []
     end
 
     def hold_on?(time)
