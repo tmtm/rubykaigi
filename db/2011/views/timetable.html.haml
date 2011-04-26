@@ -1,39 +1,69 @@
-%h1
-  タイムテーブル
+!!!
 
-- rooms = RubyKaigi2011::Room.all
-- locale = 'en'
-- days.each do |date|
-  %h2
-    = date.strftime('%Y年%m月%d日')
-  
-  %table.timetable
-    %thead
-      %tr
-        %th
-        - rooms.each do |room|
-          - room_timetable = room_timetable_at(date, room.room_id)
+%html
+  %head
+    %meta(charset='utf-8')
+    %style(type='text/css')
+      :sass
+        table, th, td
+          :border-collapse collapse
+          :border 1px solid
+          :vertical-align top
+        .title
+          :font-weight bold
+          :font-size 18px
+  %body
+    %h1
+      タイムテーブル
 
-          %th
-            = room.name[locale]
-        
-    %tbody
-      - periods_on(date).each_cons(2) do |s, e|
-        %tr
-          %td
-            = [s, e].map {|t| t.strftime("%H:%M") }.join('|')
-          - sessions = rooms.map {|room|
-          -   room_timetable_at(date, room.room_id).session_at(s)
-          - }
-          - sessions.each_with_index do |session, index|
-            - next if index != 0 && sessions[index - 1] == session
-            - count = sessions.select {|ses| ses == session }.count
-            %td{:colspan => count}
-              - if !session || session.empty?
-                = '-'
-              - else
-                - session.events.each do |event|
-                  = (event.title || {})[locale]
-                  = (event.name || {})[locale]
-                  = (event.affilization || {})[locale]
-                  %br
+    - rooms = RubyKaigi2011::Room.all
+    - days.each do |date|
+      %h2
+        = date.strftime('%Y年%m月%d日')
+
+      %table.timetable
+        %thead
+          %tr
+            %th
+            - rooms.each do |room|
+              - room_timetable = room_timetable_at(date, room.room_id)
+
+              %th
+                = room.name['en']
+
+        %tbody
+          - periods_on(date).each_cons(2) do |s, e|
+            %tr
+              %td
+                = [s, e].map {|t| t.strftime("%H:%M") }.join('|')
+              - sessions = rooms.map {|room|
+              -   room_timetable_at(date, room.room_id).session_at(s)
+              - }
+              - sessions.each_with_index do |session, index|
+                - next if index != 0 && sessions[index - 1] == session
+                - count = sessions.select {|ses| ses == session }.count
+                %td{:colspan => count}
+                  - if !session || session.empty?
+                    = '-'
+                  - else
+                    - (events = session.events).each do |event|
+                      %ul
+                        - [:title, :name, :affilization, :bio, :abstract ].each do |label|
+                          - unless (val = event.send(label)).to_s.empty?
+                            %li
+                              = label
+                              %ul
+                                - ['en', 'ja'].each do |locale|
+                                  - unless val[locale].to_s.empty?
+                                    %li
+                                      = "(#{locale}) "
+                                      %br
+                                      %span{:class => label}
+                                        = val[locale]
+                        - unless event.language.to_s.empty?
+                          %li
+                            language
+                            %br
+                            = event.language
+                      - unless events.count - 1 == events.rindex(event)
+                        %hr
