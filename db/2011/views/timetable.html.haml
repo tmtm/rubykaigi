@@ -48,6 +48,9 @@
                   - else
                     - (events = session.events).each do |event|
                       %ul
+                        %li
+                          id:
+                          = event._id
                         - [:title, :name, :affiliation, :bio, :abstract ].each do |label|
                           - unless (val = event.send(label)).to_s.empty?
                             %li
