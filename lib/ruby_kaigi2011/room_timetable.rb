@@ -21,12 +21,9 @@ module RubyKaigi2011
 
     def to_hash
       hash = @table.dup
-
       hash.delete(:timeslots)
       hash[:sessions] = sessions.map(&:to_hash)
-
       hash
     end
-
   end
 end

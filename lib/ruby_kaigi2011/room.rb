@@ -1,6 +1,5 @@
 require File.join(File.dirname(__FILE__), "yaml_loader")
 
-
 module RubyKaigi2011
   class Room < OpenStruct
     extend YamlLoader
@@ -10,6 +9,5 @@ module RubyKaigi2011
     def self.all
       super.sort_by(&:order)
     end
-
   end
 end

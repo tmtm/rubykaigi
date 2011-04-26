@@ -16,6 +16,5 @@ module RubyKaigi2011
       hash[:talks] = talks.map(&:to_hash) unless talks.empty?
       hash
     end
-
   end
 end

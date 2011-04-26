@@ -2,7 +2,6 @@ require File.join(File.dirname(__FILE__), "room_timetable")
 
 module RubyKaigi2011
   class Timetable
-
     def room_timetables
       @room_timetable ||= RoomTimetable.all
     end
@@ -32,6 +31,5 @@ module RubyKaigi2011
 
       {:timetable => hash}
     end
-
   end
 end
