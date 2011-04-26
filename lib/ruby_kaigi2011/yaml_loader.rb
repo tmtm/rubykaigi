@@ -11,6 +11,10 @@ module RubyKaigi2011
       load(File.join(@base_dir, id.to_s+".yaml"))
     end
 
+    def find_by_ids(ids)
+      ids.map{|id| find(id)}
+    end
+
     def all
       Dir[File.join(@base_dir, "**/*.yaml")].map {|path| load(path) }
     end

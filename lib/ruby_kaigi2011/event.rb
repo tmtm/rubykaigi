@@ -7,7 +7,7 @@ module RubyKaigi2011
     base_dir File.join(File.dirname(__FILE__), "../../db/2011/events/")
 
     def talks
-      @talks ||= talk_ids ? talk_ids.map {|id| Event.find(id) } : []
+      @talks ||= Event.find_by_ids(talk_ids || [])
     end
 
     def to_hash

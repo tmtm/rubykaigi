@@ -3,9 +3,8 @@ require File.join(File.dirname(__FILE__), "event")
 
 module RubyKaigi2011
   class Session < OpenStruct
-
     def events
-      @events ||= event_ids ? event_ids.map {|id| Event.find(id) } : []
+      @events ||= Event.find_by_ids(event_ids || [])
     end
 
     def hold_on?(time)
