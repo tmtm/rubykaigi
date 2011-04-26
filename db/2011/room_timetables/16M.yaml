@@ -23,6 +23,7 @@ timeslots:
     end:   &end_of_slot4
       2011-07-16T14:30:00+09:00
     event_ids: 
+      - announcement
       - 16M02
   - start: *end_of_slot4
     end:   &end_of_slot5
