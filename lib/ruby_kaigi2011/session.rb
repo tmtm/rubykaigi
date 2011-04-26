@@ -21,7 +21,7 @@ module RubyKaigi2011
 
       hash.delete(:event_ids)
       hash[:events] = events.map(&:"to_hash")
-    
+
       hash
     end
 

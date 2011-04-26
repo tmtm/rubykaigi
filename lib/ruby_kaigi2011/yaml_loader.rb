@@ -7,7 +7,7 @@ module RubyKaigi2011
     def base_dir(path = nil)
       if path
         @base_dir = path
-      else  
+      else
         @base_dir
       end
     end
