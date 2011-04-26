@@ -22,7 +22,7 @@ module RubyKaigi2011
       hash = {}
 
       days.each do |date|
-        hash[date.strftime("%Y-%m-%d")] = room_timetables_on(date).map(&:"to_hash")
+        hash[date.strftime("%Y-%m-%d")] = room_timetables_on(date).map(&:to_hash)
       end
 
       {:timetable => hash}

@@ -18,7 +18,7 @@ module RubyKaigi2011
     def to_hash
       hash = @table.dup
       hash.delete(:event_ids)
-      hash[:events] = events.map(&:"to_hash")
+      hash[:events] = events.map(&:to_hash)
       hash
     end
   end
