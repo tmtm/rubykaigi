@@ -5,7 +5,6 @@ module RubyKaigi2011
     extend YamlLoader
 
     base_dir File.join(File.dirname(__FILE__), "../../db/2011/events/")
-    # base_dir Rails.root.join("db/2011/events")
 
     def talks
       @talks ||= talk_ids ? talk_ids.map {|id| Event.find(id) } : []

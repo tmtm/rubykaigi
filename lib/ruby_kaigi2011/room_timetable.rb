@@ -6,7 +6,6 @@ module RubyKaigi2011
     extend YamlLoader
 
     base_dir File.join(File.dirname(__FILE__), "../../db/2011/room_timetables/")
-    # base_dir Rails.root.join("db/2011/room_timetables")
 
     def sessions
       @sessions ||= timeslots.map {|t| Session.new(t) }
