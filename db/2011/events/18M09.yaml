@@ -1,17 +1,5 @@
 ---
-name:
-  en: Matz
-  ja: ""
-affilization:
-  en: ""
-  ja: ""
-bio:
-  en: ""
-  ja: ""
 title:
-  en: "Keynote"
-  ja: ""
-abstract:
-  en: ""
-  ja: ""
-language: ""
+  en: lightning talks
+  ja: lightning talks
+talk_ids: []

@@ -1,0 +1,24 @@
+--- 
+name: 
+  en: Koji Shimada
+  ja: "島田 浩二"
+affilization: 
+  en: EnishiTech Inc., RubySapporo, Nihon Ruby-no-kai
+  ja: "株式会社えにしテック、Ruby札幌、日本Rubyの会"
+bio: 
+  en: "Koji Shimada (EnishiTech inc.)\n\
+    The President & CEO of EnishiTech Inc., board member of Nihon Ruby-no-kai(Japan Ruby Group) and Founder of RubySapporo.\n\
+    Wrote the book \"Ruby逆引きレシピ\" (with other authors, published by SHOEISHA) and translated Neal Ford's \"ProductiveProgrammer\" into Japanese (supervisor, The Japanese version, \"プロダクティブ・プログラマ\" was published by O'Reilly Japan)."
+  ja: "島田 浩二（株式会社えにしテック）\n\
+    株式会社えにしテック代表取締役。日本Rubyの会理事。Ruby札幌主宰。\n\
+    著書は『Ruby逆引きレシピ』(共著、翔泳社)、『プロダクティブ・プログラマ』(監訳、オライリージャパン)"
+title: 
+  en: "You must unlearn what you have learned: revisited"
+  ja: "Ruby の教えてくれたこと"
+abstract: 
+  en: |-
+    I challenged talking about "Quality of Ruby" and what I had learnt from Ruby in SapporoRubyKaigi03.
+    This talk explains about the theme again in the place of RubyKaigi that kept giving the chance to which I grow up every year and becomes the end this year.
+  ja: "わたしは札幌Ruby会議03で「Ruby の教えてくれたこと」というタイトルで Ruby に対してわたしが感じている\"良さ\"とそれと触れ合う中で学んだ大切ないくつかのことについて発表を行いました。\n\
+    本セッションでは、毎年わたしが毎年成長するきっかけを与え続けてくれた、そして本セッションでは、毎年わたしが毎年成長するきっかけを与え続けてくれた、そして今年で最後となる RubyKaigi の場で、札幌Ruby会議03でお話しした内容について考察しなおし、今のわたしなりの言葉で改めて発表させていただきたいと思います。"
+language: Japanese

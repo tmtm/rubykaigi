@@ -1,19 +1,24 @@
 --- 
 name: 
-  en: Kouhei Sutou
-  ja: "須藤功平"
+  en: SHIBATA Hiroshi
+  ja: "柴田博志"
 affilization: 
-  en: ClearCode Inc. / COZMIXNG
-  ja: "株式会社クリアコード / COZMIXNG"
+  en: Eiwa System Management, Inc./asakusa.rb
+  ja: "永和システムマネジメント/asakusa.rb"
 bio: 
-  en: He is the president of ClearCode Inc. He is also a developer of RSS Parser, Rabbit, rcairo, Ruby-GNOME2,test-unit 2.x, rroonga, rurema-search, ActiveLdap, ActiveSambaLdap, Ruby and more free softwares.
-  ja: "株式会社クリアコード代表取締役。RSS ParserとRabbitとrcairoとRuby-GNOME2とtest-unit 2.xとrroongaとるりまサーチとActiveLdapとActiveSambaLdapとRubyなどのフリーソフトウェア開発者。"
+  en: He is a programmer in Eiwa System Management,Inc. member of Japanese Society for Quality Control (JSQC). His lifework is to develop Rails ap plication and tDiary(The tsukkomi oriented weblog).
+  ja: "サービスプロバイディング事業部プログラマ、品質管理学会 正会員、Rails を使った業務システムや tDiary という Web 日記システムを作っています。"
 title: 
-  en: How to create a testing framework
-  ja: "テスティングフレームワークの作り方"
+  en: The Art of "Legacy" Ruby Code Maintainance
+  ja: "Ruby遺産とレガシーコード修理技術"
 abstract: 
-  en: "This talk is about design decisions on creating a testing framework. It is based on talker's experience by creating a few testing frameworks. This talk will not be useful for many people. But for people creating a library may be useful. A testing framework is also a library. Design decisions about a testing framework are applicable to libraries."
-  ja: "いくつかテスティングフレームワークを作ってきた経験から、テスティングフレームワークを作る場合の設計判断について話します。\r\n\
-    \r\n\
-    多くの人はテスティングフレームワークを作ることはないはずなので、あまり役に立たないと思うかもしれません。実際、多くの人にとってはそうでしょう。しかし、ライブラリを作る人には役立つかもしれません。テスティングフレームワークも「ユーザが開発者」であるライブラリの一種です。テスティングフレームワークがユーザである開発者をどう捉えていて、どのように支援したいかと考えることは多くのライブラリでも重要な問題です。"
+  en: |-
+    A remarkable feature of the Japanese Ruby is that we have many Ruby applications, the heritage of Ruby, before Rails. 
+    
+    To be confronted with the heritage of Ruby, we need powerful arms: method of test for softwares that haven't test, knowledge of anti-pattern in legacy code programming and support tools for scare of coding.
+    
+    In my talk, I discuss to continuous maintenance technique and methodology for pandora's box, especially Ruby.
+  ja: "日本のRubyの大きな特徴は、Rails以前に作られたRubyアプリケーション、すなわち「Ruby遺産」が存在することです。\n\
+    私たちが Ruby 遺産と向き合うには、テストのないソフトウェアをテストする方法、レガシーコードをプログラミングする時のアンチパターンに関する知識、プログラミングを不安から守る道具など、様々なことを学ぶ必要があります。\n\
+    発表では、Ruby 遺産を保守し続けるために必要な技術と方法についてご紹介します。"
 language: Japanese

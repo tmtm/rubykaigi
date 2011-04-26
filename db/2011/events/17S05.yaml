@@ -1,18 +1,18 @@
 --- 
 name: 
   en: Thomas E Enebo
-  ja: ""
+  ja: 
 affilization: 
   en: jruby.org / Engine Yard
-  ja: ""
+  ja: 
 bio: 
   en: Thomas Enebo has been a practitioner of Java for over a decade and he is the co-lead of the JRuby project. Thomas has also been happily using Ruby since 2001. In addition to working on JRuby, Tom is interested in improving the state of alternative languages on the Java Virtual Machine. Tom is employed working on JRuby full time at Engine Yard.
-  ja: ""
+  ja: 
 title: 
   en: "Java in Ruby: Scripting Java in JRuby"
-  ja: ""
+  ja: 
 abstract: 
-  en: |
+  en: |-
     One major benefit of JRuby is the ability to import Java classes and then use them as if they were POROs (Plain Old Ruby Objects). This feature makes Java fun again. You can pull in legacy code and sculpt an API which fits nicely into your Ruby code. You can access novel or robust Java libraries to bridge a gap in existing Ruby libraries.
     
     This talk will:
@@ -23,6 +23,5 @@ abstract:
         * Give style hints to make Java APIs fit better into the Ruby way
     
     By the end of this talk you should be able to effectively consume Java libraries in Ruby in a way that is satisfying and useful.
-
-  ja: ""
+  ja: 
 language: English

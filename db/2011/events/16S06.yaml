@@ -6,9 +6,7 @@ affilization:
   en: Graduate School of Infomation Science and Technologies, The University of Tokyo
   ja: "東京大学大学院情報理工学系研究科"
 bio: 
-  en: |
-    CRuby Commiter (VM).
-
+  en: CRuby Commiter (VM).
   ja: "CRubyコミッタ（VM関連）．"
 title: 
   en: Ruby Interpreters in the Parallel Worlds

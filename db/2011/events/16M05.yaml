@@ -1,17 +1,17 @@
 --- 
 name: 
   en: Andy Delcambre
-  ja: ""
+  ja: 
 affilization: 
   en: Engine Yard
-  ja: ""
+  ja: 
 bio: 
   en: "Andy Delcambre started using Ruby while he was a sysadmin in college.  After graduation he worked with PLANET ARGON on a number of large scale Rails sites for clients. He now works at Engine Yard on AppCloud. "
-  ja: ""
+  ja: 
 title: 
   en: Toggleable Mocks and Testing Strategies in a Service Oriented Architecture
-  ja: ""
+  ja: 
 abstract: 
   en: "Modern large scale applications often benefit from being composed of multiple smaller applications.  This can provide many benefits, but it can often make testing each piece more complex. I will cover a technique we use at Engine Yard to easily test these pieces individually and as a piece of the whole. "
-  ja: ""
+  ja: 
 language: English

@@ -17,8 +17,9 @@ abstract:
     Using ORM, you can handle RDBMS easier, but it is necessary for developers to understand underlaying technologies and techniques of ORM in order to use it effectively.
     In this session, I'll explain about basic mechanism and recommended architechture of ORM.
     If you join this session, you'll know that existing ORMs including ActiveRecord are anything but ideal.
-  ja: "オブジェクトとRDBMSとをマッピングするライブラリやツールを、「O/R Mapper」といいます。\r\n\
-    O/R Mapperを使うとRDBMSを扱うのが簡単になると期待されますが、実際にはO/R Mapperの仕組みを勉強しないと、O/R Mapperに振り回されるだけになります。\r\n\
-    本発表では、O/R Mapperの基本的な仕組みと望ましいアーキテクチャについて説明します。\r\n\
+  ja: "\n\
+    オブジェクトとRDBMSとをマッピングするライブラリやツールを、「O/R Mapper」といいます。\n\n\
+    O/R Mapperを使うとRDBMSを扱うのが簡単になると期待されますが、実際にはO/R Mapperの仕組みを勉強しないと、O/R Mapperに振り回されるだけになります。\n\n\
+    本発表では、O/R Mapperの基本的な仕組みと望ましいアーキテクチャについて説明します。\n\
     本発表を聞けば、ActiveRecordを含め既存のほとんどのO/R Mapperが、必ずしも理想的とはいえないことがわかるでしょう。"
 language: Japanese

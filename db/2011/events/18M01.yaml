@@ -7,25 +7,22 @@ affilization:
   ja: "日本Rubyの会, (株)永和システムマネジメント"
 bio: 
   en: "Kakutani Shintaro is a just another strong Ruby proponent, chief programmer in Eiwa System Management, Inc and board member of Nihon Ruby-no-kai(Japan Ruby Group). He is one of the organizers of RubyKaigi since 2006. He have translated some english technical book into japanese: \"Agile Samurai\"(supervisor), \"Agile Estimating and Planning\"(co-translator), \"Interface Oriented Design\"(supervisor), \"Practices of an Agile Developer\"(co-supervisor) and \"From Java to Ruby\"(translator)."
-  ja: "ただのRuby厨。(株)永和システムマネジメントサービスプロバイディング事業部チーフプログラマ。日本Rubyの会理事。RubyKaigiの運営を2006年からやってます。著書は『アジャイルな見積りと計画づくり』(共同翻訳)、『インターフェイス指向設計』(監訳)、『アジャイルプラクティス』(共同監訳)、『JavaからRubyへ』(翻訳)。最新刊の『The Agile Samurai』(監訳)が RubyKaigi 2011 の頃には出版されているはず。\r\n"
+  ja: "ただのRuby厨。(株)永和システムマネジメントサービスプロバイディング事業部チーフプログラマ。日本Rubyの会理事。RubyKaigiの運営を2006年からやってます。著書は『アジャイルな見積りと計画づくり』(共同翻訳)、『インターフェイス指向設計』(監訳)、『アジャイルプラクティス』(共同監訳)、『JavaからRubyへ』(翻訳)。最新刊の『The Agile Samurai』(監訳)が RubyKaigi 2011 の頃には出版されているはず。"
 title: 
   en: The Timless Way Of RubyKaigi
   ja: "時を超えたRubyKaigiの道"
 abstract: 
   en: "(大変申し訳ないです。受かったら書きます)"
-  ja: "2006年の日本Rubyカンファレンスから毎年開催されてきたRubyKaigiが終わりを迎えます(the last RubyKaigi as we know it)。\r\n\
-    始まりのあるものには全て終わりがあります。一方で、終わってしまえば、また新しく始めることもできます。\r\n\
-    \r\n\
-    今回は「(我々が知ってる)RubyKaigiの最終回です。\r\n\
-    このトークでは、過去6回すべてのRubyKaigiの運営のたずさわり、いくつかのRubyKaigiで登壇し、\r\n\
-    地域Ruby会議プロジェクトを発足させ、最初と最新(応募当時)の地域Ruby会議の実行委員長を務め、\r\n\
-    地域Rubyist集団Asakusa.rb幹部を自称する話者が、\r\n\
-    RubyKaigiが過去6回の歩みを通じて変わったことと変わらなかったことを、\r\n\
-    の場で参加者の皆さんと分かちあいます。\r\n\
-    \r\n\
-    とはいえ、限られた時間のなかではすべてのトピックを網羅することはできません。\r\n\
-    ここではRubyKaigiの開催趣意書、スポンサーシップ、KaigiFreaks、国際化についてお話しします。\r\n\
-    \r\n\
-    このトークの内容が、いつか開催されるはずの「(まだ誰も知らない)RubyKaigi」を形づくるにあたっての\r\n\
+  ja: "2006年の日本Rubyカンファレンスから毎年開催されてきたRubyKaigiが終わりを迎えます(the last RubyKaigi as we know it)。\n\
+    始まりのあるものには全て終わりがあります。一方で、終わってしまえば、また新しく始めることもできます。\n\n\
+    今回は「(我々が知ってる)RubyKaigiの最終回です。\n\
+    このトークでは、過去6回すべてのRubyKaigiの運営のたずさわり、いくつかのRubyKaigiで登壇し、\n\
+    地域Ruby会議プロジェクトを発足させ、最初と最新(応募当時)の地域Ruby会議の実行委員長を務め、\n\
+    地域Rubyist集団Asakusa.rb幹部を自称する話者が、\n\
+    RubyKaigiが過去6回の歩みを通じて変わったことと変わらなかったことを、\n\
+    の場で参加者の皆さんと分かちあいます。\n\n\
+    とはいえ、限られた時間のなかではすべてのトピックを網羅することはできません。\n\
+    ここではRubyKaigiの開催趣意書、スポンサーシップ、KaigiFreaks、国際化についてお話しします。\n\n\
+    このトークの内容が、いつか開催されるはずの「(まだ誰も知らない)RubyKaigi」を形づくるにあたっての\n\
     議論の材料となることを目指します。"
 language: Japanese

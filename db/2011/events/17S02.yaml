@@ -4,10 +4,10 @@ name:
   ja: "関将俊"
 affilization: 
   en: druby.org
-  ja: ""
+  ja: 
 bio: 
   en: Programmer. Author of ERB, dRuby and Rinda.
-  ja: "プログラマ。ERB, dRuby, Rindaの作者。ポケモンWCS2010栃木県代表(カード部門)。\r\n"
+  ja: "プログラマ。ERB, dRuby, Rindaの作者。ポケモンWCS2010栃木県代表(カード部門)。"
 title: 
   en: persistent tuple space and stream
   ja: "永続化されたタプルスペースとストリーム"
