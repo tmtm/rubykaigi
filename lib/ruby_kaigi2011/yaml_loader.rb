@@ -13,7 +13,9 @@ module RubyKaigi2011
     end
 
     def get(id)
-      find(File.join(base_dir, id.to_s))
+      attrs = load(File.join(base_dir, id.to_s)).merge(:_id => id)
+      new(attrs)
+      #find(File.join(base_dir, id.to_s))
     end
 
     def find(path)
