@@ -6,14 +6,14 @@ module RubyKaigi2011
 
     base_dir File.join(File.dirname(__FILE__), "../../db/2011/events/")
 
-    def talks
-      @talks ||= Event.find_by_ids(talk_ids || [])
+    def sub_events
+      @sub_events ||= Event.find_by_ids(sub_event_ids || [])
     end
 
     def to_hash
       hash = @table.dup
-      hash.delete(:talk_ids)
-      hash[:talks] = talks.map(&:to_hash) unless talks.empty?
+      hash.delete(:sub_event_ids)
+      hash[:sub_events] = sub_events.map(&:to_hash) unless sub_events.empty?
       hash
     end
   end
