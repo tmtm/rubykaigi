@@ -3,7 +3,7 @@ require File.join(File.dirname(__FILE__), "room_timetable")
 module RubyKaigi2011
   class Timetable
     def room_timetables
-      @room_timetable ||= RoomTimetable.all
+      @room_timetables ||= RoomTimetable.all
     end
 
     def days
