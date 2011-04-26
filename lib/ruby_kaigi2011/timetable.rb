@@ -11,11 +11,11 @@ module RubyKaigi2011
     end
 
     def room_timetable_at(date, room_id)
-      room_timetables.detect {|r| r.date == date && r.room == room_id }
+      room_timetables.detect {|r| r.scheduled_on?(date) && r.allocated_at?(room_id) }
     end
 
     def room_timetables_on(date)
-      room_timetables.select {|r| r.date == date }
+      room_timetables.select {|r| r.scheduled_on?(date) }
     end
 
     def periods_on(date)

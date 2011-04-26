@@ -7,6 +7,14 @@ module RubyKaigi2011
 
     base_dir File.join(File.dirname(__FILE__), "../../db/2011/room_timetables/")
 
+    def scheduled_on?(date)
+      self.date == date
+    end
+
+    def allocated_at?(room_id)
+      self.room == room_id
+    end
+
     def sessions
       @sessions ||= timeslots.map {|t| Session.new(t) }
     end
