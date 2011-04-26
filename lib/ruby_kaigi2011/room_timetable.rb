@@ -12,7 +12,7 @@ module RubyKaigi2011
     end
 
     def allocated_at?(room_id)
-      self.room == room_id
+      self.room_id == room_id
     end
 
     def sessions

@@ -1,6 +1,6 @@
 ---
 date: 2011-07-17
-room: S
+room_id: S
 timeslots:
   - start:
       2011-07-17T09:30:00+09:00
