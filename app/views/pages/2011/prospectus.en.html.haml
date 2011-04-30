@@ -1,0 +1,30 @@
+- @title = '日本Ruby会議2011 開催趣意書'
+-content_for :head do
+  :plain
+    <style type="text/css">
+      body {
+          margin: 0;
+          padding-bottom: 30px;
+      }
+      a, a:link, a:visited, a:hover {
+        color: #333;
+        text-decoration: none;
+        border:none;
+      }
+    </style>
+%div{:style => 'border-top: 7px solid #000; width: 100%;'}
+  <img src="/2011/images/top_head.gif" alt="The End Of Rubykaigi - 2011/07/16-18 at ToKyo, Japan">
+%p{:style => 'margin: 10px;'}
+  our brand new website design is coming soon :)
+
+%hr
+
+%h1{:style => 'margin: 10px;'}
+  #{t('rubykaigi2011')} #{t('prospectus')}
+
+%div{:style => 'border: 1px solid #000; width: 740px; margin: 10px; padding: 10px;'}
+
+  != render :partial => 'pages/2011/prospectus'
+
+%div{:style => 'margin: 10px;'}
+  ≫ <a href="/2011">RubyKaigi 2011</a>
