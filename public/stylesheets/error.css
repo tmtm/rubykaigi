@@ -1,0 +1,36 @@
+@charset "utf-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+img, table, tr, td, a, form, fieldset {
+  border: none; }
+
+body {
+  background: #f5f2ed url(/2011/images/commonBodyBg.png) top center repeat; }
+  margin: 0px;
+  color: #302b2b; }
+
+html, h1, h2, h3, h4, h5, h6 {
+  font-size: 100%; }
+
+body {
+  font-size: 62.5%; }
+
+html > body {
+  font-size: 10px; }
+
+p, caption, th, td, li, q, address {
+  font-size: 140%; }
+
+h1 {
+  font-size: 200%; }
+
+#message {
+  margin: 0 auto;
+  margin-top: 150px;
+  border: none;
+  width: 529px; }

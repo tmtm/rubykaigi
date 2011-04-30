@@ -1,0 +1,286 @@
+#content
+  %h1
+    #{t(:about)} 
+  %aside
+    %ul
+      %li
+        %a{:href => "/2011/#{current_locale}/about#diary"}
+          #{t(:rubykaigi_nikki)}
+      %li
+        %a{:href => "/2011/#{current_locale}/about#prospectus"}
+          #{t(:prospectus)}
+      %li
+        %a{:href => "/2011/#{current_locale}/about#press"}
+          #{t(:press)}
+      %li
+        %a{:href => "/2011/#{current_locale}/about#team"}
+          #{t(:team)}
+      %li
+        %a{:href => "/2011/#{current_locale}/about#photographers"}
+          #{t(:photographers)}
+  #main
+    %article#diary
+      %h2
+        %a{:name => "diary"}
+          #{t(:rubykaigi_nikki)}
+      %p 日本Ruby会議に関する最新の情報はRubyKaigi日記より配信しております。
+      %p.rss
+        != render :partial => 'shared/2011/rss'
+      %p.btn
+        %a{:href => "http://rubykaigi.tdiary.net/"}
+          %img{:alt => "#{t(:rubykaigi_nikki)}", :src => "/2011/images/aboutBtnBlog.png"}
+    != render :partial => 'shared/2011/back_to_top'
+    %article
+      %h2
+        %a{:name => "prospectus"}
+          #{t(:prospectus)}
+      %p 日本Ruby会議は、オブジェクト指向スクリプト言語Rubyに関するイベントとしては世界でも最大級のもので、2006年から毎年開催されています。昨年つくばで開催された日本Ruby会議2010は、国内外から、3日間でのべ2000人ほどの来場者を数えました。
+      %p その第6回目となる日本Ruby会議2011(略称:RubyKaigi2011)は、2011年7月16日から18日までの3日間、練馬文化センター(東京都練馬区)にて開催いたします。会場の規模としては昨年以上のものとなり、これまで以上の多くの参加を見込んでいます。
+      %p これまでRubyKaigiは、2006年の初回から昨年まで、Rubyの様々な発展を共有し、Rubyistたちの出会いを生み出し、育む「場」として、数多くのスピーカー、参加者、スポンサー、そしてそれ以外にも多くの方々のご支援、ご協力を賜りながら、年々その規模を拡大しながら成長を続けて参りました。しかしながら、拡大する規模にともない、これまでと同様の枠組みでの開催には、様々な課題が生じてきているのも事実です。
+      %p そこで、今回のRubyKaigi2011では、これまでのRubyKaigiの総決算として、一つの大きな区切りをつけることといたしました。今回のRubyKaigiのテーマは、「最後のRubyKaigi」になります。
+      %p 新たな枠組みを築くべく、大きく舵を切る前に、現在の枠組みでできることの全てを尽くしてみる。そうすれば、そこで垣間見た達成と限界から、あるべき未来の姿も見えてくるのではないでしょうか。
+      %p これまでのRubyKaigiが果たして来た、RubyとRubyistにとっての「場」。その集大成として、「最後のRubyKaigi」であると同時に「最高のRubyKaigi」となるよう、多くのみなさまのご参加をお待ち申し上げます。
+      %p.right 日本Ruby会議2011実行委員長 高橋征義
+    != render :partial => 'shared/2011/back_to_top'
+    %article
+      %h2
+        %a{:name => "press"}
+          #{t(:press)}
+      %p メディア・報道関係者向けに日本Ruby会議2010についての情報をお伝えするメーリングリストを用意しました。
+      %p 取材についての情報や来場案内などもこちらでお伝えいたしますので、日本Ruby会議2010にご興味のあるメディア・報道関係の方は是非ご参加下さい。
+      %h3 メーリングリストへの登録方法
+      %p qwikを用いておりますので、下記要領でメールを送信してください。
+      %div.mailPlease
+        %ul.listMark
+          %li To： rubykaigi2011press-ja _at_ qwik.atdot.net
+          %li Cc： ksb.4038.nullpointe.r+rubykaigi2011press_ja _at_ gmail.com
+          %li 件名： Join the list
+          %li
+            本文：
+            %br
+            RubyKaigi2011のメディア・報道社向けメーリングリストに参加します。
+            %br
+            所属： (ご自身の所属組織）
+            %br
+            お名前： (ご自身のお名前）
+      %p ※ メールアドレス中の_at_は@に読み替えてください。
+      %h3
+        #{t(:inquiry)}
+      %p 何か不明な点があれば、2011_at_rubykaigi.org までお気軽にお問い合わせください。
+    != render :partial => 'shared/2011/back_to_top'
+    %article#team
+      %h2
+        %a{:name => "team"}
+          #{t(:team)}
+      %h3 実行委員長
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          高橋征義
+          %br
+          (日本Rubyの会会長, 達人出版会)
+      %h3 運営委員長
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          角谷信太郎
+          %br
+          (日本Rubyの会 || (株)永和システムマネジメント)
+      %h3 運営委員長補佐
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          島田浩二
+          %br
+          (日本Rubyの会, 株式会社えにしテック)
+      %h3 プログラム委員長
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          笹田耕一
+          %br
+          (日本Rubyの会, 東京大学大学院情報理工学系研究科創造情報学専攻)
+      %h3 スポンサー渉外担当
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          相澤歩
+          %br
+          (日本Rubyの会, Akasaka.rb)
+      %h3 実行委員
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          あづみしんや
+          %br
+          (日本Rubyの会, インタセクト・コミュニケーションズ株式会社)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          すずきみほ
+          %br
+          (@adzuki34)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          レオ Leonard Chin
+          %br
+          (日本Rubyの会)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          諸橋恭介
+          %br
+          (Rails勉強会@東京 || (株)永和システムマネジメント)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          しだらようじ
+          %br
+          (Ruby札幌, 株式会社えにしテック)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          大和田純
+          %br
+          (Ruby札幌, サイジニア株式会社)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          白土慧
+          %br
+          (Ruby札幌, サイジニア株式会社)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          高井直人
+          %br
+          (Akasaka.rb)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          こしば としあき
+          %br
+          (株式会社ECナビ, 4038nullpointer.com)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          たなべ すなお
+          %br
+          (日本Rubyの会)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          かたぎり えいと
+          %br
+          (Ruby東海)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          櫻井達生
+          %br
+          (株式会社万葉)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          斎藤ただし
+          %br
+          (筑波大学情報学類)
+      %h3 国際化
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          xxxxx
+          %br
+          (xxxxx)
+      %h3 デザイナ
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p 
+          関谷繭子
+          %br
+          (@mayuco)
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          のりお
+          %br
+          (茨城Rubyの会)
+      %h3 KaigiFreaksレポート班
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          xxxxx
+          %br
+          (xxxxx)
+      %h3 KaigiFreaksネットワーク班
+      %div.avatar
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %p
+          xxxxx
+          %br
+          (xxxxx)
+      %h3 当日スタッフ
+      != render :partial => 'shared/2011/staffs'
+      %h3 rubykaigi.org
+      %ul.listMark
+        %li
+          %a{:href => "http://github.com/ruby-no-kai/rubykaigi/contributors"} http://github.com/ruby-no-kai/rubykaigi/contributors
+    != render :partial => 'shared/2011/back_to_top'
+    %article#photographers
+      %h2
+        %a{:name => "photographers"}
+          #{t(:photographers)}
+      %p
+        kakutani
+        %br
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "kakutani", :src => "/2011/images/commonAvatar.png"}
+        %a{:href => "http://www.flickr.com/photos/kakutani", :target => "_blank"}
+          %img{:alt => "Flickr", :src => "/2011/images/commonFlickr.png"}
+      %p
+        snoozer05 
+        %br
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %a{:href => "http://www.flickr.com/photos/snoozer/", :target => "_blank"}
+          %img{:alt => "Flickr", :src => "/2011/images/commonFlickr.png"}
+      %p
+        tmaeda_japan 
+        %br
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %a{:href => "http://www.flickr.com/photos/tmaedax/", :target => "_blank"}
+          %img{:alt => "Flickr", :src => "/2011/images/commonFlickr.png"}
+      %p
+        Naoto Takai
+        %br
+        %a{:href => "#", :target => "_blank"}
+          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+        %a{:href => "http://www.flickr.com/photos/recompile_net/", :target => "_blank"}
+          %img{:alt => "Flickr", :src => "/2011/images/commonFlickr.png"}
+    != render :partial => 'shared/2011/back_to_top'
+
