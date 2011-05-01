@@ -14,6 +14,9 @@ title:
   en: Dynamic Component System and Memory Reduction of VM for Embedded Systems
   ja: "組込みシステムのための動的コンポーネント機構とVMの最適化"
 abstract: 
-  en: "Embedded Systems generally have a small amount of memory and doesn’t accept VMs which consume memory excessively. We investigated this problem from both the application side and the VM side, and solved it by introducing a dynamic component system which enables multiple applications to run in a single VM and optimizing CRuby’s data structures related to its interpreter. We confirmed that the memory usage of the optimized VM with the web application framework Sinatra was reduced by 20% compared to CRuby 1.9.2."
+  en: |-
+    Embedded Systems generally have a small amount of memory and don't accept VMs which consume memory excessively. We investigated this problem from both the application side and the VM side, and solved it by introducing a dynamic component system which enables multiple applications to run in a single VM and optimizing CRuby's data structures related to its interpreter. We confirmed that the memory usage of the optimized VM with the web application framework Sinatra was reduced by 20% compared to CRuby 1.9.2.
+
+    (This is a cooperation work with Hitachi Solutions, Ltd. Takeshi Kawajiri, who is a engineer of Ruby Center, gives me a lot of useful advice from the view point of a ruby specialist.)
   ja: "組込みシステムは一般にメモリ量が少なく、メモリを過剰に利用するVMは適用できない。我々はこの問題をアプリケーションとVMの両面から調査し、複数アプリケーションの単一VM上での動作を可能とする動的コンポーネント機構と、RubyVMのインタプリタに関わるデータ構造の最適化によって解決した。WebアプリケーションフレームワークSinatra動作時に、最適化されたVMのメモリ使用量は、CRuby1.9.2と比べて約20%低減することを確認した。"
 language: Japanese

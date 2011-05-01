@@ -11,15 +11,17 @@ bio:
     2004年にRubyを使い始め、CGIKitを経て、2005年 Railsを使い始めました。\n\
     ここ数年は\"mission critical\"なシステム開発をRubyで行っています。"
 title: 
-  en: Earthquake disaster prevention system implemented in Ruby
-  ja: "Rubyで作った地震防災システムについて"
+  en: |-
+    Critical mission system implemented in Ruby
+  ja: |-
+    Rubyで作った "critical mission" システムについて
 abstract: 
   en: |-
     In this lecture, I will introduce the effective points
     and the problems which I'd been in the face of,
-    while implementing mission-critical system 
-    like earthquake disaster prevention system in Ruby.
-  ja: "\"mission critical\"な地震防災システムを\n\
-    Rubyで実装する中で、効果的だと感じた点、\n\
-    また直面した問題点を説明します。"
+    while implementing mission-critical system in Ruby.
+  ja: |-
+    "mission critical" システムを
+    Rubyで実装する中で、効果的だと感じた点、
+    また直面した問題点を説明します。
 language: Japanese

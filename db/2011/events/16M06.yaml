@@ -6,19 +6,30 @@ affiliation:
   en: Accenture Technology Solutions Corp.
   ja: "アクセンチュア・テクノロジー・ソリューションズ株式会社"
 bio: 
-  en: "英訳helpお願いします。"
-  ja: "外資コンサルティングファーム系列SIer所属のシステムアナリスト"
+  en: |-
+    Ayumu AIZAWA is system analyst in global consulting firm.
+    He has a wealth of experience around design/development/deploy works of business and technology architecture for
+    large-scale enterprise system integration project as his job. He founded Ruby/Rails activities in his organization
+    since 2009, and is working on that continuously.
+    Also he is a member of RubyKaigi operation team since 2009 privately.
+  ja: |-
+    外資系コンサルティングファーム系列SIer所属のシステムアナリストでクラウド推進チームのソリューションアーキテクト。
+    主に大規模案件の業務とシステムの設計/開発/展開を生業としており特に金融業界の基幹業務に関わることが多い。
+    2009年から社内でRubyの啓蒙活動と技術者の育成をおこなっている。
+    日本Ruby会議2009、2010、2011実行委員。JRuby会議2010実行委員、JRuby会議2011実行委員長。
 title: 
-  en: "英訳helpお願いします。"
-  ja: "SierのなかのRubyistが考えるべきこと"
+  en: |-
+    Issues of Enterprise Rubyist
+  ja: |-
+    Issues of Enterprise Rubyist　～SIerのなかのRubyistが考えるべきこと～
 abstract: 
   en: "英訳helpお願いします。"
-  ja: "近年、業務システムソリューションとしてRuby on Railsの採用が検討されることは\n\
-    珍しくなくなってきている。それは大手システムインテグレーターが手がける開発\n\
-    案件であっても例外ではない。\n\n\
-    SIerがRailsを採用する背景には、高い生産性と業務の変化に追随する柔軟性に対す\n\
-    る期待がある。しかしRailsを採用したシステム開発プロジェクトで大手SIerにおい\n\
-    て期待される成果をあげるためには、技術的な側面だけではなく、マネジメント的\n\
-    な側面を含めて考慮すべきことがおおい。\n\n\
-    本セッションでは、アクセンチュアにおけるRails開発案件の事例をベースに、SIerの中の開発者とプロジェクトマネジャーの両方の視点から、プロジェクトを成功に導くために考えるべきことがらについて述べる。"
+  ja: |-
+    近年、業務システムソリューションとしてRuby on Railsの採用が検討されることは珍しくなくなってきており、それは大手の
+    システムインテグレーターが手がける開発案件であっても例外ではない。
+    SIerがRailsを採用する背景には、高い生産性と業務の変化に追随する柔軟性に対する期待がある。しかしRailsを採用したシ
+    ステム開発プロジェクトで期待される成果をあげるためには、技術的な側面だけではなく、プロジェクトマネジメント的な側面
+    を含めて考慮しなければならないことがおおい。
+    本セッションでは、アクセンチュアにおけるRails開発案件の事例を基に、SIerの中の開発者とプロジェクトマネジャー双方の
+    視点から、プロジェクトを成功に導くために考えるべきことがらについて述べる。
 language: Japanese

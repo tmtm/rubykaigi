@@ -13,11 +13,13 @@ title:
   ja: "日本の図書館はどのようにRubyを使っているか - 「Next-L Enju」と「国会図書館サーチ」"
 abstract: 
   en: |-
-    In 2011, some libraries introduced "Next-L Enju", an open-source library management system. It is one of the components of "NDL Search", a search engine provided by National Diet Library, the largest library in Japan. I'd like to talk about why they choose Ruby, and how they develop the catalog that includes several million book records.
-    
+    In 2011, some libraries in Japan introduced "Next-L Enju". It is an open-source library management system built on Ruby on Rails and developed by a community of librarians and researchers. Also it is one of the components of "NDL Search" which is a new library catalog  provided by National Diet Library, the largest library in Japan. I'd like to talk about why the libraries choose Ruby, and how they develop the library system that includes several million book records.
+
     Next-L Enju: https://github.com/nabeta/next-l
     NDL Search: http://iss.ndl.go.jp/
-  ja: "2011年現在、日本ではいくつかの図書館が、Ruby on Railsで書かれたオープンソース図書館管理システム「Next-L Enju」を導入しています。「Next-L Enju」は日本最大の図書館である国立国会図書館の「国会図書館サーチ」のコンポーネントとしても採用されています。この発表では、図書館はなぜRubyを選んだか、またどのようにして数千万件の書誌情報を含んだ図書目録サービスを作ったかを説明します。\n\n\
-    Next-L Enju: https://github.com/nabeta/next-l\n\
-    NDL Search: http://iss.ndl.go.jp/"
+  ja: |-
+    2011年現在、日本ではいくつかの図書館が、オープンソース図書館管理システム「Next-L Enju」を導入しています。「Next-L Enju」はRuby on Railsで書かれており、図書館員や研究者のコミュニティによって開発されています。また「Next-L Enju」は、日本最大の図書館である国立国会図書館が提供する資料検索サービス「国会図書館サーチ」のコンポーネントのひとつとしても採用されています。この発表では、図書館はなぜRubyを選んだか、またどのようにして数千万件の書誌情報を含んだシステムを作ったかを説明します。
+
+    Next-L Enju: https://github.com/nabeta/next-l
+    NDL Search: http://iss.ndl.go.jp/
 language: Japanese

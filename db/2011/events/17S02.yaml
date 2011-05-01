@@ -9,9 +9,13 @@ bio:
   en: Programmer. Author of ERB, dRuby and Rinda.
   ja: "プログラマ。ERB, dRuby, Rindaの作者。ポケモンWCS2010栃木県代表(カード部門)。"
 title: 
-  en: persistent tuple space and stream
-  ja: "永続化されたタプルスペースとストリーム"
+  en: "Drip: Persistent tuple space and stream."
+  ja: "Drip: Persistent tuple space and stream."
 abstract: 
-  en: tasukete me!
-  ja: "永続版タプルスペースとストリーム指向のストレージ／同期メカニズムを紹介する"
+  en: |-
+    It's been several years since I last published `Rinda::TupleSpace`, the persistence layer on top of Rinda, the multi-process coordination library.  In this talk I will reexamine the pros and cons of Rinda and introduce the next generation streaming-orientated multi-process synchronisation library called "Drip".
+  ja: |-
+    Rinda::TupleSpaceの永続化機能の発表から数年たちました。
+    本講演では永続版Rindaの反省と、その中から生まれた
+    ストリーム指向同期機構 Drip を紹介します。
 language: Japanese
