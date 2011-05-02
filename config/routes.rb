@@ -5,6 +5,7 @@ Rubykaigi::Application.routes.draw do
       :as => 'registrations'
     match 'phone_registration', :to => 'registrations#phone_index'
     resources :programs, :only => [:index, :show]
+    resources :advent, :only => %w(index)
   end
 
   match 'signin', :to => 'sessions#new', :as => 'signin'

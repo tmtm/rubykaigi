@@ -21,6 +21,8 @@ development: &local
     consumer_secret: twitter_consumer_secret
     access_token: twitter_access_token
     access_secret: twitter_access_secret
+  advent:
+    ical_url: "http://www.google.com/calendar/ical/rubykaigi.org_m70c8vsg6fuid40lpjalqe1j28%40group.calendar.google.com/public/basic.ics"
 
 production:
 

@@ -26,6 +26,8 @@ gem 'warden-openid'
 
 gem 'god'
 
+gem 'ri_cal'
+
 group :development do
   gem 'capistrano', :require => nil
   gem 'capistrano-ext', :require => nil
