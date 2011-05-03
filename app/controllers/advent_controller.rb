@@ -8,7 +8,22 @@ class AdventController < LocaleBaseController
     ical = URI.parse(configatron.advent.ical_url).open(&:read)
     @advent = RiCal.parse_string(ical).first
 
-    render :layout => 'simple' # TODO: use latest_ruby_kaigi layout
+    respond_to do |format|
+      format.html { render :layout => 'simple' } # TODO: use latest_ruby_kaigi layout 
+      format.json { render :json => advent_to_json }
+    end
   end
+
+  private
+
+    def advent_to_json
+      @advent.events.map {|event|
+        {:summary => event.summary,
+         :dtstart => event.dtstart,
+         :dtend   => event.dtend,
+         :location => event.location,
+         :description => event.description}
+      }.to_json
+    end
 
 end
