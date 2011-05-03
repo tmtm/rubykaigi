@@ -53,6 +53,10 @@
       margin: 0 0 0 1em;
     }
 
+    #ical {
+      text-align: right;
+    }
+
 
 %div{:style => 'border-top: 7px solid #000; width: 100%;'}
   %img{:src => "/2011/images/top_head.gif", :alt => "The End Of Rubykaigi - 2011/07/16-18 at ToKyo, Japan"}
@@ -65,6 +69,7 @@
   RubyKaigi2010 Advent Calendar
 
 #content
+  #ical= link_to "iCal", configatron.advent.ical_url
   %ul#advent_events
     - @advent.events.each do |event|
       %li{:class => todays_event?(event) ? "todays_event" : ""}
