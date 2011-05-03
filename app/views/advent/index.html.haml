@@ -73,7 +73,7 @@
     = link_to "iCal", configatron.advent.ical_url
     = link_to "JSON", advent_index_path(params[:year], params[:locale], :json), :target => "_blank"
   %ul#advent_events
-    - @advent.events.each do |event|
+    - @events.each do |event|
       %li{:class => todays_event?(event) ? "todays_event" : ""}
         .summary= event.summary
         .time #{localtime(event.dtstart).strftime("%Y/%m/%d %H:%M")} 〜 #{localtime(event.dtend).strftime("%Y/%m/%d %H:%M")}
