@@ -70,8 +70,8 @@
       %li{:class => todays_event?(event) ? "todays_event" : ""}
         .summary= event.summary
         .time #{localtime(event.dtstart).strftime("%Y/%m/%d %H:%M")} 〜 #{localtime(event.dtend).strftime("%Y/%m/%d %H:%M")}
-        .location= event.location
-        .description= event.description
+        .location!= auto_link event.location, :all, :target => "_blank"
+        .description!= auto_link event.description, :all, :target => "_blank"
 
 %div{:style => 'margin: 10px;'}
   ≫ <a href="/2011">RubyKaigi 2011</a>
