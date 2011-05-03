@@ -1,19 +1,61 @@
 - @title = 'RubyKaigi2011 Advent Calendar'
 -content_for :head do
-  :plain
-    <style type="text/css">
-      body {
-          margin: 0;
-          padding-bottom: 30px;
-      }
-      a, a:link, a:visited, a:hover {
-        color: #333;
-        text-decoration: none;
-        border:none;
-      }
-    </style>
+  :css
+    body {
+      margin: 0;
+      padding-bottom: 30px;
+    }
+
+    a, a:link, a:visited, a:hover {
+      color: #333;
+      text-decoration: none;
+      border:none;
+    }
+
+    #content {
+      width: 740px;
+      margin: 10px;
+      padding: 0;
+    }
+
+    ul#advent_events {
+      border: 1px solid #000;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #advent_events li {
+      background: #CCC;
+      margin: 0 0 0.1em 0;
+      padding: 0.2em;
+    }
+
+    #advent_events li.todays_event {
+      background: #F00;
+    }
+
+    li .summary {
+    }
+
+    li .time {
+      font-size: 0.8em;
+      margin: 0 0 0 1em;
+    }
+
+    li .location {
+      font-size: 0.8em;
+      margin: 0 0 0 1em;
+    }
+
+    li .description {
+      font-size: 0.8em;
+      margin: 0 0 0 1em;
+    }
+
+
 %div{:style => 'border-top: 7px solid #000; width: 100%;'}
-  <img src="/2011/images/top_head.gif" alt="The End Of Rubykaigi - 2011/07/16-18 at ToKyo, Japan">
+  %img{:src => "/2011/images/top_head.gif", :alt => "The End Of Rubykaigi - 2011/07/16-18 at ToKyo, Japan"}
 %p{:style => 'margin: 10px;'}
   our brand new website design is coming soon :)
 
@@ -22,13 +64,14 @@
 %h1{:style => 'margin: 10px;'}
   RubyKaigi2010 Advent Calendar
 
-%div{:style => 'border: 1px solid #000; width: 740px; margin: 10px; padding: 10px;'}
+#content
   %ul#advent_events
     - @advent.events.each do |event|
-      %li
-        %p #{event.dtstart.to_time.localtime} 〜 #{event.dtend.to_time.localtime}
-        %p= event.summary
-        %p= event.description
+      %li{:class => todays_event?(event) ? "todays_event" : ""}
+        .summary= event.summary
+        .time #{localtime(event.dtstart).strftime("%Y/%m/%d %H:%M")} 〜 #{localtime(event.dtend).strftime("%Y/%m/%d %H:%M")}
+        .location= event.location
+        .description= event.description
 
 %div{:style => 'margin: 10px;'}
   ≫ <a href="/2011">RubyKaigi 2011</a>
