@@ -1,0 +1,20 @@
+--- 
+name: 
+  en: "COOKPAD Inc."
+  ja: "クックパッド株式会社"
+url: http://cookpad.com/
+pr: 
+  en: |-
+    COOKPAD adopted Ruby on Rails in 2008 when redesigning their user generated recipe site cookpad.com. Since then, the service has continued to grow, and as the biggest Rails site in Japan, serves 490 million page views to over 10 million unique users per month. 
+    
+    COOKPAD is an agile organization and embraces the latest technologies and techniques to always provide the greatest value to their users.
+  ja: "クックパッドの運営するレシピ投稿サイトcookpad.comは、2008年のリニュー\r\n\
+    アルでRuby on Railsを採用しました。以来、日本最大のRailsサイトとして月\r\n\
+    間1,079万人のユーザーから生み出される4.9億PVを支え、なおも拡大を続けて\r\n\
+    います。\r\n\
+    \r\n\
+    クックパッドは、テスト駆動開発やスクラムといったアジャイル開発手法の導\r\n\
+    入や、Hadoopなどの分散処理技術やクラウドといった最新の技術の本質を理解\r\n\
+    し使いこなすことによって、これまで不可能だったスピードと規模でユーザー\r\n\
+    の毎日の生活に価値を提供し、クックパッドのミッションである「毎日の料理\r\n\
+    を楽しみにすることで心からの笑顔を増やす」ことだけに取り組んでいます。"

@@ -1,0 +1,8 @@
+--- 
+name: 
+  en: Microsoft Corporation
+  ja: "日本マイクロソフト株式会社"
+url: http://www.microsoft.com/ja/jp/default.aspx
+pr: 
+  en: Microsoft is making strong efforts to ensure interoperability in various technology fronts, including building runtime environment for non-Microsoft development languages on Windows platform. Ruby runtime implementation on .NET Framework is one of achievements.
+  ja: "マイクロソフトは様々な技術領域で、相互運用性の確保に力を入れています。これには、マイクロソフト製以外の開発言語のWindowsプラットフォーム上での開発実行環境の整備も含まれます。.NET FrameworkでのRuby実行環境の実装はその代表的な成果の一つです。"
