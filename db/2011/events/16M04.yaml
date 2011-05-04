@@ -1,0 +1,17 @@
+--- 
+name: 
+  en: Corey Donohoe
+  ja: 
+affiliation: 
+  en: GitHub
+  ja: 
+bio: 
+  en: Hacker at GitHub
+  ja: 
+title: 
+  en: Shipping at the Speed of Life
+  ja: 
+abstract: 
+  en: The talk will go into the "Ship It?" culture that's a big part of GitHub.  How we use the git scm to help us deploy features fast and respond to problems on the site in a timely fashion.
+  ja: 
+language: English

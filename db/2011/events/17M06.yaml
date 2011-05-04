@@ -1,0 +1,27 @@
+--- 
+name: 
+  en: Kyosuke MOROHASHI
+  ja: "諸橋 恭介"
+affiliation: 
+  en: Eiwa System Mangement, Inc.
+  ja: "(株)永和システムマネジメント"
+bio: 
+  en: Ruby/Rails Programmer. Love TDD/BDD.
+  ja: "SIerでRuby/Railsプログラマーをやっています。TDD(BDD)が好きです。"
+title: 
+  en: 5 years know-how of RSpec driven Rails app. development.
+  ja: 
+abstract: 
+  en: |-
+    I talk about know-how of using RSpec in Rails project.
+    
+    Currently, it has became good idea that a project, developing with Rails, use RSpec(or so) and try TDD.
+    
+    However there is no silver bullet to gain testability of application and/or maitenancability of tests.
+    
+    I will talk about such know-how acquired through 5 years real world Rails project.
+  ja: "Ruby on Railsを使ったプロジェクトにおいて、RSpecでテストを書きながら開発を進めていくノウハウについてお話しします。\n\n\
+    現在、Railsを使った開発プロジェクトでは「RSpecなどによるテスト駆動開発をしたほうがよい」という考え方が極めて一般的なものになっています。RailsやRSpecのツールとしての使い方を照会している、書籍や良質なWebサイトも数多く存在します。\n\n\
+    それでも、テストしやすい設計や、メンテナンスしやすいテストの書き方などのノウハウには唯一の正解などがあるものではありません。RailsやRSpec自体やそれを取り巻くテスティングツールもどんどん変化していきますし、方法論も変わっていきます。\n\n\
+    この講演では、そのような変化とともにそれなりの期間RailsとRSpecでアプリケーションを作ってきた経験から見いだしたノウハウを紹介したいと思っています。"
+language: Japanese

@@ -1,0 +1,23 @@
+--- 
+name: 
+  en: Kouji Takao
+  ja: "高尾宏治"
+affiliation: 
+  en: "Network Applied Communication Laboratory Ltd. "
+  ja: "株式会社ネットワーク応用通信研究所"
+bio: 
+  en: |-
+    Kouji Takao is one of the commiter of MRI. 
+    He is maintener of Readline of Ruby.
+  ja: "MRIメンテナの一人。担当はReadlineライブラリです。"
+title: 
+  en: MacRuby on Rails
+  ja: "MacRuby on Rails ?MacRubyから見たcRuby?"
+abstract: 
+  en: "TBD: 申し訳ありません。後日、英訳してお送りします。"
+  ja: "2011年3月時点でのMacRubyはRuby処理系としての完成度は低く、Ruby on\n\
+    Railsが到底動作するようには思えない。しかしながら、MacRubyに対して改良\n\
+    に改良を重ねることできっとRailsを動作させることができる（はずである）。\n\n\
+    本発表ではMacRubyでRailsを動作させるために必要だった修正内容とともに、\n\
+    その過程であらためて知ることになったcRubyのすばらしさを説明します。"
+language: Japanese

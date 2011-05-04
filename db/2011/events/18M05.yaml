@@ -1,0 +1,24 @@
+--- 
+name: 
+  en: SHIBATA Hiroshi
+  ja: "柴田博志"
+affiliation: 
+  en: Eiwa System Management, Inc./asakusa.rb
+  ja: "永和システムマネジメント/asakusa.rb"
+bio: 
+  en: He is a programmer in Eiwa System Management,Inc. member of Japanese Society for Quality Control (JSQC). His lifework is to develop Rails ap plication and tDiary(The tsukkomi oriented weblog).
+  ja: "サービスプロバイディング事業部プログラマ、品質管理学会 正会員、Rails を使った業務システムや tDiary という Web 日記システムを作っています。"
+title: 
+  en: The Art of "Legacy" Ruby Code Maintainance
+  ja: "Ruby遺産とレガシーコード修理技術"
+abstract: 
+  en: |-
+    A remarkable feature of the Japanese Ruby is that we have many Ruby applications, the heritage of Ruby, before Rails. 
+    
+    To be confronted with the heritage of Ruby, we need powerful arms: method of test for softwares that haven't test, knowledge of anti-pattern in legacy code programming and support tools for scare of coding.
+    
+    In my talk, I discuss to continuous maintenance technique and methodology for pandora's box, especially Ruby.
+  ja: "日本のRubyの大きな特徴は、Rails以前に作られたRubyアプリケーション、すなわち「Ruby遺産」が存在することです。\n\
+    私たちが Ruby 遺産と向き合うには、テストのないソフトウェアをテストする方法、レガシーコードをプログラミングする時のアンチパターンに関する知識、プログラミングを不安から守る道具など、様々なことを学ぶ必要があります。\n\
+    発表では、Ruby 遺産を保守し続けるために必要な技術と方法についてご紹介します。"
+language: Japanese

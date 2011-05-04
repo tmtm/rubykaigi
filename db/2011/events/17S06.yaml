@@ -1,0 +1,20 @@
+--- 
+name: 
+  en: Shay Friedman
+  ja: 
+affiliation: 
+  en: CodeValue
+  ja: 
+bio: 
+  en: |-
+    Shay Friedman is a Visual C#?IronRuby MVP and the author of IronRuby Unleashed and ASP.NET 4 Programmer's Reference.
+    
+    With more than 10 years of experience in the software industry, Friedman now works in CodeValue, a company he has co?founded, where he creates products for developers, consults and conducts courses around the world about dynamic languages and web development. You can visit his blog at http:??IronShay.com.
+  ja: 
+title: 
+  en: Running Ruby on Windows Azure
+  ja: 
+abstract: 
+  en: Windows Azure is the name for Microsoft's cloud services. As one of the main targets of the company, this has become an impressive platform and surprisingly - it does not appeal only to Microsofties. Windows Azure is capable of running Ruby and Rails which makes it a platform to consider when moving to the cloud. In this talk we will see the good and bad in choosing this path and learn how it is done.
+  ja: 
+language: English

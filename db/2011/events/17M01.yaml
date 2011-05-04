@@ -1,0 +1,20 @@
+--- 
+name: 
+  en: Kazuhiro NISHIYAMA
+  ja: "西山和広"
+affiliation: 
+  en: Good-Day Inc.
+  ja: "株式会社 グッデイ"
+bio: 
+  en: TBD
+  ja: "MRIメンテナの一人"
+title: 
+  en: How to make secure program
+  ja: "安全なプログラムの作り方"
+abstract: 
+  en: TBD
+  ja: "コミッタなどとして関わっているソフトウェアの脆弱性修正や\n\
+    脆弱性を IPA へ届出経由で修正してもらった経験をふまえて\n\
+    どのようなプログラムを書くと脆弱性を含みやすいのかという\n\
+    話をします。"
+language: Japanese
