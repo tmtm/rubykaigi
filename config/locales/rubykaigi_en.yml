@@ -49,7 +49,6 @@ en:
   press: "Press"
   rubykaigi_archives: "Archives"
   live: "Live"
-  information: "Attendees"
   rubykaigi_nikki: "Blog"
   network: "Internet Access"
   power_outlets: "Power Outlets"
@@ -94,14 +93,14 @@ en:
   call_for_sponsors: 'RubyKaigi 2011 is looking for Sponsors.'
   sponsor_prospectus: 'Sponsor Prospectus'
   call_for_presentations: 'RubyKaigi 2011 Call for Presentations'
-  regional_rubykaigi: '地域Ruby会議'
-  about: '日本Ruby会議について'
+  regional_rubykaigi: 'Regional RubyKaigi'
+  about: 'About'
   photographers: '写真提供'
   register: 'チケット購入・各種お申込み'
-  tickets: 'チケットを購入する'
+  tickets: 'Buy tickets'
   staffs: '当日スタッフ募集'
-  for_attendees: '参加者向け情報'
-  programs: 'プログラム'
+  for_attendees: 'For Attendees'
+  programs: 'Program'
   staffs: '当日スタッフ募集'
   hall_main: '大ホール'
   hall_sub: '小ホール'
