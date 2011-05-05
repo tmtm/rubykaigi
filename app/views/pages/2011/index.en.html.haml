@@ -1,0 +1,122 @@
+- content_for :head do
+  :javascript
+    $(document).ready(function(){
+    		$('#photos').galleryView({
+    			panel_width: 640,
+    			panel_height: 380,
+    			transition_speed: 1500,
+    			transition_interval: 5000,
+    			nav_theme: 'circle',
+    			show_filmstrip: false,
+    			pause_on_hover: true
+    		});
+    });
+%header
+  %h1
+    %img{:alt => "Date: July16(Sat) - 18(Mon),2011 Venue: Nerima Culture Center(Tokyo, Japan) Keynotes: Yukihiro \"Mats\" Matsumoto, Dave Thomas, Aaron Patterson(a.k.a. tenderlove)", :height => "100", :src => "/2011/images/indexDetails.png", :width => "980"}
+  %section#photos
+    %ul.galleryview
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2006", :src => "/2011/photos/200601.png"}
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2006", :src => "/2011/photos/200602.png"}
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2007", :src => "/2011/photos/200701.png"}
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2007", :src => "/2011/photos/200702.png"}
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2008", :src => "/2011/photos/200801.png"}
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2008", :src => "/2011/photos/200802.png"}
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2009", :src => "/2011/photos/200901.png"}
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2009", :src => "/2011/photos/200902.png"}
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2010", :src => "/2011/photos/201001.png"}
+      %li
+        %img{:alt => "#{t(:rubykaigi)}2010", :src => "/2011/photos/201002.png"}
+  %section#register
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/coming_soon"}
+        %img{:alt => "Register now(チケットを購入する)", :src => "/2011/images/registerBtnTickets.png", :width => "320", :height => "90"}
+    %ul.listMark
+      %li Ruby会議のチケットは99月99日ころを予定しております。
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/programs"}
+        %img{:alt => "Programs(プログラム)", :height => "40", :src => "/2011/images/indexBtnPrograms.png", :width => "320", :height => "40"}
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/for_attendees#access"}
+        %img{:alt => "Access(アクセス)", :height => "40", :src => "/2011/images/indexBtnAccess.png", :width => "320", :height => "40"}
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/for_attendees#stay"}
+        %img{:alt => "Stay(宿泊のご案内)", :height => "40", :src => "/2011/images/indexBtnStay.png", :width => "320", :height => "40"}
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/coming_soon", :target => "_blank"}
+        %img{:alt => "Floor Guide(フロアガイド)", :src => "/2011/images/indexBtnFloorGuide.png", :width => "320", :height => "40"}
+#content
+  %section#news
+    %h2
+      %img{:alt => "", :height => "35", :src => "/2011/images/indexNewsHeader.png", :width => "250"}
+    %ul
+      %li
+        %time{:datetime => "2011-04-25"} 2011-04-25
+        %a{:href => "http://rubykaigi.tdiary.net/20110425.html"} RubyKaigi2011の"当日"ボランティアスタッフの募集を開始します
+      %li
+        %time{:datetime => "2011-04-13"} 2011-04-13
+        %a{:href => "http://rubykaigi.tdiary.net/20110413.html"} RubyKaigi planning memo for overseas
+      %li
+        %time{:datetime => "2011-04-02"} 2011-04-02
+        %a{:href => "http://rubykaigi.tdiary.net/20110402.html"} RubyKaigi2011の開催に関する現状報告
+      %li
+        %time{:datetime => "2011-03-12"} 2011-03-12
+        %a{:href => "http://rubykaigi.tdiary.net/20110312.html"} RubyKaigi2011スポンサーシップにまつわるFAQ
+      %li
+        %time{:datetime => "2011-03-08"} 2011-03-08
+        %a{:href => "http://rubykaigi.tdiary.net/20110308.html"} 日本Ruby会議2011 CFP虎の巻
+      %li
+        %time{:datetime => "2011-02-21"} 2011-02-21
+        %a{:href => "http://rubykaigi.tdiary.net/20110221.html"} 日本Ruby会議2011のスポンサーを募集します
+    %p.icon.rss
+      != render :partial => 'shared/2011/rss'
+    %p
+      %a{:href => "#"}
+        %img{:alt => "Read more...", :height => "30", :src => "/2011/images/commonReadMore.png", :width => "100"}
+  %section#twitter
+    %h2
+      %img{:alt => "", :height => "35", :src => "/2011/images/indexTwitterHeader.png", :width => "250"}
+    %article
+      %script{:src => "http://widgets.twimg.com/j/2/widget.js"}
+      :javascript
+        new TWTR.Widget({
+          version: 2,
+          type: 'search',
+          search: '#rubykaigi',
+          interval: 6000,
+          title: 'Twitter #rubykaigi',
+          subject: '',
+          width: 'auto',
+          height: 245,
+          theme: {
+            shell: {
+              background: '#fff',
+              color: '#160f0d'
+            },
+            tweets: {
+              background: '#ffffff',
+              color: '#160f0d',
+              links: '#4f7280'
+            }
+          },
+          features: {
+            scrollbar: false,
+            loop: true,
+            live: true,
+            hashtags: true,
+            timestamp: true,
+            avatars: true,
+            toptweets: false,
+            behavior: 'default'
+          }
+        }).render().start();
+  != render :partial => 'shared/2011/sponsors_list'

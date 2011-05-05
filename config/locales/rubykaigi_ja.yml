@@ -41,7 +41,7 @@ ja:
   recommend_write_in_english: "英語での記述を強くおすすめします"
   individual_sponsor_party_attend_bonus_is_over: "個人スポンサーの懇親会参加特典は終了しました。悪しからずご了承ください。"
   submit_individual_sponsor_additional_information: "個人スポンサー向け追加情報を保存する"
-  prospectus: "開催趣意書"
+  prospectus: "開催趣意"
   tickets: "参加登録"
   team: "実行委員会"
   photos: "写真"
@@ -49,7 +49,6 @@ ja:
   press: "取材をご希望の方へ"
   rubykaigi_archives: "これまでのRuby会議"
   live: "配信"
-  information: "参加者向け情報"
   rubykaigi_nikki: "RubyKaigi日記"
   network: "ネットワーク"
   power_outlets: "電源"
@@ -95,3 +94,27 @@ ja:
   sponsor_prospectus: 'スポンサーシップのご案内'
   call_for_presentations: '日本Ruby会議2011での発表を募集します'
   cfp_instruction: 'CFPインストラクション'
+  regional_rubykaigi: '地域Ruby会議'
+  about: '日本Ruby会議について'
+  photographers: '写真提供'
+  register: 'チケット購入・各種お申込み'
+  tickets: 'チケットを購入する'
+  staffs: '当日スタッフ募集'
+  for_attendees: '参加者向け情報'
+  programs: 'プログラム'
+  staffs: '当日スタッフ募集'
+  hall_main: '大ホール'
+  hall_sub: '小ホール'
+  access: 'アクセス'
+  stay: '宿泊について'
+  floor_guide: 'フロアガイド'
+  goodies: 'おまけ'
+  sponsors_register: 'スポンサー募集のご案内'
+  sponsors_register_corporate: 'スポンサーになる(企業様)'
+  sponsors_register_individual: 'スポンサーになる(個人様)'
+  archives: 'これまでのRuby会議'
+  inquiry: 'お問い合わせ'
+  signin: 'サインイン'
+  date_fri: '2011年7月16日(金)'
+  date_sat: '2011年7月17日(土)'
+  date_sun: '2011年7月18日(日)'

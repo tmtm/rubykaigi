@@ -1,0 +1,88 @@
+#content
+  %h1
+    #{t(:for_attendees)}
+  %aside
+    %ul
+      %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#programs"}
+          #{t(:programs)}
+      %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#live"}
+          #{t(:live)}
+      %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#access"}
+          #{t(:access)}
+      %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#stay"}
+          #{t(:stay)}
+      %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#floor_guide"}
+          #{t(:floor_guide)}
+      %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#faq"}
+          FAQ
+      %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#goodies"}
+          #{t(:goodies)}
+  #main
+    %article#programs
+      %h2
+        %a{:name => "programs"}
+          #{t(:programs)}
+      %p プログラムの内容はこちらからご覧いただけます。
+      %p.btn
+        %a{:href => "/2011/#{current_locale}/programs"}
+          %img{:alt => "Programs(プログラム)", :height => "40", :src => "/2011/images/indexBtnPrograms.png", :width => "320", :height => "40"}
+    != render :partial => 'shared/2011/back_to_top'
+    %article#live
+      %h2
+        %a{:name => "live"}
+          #{t(:live)}
+      %p イベント開催中は、USTREAMによりライブ中継をしております。
+      %ul.listMark
+        %li 中継品質はベストエフォートです。悪しからずご了承ください。
+        %li KaigiFreaksがお届けします。
+        %li 中継とは別に、後日録画した動画も公開予定です(準備ができ次第、別途アナウンスします)。
+      %p.linkMark
+        #{t(:hall_main)}:
+        %a{:href => "/2011/#{current_locale}/coming_soon"} Ustream
+        |
+        %a{:href => "/2011/#{current_locale}/coming_soon"} IRC
+      %p.linkMark
+        #{t(:hall_sub)}:
+        %a{:href => "/2011/#{current_locale}/coming_soon"} Ustream
+        |
+        %a{:href => "/2011/#{current_locale}/coming_soon"} IRC
+    != render :partial => 'shared/2011/back_to_top'
+    %article#access
+      %h2
+        %a{:name => "access"}
+          #{t(:access)}
+      %p Coming soon...
+    != render :partial => 'shared/2011/back_to_top'
+    %article#stay
+      %h2
+        %a{:name => "stay"}
+          #{t(:stay)}
+      %p Coming soon...
+    != render :partial => 'shared/2011/back_to_top'
+    %article#floor_guide
+      %h2
+        %a{:name => "floor_guide"}
+          #{t(:floor_guide)}
+      %p Coming soon...
+    != render :partial => 'shared/2011/back_to_top'
+    %article#faq
+      %h2
+        %a{:name => "faq"}
+          FAQ
+      %p Coming soon...
+    != render :partial => 'shared/2011/back_to_top'
+
+    %article#goodies
+      %h2
+        %a{:name => "goodies"}
+          #{t(:goodies)}
+      %p Coming soon...
+    != render :partial => 'shared/2011/back_to_top'
+

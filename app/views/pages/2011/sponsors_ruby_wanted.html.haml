@@ -1,0 +1,31 @@
+#content
+  %h1
+    #{t(:ruby_sponsor)}
+  %article
+    %h2
+      Example Company, Ltd.
+    %img#logo{:alt => "Example Company, Ltd.", :src => "/2011/sponsors/sponsorsRuby.png"}
+    #profile
+      %ul.listMark
+        %li
+          Address:
+          %br
+          xxxxxxxxxxx
+        %li
+          Tel:
+          %br
+          xxxxxxxxxxx
+        %li
+          Website:
+          %br
+          %a.linkMark{:href => "http://www.example.com", :target => "_blank"}
+            http://www.example.com
+    %div.cboth
+      %p.sponsorsRubyImg.fright
+        %img{ :alt => "sample", :src => "/2011/sponsors/sample.png" }
+      %h3 About us
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      %h3 About our products
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  != render :partial => 'shared/2011/back_to_top'
+

@@ -20,7 +20,7 @@ class PagesController < LocaleBaseController
       return
     when "2011"
       begin
-        render :template => "pages/2011/#{params[:page_name]}", :layout => "simple"
+        render :template => "pages/2011/#{params[:page_name]}", :layout => "ruby_kaigi2011"
       rescue ActionView::MissingTemplate => e
         render :file => "public/404.html", :status => 404, :layout => false
       end
