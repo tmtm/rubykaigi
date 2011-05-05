@@ -10,6 +10,26 @@ module RubyKaigi2011
       @sub_events ||= Event.find_by_ids(sub_event_ids || [])
     end
 
+    def title_on_locale
+      I18n.locale.to_s == 'ja' ? (title['ja'] || title['en']) : (title['en'] || title['ja'])
+    end
+
+    def presenter_on_locale
+      if name
+        I18n.locale.to_s == 'ja' ? (name['ja'] || name['en']) : (name['en'] || name['ja'])
+      else
+        ""
+      end
+    end
+
+    def abstract_on_locale
+      if abstract
+        I18n.locale.to_s == 'ja' ? (abstract['ja'] || abstract['en']) : (abstract['en'] || abstract['ja'])
+      else
+        ""
+      end
+    end
+
     def to_hash
       hash = @table.dup
       hash.delete(:sub_event_ids)

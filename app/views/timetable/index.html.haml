@@ -1,0 +1,39 @@
+#content
+  %h1
+    #{t(:programs)}
+  - @timetable.days.each do |date|
+    %div
+      %h2
+        %time{:datetime => date.strftime('%Y-%m-%d')}
+          = date.strftime('%Y年%m月%d日')
+      %table
+        %colgroup.hours
+        %colgroup.hall
+        %colgroup.hall
+        %tr
+          %th 時間
+          - @rooms.each do |room|
+            %th
+              = room.name[I18n.locale.to_s]
+        - @timetable.periods_on(date).each_cons(2) do |s, e|
+          %tr
+            %td
+              = [s, e].map {|t| t.strftime("%H:%M") }.join(' - ')
+            - sessions = @rooms.map {|room| @timetable.room_timetable_at(date, room.room_id).session_at(s)}
+            - sessions.each_with_index do |session, index|
+              - next if index != 0 && sessions[index - 1] == session
+              - count = sessions.select {|ses| ses == session }.count
+              %td{:colspan => count}
+                - if !session || session.empty?
+                  = '-'
+                - else
+                  - (events = session.events).each do |event|
+                    %h3
+                      %a.tip{:href => "/2011/#{current_locale}/programs_permalink"}
+                        = event.title_on_locale
+                        %img.fright{:alt => "Permalink", :src => "/2011/images/commonBtnPermalink.png"}
+                        %span
+                          = event.abstract_on_locale
+                    %p
+                      = event.presenter_on_locale
+    != render :partial => 'shared/2011/back_to_top'
