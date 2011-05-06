@@ -1,3 +1,5 @@
+@import "mixin";
+
 .btn a { 
   display: block;
   background: #fff; 
@@ -37,7 +39,9 @@ img {
   display: block;
   margin: 0 auto; }
 
-.ui-page, .ui-body-c, .ui-page-active {
+.ui-page,
+.ui-body-c,
+.ui-page-active {
   a {
     text-shadow: none;
     font-weight: normal;
@@ -56,7 +60,7 @@ img {
   text-shadow: none;
   color: #160f0d; }
 
-.ui-btn-active{
+.ui-btn-active {
   border:1px solid #000;
   background:#444;
   font-weight:bold;
@@ -64,14 +68,13 @@ img {
   cursor:pointer;
   text-shadow:0 -1px 1px #000;
   text-decoration:none;
-  background-image:-moz-linear-gradient(top,#666,#444);
-  background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#666),color-stop(1,#444));
-  -msfilter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#666666', EndColorStr='#444444')"; }
+  @include gradient_top_bottom("#666", "#444"); }
 
-#phone_index  h1, #phone_coming_soon h1 {
+#phone_index  h1,
+#phone_coming_soon h1 {
   border: none;
   padding: 0;
-  font-size: 120%;} 
+  font-size: 120%; } 
 
 /*--- header ----------------------------------------------*/
 
@@ -91,10 +94,9 @@ img {
     color: #f00;
     background: #160f0d; 
     ul {
-      margin: 0 0 0 20px;
       padding: 0; }
     li {
-      font-size: 80%;
+      font-size: 90%;
       display: inline;
       line-height: 200%; } 
     .ui-link {
@@ -112,27 +114,18 @@ footer {
   font-size: 70%;
   nav {
     li {
+      @include mark("footerLinkMarkS.png");
       color: #160f0d;
-      background: url(/2011/images/footerLinkMarkS.png) no-repeat top left;
-      padding: 0 5px 0 20px;
-      margin-left: 5px; }
-    div h2 {
-      font-size: 100%;
-      background: none;
-      border-bottom: none;
-      margin: 2px 0;
-      padding: 0;
-      a { 
-        font-weight: bold;
-        background: url(/2011/images/footerLinkMarkL.png) no-repeat top left;
-        padding: 4px 5px 0 20px; } }
-    margin: 0 auto; }
-  p, address, .icon {
+      margin-left: 5px; } }
+  p,
+  address,
+  .icon {
     padding-left: 5px;
     color: #160f0d; }
   .icon a img {
     float: left; }
   address {
+    text-align: center;
     clear: both; }
   a, .ui-link {
     &:link, &:visited, &:active {
@@ -158,12 +151,9 @@ footer {
       margin: 5px 0;
       padding: 0 0 10px 0; }
     li {
-      list-style: none;
-      background: url(/2011/images/indexNewsMark.png) no-repeat top left;
-      padding: 0 5px 0 20px; } 
-    .time {
+      @include mark("indexNewsMark.png"); } 
+    time {
       display: block;
-      font-family: 'Geo', arial, serif;
       font-size: 90%; } } }
 
 /*--- phone_register ----------------------------------------------*/

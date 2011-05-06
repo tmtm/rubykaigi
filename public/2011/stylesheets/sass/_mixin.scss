@@ -1,0 +1,49 @@
+/*--- mix-in ----------------------------------------------*/
+
+@mixin mark($img) {
+  list-style: none;
+  background: url("/2011/images/#{$img}") no-repeat top left;
+  padding: 0 5px 0 20px; }
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both; } }
+
+@mixin gradient_top_bottom($top, $bottom) {
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0, #{$top}),color-stop(1, #{$bottom}));
+  background: -moz-linear-gradient(top, #{$top}, #{$bottom});
+  }
+
+@mixin gradient_border_top_bottom($top, $bottom) {
+  border: -webkit-gradient(linear, center top, center bottom, from($top), to($bottom));
+  border: -moz-linear-gradient(top, #{$top}, #{$bottom});
+  }
+
+@mixin radius($topleft, $topright, $bottomleft, $bottomright) {
+  -webkit-border-top-left-radius: #{$topleft}px;
+  -moz-border-radius-topleft: #{$topleft}px;
+  border-top-left-radius: #{$topleft}px;
+  -webkit-border-top-right-radius: #{$topright}px;
+  -moz-border-radius-topright: #{$topright}px;
+  border-top-right-radius: #{$topright}px;
+  -webkit-border-bottom-left-radius: #{$bottomleft}px;
+  -moz-border-radius-bottomleft: #{$bottomleft}px;
+  border-bottom-left-radius: #{$bottomleft}px;
+  -webkit-border-bottom-right-radius: #{$bottomright}px;
+  -moz-border-radius-bottomright: #{$bottomright}px;
+  border-bottom-right-radius: #{$bottomright}px;
+  }
+
+@mixin text_shadow($y, $x, $blur, $color) {
+  -webkit-text-shadow: #{$y}px #{$x}px #{$blur}px #{$color};
+  -moz-text-shadow: #{$y}px #{$x}px #{$blur}px #{$color};
+  text-shadow: #{$y}px #{$x}px #{$blur}px #{$color};
+  }
+
+@mixin box_shadow($y, $x, $blur, $color) {
+  -webkit-box-shadow: #{$y}px #{$x}px #{$blur}px #{$color};
+  -moz-box-shadow: #{$y}px #{$x}px #{$blur}px #{$color};
+  box-shadow: #{$y}px #{$x}px #{$blur}px #{$color};
+  }

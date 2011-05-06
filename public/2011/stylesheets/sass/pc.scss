@@ -1,4 +1,5 @@
-/*--- mix-in ----------------------------------------------*/
+@import "mixin";
+
 /*--- default tag setting ----------------------------------------------*/
 
 aside {
@@ -10,9 +11,7 @@ aside {
   width: 280px;
   float: right;
   ul li {
-    list-style: none;
-    background: url(/2011/images/linkMark.png) no-repeat top left;
-    padding: 0 5px 0 20px;
+    @include mark("linkMark.png");
     margin: 10px; } }
 
 h1 {
@@ -23,37 +22,15 @@ h1 {
   height: 80px;
   line-height: 80px; }
 
-h2,  h3, h2 time {
-  color: #160f0d;
-  font-weight: bold;
-  margin: 15px 0 10px 0;
-  a {
-    font-weight: bold; } }
-
-h2 {
-  padding-bottom: 10px;
-  background: url(/2011/images/commonHeader2Bg.png) bottom center no-repeat; }
-  
-h3 {
-  padding-bottom: 5px;
-  border-bottom: 1px dotted #999; }
-
 /*--- common id, class ----------------------------------------------*/
-
-.avatar {
-  clear: left;
-  img {
-    float: left;
-    margin: 0 20px 0 0; }
-  p {
-    margin-top: 10px; } }
 
 .twtr-ft {
   background: #d0cfcf; }
 
 #main {
   width: 660px;
-  h2, h3 {
+  h2,
+  h3 {
     margin-bottom: 20px; } }
 
 .btn a { 
@@ -86,29 +63,14 @@ h3 {
   nav {
     background: #160f0d;
     margin: 0;
-    -webkit-border-top-left-radius: 0;
-    -webkit-border-top-right-radius: 0;
-    -webkit-border-bottom-right-radius: 7px;
-    -webkit-border-bottom-left-radius: 7px;
-    -moz-border-radius-topleft: 0;
-    -moz-border-radius-topright: 0;
-    -moz-border-radius-bottomright: 7px;
-    -moz-border-radius-bottomleft: 7px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    -webkit-box-shadow: 0 0 -2px black;
-    -moz-box-shadow: 0 0 -2px black;
-    box-shadow: 0 0 -2px black;
+    @include radius(0,0,7,7);
     float: right;
     ul {
-      margin: 0 0 0 20px;
+      margin: 0 0 0 5px;
       padding: 0; }
     li {
-      font-size: 80%;
       display: inline;
-      line-height: 200%; } } }
+      line-height: 170%; } } }
 
 #global {
   clear: both;
@@ -134,7 +96,11 @@ h3 {
 
 /*--- others ----------------------------------------------*/
 
-#ruby h2, #platinum h2, #gold h2, #individual h2, #index section h2 {
+#ruby h2,
+#platinum h2,
+#gold h2,
+#individual h2,
+#index section h2 {
   background: none;
   padding-bottom: 5px;
   border-bottom: 1px dotted #999; }
@@ -164,19 +130,18 @@ h3 {
       padding: 0;
       margin: 0;
       background: none;
-      height: 100px; } }
-  header:after {
-    content: "";
-    display: block;
-    clear: both; } 
-  #news, #twitter {
+      height: 100px; } 
+    @include clearfix; }
+  #news,
+  #twitter {
     padding: 5px;
     height: 357px;
     background: #fff;
     border-top: 5px solid #160f0d;
     overflow: hidden;
     border-bottom: 5px solid #fff; }
-  #news, #photos {
+  #news,
+  #photos {
     float: left; }
   #news {
     width: 630px; }
@@ -198,9 +163,7 @@ h3 {
       margin: 5px 0;
       padding: 0 0 10px 0;
       li {
-        list-style: none;
-        background: url(/2011/images/indexNewsMark.png) no-repeat top left;
-        padding: 0 5px 0 20px; } }
+        @include mark("indexNewsMark.png"); } }
     time {
       display: block; } }
   p {
@@ -223,10 +186,7 @@ h3 {
     clear: both;
     margin: 7px 0;
     display: block; } 
-  &:after {
-    content: "";
-    display: block;
-    clear: both; } }
+  @include clearfix; }
 
 /*--- about ----------------------------------------------*/
 
@@ -240,10 +200,7 @@ h3 {
       padding: 5px;
       border: 1px solid #d0cfcf;
       float: left; } 
-    &:after {
-      content: "";
-      display: block;
-      clear: both; } } }
+    @include clearfix; } }
 
 /*--- register ----------------------------------------------*/
 
@@ -258,12 +215,6 @@ h3 {
        padding-left: 20px;
        background: #fff url(/images/openid_logo.gif) 2px center no-repeat; } } }
 
-/*--- for_attendees ----------------------------------------------*/
-
-#for_attendees {
-
-}
-
 /*--- programs ----------------------------------------------*/
 
 #programs {
@@ -277,7 +228,9 @@ h3 {
       background-color: rgba(138, 135, 134, 0.3); }
     .hall {
       width: 400px; }
-    tr, th, td {
+    tr,
+    th,
+    td {
       padding: 5px;
       border: 1px solid #8a8786;
       border-collapse: collapse; } } }
@@ -292,31 +245,31 @@ h3 {
 
 a.tip {
   position: relative;
-  text-decoration: none; }
-a.tip span {
-  display: none;
-  position: absolute;
-  top: 30px;
-  left: -200px;
-  width: 400px;
-  padding: 10px;
-  z-index: 100;
-  background-color: rgba(22, 15, 13, 0.9); 
-  color: #fff;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  text-decoration: none; }
-a.tip span img {
-  float: left;
-  margin: 0px 10px 10px 0px;
-  opacity: 1; }
+  text-decoration: none;
+  span {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -200px;
+    width: 400px;
+    padding: 10px;
+    z-index: 100;
+    background-color: rgba(22, 15, 13, 0.9); 
+    color: #fff;
+    @include radius(5, 5, 5, 5);
+    text-decoration: none;
+    img {
+      float: left;
+      margin: 0px 10px 10px 0px;
+      opacity: 1; } } }
+
 a:hover.tip {
-  cursor: pointer; }
-a:hover.tip span {
-  display: block; }
+  cursor: pointer;
+  span {
+    display: block; } }
+
 * html a:hover.tip span {
   display: none; }
-
 
 /*--- sponsors ----------------------------------------------*/
 
@@ -354,10 +307,8 @@ a:hover.tip span {
 /*--- sponsors_ruby ----------------------------------------------*/
 
 #sponsors_ruby_wanted {
-  article:after {
-    content: "";
-    display: block;
-    clear: both; } 
+  article{
+    @include clearfix; }
   .logo {
     float: left;
     margin: 0 20px 20px  0; }
@@ -382,17 +333,11 @@ a:hover.tip span {
     float: left;
     margin: 0 20px 20px 0; } }
 
-
-/*--- sponsors_individuals ----------------------------------------------*/
-
-
 /*--- archives ----------------------------------------------*/
 
 #archives #content {
-  article:after {
-    content: "";
-    display: block;
-    clear: both; }
+  article{
+    @include clearfix; }
   div {
     float: left;
     margin: 20px 5px 5px 5px;
@@ -418,10 +363,7 @@ footer {
   padding: 10px;
   margin-top: 10px;
   font-size: 70%;
-  &:after {
-    content: "";
-    display: block;
-    clear: both; }
+  @include clearfix; 
   nav {
     div {
       float: left;
@@ -429,9 +371,8 @@ footer {
       border-right: #5b5c55 1px solid collapse;
       border-left: #5b5c55 1px solid; }
     li {
+      @include mark("footerLinkMarkS.png");
       color: #160f0d;
-      background: url(/2011/images/footerLinkMarkS.png) no-repeat top left;
-      padding: 0 5px 0 20px;
       margin-left: 5px; }
     div h2 {
       font-size: 100%;
@@ -440,16 +381,20 @@ footer {
       margin: 2px 0;
       padding: 0;
       a { 
-        font-weight: bold;
-        background: url(/2011/images/footerLinkMarkL.png) no-repeat top left;
-        padding: 4px 5px 0 20px; } }
+        @include mark("footerLinkMarkL.png");
+        padding-top: 4px;
+        font-weight: bold; } }
     width: 960px;
     margin: 0 auto; }
-  p, address, .icon {
+  p,
+  address,
+  .icon {
     padding-left: 5px;
     color: #160f0d; }
   a {
-    &:link, &:visited, &:active {
+    &:link,
+    &:visited,
+    &:active {
       color: #160f0d;
       text-decoration: none; }
     &:hover {

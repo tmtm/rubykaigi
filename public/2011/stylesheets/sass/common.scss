@@ -1,4 +1,5 @@
-/*--- mix-in ----------------------------------------------*/
+@import "mixin";
+
 /*--- default tag setting ----------------------------------------------*/
 
 * {
@@ -20,11 +21,23 @@ a {
     color: #5b5755; }
   &:hover {
     color: #8a8786; }
-  &:link img, &:visited img, &:hover img, &:active img {
+  &:link img,
+  &:visited img,
+  &:hover img,
+  &:active img {
     text-decoration: none;
     border: none; } }
 
-article, aside, dialog, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 address {
@@ -43,7 +56,9 @@ nav {
     list-style: none;
     margin-right: 20px; }
   a {
-    &:link, &:visited, &:active {
+    &:link,
+    &:visited,
+    &:active {
       color: #efeae8;
       text-decoration: none; }
     &:hover {
@@ -53,7 +68,9 @@ nav {
 article p {
   margin-bottom: 10px; }
 
-h2,  h3, h2 time {
+h2,
+h3,
+h2 time {
   color: #160f0d;
   font-weight: bold;
   margin: 15px 0 10px 0;
@@ -95,16 +112,13 @@ h3 {
   clear: right; }
 
 .linkMark {
-  background: url(/2011/images/linkMark.png) no-repeat top left;
-  padding: 0 5px 0 20px; }
+  @include mark("linkMark.png"); }
 
 .listMark {
   margin-bottom: 10px;
   li {
-    list-style: none;
-    margin-bottom: 5px;
-    background: url(/2011/images/listMark.png) no-repeat top left;
-    padding: 0 5px 0 20px; } }
+    @include mark("listMark.png");
+    margin-bottom: 5px; } }
 
 .avatar {
   clear: left;
@@ -119,13 +133,6 @@ h3 {
 
 .icon a img {
   margin-right: 5px; }
+
 .rss {
   float: right; }
-
-/*--- others ----------------------------------------------*/
-
-/*--- for_attendees ----------------------------------------------*/
-
-/*--- programs ----------------------------------------------*/
-
-
