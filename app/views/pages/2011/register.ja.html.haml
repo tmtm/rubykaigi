@@ -13,50 +13,9 @@
         %a{:href => "/2011/#{current_locale}/register#staffs"}
           #{t(:staffs)}
   #main
-    %article#tickets
-      %h2
-        %a{:name => "tickets"}
-          #{t(:tickets)}
-      %p 日本Ruby会議2011に参加登録するには、Twitter OAuthかOpenIDでサインインしてください。
-      #signin
-        %p.btn
-          != link_to image_tag('/2011/images/registerBtnTwitter.png', :alt => 'via Twitter'), sessions_path(:warden_oauth_provider => 'twitter')
-        %p.btn
-          != link_to image_tag('/2011/images/registerBtnGoogle.png', :alt => 'via Google'), sessions_path(:openid_identifier => 'https://www.google.com/accounts/o8/id')
-        %p.btn
-          != link_to image_tag('/2011/images/registerBtnYahoo.png', :alt => 'via Yahoo!'), sessions_path(:openid_identifier => 'http://yahoo.com')
-        %p.btn
-          != link_to image_tag('/2011/images/registerBtnYahooJapan.png', :alt => 'via Yahoo!JAPAN'), sessions_path(:openid_identifier => 'http://yahoo.co.jp')
-        %p.btn
-          != link_to image_tag('/2011/images/registerBtnMixi.png', :alt => 'via mixi'), sessions_path(:openid_identifier => 'http://mixi.jp')
-        %p.cleft その他のOpenIDプロバイダはこちら
-        - form_tag sessions_path, :method => :get do
-          %p
-            != text_field_tag :openid_identifier
-            != submit_tag 'Sign in'
-      %h3 3days pass
-      %p 【価格】￥6,000
-      %p.btn
-        %a{:href => "/2011/#{current_locale}/coming_soon"}
-          %img{:alt => "Register now(チケットを購入する)", :src => "/2011/images/registerBtnTickets.png"}
-      %ul.listMark
-        %li 学割制度も用意しております。詳しくはこちらをご覧ください。
-      %p
-        %img{:alt => "Coming Soon...", :src => "/2011/images/commonBtnComingSoon.png"}
+    != render :partial => 'shared/2011/tickets_ja'
     != render :partial => 'shared/2011/back_to_top'
-    %article#party
-      %h2
-        %a{:name => "party"}
-          #{t(:official_party)}
-      %p 懇親会を下記の日程で開催します。本編とともに是非お楽しみください。
-      %ul.listMark
-        %li 日付： 2011年7月17日(日)
-        %li 時間： 19時30分（受付開始）／20時00分～22時00分
-        %li 場所： 池袋サンシャインシティ 28F サンシャインクルーズ・クルーズ
-        %li 定員： 400名
-        %li 価格： ￥5,000
-      %p
-        %img{:alt => "Coming Soon...", :src => "/2011/images/commonBtnComingSoon.png"}
+    != render :partial => 'shared/2011/party_ja'
     != render :partial => 'shared/2011/back_to_top'
     %article#staffs
       %h2
