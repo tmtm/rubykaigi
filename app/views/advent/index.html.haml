@@ -44,7 +44,7 @@
   %h1
     RubyKaigi#{params[:year]} Advent Calendar
   #other_formats
-    = link_to "iCal", configatron.advent.ical_url
+    = link_to "iCal", advent_index_path(params[:year], params[:locale], :ics), :target => "_blank"
     = link_to "JSON", advent_index_path(params[:year], params[:locale], :json), :target => "_blank"
   %ul#advent_events
     - @events.each do |event|

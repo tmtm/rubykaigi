@@ -8,6 +8,7 @@ class AdventController < LocaleBaseController
     respond_to do |format|
       format.html
       format.json { render :json => events_to_json }
+      format.ics { render :text => @advent.to_s }
     end
   end
 
@@ -18,7 +19,7 @@ class AdventController < LocaleBaseController
   
       ical = URI.parse(configatron.advent.ical_url).open(&:read)
       @advent = RiCal.parse_string(ical).first
-      @events = @advent.events.map{|e| translate_event(e) }.sort_by(&:dtstart)
+      @events = @advent.events.map!{|e| translate_event(e) }.sort_by(&:dtstart)
     end
 
     def translate_event(event)
