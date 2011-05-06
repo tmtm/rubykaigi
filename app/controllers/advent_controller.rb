@@ -6,7 +6,7 @@ class AdventController < LocaleBaseController
   # GET /advent
   def index
     respond_to do |format|
-      format.html { render :layout => 'simple' } # TODO: use latest_ruby_kaigi layout 
+      format.html
       format.json { render :json => advent_to_json }
     end
   end
