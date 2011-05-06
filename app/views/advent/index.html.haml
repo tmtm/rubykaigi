@@ -1,23 +1,6 @@
-- @title = 'RubyKaigi2011 Advent Calendar'
+- @title = "RubyKaigi#{params[:year]} Advent Calendar"
 -content_for :head do
   :css
-    body {
-      margin: 0;
-      padding-bottom: 30px;
-    }
-
-    a, a:link, a:visited, a:hover {
-      color: #333;
-      text-decoration: none;
-      border:none;
-    }
-
-    #content {
-      width: 740px;
-      margin: 10px;
-      padding: 0;
-    }
-
     ul#advent_events {
       border: 2px solid #000;
       list-style: none;
@@ -57,18 +40,9 @@
       text-align: right;
     }
 
-
-%div{:style => 'border-top: 7px solid #000; width: 100%;'}
-  %img{:src => "/2011/images/top_head.gif", :alt => "The End Of Rubykaigi - 2011/07/16-18 at ToKyo, Japan"}
-%p{:style => 'margin: 10px;'}
-  our brand new website design is coming soon :)
-
-%hr
-
-%h1{:style => 'margin: 10px;'}
-  RubyKaigi#{params[:year]} Advent Calendar
-
 #content
+  %h1
+    RubyKaigi#{params[:year]} Advent Calendar
   #other_formats
     = link_to "iCal", configatron.advent.ical_url
     = link_to "JSON", advent_index_path(params[:year], params[:locale], :json), :target => "_blank"
@@ -79,9 +53,5 @@
         .time #{localtime(event.dtstart).strftime("%Y/%m/%d %H:%M")} 〜 #{localtime(event.dtend).strftime("%Y/%m/%d %H:%M")}
         .location!= auto_link event.location, :all, :target => "_blank"
         .description!= auto_link event.description, :all, :target => "_blank"
-
-%div{:style => 'margin: 10px;'}
-  ≫ <a href="/2011">RubyKaigi 2011</a>
-
 
 
