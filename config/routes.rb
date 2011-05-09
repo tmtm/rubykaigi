@@ -16,7 +16,7 @@ Rubykaigi::Application.routes.draw do
   end
 
   match 'signin', :to => 'sessions#new', :as => 'signin'
-  match 'signout', :to => 'sessions#destroy', :as => 'signout'
+  delete 'signout', :to => 'sessions#destroy', :as => 'signout'
   match 'my_tickets', :to => 'tickets#index', :as => "my_tickets"
 
   resource :sessions do
