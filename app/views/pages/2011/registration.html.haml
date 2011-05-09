@@ -1,0 +1,55 @@
+#content
+  %h1
+    #{t(:registration)}
+  %aside
+    %ul
+      %li
+        %a{:href => "/2011/#{current_locale}/registration#tickets"}
+          #{t(:tickets)}
+      %li
+        %a{:href => "/2011/#{current_locale}/registration#party"}
+          #{t(:official_party)}
+      %li
+        %a{:href => "/2011/#{current_locale}/registration#staffs"}
+          #{t(:staffs)}
+  #main
+    != render :partial => 'need_signin'
+    %article#tickets
+      %h2
+        %a{:name => "tickets"}
+          #{t(:tickets)}
+      %h3 3days pass
+      %ul.listMark
+        %li
+          When: July 16th(Sat) - 18th(Mon), 2011
+        %li
+          Venue: Nerima Culture Center(Tokyo, Japan)
+        %li
+          Capacity: ~1,000 people
+        %li
+          Price: <strong>#{number_with_delimiter(@kaigi.unit_price)} JPY</strong>
+          != stock_notification(@kaigi)
+      != render :partial => 'add_to_cart', :locals => {:item => @kaigi }
+      -# %ul.listMark
+      -#   %li 学割制度も用意しております。詳しくはこちらをご覧ください。
+    != render :partial => 'shared/2011/back_to_top'
+    %article#party
+      %h2
+        %a{:name => "party"}
+          #{t(:official_party)}
+      %p 懇親会を下記の日程で開催します。本編とともに是非お楽しみください。
+      %ul.listMark
+        %li When: July 17th(Sun) 20:00 - 22:00 (Door Open: 19:30)
+        %li Venue: Ikebukuro Sunshine city 28F SUNSHINE CRUISE CRUISE
+        %li Capacity: ~450 people
+        %li
+          Price: <strong>#{number_with_delimiter(@party.unit_price)} JPY</strong>
+          != stock_notification(@party)
+      != render :partial => 'add_to_cart', :locals => {:item => @party }
+
+    %article#staffs
+      %h2
+        %a{:name => "staffs"}
+          #{t(:staffs)}
+      != render :partial => 'shared/2011/staffs'
+    != render :partial => 'shared/2011/back_to_top'
