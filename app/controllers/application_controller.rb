@@ -53,7 +53,14 @@ class ApplicationController < ActionController::Base
   end
 
   def current_cart
-    session[:cart] ||= Cart.new
+    cart = session[:cart]
+    session[:cart] = __renew_cart_if_old_version_is_stored(cart)
+  end
+
+  def __renew_cart_if_old_version_is_stored(cart)
+    return Cart.new unless cart
+    return Cart.new unless cart.class.respond_to?(:model_name)
+    cart
   end
 
   # XXX duplicated in application_helper.rb

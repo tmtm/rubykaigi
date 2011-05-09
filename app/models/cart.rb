@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 class Cart
+  include ActiveModel::Conversion
+  extend ActiveModel::Naming
+
   class OverProductItemLimitationError < StandardError;  end
   attr_reader :items
 
@@ -48,5 +51,10 @@ class Cart
 
   def all_item_in_stock?
     @items.all? {|item| item.in_stock? }
+  end
+
+  # stub out ActiveRecord::Persistence#persisted?
+  def persisted?
+    false
   end
 end
