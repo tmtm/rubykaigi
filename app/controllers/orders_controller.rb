@@ -61,6 +61,36 @@ class OrdersController < ApplicationController
 
   def returned
     clear_current_cart
+
+    txn_id = params[:tx]
+    unless txn_id
+      render_not_found && return
+    end
+    if Rails.env == "production"
+      redirect_to(:action => 'thanks') && return
+    end
+
+    pdt = Paypal::Pdt.request(txn_id)
+    logger.info("<============ pdt params =================>")
+    logger.info("{")
+    pdt.to_a.sort_by{|pair| pair.first}.each do |(k,v)|
+      logger.info("'#{k}' => '#{v}',")
+    end
+    logger.info("}")
+    logger.info("============> pdt params =================>")
+
+    order = Order.find_by_invoice_code(pdt["invoice"])
+    job = Paypal::HandlePaymentNotificationJob.new(order.id)
+    # XXX duplicated of paypal_controller#instant_payment_notification
+    Order.transaction do
+      notification = Paypal::PaymentNotification.from_notified_params(pdt)
+      order.paypal_payment_notification = notification
+      notification.save!
+      order.save!
+    end
+    job = Paypal::HandlePaymentNotificationJob.new(order.id)
+    job.perform
+
     redirect_to(:action => 'thanks')
   end
 
