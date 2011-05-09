@@ -44,7 +44,7 @@ class ProductItem < ActiveRecord::Base
   end
 end
 
-%w[rk10 rk10_party rk10_individual_sponsor].each do |_type|
+%w[rk10 rk10_party rk10_individual_sponsor rk11 rk11_party rk11_individual_sponsor].each do |_type|
   (class << ProductItem::Type; self; end).class_eval do
     define_method(_type) { _type }
   end
