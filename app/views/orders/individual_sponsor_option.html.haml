@@ -22,12 +22,12 @@
       %dd!= f.text_field :link_label
       != error_message_on :option, :link_label, :prepend_text => t('individual_sponsor_link_label')
       <br />
-      - if ProductItem.kaigi(2010).rk10_party.now_on_sale?
-        %dd
-          != f.check_box :attend_party
-          != f.label :attend_party, t('i_will_attend_the_official_party_2010')
-      - else
-        %dd (#{t('individual_sponsor_party_attend_bonus_is_over')})
+      -# - if ProductItem.kaigi(2010).rk10_party.now_on_sale?
+      -#  %dd
+      -#    != f.check_box :attend_party
+      -#    != f.label :attend_party, t('i_will_attend_the_official_party_2010')
+      -# - else
+      -#  %dd (#{t('individual_sponsor_party_attend_bonus_is_over')})
     <br />
     <br />
     %p!= f.submit t(:submit_individual_sponsor_additional_information)
