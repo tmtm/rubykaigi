@@ -85,7 +85,7 @@ h2,  h3, h2 time {
 h2 {
   padding-bottom: 10px;
   background: url(/2011/images/commonHeader2Bg.png) bottom center no-repeat; }
-  
+
 h3 {
   padding-bottom: 5px;
   border-bottom: 1px dotted #999; }
@@ -156,9 +156,9 @@ h3 {
 .rss {
   float: right; }
 
-.btn a { 
+.btn a {
   display: block;
-  background: #fff; 
+  background: #fff;
   width: 320px;
   &:hover img, &:active img {
     opacity:0.8;
@@ -225,7 +225,7 @@ h3 {
     line-height: 60px; }
   .informations {
     background: url(/2011/images/commonGlobalNavInformations.png) top left no-repeat; }
-  .register {
+  .registration {
     background: url(/2011/images/commonGlobalNavRegister.png) top left no-repeat; }
   .forAttendees {
     background: url(/2011/images/commonGlobalNavForAttendees.png) top left no-repeat; }
@@ -268,7 +268,7 @@ h3 {
   header:after {
     content: "";
     display: block;
-    clear: both; } 
+    clear: both; }
   #news, #twitter {
     padding: 5px;
     height: 357px;
@@ -283,7 +283,7 @@ h3 {
   #twitter {
     width: 310px;
     float: right; }
-  #register {
+  #registration {
     width: 320px;
     float: right;
     ul {
@@ -322,7 +322,7 @@ h3 {
   #users .linkMark {
     clear: both;
     margin: 7px 0;
-    display: block; } 
+    display: block; }
   &:after {
     content: "";
     display: block;
@@ -339,21 +339,21 @@ h3 {
       height: 50px;
       padding: 5px;
       border: 1px solid #d0cfcf;
-      float: left; } 
+      float: left; }
     &:after {
       content: "";
       display: block;
       clear: both; } } }
 
-/*--- register ----------------------------------------------*/
+/*--- registration ----------------------------------------------*/
 
-#register {
+#registration {
   #signin {
     margin-bottom: 30px;
      .btn a {
-       margin: 0 5px 20px 0;    
+       margin: 0 5px 20px 0;
        width: 120px;
-       float: left; } 
+       float: left; }
      input[name=openid_identifier] {
        padding-left: 20px;
        background: #fff url(/images/openid_logo.gif) 2px center no-repeat; } } }
@@ -370,8 +370,8 @@ h3 {
   table {
     width: 980px;
     border: 1px solid #8a8786;
-    border-collapse: collapse; 
-    background-color: rgba(255, 255, 255, 0.3); 
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.3);
     .hours {
       white-space: nowrap;
       background-color: rgba(138, 135, 134, 0.3); }
@@ -401,7 +401,7 @@ a.tip span {
   width: 400px;
   padding: 10px;
   z-index: 100;
-  background-color: rgba(22, 15, 13, 0.9); 
+  background-color: rgba(22, 15, 13, 0.9);
   color: #fff;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -420,7 +420,7 @@ a:hover.tip span {
 
 /*--- sponsors ----------------------------------------------*/
 
-#sponsors .register {
+#sponsors .registration {
   float: left;
   margin-right: 10px; }
 
@@ -457,7 +457,7 @@ a:hover.tip span {
   article:after {
     content: "";
     display: block;
-    clear: both; } 
+    clear: both; }
   .logo {
     float: left;
     margin: 0 20px 20px  0; }
@@ -539,7 +539,7 @@ footer {
       border-bottom: none;
       margin: 2px 0;
       padding: 0;
-      a { 
+      a {
         font-weight: bold;
         background: url(/2011/images/footerLinkMarkL.png) no-repeat top left;
         padding: 4px 5px 0 20px; } }
