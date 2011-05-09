@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
     return true if authenticated?
 
     session[:return_to] = request.request_uri
-    redirect_to sigin_path
+    redirect_to signin_path
     false
   end
 
