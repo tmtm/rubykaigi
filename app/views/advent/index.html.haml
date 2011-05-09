@@ -63,7 +63,7 @@
 
   #advent_events
     - events_by_month(@events).each do |month, events|
-      %h2= month.strftime("%Y年%m月")
+      %h2= l month, :format => :month
       %ul
         - events.each do |event|
           %li{:class => todays_event?(event) ? "todays_event" : ""}

@@ -1,3 +1,6 @@
 en:
   rubykaigi2010: RubyKaigi 2010
   whats_new: What's New
+  time:
+    formats:
+      month: "%B %Y"
