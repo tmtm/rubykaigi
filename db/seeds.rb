@@ -17,3 +17,9 @@ ProductItem.create(:item_code => 'rk10_individual_sponsor', :unit_price => 20000
   :open_sale_at => DateTime.parse('2010-05-26 20:59:59'), :ready_for_sale => true)
 
 rk11 = RubyKaigi.create(:year => 2011, :capacity => 1000, :party_capacity => 450)
+ProductItem.create(:item_code => 'rk11', :unit_price => 6000, :stock => 700, :ruby_kaigi => rk11,
+  :open_sale_at => DateTime.parse('2011-05-16 19:00:00'), :ready_for_sale => true)
+ProductItem.create(:item_code => 'rk10_party', :unit_price => 5000, :stock => 200, :ruby_kaigi => rk11,
+  :open_sale_at => DateTime.parse('2011-05-16 20:59:59'), :ready_for_sale => true)
+ProductItem.create(:item_code => 'rk10_individual_sponsor', :unit_price => 15000, :stock => 200, :ruby_kaigi => rk11,
+  :open_sale_at => DateTime.parse('2011-05-13 20:59:59'), :ready_for_sale => true)
