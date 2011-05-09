@@ -13,7 +13,12 @@
         %a{:href => "/2011/#{current_locale}/registration#staffs"}
           #{t(:staffs)}
   #main
-    != render :partial => 'need_signin'
+    %p{:style=>"margin-bottom:1em"}
+      - unless authenticated?
+        != render :partial => 'need_signin'
+      - else
+        != link_to 'Show Your Cart', carts_path
+
     %article#tickets
       %h2
         %a{:name => "tickets"}
