@@ -5,5 +5,7 @@ class RegistrationsController < LocaleBaseController
     @individual_sponsor = ProductItem.find_by_item_code('rk11_individual_sponsor')
     @kaigi = ProductItem.find_by_item_code("rk11")
     @party = ProductItem.find_by_item_code("rk11_party")
+
+    render "pages/2011/registration"
   end
 end

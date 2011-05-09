@@ -1,5 +1,4 @@
 - @title = 'Sign in / Sign up'
-
 - content_for :head do
   %style(type='text/css')
     :sass
@@ -10,26 +9,24 @@
           :repeat no-repeat
           :position 2px center
 
-%div#content
-  %h1 #{@title}
-  %h2 You can Sign in/up with OAuth/OpenID
-  %ul
-    %li
-      via Twitter
-      %br
-      != link_to image_tag('/2010/images/signin_twitter.png', :alt => 'Sign in with Twitter account'), sessions_path(:warden_oauth_provider => 'twitter'), :class => 'noborder'
-    %li
-      via Google Account
-      %br
-      != link_to image_tag('/2010/images/signin_google.png', :alt => 'Sign in with Google account'), sessions_path(:openid_identifier => 'https://www.google.com/accounts/o8/id'), :class => 'noborder'
-  %ul
-    %li!= link_to 'Sign in with Yahoo! ID', sessions_path(:openid_identifier => 'http://yahoo.com')
-    %li!= link_to 'Sign in with Yahoo! Japan ID', sessions_path(:openid_identifier => 'http://yahoo.co.jp')
-    %li!= link_to 'Sign in with mixi', sessions_path(:openid_identifier => 'http://mixi.jp')
-  %h2
-    Using Other OpenID Providers
-
-  - form_tag sessions_path, :method => :get do
-    %p
-      != text_field_tag :openid_identifier
-      != submit_tag 'Sign in'
+#content
+  %h1= @title
+  #main
+    %h2 You can Sign in/up with OAuth/OpenID
+    #signin
+      %p.btn
+        != link_to image_tag('/2011/images/registerBtnTwitter.png', :alt => 'via Twitter'), sessions_path(:warden_oauth_provider => 'twitter')
+      %p.btn
+        != link_to image_tag('/2011/images/registerBtnGoogle.png', :alt => 'via Google'), sessions_path(:openid_identifier => 'https://www.google.com/accounts/o8/id')
+      %p.btn
+        != link_to image_tag('/2011/images/registerBtnYahoo.png', :alt => 'via Yahoo!'), sessions_path(:openid_identifier => 'http://yahoo.com')
+      %p.btn
+        != link_to image_tag('/2011/images/registerBtnYahooJapan.png', :alt => 'via Yahoo!JAPAN'), sessions_path(:openid_identifier => 'http://yahoo.co.jp')
+      %p.btn
+        != link_to image_tag('/2011/images/registerBtnMixi.png', :alt => 'via mixi'), sessions_path(:openid_identifier => 'http://mixi.jp')
+      %p.cleft
+        その他のOpenIDプロバイダはこちら
+        != form_tag sessions_path, :method => :get do
+          %p
+            != text_field_tag :openid_identifier
+            != submit_tag 'Sign in'

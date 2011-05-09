@@ -1,6 +1,10 @@
-%p.add_to_cart{:style => 'text-align:right'}
+%p.btn
   - if item.now_on_sale?
-    != link_to(img_add_to_cart_button, add_item_carts_path(:product_item_code => item.item_code), :method => :post, :class => 'noborder')
+    - btn = '<img alt="Register now(チケットを購入する)" src ="/2011/images/registerBtnTickets.png" />'
+    /!= image_button_to(raw(btn), add_item_carts_path(:product_item_code => item.item_code), :method => :post)
+    != form_tag(add_item_carts_path) do
+      != hidden_field_tag :product_item_code, item.item_code
+      != image_submit_tag("/2011/images/registerBtnTickets.png")
   - else
     %span{:style => 'font-size: 24px;font-weight:bold'}
       - if item.sold_out?
@@ -8,5 +12,5 @@
       - else
         [In Preparation]
     - unless item.sold_out?
-      <br />
+      <br style="line-height:2" />
       (it will be opening at #{item.open_sale_at.to_s(:short)} JST)
