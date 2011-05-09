@@ -37,6 +37,7 @@ Rubykaigi::Application.routes.draw do
     collection do
       get :confirm
       get :thanks
+      get :returned
       get :individual_sponsor_option
     end
   end

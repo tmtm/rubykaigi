@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 class OrdersController < ApplicationController
   before_filter :login_required
 
@@ -31,7 +32,7 @@ class OrdersController < ApplicationController
   def confirm
     @order = Order.find(session[:order_id])
     @paypal_form = Paypal::EncryptedForm.new(@order,
-      thanks_orders_url, paypal_ipn_url(:secret => Paypal::EncryptedForm.ipn_secret))
+      returned_orders_url, paypal_ipn_url(:secret => Paypal::EncryptedForm.ipn_secret))
     unless @order
       flash[:error] = t('flash.order.notfound')
       redirect_to carts_path
@@ -58,8 +59,12 @@ class OrdersController < ApplicationController
     @option.link_label = user.full_name if @option.link_label.blank?
   end
 
-  def thanks
+  def returned
     clear_current_cart
+    redirect_to(:action => 'thanks')
+  end
+
+  def thanks
   end
 
   private
