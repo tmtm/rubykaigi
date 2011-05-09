@@ -7,6 +7,7 @@ development: &local
     cert_id: PAYPAL_CERT_ID
     cert_filename: paypal_cert_sandbox.pem
     ipn_secret: takahashimasayoshi
+    pdt_token: PDT_TOKEN
   gmail:
     user_name: gmail_user_name
     password: gmail_password
