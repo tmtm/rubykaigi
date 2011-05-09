@@ -63,6 +63,19 @@ class ApplicationController < ActionController::Base
     cart
   end
 
+  def render_not_found
+    render(:status => 404, :file => 'public/404.html')
+  end
+
+  def render_forbidden
+    render(:status => 403, :file => 'public/403.html')
+  end
+
+  def render_unprocessable
+    render(:status => 422, :file => 'public/422.html')
+  end
+
+
   # XXX duplicated in application_helper.rb
   def current_locale
     I18n.locale
