@@ -7,4 +7,12 @@ module AdventHelper
     datetime.to_time.localtime
   end
 
+  def events_by_month(events)
+    events.inject(ActiveSupport::OrderedHash.new) do |months, event|
+      month = localtime(event.dtstart).beginning_of_month
+      months[month] ||= []
+      months[month] << event
+      months
+    end
+  end
 end

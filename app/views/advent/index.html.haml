@@ -1,29 +1,40 @@
 - @title = "RubyKaigi#{params[:year]} Advent Calendar"
 -content_for :head do
   :css
-    ul#advent_events {
-      border: 2px solid #000;
+    #advent_events ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
-    #advent_events li {
+    #advent_events ul li {
       background: #CCC;
-      margin: 2px;
-      padding: 0.2em;
+      margin: 5px 0 5px 0;
+      padding: 0;
+      border: 2px solid #000;
+      white-space: nowrap;
+      background-color: rgba(255, 255, 255, 0.3);
     }
 
-    #advent_events li.todays_event {
-      background: #F00;
+    #advent_events ul li.todays_event .summary {
+      background-color: rgba(20, 20, 20, 0.8);
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    li div {
+      padding: 0.4em;
     }
 
     li .summary {
+      background-color: rgba(138, 135, 134, 0.3);
+      font-weight: bold;
+      border-bottom: 1px dotted #999;
     }
 
     li .time {
       font-size: 0.8em;
       margin: 0 0 0 1em;
+      padding-top: 0.8em;
     }
 
     li .location {
@@ -34,24 +45,33 @@
     li .description {
       font-size: 0.8em;
       margin: 0 0 0 1em;
+      padding-bottom: 0.8em;
     }
 
     #other_formats {
+      margin-top: -1em;
       text-align: right;
     }
 
 #content
   %h1
     RubyKaigi#{params[:year]} Advent Calendar
+
   #other_formats
     = link_to "iCal", advent_index_path(params[:year], params[:locale], :ics), :target => "_blank"
     = link_to "JSON", advent_index_path(params[:year], params[:locale], :json), :target => "_blank"
-  %ul#advent_events
-    - @events.each do |event|
-      %li{:class => todays_event?(event) ? "todays_event" : ""}
-        .summary= event.summary
-        .time #{localtime(event.dtstart).strftime("%Y/%m/%d %H:%M")} 〜 #{localtime(event.dtend).strftime("%Y/%m/%d %H:%M")}
-        .location!= auto_link event.location, :all, :target => "_blank"
-        .description!= auto_link event.description, :all, :target => "_blank"
+
+  #advent_events
+    - events_by_month(@events).each do |month, events|
+      %h2= month.strftime("%Y年%m月")
+      %ul
+        - events.each do |event|
+          %li{:class => todays_event?(event) ? "todays_event" : ""}
+            .summary= event.summary
+            .time #{l(localtime(event.dtstart), :format => :short)} 〜 #{l(localtime(event.dtend), :format => :short)}
+            .location!= auto_link event.location, :all, :target => "_blank"
+            .description!= auto_link event.description, :all, :target => "_blank"
+
+      != render :partial => "shared/2011/back_to_top"
 
 
