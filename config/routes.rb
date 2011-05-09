@@ -1,4 +1,9 @@
 Rubykaigi::Application.routes.draw do
+  match ':year/:locale/registration',
+    :to => 'registrations#index',
+    :as => 'registrations',
+    :constraints => {:year => /2\d{3}/, :locale => /en|ja/}
+
   match ":year/:locale/timetable",
     :to => 'events#timetable',
     :as => 'timetable',
@@ -47,10 +52,6 @@ Rubykaigi::Application.routes.draw do
   match 'dashboard',
     :to => 'dashboard#index',
     :as => 'dashboard'
-  match ':year/:locale/Registration',
-    :to => 'registrations#index',
-    :as => 'registrations',
-    :constraints => {:year => /2\d{3}/, :locale => /en|ja/}
 
   scope ':year', :to => 'pages#show', :defaults => {:page_name => "index"} do
     match ':locale(/:page_name)',
