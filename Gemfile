@@ -3,6 +3,7 @@ source :rubygems
 source 'http://gems.github.com'
 
 gem 'rails', '3.0.6', :require => nil
+gem 'jquery-rails', '>= 0.2.6'
 gem 'mysql'
 gem 'configatron'
 gem "ambethia-smtp-tls", :require => "smtp-tls"
