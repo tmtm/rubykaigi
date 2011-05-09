@@ -42,6 +42,14 @@ class ProductItem < ActiveRecord::Base
   def now_on_sale?
     ready_for_sale? && open_sale_at.past? && available?
   end
+
+  unless Rails.env == "production"
+    def force_now_on_sale_for_development!
+      ready_for_sale = true
+      open_sale_at = DateTime.now
+      save!
+    end
+  end
 end
 
 %w[rk10 rk10_party rk10_individual_sponsor rk11 rk11_party rk11_individual_sponsor].each do |_type|
