@@ -4,130 +4,28 @@
       %a{:href => "#"}
         %img{:alt => "", :height => "50", :src => "/2011/images/sponsorsHeaderRuby.png", :width => "300"}
     %ul
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsRuby.png", :width => "130"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsRuby.png", :width => "130"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsRuby.png", :width => "130"}
+      - RubyKaigi2011::RubySponsor.all.each do |sponsor|
+        %li
+          %a{:href => "#"}
+            %img{:alt => "", :src => "/2011/sponsors/sponsorsRuby.png", :width => "130"}
   %section#platinum
     %h2
-      %a{:href => "#"}
+      %a{:href => "/2011/#{current_locale}/sponsors_platinum"}
         %img{:alt => "", :height => "50", :src => "/2011/images/sponsorsHeaderPlatinum.png", :width => "300"}
     %ul
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsPlatinum.png", :width => "110"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsPlatinum.png", :width => "110"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsPlatinum.png", :width => "110"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsPlatinum.png", :width => "110"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsPlatinum.png", :width => "110"}
+      - RubyKaigi2011::PlatinumSponsor.all.each do |sponsor|
+        %li
+          %a{:href => "/2011/#{current_locale}/sponsors_platinum"}
+            %img{:alt => "", :src => "/2011/sponsors/sponsorsPlatinum.png", :width => "110"}
   %section#gold
     %h2
-      %a{:href => "#"}
+      %a{:href => "/2011/#{current_locale}/sponsors_gold"}
         %img{:alt => "", :height => "50", :src => "/2011/images/sponsorsHeaderGold.png", :width => "300"}
     %ul
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
+      - RubyKaigi2011::GoldSponsor.all.each do |sponsor|
+        %li
+          %a{:href => "/2011/#{current_locale}/sponsors_gold"}
+            %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
   %section#individual
     %h2
       %a{:href => "#"}
