@@ -7,9 +7,6 @@
         %a{:href => "/2011/#{current_locale}/for_attendees#programs"}
           #{t(:programs)}
       %li
-        %a{:href => "/2011/#{current_locale}/for_attendees#advent"}
-          #{t(:advent)}
-      %li
         %a{:href => "/2011/#{current_locale}/for_attendees#live"}
           #{t(:live)}
       %li
@@ -21,6 +18,9 @@
       %li
         %a{:href => "/2011/#{current_locale}/for_attendees#floor_guide"}
           #{t(:floor_guide)}
+      %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#advent"}
+          #{t(:advent)}
       %li
         %a{:href => "/2011/#{current_locale}/for_attendees#community"}
           #{t(:community)}
@@ -39,15 +39,6 @@
       %p.btn
         %a{:href => "/2011/#{current_locale}/programs"}
           %img{:alt => "Programs(プログラム)", :height => "40", :src => "/2011/images/indexBtnPrograms.png", :width => "320", :height => "40"}
-    != render :partial => 'shared/2011/back_to_top'
-    %article#advent
-      %h2
-        %a{:name => "advent"}
-          #{t(:advent)}
-      %p Ruby会議 2011の会期前に、RubyKaigi Advent Carendar というイベントを予定しています。詳しくは以下をご覧ください。
-      %p.btn
-        %a{:href => "/2011/#{current_locale}/advent"}
-          %img{:alt => "Advent(アドベント)", :height => "40", :src => "/2011/images/indexBtnAdvent.png", :width => "320", :height => "40"}
     != render :partial => 'shared/2011/back_to_top'
     %article#live
       %h2
@@ -86,6 +77,15 @@
         %a{:name => "floor_guide"}
           #{t(:floor_guide)}
       %p Coming soon...
+    != render :partial => 'shared/2011/back_to_top'
+    %article#advent
+      %h2
+        %a{:name => "advent"}
+          #{t(:advent)}
+      %p Ruby会議 2011の会期前に、RubyKaigi Advent Carendar というイベントを予定しています。詳しくは以下をご覧ください。
+      %p.btn
+        %a{:href => "/2011/#{current_locale}/advent"}
+          %img{:alt => "Advent(アドベント)", :height => "40", :src => "/2011/images/indexBtnAdvent.png", :width => "320", :height => "40"}
     != render :partial => 'shared/2011/back_to_top'
     %article
       %h2
