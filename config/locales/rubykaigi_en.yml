@@ -120,3 +120,6 @@ en:
   date_fri: '2011年7月16日(金)'
   date_sat: '2011年7月17日(土)'
   date_sun: '2011年7月18日(日)'
+  advent: 'Advent'
+  advent_about: 'About advent'
+  advent_calendar: 'Advent calendar'
