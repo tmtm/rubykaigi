@@ -36,9 +36,9 @@
         %a{:href => "/"}
           %img{:alt => "RubyKaigi2011(日本Ruby会議2011)", :height => "80", :src => "/2011/images/commonLogo.png", :width => "400"}
       %p#topBarLang
-        != link_to 'English', :locale => 'en'
+        != link_to 'English', :locale => 'en', :page_name => params[:page_name]
         |
-        != link_to '日本語', :locale => 'ja'
+        != link_to '日本語', :locale => 'ja', :page_name => params[:page_name]
     #global
       %nav
         %ul
