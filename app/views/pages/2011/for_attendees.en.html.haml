@@ -13,8 +13,8 @@
         %a{:href => "/2011/#{current_locale}/for_attendees#access"}
           #{t(:access)}
       %li
-        %a{:href => "/2011/#{current_locale}/for_attendees#stay"}
-          #{t(:stay)}
+        %a{:href => "/2011/#{current_locale}/for_attendees#hotel_and_travel"}
+          #{t(:hotel_and_travel)}
       %li
         %a{:href => "/2011/#{current_locale}/for_attendees#floor_guide"}
           #{t(:floor_guide)}
@@ -60,10 +60,10 @@
           #{t(:access)}
       %p Coming soon...
     != render :partial => 'shared/2011/back_to_top'
-    %article#stay
+    %article#hotel_and_travel
       %h2
-        %a{:name => "stay"}
-          #{t(:stay)}
+        %a{:name => "hotel_and_travel"}
+          #{t(:hotel_and_travel)}
       %p Coming soon...
     != render :partial => 'shared/2011/back_to_top'
     %article#floor_guide
