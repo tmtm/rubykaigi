@@ -1,0 +1,24 @@
+ryogoku_ruby_kaigi01:
+  name_en: 'Ryogoku RubyKaigi 01'
+  name_ja: '両国RubyKaigi01'
+  dtstart: '2011-05-11 10:00'
+  dtend: '2011-05-11 12:00'
+  description: "そんなKaigiはありません http://example.com/ryogoku_ruby_kaigi01"
+  location: "両国でやります"
+
+asakurarb:
+  name_en: 'Asakura.rb!'
+  name_ja: 'Asakura.rb!'
+  dtstart: '2011-05-10 10:00'
+  dtend: '2011-05-10 15:00'
+  description: "typo"
+  location: "E和"
+
+ryogoku_ruby_kaigi02:
+  name_en: 'Ryogoku RubyKaigi 02'
+  name_ja: '両国RubyKaigi02'
+  dtstart: '2011-06-15 10:00'
+  dtend: '2011-06-15 12:00'
+  description: "そんなKaigiはありません http://example.com/ryogoku_ruby_kaigi01"
+  location: "両国でやります"
+
