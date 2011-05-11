@@ -26,9 +26,9 @@
         %img{:alt => "RubyKaigi2011(日本Ruby会議2011)", :src => "/2011/images/commonLogo.png"}
     #topBarLang
       %p.linkMark
-        != link_to 'English', :locale => 'en'
+        != link_to 'English', :locale => 'en', :page_name => params[:page_name]
       %p.linkMark
-        != link_to '日本語', :locale => 'ja'
+        != link_to '日本語', :locale => 'ja', :page_name => params[:page_name]
     #topBar
       %nav
         - if authenticated?
