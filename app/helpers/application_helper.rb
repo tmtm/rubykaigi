@@ -34,9 +34,9 @@ module ApplicationHelper
 
   def rubykaigi_org_feed_url(locale)
     if locale.to_sym == :ja
-      "http://pipes.yahoo.com/pipes/pipe.run?_id=6eb380c6cbaddc688d8d2f4599ead952&_render=rss"
+      "http://pipes.yahoo.com/pipes/pipe.run?_id=d74f71afb8dfc68ec415b47f53ec52aa&_render=rss"
     else
-      "http://pipes.yahoo.com/pipes/pipe.run?_id=050be76c02065f46170d82dca2abfe84&_render=rss"
+      "http://pipes.yahoo.com/pipes/pipe.run?_id=494b7af263b25d814618521c7148107f&_render=rss"
     end
   end
 
