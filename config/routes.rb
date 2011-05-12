@@ -5,7 +5,7 @@ Rubykaigi::Application.routes.draw do
     :constraints => {:year => /2\d{3}/, :locale => /en|ja/}
 
   match ":year/:locale/timetable",
-    :to => 'events#timetable',
+    :to => 'timetable#index',
     :as => 'timetable',
     :constraints => {:year => /2\d{3}/, :locale => /en|ja/}
 

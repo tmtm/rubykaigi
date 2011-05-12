@@ -1,18 +1,19 @@
 --- 
-name: 
-  en: nari
-  ja: 
-affiliation: 
-  en: Network Applied Communication Laboratory
-  ja: "株式会社ネットワーク応用通信研究所"
-bio: 
-  en: |-
-    I'm GC lover and Ruby commiter. 
-    I'm good at developing GC with RubyKaigi Driven Development(RDD).
-    My fearful words are "Please revert".
-  ja: "GC好きのRubyコミッタ。\n\
-    RubyKaigi Driven Development(RDD)によるGC開発が得意。\n\
-    怖い言葉は「Revertしてください」"
+presenter:
+  name: 
+    en: nari
+    ja: 
+  affiliation: 
+    en: Network Applied Communication Laboratory
+    ja: "株式会社ネットワーク応用通信研究所"
+  bio: 
+    en: |-
+      I'm GC lover and Ruby commiter. 
+      I'm good at developing GC with RubyKaigi Driven Development(RDD).
+      My fearful words are "Please revert".
+    ja: "GC好きのRubyコミッタ。\n\
+      RubyKaigi Driven Development(RDD)によるGC開発が得意。\n\
+      怖い言葉は「Revertしてください」"
 title: 
   en: Parallel world of CRuby's GC
   ja: "CRubyGCの並列世界"

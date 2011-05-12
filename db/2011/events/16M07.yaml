@@ -1,13 +1,14 @@
 --- 
-name: 
-  en: Kosuke Tanabe
-  ja: "田辺浩介"
-affiliation: 
-  en: Project Next-L / Keio Univeristy
-  ja: "Project Next-L / 慶應義塾大学"
-bio: 
-  en: a member of "Project Next-L', a voluntary project to develop an open-source library management system / Doctoral student at Keio University
-  ja: "オープンソース図書館システム開発プロジェクト\"Project Next-L\"のメンバー / 慶應義塾大学大学院政策・メディア研究科博士課程"
+presenter:
+  name: 
+    en: Kosuke Tanabe
+    ja: "田辺浩介"
+  affiliation: 
+    en: Project Next-L / Keio Univeristy
+    ja: "Project Next-L / 慶應義塾大学"
+  bio: 
+    en: a member of "Project Next-L', a voluntary project to develop an open-source library management system / Doctoral student at Keio University
+    ja: "オープンソース図書館システム開発プロジェクト\"Project Next-L\"のメンバー / 慶應義塾大学大学院政策・メディア研究科博士課程"
 title: 
   en: How libraries in Japan use Ruby - "Next-L Enju" and "NDL Search"
   ja: "日本の図書館はどのようにRubyを使っているか - 「Next-L Enju」と「国会図書館サーチ」"

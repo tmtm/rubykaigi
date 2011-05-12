@@ -1,13 +1,14 @@
 --- 
-name: 
-  en: Shin-ichiro OGAWA
-  ja: "小川 伸一郎"
-affiliation: 
-  en: Tokyu.rb
-  ja: Tokyu.rb
-bio: 
-  en: Rails Developer, jpmobile contributer. Ph.D. Physics.
-  ja: "Railsアプリケーション開発者。jpmobileを開発しています。"
+presenter:
+  name: 
+    en: Shin-ichiro OGAWA
+    ja: "小川 伸一郎"
+  affiliation: 
+    en: Tokyu.rb
+    ja: Tokyu.rb
+  bio: 
+    en: Rails Developer, jpmobile contributer. Ph.D. Physics.
+    ja: "Railsアプリケーション開発者。jpmobileを開発しています。"
 title: 
   en: The best practice of building mobile website with jpmobile
   ja: "jpmobileのベストプラクティス"

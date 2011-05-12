@@ -1,15 +1,16 @@
 --- 
-name: 
-  en: Kouji Takao
-  ja: "高尾宏治"
-affiliation: 
-  en: "Network Applied Communication Laboratory Ltd. "
-  ja: "株式会社ネットワーク応用通信研究所"
-bio: 
-  en: |-
-    Kouji Takao is one of the commiter of MRI. 
-    He is maintener of Readline of Ruby.
-  ja: "MRIメンテナの一人。担当はReadlineライブラリです。"
+presenter:
+  name: 
+    en: Kouji Takao
+    ja: "高尾宏治"
+  affiliation: 
+    en: "Network Applied Communication Laboratory Ltd. "
+    ja: "株式会社ネットワーク応用通信研究所"
+  bio: 
+    en: |-
+      Kouji Takao is one of the commiter of MRI. 
+      He is maintener of Readline of Ruby.
+    ja: "MRIメンテナの一人。担当はReadlineライブラリです。"
 title: 
   en: MacRuby on Rails
   ja: "MacRuby on Rails ?MacRubyから見たcRuby?"

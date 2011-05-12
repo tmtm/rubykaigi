@@ -1,13 +1,14 @@
 --- 
-name: 
-  en: 
-  ja: "須藤功平"
-affiliation: 
-  en: ClearCode Inc. / COZMIXNG
-  ja: "株式会社クリアコード / COZMIXNG"
-bio: 
-  en: He is the president of ClearCode Inc. He is also a developer of RSS Parser, Rabbit, rcairo, Ruby-GNOME2,test-unit 2.x, rroonga, rurema-search, ActiveLdap, ActiveSambaLdap, Ruby and more free softwares.
-  ja: "株式会社クリアコード代表取締役。RSS ParserとRabbitとrcairoとRuby-GNOME2とtest-unit 2.xとrroongaとるりまサーチとActiveLdapとActiveSambaLdapとRubyなどのフリーソフトウェア開発者。"
+presenter:
+  name: 
+    en: 
+    ja: "須藤功平"
+  affiliation: 
+    en: ClearCode Inc. / COZMIXNG
+    ja: "株式会社クリアコード / COZMIXNG"
+  bio: 
+    en: He is the president of ClearCode Inc. He is also a developer of RSS Parser, Rabbit, rcairo, Ruby-GNOME2,test-unit 2.x, rroonga, rurema-search, ActiveLdap, ActiveSambaLdap, Ruby and more free softwares.
+    ja: "株式会社クリアコード代表取締役。RSS ParserとRabbitとrcairoとRuby-GNOME2とtest-unit 2.xとrroongaとるりまサーチとActiveLdapとActiveSambaLdapとRubyなどのフリーソフトウェア開発者。"
 title: 
   en: How to create a testing framework
   ja: "テスティングフレームワークの作り方"

@@ -1,13 +1,14 @@
 --- 
-name: 
-  en: TOSHIAKI Koshiba
-  ja: "こしば としあき"
-affiliation: 
-  en: "株式会社ECナビ|TokyoRubyKaigi05 Chairman"
-  ja: "株式会社ECナビ|東京Ruby会議05実行委員長"
-bio: 
-  en: "Software Engineer. like: Excel, Ruby, UML, DFD, Agile Development, Project Facilitation"
-  ja: "ソフトウェアエンジニア。好きなもの: Excel, Ruby, UML, DFD, アジャイルなソフトウェア開発を進める事, プロジェクトファシリテーション"
+presenter:
+  name: 
+    en: TOSHIAKI Koshiba
+    ja: "こしば としあき"
+  affiliation: 
+    en: "株式会社ECナビ|TokyoRubyKaigi05 Chairman"
+    ja: "株式会社ECナビ|東京Ruby会議05実行委員長"
+  bio: 
+    en: "Software Engineer. like: Excel, Ruby, UML, DFD, Agile Development, Project Facilitation"
+    ja: "ソフトウェアエンジニア。好きなもの: Excel, Ruby, UML, DFD, アジャイルなソフトウェア開発を進める事, プロジェクトファシリテーション"
 title: 
   en: Tokyo RubyKaigi KAIGI
   ja: "TokyoRubyKaigi会議"

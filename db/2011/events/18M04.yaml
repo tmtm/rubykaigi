@@ -1,13 +1,14 @@
 --- 
-name: 
-  en: okkez
-  ja: okkez
-affiliation: 
-  en: Rurema Project(Ruby Reference Manual Renewal Project)
-  ja: "るりまプロジェクト"
-bio: 
-  en: A Rubyist.
-  ja: "大阪出身の Rubyist です。今はさいたま市に住んでいます。"
+presenter:
+  name: 
+    en: okkez
+    ja: okkez
+  affiliation: 
+    en: Rurema Project(Ruby Reference Manual Renewal Project)
+    ja: "るりまプロジェクト"
+  bio: 
+    en: A Rubyist.
+    ja: "大阪出身の Rubyist です。今はさいたま市に住んでいます。"
 title: 
   en: Rurema Project 2011
   ja: "るりまプロジェクト2011夏"
