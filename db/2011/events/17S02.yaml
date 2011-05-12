@@ -1,13 +1,14 @@
 --- 
-name: 
-  en: Masatoshi SEKI
-  ja: "関将俊"
-affiliation: 
-  en: druby.org
-  ja: 
-bio: 
-  en: Programmer. Author of ERB, dRuby and Rinda.
-  ja: "プログラマ。ERB, dRuby, Rindaの作者。ポケモンWCS2010栃木県代表(カード部門)。"
+presenter:
+  name: 
+    en: Masatoshi SEKI
+    ja: "関将俊"
+  affiliation: 
+    en: druby.org
+    ja: 
+  bio: 
+    en: Programmer. Author of ERB, dRuby and Rinda.
+    ja: "プログラマ。ERB, dRuby, Rindaの作者。ポケモンWCS2010栃木県代表(カード部門)。"
 title: 
   en: "Drip: Persistent tuple space and stream."
   ja: "Drip: Persistent tuple space and stream."

@@ -1,13 +1,14 @@
 --- 
-name: 
-  en: Kyosuke MOROHASHI
-  ja: "諸橋 恭介"
-affiliation: 
-  en: Eiwa System Mangement, Inc.
-  ja: "(株)永和システムマネジメント"
-bio: 
-  en: Ruby/Rails Programmer. Love TDD/BDD.
-  ja: "SIerでRuby/Railsプログラマーをやっています。TDD(BDD)が好きです。"
+presenter:
+  name: 
+    en: Kyosuke MOROHASHI
+    ja: "諸橋 恭介"
+  affiliation: 
+    en: Eiwa System Mangement, Inc.
+    ja: "(株)永和システムマネジメント"
+  bio: 
+    en: Ruby/Rails Programmer. Love TDD/BDD.
+    ja: "SIerでRuby/Railsプログラマーをやっています。TDD(BDD)が好きです。"
 title: 
   en: 5 years know-how of RSpec driven Rails app. development.
   ja: 

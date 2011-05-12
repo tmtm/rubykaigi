@@ -1,15 +1,16 @@
 --- 
-name: 
-  en: Kiyoshi Ikehara
-  ja: "池原　潔"
-affiliation: 
-  en: Hitachi, Ltd.
-  ja: "（株）日立製作所"
-bio: 
-  en: |-
-    April 2003, System Development Laboratory, Hitachi Ltd.
-    April 2011, Yokohama Laboratory, Hitachi Ltd.
-  ja: "2003年4月（株）日立製作所入社、システム開発研究所配属。2011年4月より横浜研究所所属。"
+presenter:
+  name: 
+    en: Kiyoshi Ikehara
+    ja: "池原　潔"
+  affiliation: 
+    en: Hitachi, Ltd.
+    ja: "（株）日立製作所"
+  bio: 
+    en: |-
+      April 2003, System Development Laboratory, Hitachi Ltd.
+      April 2011, Yokohama Laboratory, Hitachi Ltd.
+    ja: "2003年4月（株）日立製作所入社、システム開発研究所配属。2011年4月より横浜研究所所属。"
 title: 
   en: Dynamic Component System and Memory Reduction of VM for Embedded Systems
   ja: "組込みシステムのための動的コンポーネント機構とVMの最適化"

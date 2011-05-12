@@ -10,8 +10,11 @@ module RubyKaigi2011
       @sub_events ||= Event.find_by_ids(sub_event_ids || [])
     end
 
-    def localize(locale, attr_name)
-      value = send(attr_name)
+    def localize(locale, *attr_names)
+      attrs = self.send(attr_names.shift)
+      value = attr_names.inject(attrs) do |context , attr_name|
+        context[attr_name.to_s]
+      end
       return value unless value.is_a?(Hash)
 
       locale_orders(locale).each do |l|

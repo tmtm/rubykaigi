@@ -1,13 +1,14 @@
 ---
-name:
-  en: Dave Thomas
-  ja:
-affiliation:
-  en: ""
-  ja: ""
-bio:
-  en: ""
-  ja: ""
+presenter:
+  name:
+    en: Dave Thomas
+    ja:
+  affiliation:
+    en: ""
+    ja: ""
+  bio:
+    en: ""
+    ja: ""
 title:
   en: "Keynote"
   ja:

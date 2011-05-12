@@ -1,13 +1,14 @@
 --- 
-name: 
-  en: Paul Elliott
-  ja: 
-affiliation: 
-  en: Hashrocket
-  ja: 
-bio: 
-  en: Ruby developer, Rails Consultant, Rocketeer @ Hashrocket, co-host of the Ruby5 podcast, maintainer of mongoid, and creator of fabrication.
-  ja: 
+presenter:
+  name: 
+    en: Paul Elliott
+    ja: 
+  affiliation: 
+    en: Hashrocket
+    ja: 
+  bio: 
+    en: Ruby developer, Rails Consultant, Rocketeer @ Hashrocket, co-host of the Ruby5 podcast, maintainer of mongoid, and creator of fabrication.
+    ja: 
 title: 
   en: Everyday Mongoid
   ja: 

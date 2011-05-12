@@ -1,16 +1,17 @@
 --- 
-name: 
-  en: Shay Friedman
-  ja: 
-affiliation: 
-  en: CodeValue
-  ja: 
-bio: 
-  en: |-
-    Shay Friedman is a Visual C#?IronRuby MVP and the author of IronRuby Unleashed and ASP.NET 4 Programmer's Reference.
-    
-    With more than 10 years of experience in the software industry, Friedman now works in CodeValue, a company he has co?founded, where he creates products for developers, consults and conducts courses around the world about dynamic languages and web development. You can visit his blog at http:??IronShay.com.
-  ja: 
+presenter:
+  name: 
+    en: Shay Friedman
+    ja: 
+  affiliation: 
+    en: CodeValue
+    ja: 
+  bio: 
+    en: |-
+      Shay Friedman is a Visual C#?IronRuby MVP and the author of IronRuby Unleashed and ASP.NET 4 Programmer's Reference.
+      
+      With more than 10 years of experience in the software industry, Friedman now works in CodeValue, a company he has co?founded, where he creates products for developers, consults and conducts courses around the world about dynamic languages and web development. You can visit his blog at http:??IronShay.com.
+    ja: 
 title: 
   en: Running Ruby on Windows Azure
   ja: 

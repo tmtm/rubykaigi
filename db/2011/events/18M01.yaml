@@ -1,13 +1,14 @@
 --- 
-name: 
-  en: Kakutani Shintaro
-  ja: "角谷 信太郎"
-affiliation: 
-  en: Nihon Ruby-no-kai(Japan Ruby Group), Eiwa System Management, Inc.
-  ja: "日本Rubyの会, (株)永和システムマネジメント"
-bio: 
-  en: "Kakutani Shintaro is a just another strong Ruby proponent, chief programmer in Eiwa System Management, Inc and board member of Nihon Ruby-no-kai(Japan Ruby Group). He is one of the organizers of RubyKaigi since 2006. He have translated some english technical book into japanese: \"Agile Samurai\"(supervisor), \"Agile Estimating and Planning\"(co-translator), \"Interface Oriented Design\"(supervisor), \"Practices of an Agile Developer\"(co-supervisor) and \"From Java to Ruby\"(translator)."
-  ja: "ただのRuby厨。(株)永和システムマネジメントサービスプロバイディング事業部チーフプログラマ。日本Rubyの会理事。RubyKaigiの運営を2006年からやってます。著書は『アジャイルな見積りと計画づくり』(共同翻訳)、『インターフェイス指向設計』(監訳)、『アジャイルプラクティス』(共同監訳)、『JavaからRubyへ』(翻訳)。最新刊の『The Agile Samurai』(監訳)が RubyKaigi 2011 の頃には出版されているはず。"
+presenter:
+  name: 
+    en: Kakutani Shintaro
+    ja: "角谷 信太郎"
+  affiliation: 
+    en: Nihon Ruby-no-kai(Japan Ruby Group), Eiwa System Management, Inc.
+    ja: "日本Rubyの会, (株)永和システムマネジメント"
+  bio: 
+    en: "Kakutani Shintaro is a just another strong Ruby proponent, chief programmer in Eiwa System Management, Inc and board member of Nihon Ruby-no-kai(Japan Ruby Group). He is one of the organizers of RubyKaigi since 2006. He have translated some english technical book into japanese: \"Agile Samurai\"(supervisor), \"Agile Estimating and Planning\"(co-translator), \"Interface Oriented Design\"(supervisor), \"Practices of an Agile Developer\"(co-supervisor) and \"From Java to Ruby\"(translator)."
+    ja: "ただのRuby厨。(株)永和システムマネジメントサービスプロバイディング事業部チーフプログラマ。日本Rubyの会理事。RubyKaigiの運営を2006年からやってます。著書は『アジャイルな見積りと計画づくり』(共同翻訳)、『インターフェイス指向設計』(監訳)、『アジャイルプラクティス』(共同監訳)、『JavaからRubyへ』(翻訳)。最新刊の『The Agile Samurai』(監訳)が RubyKaigi 2011 の頃には出版されているはず。"
 title: 
   en: The Timless Way Of RubyKaigi
   ja: "時を超えたRubyKaigiの道"

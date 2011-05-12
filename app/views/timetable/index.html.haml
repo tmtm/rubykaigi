@@ -35,5 +35,6 @@
                         %span
                           = event.localize(I18n.locale, :abstract)
                     %p
-                      = event.localize(I18n.locale, :name)
+                      - if event.presenter
+                        = event.localize(I18n.locale, :presenter, :name)
     != render :partial => 'shared/2011/back_to_top'
