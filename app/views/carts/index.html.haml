@@ -28,7 +28,7 @@
       %p
         != link_to 'Back to Registration', registrations_path(:year => RubyKaigi.latest_year, :locale => current_locale)
 
-    %p.procedd_to_checkout{:style => 'text-align:right'}
+    %p.btn
       != proceed_to_checkout_button
       -# <br />(When you are changed quantity, you need to update cart via "Update Cart" button before "Proceed To CheckOut")
   - else
