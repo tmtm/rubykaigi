@@ -14,7 +14,7 @@
           %th 時間
           - @rooms.each do |room|
             %th
-              = room.name[I18n.locale.to_s]
+              = room.localize(I18n.locale, :name)
         - @timetable.periods_on(date).each_cons(2) do |s, e|
           %tr
             %td
