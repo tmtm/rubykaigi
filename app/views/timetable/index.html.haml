@@ -19,15 +19,15 @@
           %tr
             %td
               = [s, e].map {|t| t.strftime("%H:%M") }.join(' - ')
-            - sessions = @rooms.map {|room| @timetable.room_timetable_at(date, room.room_id).session_at(s)}
-            - sessions.each_with_index do |session, index|
-              - next if index != 0 && sessions[index - 1] == session
-              - count = sessions.select {|ses| ses == session }.count
+            - rk_sessions = @rooms.map {|room| @timetable.room_timetable_at(date, room.room_id).session_at(s)}
+            - rk_sessions.each_with_index do |rk_session, index|
+              - next if index != 0 && rk_sessions[index - 1] == rk_session
+              - count = rk_sessions.select {|ses| ses == rk_session }.count
               %td{:colspan => count}
-                - if !session || session.empty?
+                - if !rk_session || rk_session.empty?
                   = '-'
                 - else
-                  - (events = session.events).each do |event|
+                  - (events = rk_session.events).each do |event|
                     %h3
                       %a.tip{:href => "/2011/#{current_locale}/programs_permalink"}
                         = event.localize(I18n.locale, :title)
