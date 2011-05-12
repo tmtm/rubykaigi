@@ -10,23 +10,12 @@ module RubyKaigi2011
       @sub_events ||= Event.find_by_ids(sub_event_ids || [])
     end
 
-    def title_on_locale
-      I18n.locale.to_s == 'ja' ? (title['ja'] || title['en']) : (title['en'] || title['ja'])
-    end
+    def localize(locale, attr_name)
+      value = send(attr_name)
+      return value unless value.is_a?(Hash)
 
-    def presenter_on_locale
-      if name
-        I18n.locale.to_s == 'ja' ? (name['ja'] || name['en']) : (name['en'] || name['ja'])
-      else
-        ""
-      end
-    end
-
-    def abstract_on_locale
-      if abstract
-        I18n.locale.to_s == 'ja' ? (abstract['ja'] || abstract['en']) : (abstract['en'] || abstract['ja'])
-      else
-        ""
+      locale_orders(locale).each do |l|
+        return value[l] if value[l]
       end
     end
 
@@ -35,6 +24,11 @@ module RubyKaigi2011
       hash.delete(:sub_event_ids)
       hash[:sub_events] = sub_events.map(&:to_hash) unless sub_events.empty?
       hash
+    end
+
+    private
+    def locale_orders(required_locale)
+      ([ required_locale.to_s ] << 'en').uniq
     end
   end
 end

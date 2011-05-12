@@ -30,10 +30,10 @@
                   - (events = session.events).each do |event|
                     %h3
                       %a.tip{:href => "/2011/#{current_locale}/programs_permalink"}
-                        = event.title_on_locale
+                        = event.localize(I18n.locale, :title)
                         %img.fright{:alt => "Permalink", :src => "/2011/images/commonBtnPermalink.png"}
                         %span
-                          = event.abstract_on_locale
+                          = event.localize(I18n.locale, :abstract)
                     %p
-                      = event.presenter_on_locale
+                      = event.localize(I18n.locale, :name)
     != render :partial => 'shared/2011/back_to_top'
