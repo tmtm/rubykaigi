@@ -19,7 +19,7 @@ module RubyKaigi2011
     end
 
     def locale_orders(locale)
-      [locale, default_locale].uniq
+      [locale.to_s, default_locale].uniq
     end
   end
 end
