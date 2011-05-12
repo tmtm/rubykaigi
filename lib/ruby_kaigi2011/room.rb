@@ -6,7 +6,7 @@ module RubyKaigi2011
     extend YamlLoader
     include Localizer
 
-    base_dir File.join(File.dirname(__FILE__), "../../db/2011/rooms/")
+    base_dir Rails.root.join("db/2011/rooms/")
 
     def self.all
       super.sort_by(&:order)

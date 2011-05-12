@@ -6,7 +6,7 @@ module RubyKaigi2011
     extend YamlLoader
     include Localizer
 
-    base_dir File.join(File.dirname(__FILE__), "../../db/2011/events/")
+    base_dir Rails.root.join("db/2011/events/")
 
     def sub_events
       @sub_events ||= Event.find_by_ids(sub_event_ids || [])
