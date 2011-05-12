@@ -301,8 +301,10 @@ a:hover.tip {
     clear: both;
     li {
       margin-right: 8px; } }
-  #individual li {
-    margin-right: 4px; } }
+  #individual {
+    clear: both; 
+    li {
+    margin-right: 4px; } } }
 
 /*--- sponsors_ruby ----------------------------------------------*/
 
