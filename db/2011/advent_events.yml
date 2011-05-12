@@ -1,24 +1,24 @@
-ryogoku_ruby_kaigi01:
-  name_en: 'Ryogoku RubyKaigi 01'
-  name_ja: '両国RubyKaigi01'
-  dtstart: '2011-05-11 10:00'
-  dtend: '2011-05-11 12:00'
-  description: "そんなKaigiはありません http://example.com/ryogoku_ruby_kaigi01"
-  location: "両国でやります"
+asakusarb:
+  name_en: 'Asakusa.rb'
+  name_ja: '浅草.rb'
+  dtstart: '2011-07-12 00:00'
+  dtend: '2011-07-19 23:59'
+  description: "http://qwik.jp/asakusarb/"
+  location: "Asakusa"
 
-asakurarb:
-  name_en: 'Asakura.rb!'
-  name_ja: 'Asakura.rb!'
-  dtstart: '2011-05-10 10:00'
-  dtend: '2011-05-10 15:00'
-  description: "typo"
-  location: "E和"
+tech_lion02:
+  name_en: 'Tech LION vol.2'
+  name_ja: 'Tech LION vol.2'
+  dtstart: '2011-06-17 19:30'
+  dtend: '2011-06-17 22:00'
+  description: "http://www.usptomonokai.jp/techlion"
+  location: "Naked Loft (Tokyo, Japan)"
 
-ryogoku_ruby_kaigi02:
-  name_en: 'Ryogoku RubyKaigi 02'
-  name_ja: '両国RubyKaigi02'
-  dtstart: '2011-06-15 10:00'
-  dtend: '2011-06-15 12:00'
-  description: "そんなKaigiはありません http://example.com/ryogoku_ruby_kaigi01"
-  location: "両国でやります"
+rubykaigi2011:
+  name_en: 'RubyKaigi2011'
+  name_ja: '日本Ruby会議2011'
+  dtstart: '2011-07-16 00:00'
+  dtend: '2011-07-19 23:59'
+  description: "http://rubykaigi.org/2011"
+  location: "Nerima Culture Center (Tokyo, Japan)"
 
