@@ -1,0 +1,33 @@
+#content
+  %h1
+    #{t(:programs)}
+  %article
+    %h2
+      %time{:datetime => @session.start.strftime("%Y-%m-%d") }
+        = l @session.start.to_date, :format => :long
+        = [:start, :end].map{|t| @session.send(t).strftime("%H:%M") }.join("-")
+        (#{@room.localize(I18n.locale, :name)})
+    #abstract
+      %h3
+        #{t(:abstract)}
+      %p
+        = @event.localize(I18n.locale, :abstract)
+    - if @event.presenter
+      #speaker
+        %h3
+          #{t(:speaker)}
+        %div.avatar
+          %a{:href => "#", :target => "_blank"}
+            %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+          %h4
+            = @event.localize(I18n.locale, :presenter, :name)
+          %p
+            = @event.localize(I18n.locale, :presenter, :bio)
+          %p
+            %a.linkMark{:href => "#", :target => "_blank"}
+              http://www.example.com
+    %h3.cboth
+      #{t(:presentation_material)}
+    %p -
+  != render :partial => 'shared/2011/back_to_top'
+

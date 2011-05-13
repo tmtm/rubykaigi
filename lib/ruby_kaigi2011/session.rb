@@ -15,6 +15,10 @@ module RubyKaigi2011
       events.empty?
     end
 
+    def contains?(event)
+      !!events.detect {|e| e._id == event._id }
+    end
+
     def to_hash
       hash = @table.dup
       hash.delete(:event_ids)

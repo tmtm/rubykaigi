@@ -6,6 +6,10 @@ module RubyKaigi2011
       @room_timetables ||= RoomTimetable.all
     end
 
+    def room_timetable_contains_event(event)
+      room_timetables.detect {|r| r.session_contains_event(event) }
+    end
+
     def days
       room_timetables.map {|r| r.date }.uniq
     end

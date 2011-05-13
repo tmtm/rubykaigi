@@ -19,6 +19,10 @@ module RubyKaigi2011
       @sessions ||= timeslots.map {|t| Session.new(t) }
     end
 
+    def session_contains_event(event)
+      sessions.detect {|s| s.contains?(event) }
+    end
+
     def periods
       sessions.map {|s| [ s.start, s.end ] }.flatten.uniq
     end

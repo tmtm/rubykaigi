@@ -4,12 +4,8 @@ Rubykaigi::Application.routes.draw do
       :to => 'registrations#index',
       :as => 'registrations'
 
-    match 'timetable',
-      :to => 'timetable#index',
-      :as => 'timetable'
-
-    resources :events,
-      :only => %w(index show)
+    match 'timetable' => 'timetable#index'
+    match 'events/:id' => 'timetable#event', :as => 'event'
   end
 
   match 'signin', :to => 'sessions#new', :as => 'signin'
