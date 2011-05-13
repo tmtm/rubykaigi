@@ -4,8 +4,13 @@ module RubyKaigi2011
   class Sponsor < OpenStruct
     extend YamlLoader
     include Localizer
+
     def self.yaml_path
       Rails.root.join("db/2011/sponsors", name.gsub(/(RubyKaigi2011::|Sponsor)/, '').downcase)
+    end
+
+    def self.inherited(base)
+      base.base_dir base.yaml_path
     end
   end
 end
