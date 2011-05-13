@@ -1,7 +1,7 @@
 - @title = "RubyKaigi#{params[:year]} Advent Calendar"
--content_for :head do
-  %link{:rel => "alternate", :type => "application/xml", :title => @title, :href => advent_index_path(params[:year], params[:locale], :rdf)}
+- content_for :head do
   %link{:href => "/2011/stylesheets/advent.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+  %link{:rel => "alternate", :type => "application/xml", :title => @title, :href => advent_index_path(params[:year], params[:locale], :rdf)}
 
 #content
   %h1
@@ -13,11 +13,11 @@
     = link_to "RSS",  advent_index_path(params[:year], params[:locale], :rdf), :target => "_blank"
 
   #advent_events
-    - events_by_month(AdventEvent.all).each do |month, events|
+    - AdventEvent.by_month.each do |month, events|
       %h2= l month, :format => :month
       %ul
         - events.each do |event|
-          %li{:id => event.id, :class => todays_event?(event) ? "todays_event" : ""}
+          %li{:id => event.id, :class => event.today? ? "todays_event" : ""}
             .summary= link_to event.name, "##{event.id}"
             .time #{l(event.dtstart, :format => :short)} 〜 #{l(event.dtend, :format => :short)}
             .location!= auto_link event.location, :all, :target => "_blank"
