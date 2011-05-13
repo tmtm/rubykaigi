@@ -5,12 +5,12 @@
   - RubyKaigi2011::GoldSponsor.all.each do |sponsor|
     %article
       %h2
-        = sponsor.name['ja']
+        = sponsor.localize(I18n.locale, :name)
       %img.logo{:alt => "Example Company, Ltd.", :src => "/2011/sponsors/sponsorsGold.png"}
       %div
         %div
           %p
-            = sponsor.pr['ja']
+            = sponsor.localize(I18n.locale, :pr)
           %p.right
             %a.linkMark{:href => "#{sponsor.url}", :target => "_blank"}
               = sponsor.url
