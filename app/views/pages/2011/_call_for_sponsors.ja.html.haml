@@ -3,13 +3,22 @@
 %p
   %a.linkMark{ :href => "/2011/rk11prospectus.pdf", :target => "_blank"}
     #{t('rubykaigi2011')} #{t('sponsor_prospectus')}(PDF)
+%h3 個人スポンサーについて
+%ul.listMark
+  %li xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  %li xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  %li xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  %li xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  %li xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+  %li xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 %section.registration
   %h3 企業様のご申請
   %p.btn
     %a{:href => "http://www.atdot.net/~ko1/file/rubykaigi/2011/sponsor/upload", :target => "_blank"}
-      %img{:alt => "#{t(:sponsors_registration_corporate)}", :src => "/2011/images/sponsorsBtnForCorporate.png"}
+      %img{:alt => "#{t(:sponsors_registration_corporate)}", :src => "/2011/images/sponsorsBtnBecomeASponsor.png"}
 %section.registration
   %h3 個人様のご申請
   %p.btn
-    %img{:alt => "#{t(:sponsors_registration_individual)}", :src => "/2011/images/commonBtnComingSoon.png"}
+    %a{:href => "/2011/#{current_locale}/registration#individual_sponsor"}
+      %img{:alt => "#{t(:sponsors_registration_individual)}", :src => "/2011/images/sponsorsBtnBecomeAIndividualSponsor.png"}
 %p.cboth 日本最大規模のRubyのカンファレンスを一緒につくっていただける皆さまからの応募を心よりお待ちしております。
