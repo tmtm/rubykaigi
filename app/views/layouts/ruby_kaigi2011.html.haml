@@ -116,6 +116,12 @@
               %a{:href => "/2011/#{current_locale}/coming_soon"}
                 #{t(:floor_guide)}(PDF)
             %li
+              %a{:href => "/2011/#{current_locale}/advent"}
+                #{t(:advent)}
+            %li
+              %a{:href => "/2011/#{current_locale}/for_attendees#community"}
+                #{t(:community)}
+            %li
               %a{:href => "/2011/#{current_locale}/for_attendees#faq"}
                 FAQ
             %li
@@ -172,6 +178,8 @@
           %p.icon
             %a{:href => "http://twitter.com/rubykaigi"}
               %img{:alt => "Twitter", :src => "/2011/images/commonTwitter.png"}
+            %a{:href => "http://www.facebook.com/pages/RubyKaigi/204401496251843"}
+              %img{:alt => "facebook", :src => "/2011/images/commonFacebook.png"}
             != render :partial => 'shared/2011/rss'
           %address
             \&copy; 2006-2011

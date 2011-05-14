@@ -19,6 +19,12 @@
         %a{:href => "/2011/#{current_locale}/for_attendees#floor_guide"}
           #{t(:floor_guide)}
       %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#advent"}
+          #{t(:advent)}
+      %li
+        %a{:href => "/2011/#{current_locale}/for_attendees#community"}
+          #{t(:community)}
+      %li
         %a{:href => "/2011/#{current_locale}/for_attendees#faq"}
           FAQ
       %li
@@ -71,6 +77,43 @@
         %a{:name => "floor_guide"}
           #{t(:floor_guide)}
       %p Coming soon...
+    != render :partial => 'shared/2011/back_to_top'
+    %article#advent
+      %h2
+        %a{:name => "advent"}
+          #{t(:advent)}
+      %p Ruby会議 2011の会期前に、RubyKaigi Advent Carendar というイベントを予定しています。詳しくは以下をご覧ください。
+      %p.btn
+        %a{:href => "/2011/#{current_locale}/advent"}
+          %img{:alt => "Advent(アドベント)", :height => "40", :src => "/2011/images/indexBtnAdvent.png", :width => "320", :height => "40"}
+    != render :partial => 'shared/2011/back_to_top'
+    %article
+      %h2
+        %a{:name => "community"}
+          #{t(:community)}
+      %h3 海外から参加される方へ
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+      %h3 メーリングリストへの登録方法
+      %p qwikを用いておりますので、下記要領でメールを送信してください。
+      %div.mailPlease
+        %ul.listMark
+          %li To： rubykaigi2011press-ja _at_ qwik.atdot.net
+          %li Cc： ksb.4038.nullpointe.r+rubykaigi2011press_ja _at_ gmail.com
+          %li 件名： Join the list
+          %li
+            本文：
+            %br
+            RubyKaigi2011のメディア・報道社向けメーリングリストに参加します。
+            %br
+            所属： (ご自身の所属組織）
+            %br
+            お名前： (ご自身のお名前）
+      %p ※ メールアドレス中の_at_は@に読み替えてください。
+      %h3 facebookファンページのご案内
+      %p facebookのファンページを用意しました。以下よりご覧いただけます。 
+      %p.btn
+        %a{:href => "http://www.facebook.com/pages/RubyKaigi/204401496251843"}
+          %img{:alt => "Check us out on facebook(facebookをチェック)", :height => "40", :src => "/2011/images/forAttendeesBtnFacebook.png", :width => "320", :height => "40"}
     != render :partial => 'shared/2011/back_to_top'
     %article#faq
       %h2
