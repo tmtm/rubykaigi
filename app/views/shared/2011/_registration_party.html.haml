@@ -1,0 +1,16 @@
+%article#party
+  %h2
+    %a{:name => "party"}
+      #{t(:official_party)}
+  %p 懇親会を下記の日程で開催します。本編とともに是非お楽しみください。 
+  %ul.listMark
+    %li When: July 17th(Sun) 20:00 - 22:00 (Door Open: 19:30)
+    %li Venue: Ikebukuro Sunshine city 28F SUNSHINE CRUISE CRUISE
+    %li Capacity: ~450 people
+    %li
+      Price: <strong>#{number_with_delimiter(@party.unit_price)} JPY</strong>
+      != stock_notification(@party)
+  != render :partial => 'add_to_cart', :locals => {:item => @party }
+  %h3 #{t('student_discount_program')}
+  %ul.listMark
+    %li Student discounts <strong>are not available</strong> for the Conference Party.

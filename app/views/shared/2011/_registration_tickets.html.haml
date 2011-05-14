@@ -1,0 +1,29 @@
+%article#tickets
+  %h2
+    %a{:name => "tickets"}
+      #{t(:tickets)}
+  %h3 3days pass
+  %ul.listMark
+    %li
+      When: July 16th(Sat) - 18th(Mon), 2011
+    %li
+      Venue: Nerima Culture Center(Tokyo, Japan)
+    %li
+      Capacity: ~1,000 people
+    %li
+      Price: <strong>#{number_with_delimiter(@kaigi.unit_price)} JPY</strong>
+      != stock_notification(@kaigi)
+  != render :partial => 'add_to_cart', :locals => {:item => @kaigi }
+  %h3
+    #{t('student_discount_program_detail')}:
+    (
+    != link_to 'English', 'http://rubykaigi.tdiary.net/20100614.html#p02'
+    ),(
+    != link_to '日本語', 'http://rubykaigi.tdiary.net/20100614.html#p01'
+    )
+  %ul.listMark
+    %li
+      != link_to_if(true, t('student_discount_program_entry_form'), 'https://spreadsheets.google.com/viewform?formkey=dEpJSldhXzV6Skp6d0RxQVdWQS1Odnc6MQ')
+      -# (#{t("already_at_capacity")})
+    - unless @kaigi.now_on_sale?
+      (In Preparation)

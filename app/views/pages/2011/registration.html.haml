@@ -22,72 +22,12 @@
       - else
         != link_to 'Show Your Cart', carts_path
 
-    %article#tickets
-      %h2
-        %a{:name => "tickets"}
-          #{t(:tickets)}
-      %h3 3days pass
-      %ul.listMark
-        %li
-          When: July 16th(Sat) - 18th(Mon), 2011
-        %li
-          Venue: Nerima Culture Center(Tokyo, Japan)
-        %li
-          Capacity: ~1,000 people
-        %li
-          Price: <strong>#{number_with_delimiter(@kaigi.unit_price)} JPY</strong>
-          != stock_notification(@kaigi)
-      != render :partial => 'add_to_cart', :locals => {:item => @kaigi }
-      %h3
-        #{t('student_discount_program_detail')}:
-        (
-        != link_to 'English', 'http://rubykaigi.tdiary.net/20100614.html#p02'
-        ),(
-        != link_to '日本語', 'http://rubykaigi.tdiary.net/20100614.html#p01'
-        )
-      %ul.listMark
-        %li
-          != link_to_if(true, t('student_discount_program_entry_form'), 'https://spreadsheets.google.com/viewform?formkey=dEpJSldhXzV6Skp6d0RxQVdWQS1Odnc6MQ')
-          -# (#{t("already_at_capacity")})
-        - unless @kaigi.now_on_sale?
-          (In Preparation)
-      != render :partial => 'shared/2011/back_to_top'
-    %article#party
-      %h2
-        %a{:name => "party"}
-          #{t(:official_party)}
-      %p 懇親会を下記の日程で開催します。本編とともに是非お楽しみください。
-      %ul.listMark
-        %li When: July 17th(Sun) 20:00 - 22:00 (Door Open: 19:30)
-        %li Venue: Ikebukuro Sunshine city 28F SUNSHINE CRUISE CRUISE
-        %li Capacity: ~450 people
-        %li
-          Price: <strong>#{number_with_delimiter(@party.unit_price)} JPY</strong>
-          != stock_notification(@party)
-      != render :partial => 'add_to_cart', :locals => {:item => @party }
-      %h3 #{t('student_discount_program')}
-      %ul.listMark
-        %li Student discounts <strong>are not available</strong> for the Conference Party.
-      != render :partial => 'shared/2011/back_to_top'
-    %article#individual_sponsor
-      %h2
-        %a{:name => "individual_sponsor"}
-          #{t('product_item.rk11_individual_sponsor')}
-      %ul.listMark
-        %li
-          #{t('individual_sponsor_detail')}:
-          (
-          != link_to 'English', 'http://rubykaigi.tdiary.net/20100524.html#p02'
-          ),(
-          != link_to '日本語', 'http://rubykaigi.tdiary.net/20100507.html#p02'
-          )
-        %li
-          Price:
-          <strong>#{number_with_delimiter(@individual_sponsor.unit_price)} JPY + #{t('additional_amount_label')}</strong>
-          != stock_notification(@individual_sponsor)
-      != render :partial => 'add_to_cart', :locals => {:item => @individual_sponsor }
-      != render :partial => 'shared/2011/back_to_top'
-
+    != render :partial => 'shared/2011/registration_tickets'
+    != render :partial => 'shared/2011/back_to_top'
+    != render :partial => 'shared/2011/registration_party'
+    != render :partial => 'shared/2011/back_to_top'
+    != render :partial => 'shared/2011/registration_individual_sponsors'
+    != render :partial => 'shared/2011/back_to_top'
     %article#staffs
       %h2
         %a{:name => "staffs"}

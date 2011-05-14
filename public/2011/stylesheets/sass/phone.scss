@@ -1,0 +1,172 @@
+@import "mixin";
+
+.btn a { 
+  display: block;
+  background: #fff; 
+  width: 280px;
+  margin-bottom: 2px;
+  &:hover img, &:active img {
+    opacity:0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha( opacity=80 )"; } }
+
+#content {
+  clear: both;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 0;
+  display: table;
+  background: url(/2011/images/commonHeaderBg.png) top center no-repeat;
+  article {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.3); } }
+
+h1 {
+  clear: both;
+  border: 2px solid #160f0d;
+  padding: 10px;
+  margin-bottom: 3px;
+  font-size: 120%;}
+
+h2 {
+  font-size: 110%;
+  padding: 3px; }
+
+img {
+  max-width: 280px;
+  display: block;
+  margin: 0 auto; }
+
+.ui-page,
+.ui-body-c,
+.ui-page-active {
+  a {
+    text-shadow: none;
+    font-weight: normal;
+    &:link, &:visited, &:active {
+      color: #5b5755; }
+    &:hover {
+      color: #8a8786; }
+    &:link img, &:visited img, &:hover img, &:active img {
+      text-decoration: none;
+      border: none; } } }
+
+/*--- other ----------------------------------------------*/
+
+.ui-body-c .ui-link {
+  font-weight: normal;
+  text-shadow: none;
+  color: #160f0d; }
+
+.ui-btn-active {
+  border:1px solid #000;
+  background:#444;
+  font-weight:bold;
+  color:#fff;
+  cursor:pointer;
+  text-shadow:0 -1px 1px #000;
+  text-decoration:none;
+  @include gradient_top_bottom("#666", "#444"); }
+
+#phone_index  h1,
+#phone_coming_soon h1 {
+  border: none;
+  padding: 0;
+  font-size: 120%; } 
+
+/*--- header ----------------------------------------------*/
+
+#topBarLogo {
+  img {
+    width: 200px; }
+  float: left; }
+
+#topBarLang {
+  width: 80px;
+  float: right;
+  padding-top: 5px; }
+
+#topBar {
+  clear: both;
+  nav {
+    color: #f00;
+    background: #160f0d; 
+    ul {
+      padding: 0; }
+    li {
+      font-size: 90%;
+      display: inline;
+      line-height: 200%; } 
+    .ui-link {
+      color: #fff;  } } }
+
+/*--- footer ----------------------------------------------*/
+
+footer {
+  clear: both;
+  background: url(/2011/images/commonFooterBg.png) top center repeat-x;
+  text-shadow: none;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 70%;
+  nav {
+    li {
+      @include mark("footerLinkMarkS.png");
+      color: #160f0d;
+      margin-left: 5px; } }
+  p,
+  address,
+  .icon {
+    padding-left: 5px;
+    color: #160f0d; }
+  .icon a img {
+    float: left; }
+  address {
+    text-align: center;
+    clear: both; }
+  a, .ui-link {
+    &:link, &:visited, &:active {
+      color: #160f0d;
+      text-decoration: none; }
+    &:hover {
+      color: #5b5c55;
+      text-decoration: underline;
+      img {
+        text-decoration: none; } } } }
+
+#phoneFooter {
+  a {
+    display: block; }
+  .ui-btn-text {
+    color: #fff; } }
+
+/*--- phone_index ----------------------------------------------*/
+
+#phone_index {
+  #news {
+    ul {
+      margin: 5px 0;
+      padding: 0 0 10px 0; }
+    li {
+      @include mark("indexNewsMark.png"); } 
+    time {
+      display: block;
+      font-size: 90%; } } }
+
+/*--- phone_registration ----------------------------------------------*/
+
+#phone_registration {
+  #signin {
+    .btn  a{
+      margin: 0 auto;
+      width: 100px; } } }
+
+/*--- coming_soon ----------------------------------------------*/
+
+#coming_soon h1 {
+  width: 280px;
+  margin: 0 auto;
+  background: none; }

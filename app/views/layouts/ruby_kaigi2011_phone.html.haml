@@ -1,0 +1,98 @@
+!!!
+%html{:lang => "ja"}
+  %head
+    != yield :meta_top
+    %meta{ "http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
+    != csrf_meta_tag
+    %title 日本Ruby会議2011, 7月16日〜18日
+    %link{:href => "/2011/stylesheets/jquery.mobile-1.0a3.min.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+    %link{ :rel => "alternate", :type => "application/rss+xml", :title => "RubyKaigi2011(#{t(current_locale)})", :href => rubykaigi_org_feed_url(current_locale) }
+    %script{:src => "/2011/javascripts/jquery-1.5.1.min.js", :type => "text/javascript"}
+    :javascript
+      $(document).bind("mobileinit", function(){
+        $.extend( $.mobile , {
+        ajaxLinksEnabled: false,
+        ajaxFormsEnabled: false
+        });
+      });
+    %script{:src => "/2011/javascripts/jquery.mobile-1.0a3.min.js", :type => "text/javascript"}
+    %link{:href => "/2011/stylesheets/common.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "/2011/stylesheets/phone.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "/2011/favicon.ico", :rel => "shortcut icon"}/
+    != yield :head
+  %body{:id => params[:page_name], "data-role" => "page"}
+    #topBarLogo
+      %a{:href => "/2011/#{current_locale}/phone_index"}
+        %img{:alt => "RubyKaigi2011(日本Ruby会議2011)", :src => "/2011/images/commonLogo.png"}
+    #topBarLang
+      %p.linkMark
+        != link_to 'English', :locale => 'en', :page_name => params[:page_name]
+      %p.linkMark
+        != link_to '日本語', :locale => 'ja', :page_name => params[:page_name]
+    #topBar
+      %nav
+        - if authenticated?
+          %p Welcome, #{user.username}
+          %ul
+            %li!= link_to 'Dashboard', dashboard_path
+            %li!= link_to 'Account Settings', edit_account_path
+            %li!= link_to 'Sign Out', signout_path, :method => :delete
+          %img.icon{:alt => "#{user.username}", :title => "Avatar Icon Setting Feature is coming soon :<", :src => "/2011/images/sponsorsIndividual.png"}
+        - else
+          %ul
+            %li
+              %a{:href => "#"}
+                #{t(:signin)}
+        %a{:name => "top"}
+    != yield
+    %footer
+      %nav
+        %div
+          %ul
+            %li
+              %a{:href => "http://rubykaigi.tdiary.net/", :target => "_blank"}
+                #{t(:rubykaigi_nikki)}
+            %li
+              %a{:href => "/2011/#{current_locale}/phone_registration"}
+                #{t(:registration)}
+            %li
+              %a{:href => "/2011/#{current_locale}/phone_programs"}
+                #{t(:programs)}
+            %li
+              #{t(:hall_main)}:
+              %a{:href => "/2011/#{current_locale}/phone_coming_soon"} Ustream
+              |
+              %a{:href => "/2011/#{current_locale}/phone_coming_soon"} IRC
+            %li
+              #{t(:hall_sub)}:
+              %a{:href => "/2011/#{current_locale}/phone_coming_soon"} Ustream
+              |
+              %a{:href => "/2011/#{current_locale}/phone_coming_soon"} IRC
+            %li
+              %a{:href => "/2011/#{current_locale}/phone_coming_soon"}
+                #{t(:access)}
+            %li
+              %a{:href => "/2011/#{current_locale}/phone_coming_soon"}
+                #{t(:hotel_and_travel)}
+            %li
+              %a{:href => "/2011/#{current_locale}/phone_coming_soon", :target => "_blank"}
+                #{t(:floor_guide)}(PDF)
+            %li
+              %a{:href => "/2011/#{current_locale}/phone_coming_soon"}
+                FAQ
+            %li
+              %a{:href => "/2011/#{current_locale}/phone_coming_soon"}
+                Download(wallpaper) 
+          %p
+            【#{t(:inquiry)}】 2011_at_rubykaigi_dot_org
+          %p.icon
+            %a{:href => "http://twitter.com/rubykaigi"}
+              %img{:alt => "Twitter", :src => "/2011/images/commonTwitter.png"}
+            != render :partial => 'shared/2011/rss'
+          %address
+            \&copy; 2006-2011
+            %a{:href => "/2011/#{current_locale}/phone_index"} rubykaigi.org
+#phoneFooter{"data-role" => "footer", "data-position" => "fixed"}
+  %div{"data-role" => "navbar", "data-theme" => "a"}
+    %a{:href => "/2011/#{current_locale}/phone_index", "data-icon" => "home"}
+      Home
