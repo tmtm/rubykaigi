@@ -32,8 +32,8 @@
                       %a.tip{:href => event_path(:id => event._id)}
                         = event.localize(I18n.locale, :title)
                         %img.fright{:alt => "Permalink", :src => "/2011/images/commonBtnPermalink.png"}
-                        %span
-                          = event.localize(I18n.locale, :abstract)
+                        - if abstract = event.localize(I18n.locale, :abstract)
+                          %span= abstract
                     %p
                       - if event.presenter
                         = event.localize(I18n.locale, :presenter, :name)
