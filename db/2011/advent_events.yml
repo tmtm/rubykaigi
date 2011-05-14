@@ -5,6 +5,7 @@ asakusarb:
   dtend: '2011-07-19 23:59'
   description: "http://qwik.jp/asakusarb/"
   location: "Asakusa"
+  pub_date: '2011-05-10'
 
 tech_lion02:
   name_en: 'Tech LION vol.2'
@@ -13,6 +14,7 @@ tech_lion02:
   dtend: '2011-06-17 22:00'
   description: "http://www.usptomonokai.jp/techlion"
   location: "Naked Loft (Tokyo, Japan)"
+  pub_date: '2011-05-11'
 
 rubykaigi2011:
   name_en: 'RubyKaigi2011'
@@ -21,4 +23,5 @@ rubykaigi2011:
   dtend: '2011-07-19 23:59'
   description: "http://rubykaigi.org/2011"
   location: "Nerima Culture Center (Tokyo, Japan)"
+  pub_date: '2011-05-01'
 

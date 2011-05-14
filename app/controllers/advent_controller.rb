@@ -50,6 +50,7 @@ class AdventController < LocaleBaseController
         xml.channel :'rdf:about' => page_url do
           xml.title "RubyKaigi AdventCalender #{params[:year]}"
           xml.link page_url
+          xml.dc:date, AdventEvent.all.first.pub_date
           xml.description "RubyKaigi AdventCalender #{params[:year]}"
           xml.items do
             xml.rdf:Seq do
@@ -62,7 +63,7 @@ class AdventController < LocaleBaseController
           xml.item :about => page_with_link_url = page_url + "##{e.id}" do
             xml.title e.name
             xml.description e.description
-            xml.pubDate Time.now
+            xml.dc:date, e.pub_date
             xml.link page_with_link_url
             xml.foaf:topic do
               xml.ical:Vevent do
