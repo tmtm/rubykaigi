@@ -1,0 +1,11 @@
+#content
+  %h1
+    #{t(:registration)}
+  %p{:style=>"margin-bottom:1em"}
+    - unless authenticated?
+      != render :partial => 'need_signin'
+    - else
+      != link_to 'Show Your Cart', carts_path
+  != render :partial => 'shared/2011/registration_tickets'
+  != render :partial => 'shared/2011/registration_party'
+  != render :partial => 'shared/2011/registration_individual_sponsors'

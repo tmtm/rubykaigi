@@ -3,7 +3,7 @@ Rubykaigi::Application.routes.draw do
     match 'registration',
       :to => 'registrations#index',
       :as => 'registrations'
-
+    match 'phone_registration', :to => 'registrations#phone_index'
     match 'timetable' => 'timetable#index'
     match 'events/:id' => 'events#show', :as => 'event'
   end
