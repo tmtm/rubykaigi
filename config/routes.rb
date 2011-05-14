@@ -5,7 +5,7 @@ Rubykaigi::Application.routes.draw do
       :as => 'registrations'
 
     match 'timetable' => 'timetable#index'
-    match 'events/:id' => 'timetable#event', :as => 'event'
+    match 'events/:id' => 'events#show', :as => 'event'
   end
 
   match 'signin', :to => 'sessions#new', :as => 'signin'
