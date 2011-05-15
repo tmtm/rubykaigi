@@ -222,21 +222,17 @@ h1 {
 
 #programs {
   table {
+    @include table_border;
     width: 980px;
-    border: 1px solid #8a8786;
-    border-collapse: collapse; 
-    background-color: rgba(255, 255, 255, 0.3); 
+    td p {
+    @include mark("programsSpeakerMark.png"); }
+    h3 {
+      border-bottom: none; }
     .hours {
       white-space: nowrap;
       background-color: rgba(138, 135, 134, 0.3); }
     .hall {
-      width: 400px; }
-    tr,
-    th,
-    td {
-      padding: 5px;
-      border: 1px solid #8a8786;
-      border-collapse: collapse; } } }
+      width: 400px; } } }
 
 #abstract {
   float: left;
