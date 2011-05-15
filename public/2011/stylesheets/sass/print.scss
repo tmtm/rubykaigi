@@ -1,0 +1,54 @@
+@import "mixin";
+
+/*--- default tag setting ----------------------------------------------*/
+
+#topBar,
+#global,
+footer,
+aside {
+  display: none; }
+
+h1 {
+  color: #160f0d;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  background: none;
+  border: 3px solid #160f0d; }
+
+h2 {
+  background: none;
+  border-bottom: 1px solid #160f0d; }
+
+/*--- common id, class ----------------------------------------------*/
+
+
+#main {
+  width: 660px;
+  h2,
+  h3 {
+    padding: 3px;
+    margin: 3px; } }
+
+#programs {
+  .backToTop,
+  .tip span,
+  .fright {
+    display: none; }
+  table {
+    page-break-after: always; 
+    @include table_border;
+    width: 980px;
+    * {
+    padding: 1px;
+    margin: 1px; }
+    td {
+      font-size: 80%;
+      p {
+        @include mark("programsSpeakerMark.png"); }
+      h3 {
+        border-bottom: none; } }
+    .hours {
+      white-space: nowrap;
+      background-color: rgba(138, 135, 134, 0.3); }
+    .hall {
+      width: 400px; } } }
