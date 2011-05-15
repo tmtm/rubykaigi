@@ -47,6 +47,7 @@ class AdventController < LocaleBaseController
                      :'xmlns:foaf' => "http://xmlns.com/foaf/0.1/",
                      :'xmlns:ical' => "http://www.w3.org/2002/12/cal/icaltzd#",
                      :'xml:lang'   => "ja" do
+
         xml.channel :'rdf:about' => page_url do
           xml.title "RubyKaigi AdventCalender #{params[:year]}"
           xml.link page_url
@@ -62,7 +63,15 @@ class AdventController < LocaleBaseController
         AdventEvent.all.each do |e|
           xml.item :about => page_with_link_url = page_url + "##{e.id}" do
             xml.title e.name
-            xml.description e.description
+            xml.description do
+              xml.cdata! Haml::Engine.new(<<-HAML).render(binding)
+.summary
+  %a{:href => "#{page_with_link_url}"}= e.name
+.time #{l(e.dtstart, :format => :short)} - #{l(e.dtend, :format => :short)}
+.location= e.location
+.description= e.description
+              HAML
+            end
             xml.dc:date, e.pub_date
             xml.link page_with_link_url
             xml.foaf:topic do
