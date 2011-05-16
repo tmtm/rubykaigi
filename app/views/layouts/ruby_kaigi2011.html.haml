@@ -23,7 +23,7 @@
       %nav
         - if authenticated?
           %p
-            %img.icon{:alt => "#{user.username}", :title => "Avatar Icon Setting Feature is coming soon :<", :src => "/images/bow_face.png", :width => '24', :height => '24'}
+            != img_tag_for_usernavi(user)
             #{user.username}
           %ul
             %li!= link_to 'Dashboard', dashboard_path
@@ -187,4 +187,3 @@
           %p
             %a{:href => "/"}
               %img{:alt => "HOME", :src => "/2011/images/commonBtnHome.png"}
-
