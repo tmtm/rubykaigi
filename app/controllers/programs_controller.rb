@@ -1,5 +1,5 @@
 # coding: utf-8
-class TimetableController < LocaleBaseController
+class ProgramsController < LocaleBaseController
   skip_before_filter :login_required
 
   layout_for_latest_ruby_kaigi
