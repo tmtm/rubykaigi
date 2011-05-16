@@ -66,7 +66,7 @@ class OrdersController < ApplicationController
     unless txn_id
       render_not_found && return
     end
-    if Rails.env == "production"
+    if Rails.env.production?
       redirect_to(:action => 'thanks') && return
     end
 
