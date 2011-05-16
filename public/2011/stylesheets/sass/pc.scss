@@ -61,19 +61,21 @@ h1 {
   height: 80px;
   margin: 0 auto;
   nav {
+    max-width: 700px;
+    white-space: nowrap;
     background: #160f0d;
     margin: 0;
     @include radius(0,0,7,7);
     float: right;
-    p {
       padding-left: 20px;
       color: #efeae8; }
     ul {
+      float: right;
       margin: 0 0 0 5px;
       padding: 0; }
     li {
       display: inline;
-      line-height: 170%; } } }
+      line-height: 170%; } }
 
 #global {
   clear: both;

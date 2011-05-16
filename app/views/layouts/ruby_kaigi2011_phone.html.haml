@@ -32,16 +32,17 @@
     #topBar
       %nav
         - if authenticated?
-          %p Welcome, #{user.username}
-          %ul
-            %li!= link_to 'Dashboard', dashboard_path
-            %li!= link_to 'Account Settings', edit_account_path
-            %li!= link_to 'Sign Out', signout_path, :method => :delete
-          %img.icon{:alt => "#{user.username}", :title => "Avatar Icon Setting Feature is coming soon :<", :src => "/2011/images/sponsorsIndividual.png"}
+          %div{"data-role" => "collapsible", "data-collapsed" => "true", "data-theme" => "a"}
+            %h2 
+              MENU (sigined in as #{user.username})
+            %ul
+              %li!= link_to 'Dashboard', dashboard_path
+              %li!= link_to 'Account Settings', edit_account_path
+              %li!= link_to 'Sign Out', signout_path, :method => :delete
         - else
           %ul
             %li
-              %a{:href => "#"}
+              %a{:href => "phone_coming_soon"}
                 #{t(:signin)}
         %a{:name => "top"}
     != yield

@@ -49,6 +49,15 @@ hr {
 nav {
   margin: 0;
   padding: 0;
+  span {
+    height: 32px;
+    margin-right: 10px;
+    color: #efeae8; }
+  .name {
+    color: #efeae8;
+    margin: 0 10px;
+    float: right;
+    line-height: 170%; }
   ul li {
     line-height: 200%;
     background: url(/2011/images/navigationMark.png) no-repeat top left;

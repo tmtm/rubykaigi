@@ -89,9 +89,12 @@ img {
   padding-top: 5px; }
 
 #topBar {
+  a {
+    text-decoration: none; }
+  .ui-btn-corner-all {
+    background: rgba(255,255,255,0); }
   clear: both;
   nav {
-    color: #f00;
     background: #160f0d; 
     ul {
       padding: 0; }
