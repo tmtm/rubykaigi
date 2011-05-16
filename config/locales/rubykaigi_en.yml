@@ -43,6 +43,7 @@ en:
   individual_sponsor_link_label: "Link Label for URL"
   recommend_write_in_english: "It's strongly recommended to write in English"
   individual_sponsor_party_attend_bonus_is_over: "Sorry. RubyKaigi 2010 official conference party ticket has been sold out."
+  individual_sponsor_anonymous: "Become an anonymous sponsor"
   submit_individual_sponsor_additional_information: "Submit Individual Sponsor Additional Information"
   prospectus: "Prospectus"
   tickets: "Registration"
@@ -124,4 +125,3 @@ en:
   advent_about: 'About RubyKaigi Advent Calendar 2011'
   advent_calendar: 'RubyKaigi Advent Calendar 2011'
   community: 'Community'
-

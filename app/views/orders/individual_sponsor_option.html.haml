@@ -1,4 +1,7 @@
 - @title = t("order.individual_sponsor_option")
+- content_for :head do
+  != stylesheet_link_tag('/2011/stylesheets/registration')
+  != javascript_include_tag('/2011/javascripts/registration')
 #content
   %h1= @title
 
@@ -21,13 +24,10 @@
       %dt!= f.label :link_label, "#{t('individual_sponsor_link_label')}(#{t('recommend_write_in_english')})"
       %dd!= f.text_field :link_label
       != error_message_on :option, :link_label, :prepend_text => t('individual_sponsor_link_label')
-      <br />
-      -# - if ProductItem.kaigi(2010).rk10_party.now_on_sale?
-      -#  %dd
-      -#    != f.check_box :attend_party
-      -#    != f.label :attend_party, t('i_will_attend_the_official_party_2010')
-      -# - else
-      -#  %dd (#{t('individual_sponsor_party_attend_bonus_is_over')})
+      %dt{:style => 'margin-top:1em'}
+        != f.check_box :anonymous
+        != f.label :anonymous, t('individual_sponsor_anonymous')
+
     <br />
     <br />
     %p!= f.submit t(:submit_individual_sponsor_additional_information)

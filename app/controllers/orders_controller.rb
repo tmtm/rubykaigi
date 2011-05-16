@@ -106,8 +106,14 @@ class OrdersController < ApplicationController
     @option = IndividualSponsorOption.find(opt_params[:id])
     @option.additional_amount = opt_params[:additional_amount].to_i
     @option.attend_party = opt_params[:attend_party]
-    @option.link_label = opt_params[:link_label]
-    @option.link_url = opt_params[:link_url]
+    @option.anonymous = opt_params[:anonymous]
+    if @option.anonymous
+      @option.link_label = 'Anoymous'
+      @option.link_url = ''
+    else
+      @option.link_label = opt_params[:link_label]
+      @option.link_url = opt_params[:link_url]
+    end
     @option.save
     order = @option.order_item.order
     order.calculate_price

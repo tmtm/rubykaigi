@@ -5,18 +5,22 @@
   - @order.line_items.each do |item|
     %h2 #{t(item.product_item.label)}
     %p
-      #{t('amount')}: #{number_with_delimiter(item.price)} JPY
-      #{t('quantity')}: #{number_with_delimiter(item.quantity)}
-      #{t('subtotal_price')}: #{number_with_delimiter(item.subtotal_price)} JPY
+      #{t('amount')}: #{number_with_delimiter(item.price)} JPY<br />
+      #{t('quantity')}: #{number_with_delimiter(item.quantity)}<br />
+      #{t('subtotal_price')}: #{number_with_delimiter(item.subtotal_price)} JPY<br />
       - if item.individual_sponsor?
-        Individual Sponsor Link Label: <strong>#{item.link_label.present? ? item.link_label : "(default: name on your account)" }</strong>
-        Individual Sponsor Link URL: <strong>#{item.link_url.present? ? item.link_url : "(default: website on your account)" }</strong>
-        <br />
+        %p{:style => 'margin-top: 1em'}
+          - if item.anonymous?
+            <em>Anonymous Individual Sponsor</em><br />
+          - else
+            Individual Sponsor Link Label: <strong>#{item.link_label.present? ? item.link_label : "(default: name on your account)" }</strong><br />
+            Individual Sponsor Link URL: <strong>#{item.link_url.present? ? item.link_url : "(default: website on your account)" }</strong><br />
+            <br />
         %p!= link_to 'Edit Individual Sponsor Options', individual_sponsor_option_orders_path
 
   %h2 #{t('total_price')}
   %p
-    #{number_with_delimiter(@order.price)} JPY
+    <strong>#{number_with_delimiter(@order.price)}</strong> JPY
   <br /><br /><br /><br />
   %p
     != link_to 'Back to Cart', carts_path
