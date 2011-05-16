@@ -138,7 +138,7 @@ h1 {
   #news,
   #twitter {
     padding: 5px;
-    height: 357px;
+    height: 427px;
     background: #fff;
     border-top: 5px solid #160f0d;
     overflow: hidden;
@@ -161,14 +161,6 @@ h1 {
   section h2 {
     padding: 0;
     margin: 0; }
-  #news {
-    ul {
-      margin: 5px 0;
-      padding: 0 0 10px 0;
-      li {
-        @include mark("indexNewsMark.png"); } }
-    time {
-      display: block; } }
   p {
     margin: 0px; }
   #twitter {

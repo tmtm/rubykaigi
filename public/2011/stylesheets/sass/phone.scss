@@ -147,13 +147,7 @@ footer {
 
 #phone_index {
   #news {
-    ul {
-      margin: 5px 0;
-      padding: 0 0 10px 0; }
-    li {
-      @include mark("indexNewsMark.png"); } 
     time {
-      display: block;
       font-size: 90%; } } }
 
 /*--- phone_registration ----------------------------------------------*/
