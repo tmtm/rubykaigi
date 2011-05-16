@@ -6,7 +6,7 @@
     - RubyKaigi2011::PlatinumSponsor.all.reject{|s| s.wanted }.each do |sponsor|
       %h2
         = sponsor.localize(I18n.locale, :name)
-      %img#logo{:alt => "Example Company, Ltd.", :src => "/2011/sponsors/sponsorsPlatinum.png"}
+      %img#logo{:alt => "Example Company, Ltd.", :src => "/2011/sponsors/#{sponsor._id}.png"}
       %div
         %p
           = sponsor.localize(I18n.locale, :pr)
