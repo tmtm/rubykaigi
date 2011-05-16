@@ -1,27 +1,49 @@
-- @title = "RubyKaigi#{params[:year]} Advent Calendar"
+- @title = t(:advent)
 - content_for :head do
   %link{:href => "/2011/stylesheets/advent.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
-  %link{:rel => "alternate", :type => "application/xml", :title => @title, :href => advent_index_path(params[:year], params[:locale], :rdf)}
+  %link{:rel => "alternate", :type => "application/xml", :title => @title, :href => advent_index_path(params[:year], current_locale, :rdf)}
 
 #content
   %h1
-    RubyKaigi#{params[:year]} Advent Calendar
+    #{t(:advent)}
+  %aside
+    %ul
+      %li
+        %a{:href => "/2011/#{current_locale}/advent#about"}
+          #{t(:advent_about)}
+      %li
+        %a{:href => "/2011/#{current_locale}/advent#calendar"}
+          #{t(:advent_calendar)}
+  #main
+    %article
+      %h2
+        %a{:name => "about"}
+          #{t(:advent_about)}
+      %p 今年は会場の制約もあって、昨年の「企画」のような中規模の催しを会期中に 会場で実施することにはあまり期待できません。具体的には「Head First ふつ うのシステム開発」や「JRuby会議2010」、「Ruby powering 9 million dining tables」ぐらいの規模のイベントのための適切な場所を確保できません。
+      %p これに対応するために、RubyKaigi 2011の会期の前にRuby関連イベントを独自 に開催してもらって、連続協賛イベントみたいな試みをやれないかなあと思っ ています。例えるなら、12月にクリスマスを楽しみに待つためにプログラミン グTipsを連ねるAdvent Calendarがあるように、7月に「最後のRubyKaigi」を楽 しみに待つための「RubyKaigi Advent Calender」を用意できるといいなと考え ています。 ……といっても現時点では「考えています」というレベルでしかあ りません。こういう取り組みに興味のあるRubyコミュニティや企業さま、有志 がいらっしゃいましたら、お気軽に 2011 at rubykaigi dot org までメールで お問い合わせください。
+      %p 時期が時期なので、日本Ruby会議2011実行委員会が具体的なイベントの準備や 運営に人的リソースを割くのは難しいと思います(Ustream.tvで中継したいから KaigiFreaks来てくれ、と言われても困りそう)が、rubykaigi.orgでの告知や、 コンテンツをどうするかといった準備段階での相談や連携には可能な限り協力 していきたいと思っています。たとえば、JRubyKaigi2011を7月のどこかで開催 するとか、ジュンク堂書店池袋本店でRuby関連書籍のトークセッションがある とか、7/12(火)のAsakusa.rbの定例meetupをRubyKaigi直前特集拡大版みたいな のにするとか、そういうのが実現したらいいなあ、ということを漠然と考えて います。
+      %p 繰り返しになりますが、RubyKaigi Advent Calendarの実現に興味のある方がい らっしゃいましたら、是非ぜひお気軽に 2011 at rubykaigi dot org までメー ルにてご連絡いただけると助かります。協賛開催してくれるイベントが無けれ ば実現できない企画なので、こちらも皆さんのお力を借りたいと思っています。
+    != render :partial => 'shared/2011/back_to_top'
+    %article
+      %h2
+        %a{:name => "calendar"}
+          #{t(:advent_calendar)}
+      #other_formats
+        = link_to "iCal", advent_index_url(params[:year], current_locale, :ics, :protocol => "webcal")
+        = link_to "JSON", advent_index_path(params[:year], current_locale, :json), :target => "_blank"
+        = link_to "RSS",  advent_index_path(params[:year], current_locale, :rdf), :target => "_blank"
+    
+      #advent_events
+        - AdventEvent.by_month.each do |month, events|
+          %h3= l month, :format => :month
+          %ul
+            - events.each do |event|
+              %li{:id => event.id, :class => event.today? ? "todays_event" : ""}
+                .summary= link_to event.name, "##{event.id}"
+                .time #{l(event.dtstart, :format => :short)} 〜 #{l(event.dtend, :format => :short)}
+                .location!= auto_link event.location, :all, :target => "_blank"
+                .description!= auto_link event.description, :all, :target => "_blank"
+    
+    != render :partial => "shared/2011/back_to_top"
 
-  #other_formats
-    = link_to "iCal", advent_index_url(params[:year], params[:locale], :ics, :protocol => "webcal")
-    = link_to "JSON", advent_index_path(params[:year], params[:locale], :json), :target => "_blank"
-    = link_to "RSS",  advent_index_path(params[:year], params[:locale], :rdf), :target => "_blank"
-
-  #advent_events
-    - AdventEvent.by_month.each do |month, events|
-      %h2= l month, :format => :month
-      %ul
-        - events.each do |event|
-          %li{:id => event.id, :class => event.today? ? "todays_event" : ""}
-            .summary= link_to event.name, "##{event.id}"
-            .time #{l(event.dtstart, :format => :short)} 〜 #{l(event.dtend, :format => :short)}
-            .location!= auto_link event.location, :all, :target => "_blank"
-            .description!= auto_link event.description, :all, :target => "_blank"
-
-      != render :partial => "shared/2011/back_to_top"
 
