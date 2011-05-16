@@ -12,7 +12,7 @@ class ProductItem < ActiveRecord::Base
     def item_of(item_code)
       @items.detect{|i| i.item_code == item_code }
     end
-  end # Type
+  end # Proxy
 
   belongs_to :ruby_kaigi
 
