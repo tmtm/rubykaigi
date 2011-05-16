@@ -325,6 +325,8 @@ a:hover.tip {
 /*--- sponsors_platinum ----------------------------------------------*/
 
 #sponsors_platinum {
+  article{
+    @include clearfix; }
   .logo {
     float: left;
     margin: 0 20px 20px 0; } }
@@ -332,6 +334,8 @@ a:hover.tip {
 /*--- sponsors_gold ----------------------------------------------*/
 
 #sponsors_gold {
+  article{
+    @include clearfix; }
   .logo {
     float: left;
     margin: 0 20px 20px 0; } }
