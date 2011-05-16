@@ -28,100 +28,14 @@
             %img{:alt => "", :src => "/2011/sponsors/sponsorsGold.png"}
   %section#individual
     %h2
-      %a{:href => "#"}
+      %a{:href => "/2011/#{current_locale}/sponsors_individual"}
         %img{:alt => "", :height => "50", :src => "/2011/images/sponsorsHeaderIndividual.png", :width => "300"}
     %ul
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %li
-        %a{:href => "#"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-  
+      - if ((sponsors = Contribution.individual_sponsors_of(2011)).present?)
+        - sponsors.each do |sponsor|
+          %li
+            - img = img_tag_for_individual_sponsor(sponsor)
+            != link_to_if((!sponsor.anonymous? && sponsor.link_url.present?), raw(img), sponsor.link_url)
+            %a{:href => "#"}
+      - else
+        %li (Not Yet)

@@ -77,6 +77,11 @@ class Rubyist < ActiveRecord::Base
     end
   end
 
+  # 2011の個人スポンサー用にでっち上げた
+  def gravatar_url(size = 42)
+    "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(email.downcase)}?s=#{size}"
+  end
+
   private
   def contribution_types_of(kaigi_year)
     contributions.select {|c| c.ruby_kaigi.year == kaigi_year }.map(&:contribution_type)

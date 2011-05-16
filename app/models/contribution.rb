@@ -187,6 +187,10 @@ class Contribution < ActiveRecord::Base
     def anonymous?
       order_item.anonymous?
     end
+
+    def gravatar_url(size=32)
+      rubyist.gravatar_url(size)
+    end
   end # IndividualSponsorInstanceMethods
 
   belongs_to :rubyist
@@ -202,7 +206,7 @@ class Contribution < ActiveRecord::Base
     end
 
     def individual_sponsors_of(kaigi_year = RubyKaigi.latest_year)
-      Contribution.all(:include => [:order_item, :ruby_kaigi],
+      Contribution.all(:include => [:order_item, :ruby_kaigi, :rubyist],
         :conditions => ["contribution_type = ? AND ruby_kaigis.year = ?", "individual_sponsor", kaigi_year]).
         map(&:as_individual_sponsor).sort_by { |e| e.amount }.reverse
     end

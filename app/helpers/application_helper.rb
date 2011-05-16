@@ -43,4 +43,15 @@ module ApplicationHelper
   def noindex_nofollow
     '<meta name="robots" content="noindex,nofollow" />'
   end
+
+  def img_tag_for_individual_sponsor(sponsor, size = 32)
+    img_location = (sponsor.anonymous? ? "/images/bow_face.png" : sponsor.gravatar_url(size))
+    image_tag(img_location, :size => '#{size}x#{size}', :alt => sponsor.link_label, :title => sponsor.link_label)
+  end
+
+  def img_tag_for_usernavi(user)
+    size = 24
+    src = user.gravatar_url(size)
+    image_tag(src, :alt => user.username, :title => user.username, :size => "#{size}x#{size}", :class => 'icon')
+  end
 end

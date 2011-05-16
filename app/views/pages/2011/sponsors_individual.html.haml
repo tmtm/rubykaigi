@@ -3,95 +3,17 @@
   %h1
     #{t(:individual_sponsor)}
   %article
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
-    %div.avatar
-      %a{:href => "#", :target => "_blank"}
-        %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-      %p
-        Name
-        %br
-        Website:
-        %a.linkMark{:href => "#", :target => "_blank"} http://www.example.com
-    %hr
+    - if ((sponsors = Contribution.individual_sponsors_of(2011)).present?)
+      - sponsors.each do |sponsor|
+        %div.avatar
+          - img = img_tag_for_individual_sponsor(sponsor, 42)
+          != link_to_if((!sponsor.anonymous? && sponsor.link_url.present?), raw(img), sponsor.link_url)
+          %p{:style => 'vertical-align:middle'}
+            != link_to_if(!sponsor.anonymous? && sponsor.link_url.present?, h(sponsor.link_label), sponsor.link_url, :class => 'linkMark')
+            <br /><br />
+          %hr
+    - else
+      %div.avatar
+        (Not Yet)
+      %hr
   != render :partial => 'shared/2011/back_to_top'
-
