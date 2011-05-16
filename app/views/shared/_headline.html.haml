@@ -1,9 +1,9 @@
-%h2= t(:latest_news)
-%ul#news
-  - unless @headlines.empty?
-    - @headlines.each do |h|
-      %li
-        = l(h.time.to_date, :format => :long)
-        != link_to h(h.title), h.link
-  - else
+- headline_entries = HeadlineEntry.recent(current_locale, 5)
+%ul
+  - if headline_entries.empty?
     %li= t(:no_news)
+  - else
+    - headline_entries.each do |entry|
+      %li
+        %time{:datetime => entry.time.to_date}= entry.time.to_date
+        = link_to h(entry.title), entry.link
