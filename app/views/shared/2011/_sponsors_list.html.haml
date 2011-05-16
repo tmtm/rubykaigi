@@ -6,7 +6,7 @@
     %ul
       - RubyKaigi2011::RubySponsor.all.each do |sponsor|
         %li
-          %a{:href => "#"}
+          %a{:href => "/2011/#{current_locale}/sponsors_ruby/#{sponsor._id}"}
             %img{:alt => "", :src => "/2011/sponsors/#{sponsor._id}.png", :width => "130"}
   %section#platinum
     %h2
