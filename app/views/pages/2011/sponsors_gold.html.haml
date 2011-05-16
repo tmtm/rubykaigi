@@ -7,7 +7,8 @@
     %article
       %h2
         = sponsor.localize(I18n.locale, :name)
-      %img.logo{:alt => "Example Company, Ltd.", :src => "/2011/sponsors/#{sponsor._id}.png"}
+      %a{:name => sponsor._id}
+        %img.logo{:alt => "Example Company, Ltd.", :src => "/2011/sponsors/#{sponsor._id}.png"}
       %div
         %div
           %p
