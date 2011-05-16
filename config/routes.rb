@@ -4,8 +4,7 @@ Rubykaigi::Application.routes.draw do
       :to => 'registrations#index',
       :as => 'registrations'
     match 'phone_registration', :to => 'registrations#phone_index'
-    match 'programs' => 'programs#index'
-    match 'events/:id' => 'events#show', :as => 'event'
+    resources :programs, :only => [:index, :show]
   end
 
   match 'signin', :to => 'sessions#new', :as => 'signin'
