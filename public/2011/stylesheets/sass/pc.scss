@@ -207,18 +207,16 @@ h1 {
       float: left; } 
     @include clearfix; } }
 
-/*--- registration ----------------------------------------------*/
 
-#registration {
-  #signin {
-    margin-bottom: 30px;
-     .btn a {
-       margin: 0 5px 20px 0;    
-       width: 120px;
-       float: left; } 
-     input[name=openid_identifier] {
-       padding-left: 20px;
-       background: #fff url(/images/openid_logo.gif) 2px center no-repeat; } } }
+#signin {
+  margin-bottom: 30px;
+   .btn a {
+     margin: 0 5px 20px 0;    
+     width: 120px;
+     float: left; } 
+   input[name=openid_identifier] {
+     padding-left: 20px;
+     background: #fff url(/images/openid_logo.gif) 2px center no-repeat; } }
 
 /*--- programs ----------------------------------------------*/
 
