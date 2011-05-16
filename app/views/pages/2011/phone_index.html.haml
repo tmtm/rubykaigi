@@ -21,16 +21,7 @@
     %h2
       %img{:alt => "", :height => "35", :src => "/2011/images/indexNewsHeader.png", :width => "250"}
     #information
-      %ul
-        %li
-          %time{:datetime => "2011-04-25"} 2011-04-25
-          %a{:href => "http://rubykaigi.tdiary.net/20110425.html"} RubyKaigi2011の"当日"ボランティアスタッフの募集を開始します
-        %li
-          %time{:datetime => "2011-04-13"} 2011-04-13
-          %a{:href => "http://rubykaigi.tdiary.net/20110413.html"} RubyKaigi planning memo for overseas
-        %li
-          %time{:datetime => "2011-04-02"} 2011-04-02
-          %a{:href => "http://rubykaigi.tdiary.net/20110402.html"} RubyKaigi2011の開催に関する現状報告
+      = render :partial => 'pages/2011/important_news'
     = render :partial => 'shared/headline'
     %p
       %a{:href => "#"}
