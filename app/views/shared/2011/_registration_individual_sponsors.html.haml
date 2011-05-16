@@ -14,4 +14,4 @@
       Price:
       <strong>#{number_with_delimiter(@individual_sponsor.unit_price)} JPY + #{t('additional_amount_label')}</strong>
       != stock_notification(@individual_sponsor)
-      != render :partial => 'add_to_cart', :locals => {:item => @individual_sponsor }
+    != render :partial => 'add_to_cart', :locals => {:item => @individual_sponsor }

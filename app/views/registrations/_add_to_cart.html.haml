@@ -1,10 +1,9 @@
 %p.btn
   - if item.now_on_sale?
-    - btn = '<img alt="Register now(チケットを購入する)" src ="/2011/images/registerBtnTickets.png" />'
-    /!= image_button_to(raw(btn), add_item_carts_path(:product_item_code => item.item_code), :method => :post)
     != form_tag(add_item_carts_path) do
+      - btnimg_fname = (item.individual_sponsor? ? "sponsorsBtnBecomeAIndividualSponsor" : "registrationBtnTickets")
       != hidden_field_tag :product_item_code, item.item_code
-      != image_submit_tag("/2011/images/registerBtnTickets.png")
+      != image_submit_tag("/2011/images/#{btnimg_fname}.png")
   - else
     %span{:style => 'font-size: 24px;font-weight:bold'}
       - if item.sold_out?
