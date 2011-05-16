@@ -43,11 +43,17 @@ class ProductItem < ActiveRecord::Base
     ready_for_sale? && open_sale_at.past? && available?
   end
 
-  unless Rails.env == "production"
+  unless Rails.env.production?
     def force_now_on_sale_for_development!
       ready_for_sale = true
       open_sale_at = DateTime.now
+    end
+
+    def toggle_now_on_sale_for_development!(flag=nil)
+      self.ready_for_sale = (flag.nil? ? !ready_for_sale : flag)
+      self.open_sale_at = (ready_for_sale ? DateTime.now : 1.week.from_now)
       save!
+      self
     end
   end
 end
