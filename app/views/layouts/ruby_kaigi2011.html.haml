@@ -28,9 +28,9 @@
             %li!= link_to 'Account Settings', edit_account_path
             %li!= link_to 'Sign Out', signout_path, :method => :delete
           %p.name
-            mayucomayuco
+            #{user.username}
           %span
-            %img{:alt => "Twitter", :src => "/2011/images/commonTwitter.png"}
+            != img_tag_for_usernavi(user)
         - else
           %ul
             %li!= link_to "#{t(:signin)}", signin_path
