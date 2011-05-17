@@ -6,7 +6,7 @@
       - @tickets.each do |ticket|
         - extra_ticket_type = ticket.extra_ticket_type.present? ? " (#{ticket.extra_ticket_type})" : ""
         - ticket_label = "RubyKaigi #{ticket.ruby_kaigi.year}, #{I18n.t(ticket.ticket_type)}#{extra_ticket_type}, #{ticket.name}"
-        %li{:style => 'font-size: 16px;}
+        %li{:style => 'font-size: 16px;'}
           != link_to(ticket_label, ticket_path(ticket))
 
     %h2 Ticket Instruction for RubyKaigi 2011
