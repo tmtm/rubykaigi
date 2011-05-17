@@ -38,7 +38,8 @@
           #{t(:programs)}
       %p プログラムの内容はこちらからご覧いただけます。
       %p.btn
-        %a{:href => "/2011/#{current_locale}/timetable"}
+        -#%a{:href => "/2011/#{current_locale}/timetable"}
+        %a{:href => "/2011/#{current_locale}/coming_soon"}
           %img{:alt => "Programs(プログラム)", :height => "40", :src => "/2011/images/indexBtnPrograms.png", :width => "320", :height => "40"}
     != render :partial => 'shared/2011/back_to_top'
     %article#live
