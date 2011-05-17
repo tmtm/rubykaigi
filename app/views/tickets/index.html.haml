@@ -6,10 +6,14 @@
       - @tickets.each do |ticket|
         - extra_ticket_type = ticket.extra_ticket_type.present? ? " (#{ticket.extra_ticket_type})" : ""
         - ticket_label = "RubyKaigi #{ticket.ruby_kaigi.year}, #{I18n.t(ticket.ticket_type)}#{extra_ticket_type}, #{ticket.name}"
-        %li!= link_to(ticket_label, ticket_path(ticket))
+        %li{:style => 'font-size: 16px;}
+          != link_to(ticket_label, ticket_path(ticket))
 
+    %h2 Ticket Instruction for RubyKaigi 2011
+    %p
+      (Coming Soon...)
 
-    %h2 Information
+    %h2 Ticket Instruction for RubyKaigi 2010
     %ul.listMark
       - if params[:locale] == 'ja'
         %li
