@@ -9,13 +9,13 @@
           #{t(:rubykaigi_nikki)}
       %li
         %a{:href => "/2011/#{current_locale}/about#prospectus"}
-          #{t(:prospectus)}
+          #{t(:rubykaigi2011)} #{t(:prospectus)}
       %li
         %a{:href => "/2011/#{current_locale}/about#press"}
           #{t(:press)}
-      %li
-        %a{:href => "/2011/#{current_locale}/about#team"}
-          #{t(:team)}
+      -#       %li
+      -#         %a{:href => "/2011/#{current_locale}/about#team"}
+      -#           #{t(:rubykaigi2011)} #{t(:team)}
       %li
         %a{:href => "/2011/#{current_locale}/about#photographers"}
           #{t(:photographers)}
@@ -34,7 +34,7 @@
     %article
       %h2
         %a{:name => "prospectus"}
-          #{t(:prospectus)}
+          #{t(:rubykaigi2011)} #{t(:prospectus)}
       != render :partial => 'pages/2011/prospectus'
     != render :partial => 'shared/2011/back_to_top'
     %article
@@ -63,240 +63,7 @@
         #{t(:inquiry)}
       %p 何か不明な点があれば、2011_at_rubykaigi.org までお気軽にお問い合わせください。
     != render :partial => 'shared/2011/back_to_top'
-    %article#team
-      %h2
-        %a{:name => "team"}
-          #{t(:team)}
-      %h3 実行委員長
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          高橋征義
-          %br
-          (日本Rubyの会会長, 達人出版会)
-      %h3 副実行委員長
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          角谷信太郎
-          %br
-          (日本Rubyの会 || (株)永和システムマネジメント)
-      %h3 運営委員長
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          島田浩二
-          %br
-          (日本Rubyの会, 株式会社えにしテック)
-      %h3 プログラム委員長
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          笹田耕一
-          %br
-          (日本Rubyの会, 東京大学大学院情報理工学系研究科創造情報学専攻)
-      %h3 スポンサー渉外担当
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          相澤歩
-          %br
-          (日本Rubyの会, Akasaka.rb)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          前田修吾
-          %br
-          (Rubyアソシエーション, 株式会社ネットワーク応用通信研究所)
-      %h3 実行委員
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          あづみしんや
-          %br
-          (日本Rubyの会)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          すずきみほ
-          %br
-          (@adzuki34)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          レオ Leonard Chin
-          %br
-          (日本Rubyの会)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          諸橋恭介
-          %br
-          (Rails勉強会@東京 || (株)永和システムマネジメント)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          しだらようじ
-          %br
-          (Ruby札幌, 株式会社えにしテック)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          大和田純
-          %br
-          (Ruby札幌, サイジニア株式会社)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          白土慧
-          %br
-          (Ruby札幌, サイジニア株式会社)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          高井直人
-          %br
-          (Akasaka.rb)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          こしば としあき
-          %br
-          (株式会社ECナビ, 4038nullpointer.com)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          たなべ すなお
-          %br
-          (日本Rubyの会)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          かたぎり えいと
-          %br
-          (Ruby東海)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          櫻井達生
-          %br
-          (株式会社万葉)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          斎藤ただし
-          %br
-          ()
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          卜部昌平
-          %br
-          ()
-      %h3 国際化
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          アクター　アダム
-          %br
-          (@robodisco)
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          マクマホン　ポール
-          %br
-          (@pwim)
-      %h3 デザイナ
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          関谷繭子
-          %br
-          (@mayuco)
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          のりお
-          %br
-          (茨城Rubyの会)
-      %h3 KaigiFreaksレポート班
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          三村益隆
-          %br
-          (永和システムマネジメント, asakusa.rb)
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          すがわらまさのり
-          %br
-          (@sugamasao)
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          赤松祐希
-          %br
-          (ukstudio)
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          菅井祐太朗
-          %br
-          (@hokkai7go)
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          小松崎典之
-          %br
-          (@oshow)
-      %h3 KaigiFreaksネットワーク班
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          小岩秀和
-          %br
-          (@koiwa)
-      %h3 KaigiFreaks録画配信班
-      %div.avatar
-        %a{:href => "#", :target => "_blank"}
-          %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-        %p
-          荻原 一平
-          %br
-          (@iogi)
-      %h3 当日スタッフ
-      != render :partial => 'shared/2011/staffs'
-      %h3 rubykaigi.org
-      %ul.listMark
-        %li
-          %a{:href => "http://github.com/ruby-no-kai/rubykaigi/contributors"} http://github.com/ruby-no-kai/rubykaigi/contributors
-    != render :partial => 'shared/2011/back_to_top'
+    -# render :partial => 'shared/2011/team'
     %article#photographers
       %h2
         %a{:name => "photographers"}
@@ -330,4 +97,3 @@
         %a{:href => "http://www.flickr.com/photos/recompile_net/", :target => "_blank"}
           %img{:alt => "Flickr", :src => "/2011/images/commonFlickr.png"}
     != render :partial => 'shared/2011/back_to_top'
-
