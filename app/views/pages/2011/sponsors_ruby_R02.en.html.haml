@@ -1,0 +1,26 @@
+- @title = t(:ruby_sponsor)
+- sponsor = RubyKaigi2011::RubySponsor.find("R02")
+#content
+  %h1
+    #{t(:ruby_sponsor)}
+  %article
+    %h2
+      = sponsor.localize(I18n.locale, :name)
+    %img#logo{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/#{sponsor._id}.png"}
+    #profile
+      %ul.listMark
+        %li
+          Website:
+          %br
+          %a.linkMark{:href => sponsor.url, :target => "_blank"}
+            = sponsor.url
+    %h3 Introduction to quanp
+    %p
+      High-performance technology, easier to use. In addition to Ricoh product development and services that focus on imaging equipment, Ricoh is expanding its business scope to provide a combination of office solutions. One of these new businesses being developed is "quanp."
+      quanp is a visual online storage service for helping individuals to get used to utilizing information intelligently. The user can upload files, share, and do simple search operations. quanp’s server systems are powered by Ruby. In the future, while contributing knowledge and technologies gained during development to the growth of Ruby, we would like to refine large-scale system construction technologies that utilize Ruby’s advantages.
+    %p
+      %img{:alt => "quanp", :src => "/2010/sponsors/ricoh_logo.gif"}
+    %p
+      %img{:alt => "quanp", :src => '/2010/sponsors/ricoh_pht01.jpg'}
+  != render :partial => 'shared/2011/back_to_top'
+

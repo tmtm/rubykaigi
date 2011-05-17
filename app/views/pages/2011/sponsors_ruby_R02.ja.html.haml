@@ -1,0 +1,27 @@
+- @title = t(:ruby_sponsor)
+- sponsor = RubyKaigi2011::RubySponsor.find("R02")
+#content
+  %h1
+    #{t(:ruby_sponsor)}
+  %article
+    %h2
+      = sponsor.localize(I18n.locale, :name)
+    %img#logo{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/#{sponsor._id}.png"}
+    #profile
+      %ul.listMark
+        %li
+          Website:
+          %br
+          %a.linkMark{:href => sponsor.url, :target => "_blank"}
+            = sponsor.url
+    %h3 quanpの紹介
+    %p
+      高性能な技術を、より使いやすく。リコーは画像機器を中心とした製品開発やサービスの提供に加え、それらを組み合わせたオフィスソリューションの提供へと事業領域を拡大しています。そうした新規事業の一つとして“quanp”を展開中。
+    %p
+      quanpは情報をスマートに使いこなすための個人向けビジュアルオンラインストレージサービスです。ファイルのアップロード、共有、検索を簡単な操作で行うことができます。このquanpでは、サーバーシステムの構築においてRubyを活用しています。今後も、開発の中で得た知識・技術でRubyの発展に貢献するとともに、Rubyの利点を活かした大規模システム構築技術に磨きをかけていきたいと考えています。
+    %p
+      %img{:alt => "quanp", :src => "/2010/sponsors/ricoh_logo.gif"}
+    %p
+      %img{:alt => "quanp", :src => '/2010/sponsors/ricoh_pht01.jpg'}
+  != render :partial => 'shared/2011/back_to_top'
+

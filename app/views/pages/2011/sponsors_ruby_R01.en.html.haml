@@ -1,0 +1,21 @@
+- @title = t(:ruby_sponsor)
+- sponsor = RubyKaigi2011::RubySponsor.find("R01")
+#content
+  %h1
+    #{t(:ruby_sponsor)}
+  %article
+    %h2
+      = sponsor.localize(I18n.locale, :name)
+    %img#logo{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/#{sponsor._id}.png"}
+    %img{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/nacl_pht01.png", :width => 410}
+    #profile
+      %ul.listMark
+        %li
+          Website:
+          %br
+          %a.linkMark{:href => sponsor.url, :target => "_blank"}
+            = sponsor.url
+    %p
+      Network Applied Communication Laboratory (NaCl) delivers system development solutions utilizing open source software. NaCl drives the Ruby programming language with Ruby creator and NaCl fellow, Yukihiro "Matz" Matsumoto.
+  != render :partial => 'shared/2011/back_to_top'
+

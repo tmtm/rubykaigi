@@ -1,0 +1,44 @@
+- @title = t(:ruby_sponsor)
+- sponsor = RubyKaigi2011::RubySponsor.find("R01")
+#content
+  %h1
+    #{t(:ruby_sponsor)}
+  %article
+    %h2
+      = sponsor.localize(I18n.locale, :name)
+    %img#logo{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/#{sponsor._id}.png"}
+    %img{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/nacl_pht01.png", :width => 410}
+    #profile
+      %ul.listMark
+        %li
+          Website:
+          %br
+          %a.linkMark{:href => sponsor.url, :target => "_blank"}
+            = sponsor.url
+    %h3 世界と競い、未来を拓く
+    %p
+      ソースコードを公開して誰でも自由に利用できるようにし、利用者や他の開発者からのフィードバックを取り入れながら進化を続ける、それがオープンソースソフトウェア（OSS）です。 株式会社ネットワーク応用研究所（NaCl）では、単にOSSを利用するだけではなく、オブジェクト指向言語Rubyの開発者であるまつもとゆきひろ をはじめ、多くの社員がOSSの開発に貢献し、 OSSを利用したシステム開発では先進的な実績を残しています。
+    %h3 ＜Ruby、Ruby on Railsに関する取り組み＞
+    %p
+      %ul.listMark
+        %li
+          島根県CMS
+          %br
+          読み上げ機能や自動ふりがな機能を持つ、Ruby on Rails（Rails）で作られた行政機関向けCMS（コンテンツマネージメントシステム）です。 OSSとして公開され島根県をはじめとする複数の自治体のwebサイトで採用されています。
+        %img{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/nacl_pht02.png", :width => 410}
+        %li
+          Rubyの国際標準化へ向けた活動への協力
+          %br
+          IPA（独立行政法人情報処理推進機構）が進めるRubyの国際標準化へ向けたプロジェクトに協力しています。Rubyを国際標準規格により、複数のRuby実装の間での互換性が向上し、政府調達においても採用し易くなることが期待されます。
+        %li
+          ニーズの高まるRuby教育
+          %br
+          Rubyへの関心は高まっていますが、技術者確保が課題となっています。NaClではRubyアソシエーションの認定を受けたテキストを提供し、Rubyそのものや、Railsをはじめとする周辺技術に関する教育事業を行っています。認定テキストによる標準コース以外に、初めてのRuby、Railsでの開発に取り組む場合等にお使いいただけるカスタマイズ教育を提供しております。ご相談ください。
+    %h3 ＜OSS「日医標準レセプトソフト」の開発＞
+    %p
+      NaClは、全国1万ヶ所以上の医療機関に導入されているオープンソースソフトウェア「日医標準レセプトソフト」の開発会社として、医療現場のIT化を推進しています。
+    %h3 NaClについて
+    %p
+      弊社の通称である「NaCl」は、社名の英語表記「Network Applied Communication Laboratory Ltd.」の頭文字であると同時に、生物が生きていくために欠かせない「塩」の化学式でもあります。 私たちは「NaCl」を塩の化学式にちなみ、「エヌ・エー・シーエル」と呼んでいます。
+  != render :partial => 'shared/2011/back_to_top'
+
