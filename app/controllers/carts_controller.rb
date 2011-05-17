@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-class CartsController < ApplicationController
+class CartsController < LocaleBaseController
   layout_for_latest_ruby_kaigi
   before_filter :login_required, :only => :index
 

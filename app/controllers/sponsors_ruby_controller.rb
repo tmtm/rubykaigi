@@ -1,4 +1,4 @@
-class SponsorsRubyController < ApplicationController
+class SponsorsRubyController < LocalBaseController
   layout_for_latest_ruby_kaigi
 
   def show

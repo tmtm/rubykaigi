@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-class OrdersController < ApplicationController
+class OrdersController < LocaleBaseController
   before_filter :login_required
 
   layout_for_latest_ruby_kaigi

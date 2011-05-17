@@ -1,4 +1,4 @@
-class RubyistsController < ApplicationController
+class RubyistsController < LocaleBaseController
   layout_for_latest_ruby_kaigi
 
   def show
