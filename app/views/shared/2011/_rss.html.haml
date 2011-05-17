@@ -1,3 +1,12 @@
 %a{ :href => rubykaigi_org_feed_url(current_locale)}
   %img{:alt => "RSS", :src => "/2011/images/commonRss.png"}
-
+%ul
+  - headlines = HeadlineEntry.recent(I18n.locale, 5)
+  - if headlines.present?
+    - headlines.each do |e|
+      %li
+        - datetime = l(e.time.to_date, :format => :long)
+        %time{:datetime => datetime} #{datetime}
+        != link_to h(e.title), e.link
+  - else
+    %li= t(:no_news)
