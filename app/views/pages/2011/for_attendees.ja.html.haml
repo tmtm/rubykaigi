@@ -38,7 +38,8 @@
           #{t(:programs)}
       %p プログラムの内容はこちらからご覧いただけます。
       %p.btn
-        %a{:href => "/2011/#{current_locale}/timetable"}
+        -#%a{:href => "/2011/#{current_locale}/timetable"}
+        %a{:href => "/2011/#{current_locale}/coming_soon"}
           %img{:alt => "Programs(プログラム)", :height => "40", :src => "/2011/images/indexBtnPrograms.png", :width => "320", :height => "40"}
     != render :partial => 'shared/2011/back_to_top'
     %article#live
@@ -50,7 +51,7 @@
         %li 中継品質はベストエフォートです。悪しからずご了承ください。
         %li KaigiFreaksがお届けします。
         %li 中継とは別に、後日録画した動画も公開予定です(準備ができ次第、別途アナウンスします)。
-      %p.linkMark 
+      %p.linkMark
         #{t(:hall_main)}:
         %a{:href => "/2011/#{current_locale}/coming_soon"} Ustream
         |
