@@ -4,9 +4,11 @@ set :default_stage, "staging"
 set :application, "rubykaigi"
 set :repository,  "git://github.com/ruby-no-kai/rubykaigi.git"
 set :branch, "production"
+set :appdir, "railsapp"
+set :port, 2022
 require "capistrano/ext/multistage"
 
-set :deploy_to, "/home/#{application}/railsapp"
+set(:deploy_to){ "/home/#{application}/#{appdir}" }
 set :ssh_options, { :forward_agent => true }
 
 set :scm, :git
@@ -58,6 +60,8 @@ end
 after("deploy:update_code") do
   setup_shared_config("database.yml")
   setup_shared_config("config.yml")
+  stage = fetch(:stage, 'staging')
+  run "ln -fs #{latest_release}/config/rubykaigi_template.pill #{latest_release}/config/#{stage}.pill"
 end
 
 after("deploy:symlink") do
@@ -79,31 +83,23 @@ namespace :bundler do
   end
 end
 
-namespace :god do
-  desc "start god for rubykaigi.org"
-  task :start do
-    pid_path = "#{current_path}/tmp/pids/god.pid"
-    log_path = "#{current_path}/log/god.log"
-    config_path = "#{current_path}/config/rubykaigi.god"
-    run("god -c #{config_path} -P #{pid_path} -l #{log_path}")
-  end
-
-  desc "terminate god"
-  task :terminate do
-    run("god terminate")
-  end
-
-  desc "restart god w/ deplayed_job"
-  task :restart do
-    run("god restart delayed_job")
-  end
-
-  task :reboot do
-    terminate
-    start
+namespace :bluepill do
+  desc "take the bluepill"
+  task :take do
+    stage = fetch(:stage, 'staging')
+    run "/usr/local/bin/bluepill --no-privileged --base-dir #{current_path}/tmp load #{current_path}/config/#{stage}.pill"
   end
 end
 
+namespace :delayed_job do
+  desc "restart delayed_job"
+  task :restart do
+    run "/usr/local/bin/bluepill --no-privileged --base-dir #{current_path}/tmp #{fetch(:stage, 'staging')} restart delayed_job"
+  end
+end
+
+before 'deploy:restart', 'bluepill:take'
+after 'deploy', 'delayed_job:restart'
 
 Dir[File.join(File.dirname(__FILE__), '..', 'vendor', 'gems', 'hoptoad_notifier-*')].each do |vendored_notifier|
   $: << File.join(vendored_notifier, 'lib')
@@ -115,16 +111,17 @@ require 'capistrano-notification'
 notification.irc do |irc|
   irc.host    'chat.freenode.net'
   irc.channel '#rubykaigi.org'
-  irc.message "#{local_user} deployed #{application} to (production or staging...hmm it doesn't work properly now)"
+  irc.message "#{local_user} deployed #{application} to #{fetch(:stage, 'staging')}"
 end
 
 after 'deploy:finalize_update', 'bundler:bundle'
 after 'deploy:migrations', 'god:reboot'
 
 namespace 'db' do
-  desc "run RAILS_ENV=produciton rake db:seed_2010 on rubykaigi.org. sweet :)"
+  desc "run RAILS_ENV=#{fetch(:stage, 'staging')} rake db:seed_2010 on rubykaigi.org. sweet :)"
   task 'seed_2010', :roles => :app do
-    run("cd #{current_path} && RAILS_ENV=production rake db:seed_2010")
+    stage = fetch(:stage, 'staging')
+    run("cd #{current_path} && RAILS_ENV=#{stage} rake db:seed_2010")
   end
 end
 before 'db:seed_2010', 'deploy'
@@ -134,7 +131,7 @@ after 'db:seed_2010', 'deploy:web:enable'
 namespace 'ticket' do
   desc "ticket summary report"
   task "summary", :roles => :app do
-    ticket_summary = capture("cd #{current_path} && RAILS_ENV=production script/ticket_summary")
+    ticket_summary = capture("cd #{current_path} && RAILS_ENV=#{fetch(:stage, 'staging')} script/ticket_summary")
     puts ticket_summary
   end
 end
