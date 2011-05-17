@@ -11,7 +11,7 @@
       - if item.individual_sponsor?
         %p{:style => 'margin-top: 1em'}
           - if item.anonymous?
-            <em>Anonymous Individual Sponsor</em><br />
+            <em>Anonymous Individual Sponsor</em><br /><br />
           - else
             Individual Sponsor Link Label: <strong>#{item.link_label.present? ? item.link_label : "(default: name on your account)" }</strong><br />
             Individual Sponsor Link URL: <strong>#{item.link_url.present? ? item.link_url : "(default: website on your account)" }</strong><br />
