@@ -37,7 +37,7 @@
           #{t(:rubykaigi2011)} #{t(:prospectus)}
       != render :partial => 'pages/2011/prospectus'
     != render :partial => 'shared/2011/back_to_top'
-    %article
+    -#%article
       %h2
         %a{:name => "press"}
           #{t(:press)}
@@ -62,7 +62,7 @@
       %h3
         #{t(:inquiry)}
       %p 何か不明な点があれば、2011_at_rubykaigi.org までお気軽にお問い合わせください。
-    != render :partial => 'shared/2011/back_to_top'
+    -#!= render :partial => 'shared/2011/back_to_top'
     -# render :partial => 'shared/2011/team'
     %article#photographers
       %h2
