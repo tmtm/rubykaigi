@@ -13,7 +13,7 @@
             #{t('amount')}: #{number_with_delimiter(item.unit_price)}
             JPY + #{t('additional_amount_label')}<br />
             #{t('quantity')}: #{number_with_delimiter(item.quantity)}<br />
-            != link_to("[#{t('delete_this_item')}]", remove_item_carts_path(:product_item_code => item.item_code), :method => :delete)
+            != link_to("[#{t('delete_this_item')}]", remove_item_carts_path(:product_item_code => item.item_code, :locale => current_locale), :method => :delete)
         - else
           %h2 #{t(item.label)}
           %p
@@ -21,7 +21,7 @@
             #{t('quantity')}:
             #{item.quantity}
             <br />
-            != link_to("[#{t('delete_this_item')}]", remove_item_carts_path(:product_item_code => item.item_code), :method => :delete)
+            != link_to("[#{t('delete_this_item')}]", remove_item_carts_path(:product_item_code => item.item_code, :locale => current_locale), :method => :delete)
       <br/>
       <br/>
     %div.proceed_btn
