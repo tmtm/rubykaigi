@@ -16,7 +16,7 @@ module RubyKaigi2011
     end
 
     def all
-      Dir[File.join(@base_dir, "**/*.yaml")].map {|path| load(path) }
+      Dir[File.join(@base_dir, "**/*.yaml")].sort.map {|path| load(path) }
     end
 
     def load(path)
