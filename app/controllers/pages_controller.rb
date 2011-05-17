@@ -51,7 +51,7 @@ class PagesController < LocaleBaseController
   end
 
   def page_name_is_valid
-    head(:not_found) unless /\A[A-Za-z_\-]*\Z/ =~ params[:page_name]
+    head(:not_found) unless /\A[A-Za-z0-9_\-]*\Z/ =~ params[:page_name]
   end
 
   def redirect_to_past_kaigi

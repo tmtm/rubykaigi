@@ -1,0 +1,20 @@
+- @title = t(:ruby_sponsor)
+- sponsor = RubyKaigi2011::RubySponsor.find("R03")
+#content
+  %h1
+    #{t(:ruby_sponsor)}
+  %article
+    %h2
+      = sponsor.localize(I18n.locale, :name)
+    %img#logo{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/#{sponsor._id}.png"}
+    #profile
+      %ul.listMark
+        %li
+          Website:
+          %br
+          %a.linkMark{:href => sponsor.url, :target => "_blank"}
+            = sponsor.url
+    %div.cboth
+      = sponsor.localize(I18n.locale, :pr)
+  != render :partial => 'shared/2011/back_to_top'
+

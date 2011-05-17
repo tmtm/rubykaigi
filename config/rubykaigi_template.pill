@@ -1,6 +1,6 @@
 RAILS_ENV = File.basename(__FILE__, ".pill")
-APPDIR_SUFFIX = (RAILS_ENV =~ /staging/ ? "staging" : "")
-APPDIR = ['railsapp', APPDIR_SUFFIX].join('.')
+APPDIR_SUFFIX = (RAILS_ENV =~ /staging/ ? "staging" : nil)
+APPDIR = ['railsapp', APPDIR_SUFFIX].join('.').sub(/\.$/, '')
 RAILS_CURRENT_PATH= "/home/rubykaigi/#{APPDIR}/current"
 
 Bluepill.application(RAILS_ENV, :base_dir => "#{RAILS_CURRENT_PATH}/tmp", :log_file => "#{RAILS_CURRENT_PATH}/log/bluepill.log") do |app|

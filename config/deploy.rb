@@ -18,6 +18,10 @@ set :use_sudo, false
 set :runner, "rubykaigi"
 ssh_options[:username] = application
 
+#set :wenever_command, 'bundle exec whenever'
+#set(:whenever_environment) { fetch(:stage, 'staging') }
+#require 'whenever/capistrano'
+
 def setup_shared(dir, path)
   src = "#{shared_path}/#{dir}/#{path}"
   dest = "#{latest_release}/#{dir}/#{path}"
