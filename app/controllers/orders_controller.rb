@@ -32,7 +32,7 @@ class OrdersController < LocaleBaseController
   def confirm
     @order = Order.find(session[:order_id])
     @paypal_form = Paypal::EncryptedForm.new(@order,
-      returned_orders_url, paypal_ipn_url(:secret => Paypal::EncryptedForm.ipn_secret))
+      returned_orders_url(:locale => params[:locale]), paypal_ipn_url(:secret => Paypal::EncryptedForm.ipn_secret))
     unless @order
       flash[:error] = t('flash.order.notfound')
       redirect_to carts_path
