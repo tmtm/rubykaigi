@@ -131,3 +131,11 @@ en:
   back_to_registration: 'Back to Registration'
   show_your_cart: 'Show Your Cart'
   official_party_description: ''
+  individual_sponsor_program_detail: 'Program Detail'
+  about_donation: 'Donation: Minimum 15,000 JPY. No maximum limits :)'
+  about_payment: 'Payment: Will accept credit cards via PayPal.'
+  individual_sponsor_program_benefits: 'Program Benefits'
+  individual_sponsor_program_benefit_1: '1 pass to RubyKaigi 2011.'
+  individual_sponsor_program_benefit_2: 'No pass to the official party(you should buy the ticket if want to join the party.'
+  individual_sponsor_program_benefit_3: 'A mention of your name and link to your website in the individual sponsor section of RubyKaigi 2011 web site.'
+

@@ -132,3 +132,11 @@ ja:
   back_to_registration: 'チケット購入・各種お申込み画面に戻る'
   show_your_cart: 'カートを見る'
   official_party_description: '懇親会を下記の日程で開催します。本編とともに是非お楽しみください'
+  individual_sponsor_program_detail: '日本Ruby会議2011個人スポンサー仕様'
+  about_donation: '金額: 15,000JPYから。上限はありません :)'
+  about_payment: '支払方法: PayPalによるクレジットカード払'
+  individual_sponsor_program_benefits: '日本Ruby会議2011個人スポンサー特典'
+  individual_sponsor_program_benefit_1: 'RubyKaigi2011 本編参加チケット 1枚'
+  individual_sponsor_program_benefit_2: 'rubykaigi.org にRubyKaigi2011個人スポンサーとしてお名前とリンク先を掲載します(匿名での支援も受け付けます)'
+  individual_sponsor_program_benefit_3: 'RubyKaigi2011 公式懇親会への参加特典はありません【昨年から仕様変更】'
+
