@@ -108,7 +108,7 @@ class OrdersController < LocaleBaseController
     @option.attend_party = opt_params[:attend_party]
     @option.anonymous = opt_params[:anonymous]
     if @option.anonymous
-      @option.link_label = 'Anoymous'
+      @option.link_label = 'Anonymous'
       @option.link_url = ''
     else
       @option.link_label = opt_params[:link_label]
