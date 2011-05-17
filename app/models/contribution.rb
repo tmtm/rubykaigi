@@ -37,7 +37,7 @@ class Contribution < ActiveRecord::Base
       tickets << Ticket.build_from_contrib(individual_sponsor)
 
       Contribution.transaction do
-        [individual_sponsor,
+        [individual_sponsor,tickets,
           rk11_individual_sponsor].flatten.compact.each(&:save!)
       end
 
