@@ -24,9 +24,9 @@
       %nav
         - if authenticated?
           %ul
-            %li!= link_to 'Dashboard', dashboard_path
-            %li!= link_to 'Account Settings', edit_account_path
-            %li!= link_to 'Sign Out', signout_path, :method => :delete
+            %li!= link_to t(:dashboard), dashboard_path
+            %li!= link_to t(:account_settings), edit_account_path
+            %li!= link_to t(:signout), signout_path, :method => :delete
           %p.name
             #{user.username}
           %span
