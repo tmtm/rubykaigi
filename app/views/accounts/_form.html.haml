@@ -14,7 +14,9 @@
   %dt!= form.label :full_name
   %dd!= form.text_field :full_name
   <br />
-  %dt!= form.label :email
+  %dt
+    != form.label :email
+    (also use to fetch your icon via <a href="http://gravatar.com">gravatar.com</a>)
   %dd!= form.text_field :email
   <br />
   %dt!= form.label :website
