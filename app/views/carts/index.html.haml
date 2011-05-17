@@ -32,6 +32,6 @@
     <br/>
     <br/>
     %p
-      != link_to 'Back to Registration', registrations_path(:year => RubyKaigi.latest_year, :locale => current_locale)
+      != link_to t('back_to_registration'), registrations_path(:year => RubyKaigi.latest_year, :locale => current_locale)
   %p{:style => 'clear:both'}
-    != link_to 'Back to Registration', registrations_path(:year => RubyKaigi.latest_year, :locale => current_locale)
+    != link_to t('back_to_registration'), registrations_path(:year => RubyKaigi.latest_year, :locale => current_locale)

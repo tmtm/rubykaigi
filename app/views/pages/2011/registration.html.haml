@@ -18,7 +18,7 @@
       - unless authenticated?
         != render :partial => 'need_signin'
       - else
-        != link_to 'Show Your Cart', carts_path
+        != link_to t('show_your_cart'), carts_path
     != render :partial => 'shared/2011/registration_tickets'
     != render :partial => 'shared/2011/back_to_top'
     != render :partial => 'shared/2011/registration_party'
