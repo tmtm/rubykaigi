@@ -37,8 +37,8 @@ class Contribution < ActiveRecord::Base
       tickets << Ticket.build_from_contrib(individual_sponsor)
 
       Contribution.transaction do
-        [individual_sponsor, party_attendees,
-          rk10_individual_sponsor].flatten.compact.each(&:save!)
+        [individual_sponsor,
+          rk11_individual_sponsor].flatten.compact.each(&:save!)
       end
 
 #       rk10_party = ProductItem.kaigi(2010).rk10_party
