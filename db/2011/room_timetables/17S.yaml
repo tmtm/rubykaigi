@@ -33,9 +33,9 @@ timeslots:
   - start: *end_of_slot5
     end:   &end_of_slot6
       2011-07-17T14:30:00+09:00
-    event_ids: 
+    event_ids:
       - 17S05
-      #- 17S06
+      - 17S06
   - start: *end_of_slot6
     end:   &end_of_slot7
       2011-07-17T14:40:00+09:00

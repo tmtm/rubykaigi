@@ -1,18 +1,24 @@
 --- 
 presenter:
   name: 
-    en: Shugo Maeda
-    ja: "前田 修吾"
+    en: Kouji Takao
+    ja: "高尾宏治"
   affiliation: 
-    en: Network Applied Communication Laboratory Ltd.
+    en: "Network Applied Communication Laboratory Ltd. "
     ja: "株式会社ネットワーク応用通信研究所"
   bio: 
-    en: a Ruby committer
-    ja: "Rubyコミッタ"
+    en: |-
+      Kouji Takao is one of the commiter of MRI. 
+      He is maintener of Readline of Ruby.
+    ja: "MRIメンテナの一人。担当はReadlineライブラリです。"
 title: 
-  en: How to read JIS X 3017
-  ja: "JIS X 3017の読み方"
+  en: MacRuby on Rails
+  ja: "MacRuby on Rails ?MacRubyから見たcRuby?"
 abstract: 
-  en: JIS X 3017 is the Japanese national standard of the Ruby programming language.  This talk explains why the standard and Ruby itself are so complex.
-  ja: "JIS X 3017はプログラミング言語Rubyの日本国内規格である。この講演では，この規格及びRuby自身がなぜかくも複雑であるかを説明する。"
+  en: "TBD: 申し訳ありません。後日、英訳してお送りします。"
+  ja: "2011年3月時点でのMacRubyはRuby処理系としての完成度は低く、Ruby on\n\
+    Railsが到底動作するようには思えない。しかしながら、MacRubyに対して改良\n\
+    に改良を重ねることできっとRailsを動作させることができる（はずである）。\n\n\
+    本発表ではMacRubyでRailsを動作させるために必要だった修正内容とともに、\n\
+    その過程であらためて知ることになったcRubyのすばらしさを説明します。"
 language: Japanese

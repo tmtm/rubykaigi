@@ -1,28 +1,18 @@
---- 
+---
 presenter:
-  name: 
-    en: Thomas E Enebo
-    ja: 
-  affiliation: 
-    en: jruby.org / Engine Yard
-    ja: 
-  bio: 
-    en: Thomas Enebo has been a practitioner of Java for over a decade and he is the co-lead of the JRuby project. Thomas has also been happily using Ruby since 2001. In addition to working on JRuby, Tom is interested in improving the state of alternative languages on the Java Virtual Machine. Tom is employed working on JRuby full time at Engine Yard.
-    ja: 
-title: 
-  en: "Java in Ruby: Scripting Java in JRuby"
-  ja: 
-abstract: 
-  en: |-
-    One major benefit of JRuby is the ability to import Java classes and then use them as if they were POROs (Plain Old Ruby Objects). This feature makes Java fun again. You can pull in legacy code and sculpt an API which fits nicely into your Ruby code. You can access novel or robust Java libraries to bridge a gap in existing Ruby libraries.
-    
-    This talk will:
-    
-        * Show basics of interacting with Java classes from within Ruby
-        * Implementing Java interfaces with Ruby blocks and classes
-        * Point out Gotchas
-        * Give style hints to make Java APIs fit better into the Ruby way
-    
-    By the end of this talk you should be able to effectively consume Java libraries in Ruby in a way that is satisfying and useful.
-  ja: 
-language: English
+  name:
+    en: Hidetoshi NAGAI
+    ja: 永井 秀利
+  affiliation:
+    en: Kyushu Institute of Technology / Rubyist Kyushu
+    ja: 九州工業大学 / Rubyist九州
+  bio:
+    en: "Hidetoshi NAGAI is a developer of Ruby/Tk. Ruby is a favorite tool for data processing on his research works (those don't belong to the domain of software engineering)."
+    ja: "永井秀利 (永井＠知能．九工大) は Ruby/Tk の開発者である．Ruby は彼の本業の研究 (ソフトウェア工学の分野ではない) でのデータ処理の際のお気に入りの道具となっている．"
+title:
+  en: Improvement of ThreadGroup class and its usage
+  ja: ThreadGroupクラスの強化とその利用法
+abstract:
+  en: "ThreadGroup class, which is one of the embedded classes of Ruby, is useful for managing sets of threads. Although a ThreadGroup object should have advantages over a simple list of threads, it hasn't had enough methods to do that. In this presentation, I'll introduce details and intentions of improving ThreadGroup with some usages."
+  ja: "Rubyの組み込みクラスの一つであるThreadGroupは，thread集合を扱う際に有用なものである．threadを単純に集めたものを上回る活用が可能であるはずだが，従来は操作メソッドが十分に充実しているとは言えなかった．本発表では，ThreadGroup強化の内容と意図とを，用例を交えながら紹介する．"
+language: Japanese
