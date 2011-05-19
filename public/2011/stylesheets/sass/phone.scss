@@ -1,19 +1,5 @@
 @import "mixin";
 
-.btn { 
-  @include btnHover;
-  width: 280px;
-  margin-bottom: 2px; }
-
-.btnText90 {
-    @include btnHover;
-  	background: #fff url(/2011/images/commonBtn320x90.png) no-repeat;
-  	width: 280px;
-  	line-height: 84px;
-  	text-align: center;
-  	font-size: 16px;
-  	font-weight: bold; }
-
 #content {
   clear: both;
   width: 280px;
@@ -56,6 +42,20 @@ img {
     &:link img, &:visited img, &:hover img, &:active img {
       text-decoration: none;
       border: none; } } }
+
+.btn { 
+  @include btnHover;
+  width: 280px;
+  margin-bottom: 2px; }
+
+.btnText90 {
+    @include btnHover;
+  	background: #fff url(/2011/images/commonBtn320x90.png) no-repeat;
+  	width: 280px;
+  	line-height: 84px;
+  	text-align: center;
+  	font-size: 16px;
+  	font-weight: bold; }
 
 /*--- other ----------------------------------------------*/
 

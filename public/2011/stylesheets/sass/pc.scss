@@ -33,7 +33,7 @@ h1 {
   h3 {
     margin-bottom: 20px; } }
 
-.btn a { 
+.btn { 
   @include btnHover;
   width: 320px;
 	background: #fff url(/2011/images/commonBtn320x90.png) no-repeat;}

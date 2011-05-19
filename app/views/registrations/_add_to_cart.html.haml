@@ -3,7 +3,7 @@
     != form_tag(add_item_carts_path(:locale => params[:locale])) do
       - btnimg_fname = (item.individual_sponsor? ? "sponsorsBtnBecomeAIndividualSponsor" : "registrationBtnTickets")
       != hidden_field_tag :product_item_code, item.item_code
-      != image_submit_tag("/2011/images/#{btnimg_fname}.png")
+      != image_submit_tag("/2011/images/#{btnimg_fname}.png", {"class" => "btnInput"})
   - else
     %span{:style => 'font-size: 24px;font-weight:bold'}
       - if item.sold_out?

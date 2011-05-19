@@ -153,3 +153,6 @@ ol {
 
 .rss {
   float: right; }
+
+.btnInput {
+  @include opacity80; }

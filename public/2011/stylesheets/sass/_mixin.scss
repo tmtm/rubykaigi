@@ -7,11 +7,14 @@
     color: #fff;
     &:link, &:visited, &:hover, &:active {
       color: #fff;
-  	  text-decoration:none; } }
+  	  text-decoration:none; } 
+    @include opacity80; } }
+
+@mixin opacity80 {
   &:hover, &:active {
     opacity:0.8;
     filter: alpha(opacity=80);
-    -ms-filter: "alpha( opacity=80 )"; } }
+    -ms-filter: "alpha( opacity=80 )";} }
 
 @mixin mark($img) {
   list-style: none;
