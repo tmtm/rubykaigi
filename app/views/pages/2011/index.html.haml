@@ -13,7 +13,7 @@
     });
 %header
   %h1
-    %img{:alt => "Date: July16(Sat) - 18(Mon),2011 Venue: Nerima Culture Center(Tokyo, Japan) Keynotes: Yukihiro \"Mats\" Matsumoto, Aaron Patterson(a.k.a. tenderlove)", :height => "100", :src => "/2011/images/indexDetails.png", :width => "980"}
+    %img{:alt => "Date: July16(Sat) - 18(Mon),2011 Venue: Nerima Culture Center(Tokyo, Japan) Keynotes: Yukihiro \"Mats\" Matsumoto, Dave Thomas, Aaron Patterson(a.k.a. tenderlove)", :height => "100", :src => "/2011/images/indexDetails.png", :width => "980"}
   %section#photos
     %ul.galleryview
       %li
@@ -39,15 +39,15 @@
   %section#registration
     %p{:style => "margin-bottom: 10px;"}
       %a.linkMark{:href => "http://rubykaigi.tdiary.net/20110519.html", :target => "_blank"}
-        講演に関する残念なお知らせ
+        #{t(:canceled)}
     %p.btn
       %a{:href => "/2011/#{current_locale}/registration#individual_sponsor"}
         -#%img{:alt => "Registration (チケット購入)", :src => "/2011/images/registrationBtnTickets.png", :width => "320", :height => "90"}
         %img{:alt => "#{t(:sponsors_registration_individual)}", :src => "/2011/images/sponsorsBtnBecomeAIndividualSponsor.png"}
     -# %p.btn
-    -#  -#%a{:href => "/2011/#{current_locale}/programs"}
+    -#  -#%a{:href => "/2011/#{current_locale}/schedule/grid"}
     -#  %a{:href => "/2011/#{current_locale}/coming_soon"}
-    -#    %img{:alt => "Programs(プログラム)", :height => "40", :src => "/2011/images/indexBtnPrograms.png", :width => "320", :height => "40"}
+    -#    %img{:alt => "Schedule", :height => "40", :src => "/2011/images/indexBtnSchedule.png", :width => "320", :height => "40"}
     -#%p.btn
     -#  %a{:href => "/2011/#{current_locale}/for_attendees#access"}
     -#    %img{:alt => "Access(アクセス)", :height => "40", :src => "/2011/images/indexBtnAccess.png", :width => "320", :height => "40"}

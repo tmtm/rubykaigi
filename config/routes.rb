@@ -4,9 +4,10 @@ Rubykaigi::Application.routes.draw do
       :to => 'registrations#index',
       :as => 'registrations'
     match 'phone_registration', :to => 'registrations#phone_index'
-    resources :programs, :only => [:index, :show]
     resources :advent, :only => %w(index)
     match 'sponsors_ruby/:id', :to => 'sponsors_ruby#show'
+    resources :events, :only => %w(show)
+    match 'schedule/grid' => 'schedule#grid'
   end
 
   match 'signin', :to => 'sessions#new', :as => 'signin'

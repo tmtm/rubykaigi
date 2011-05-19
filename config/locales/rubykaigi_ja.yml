@@ -106,6 +106,7 @@ ja:
   staffs: '当日スタッフ募集'
   for_attendees: '参加者向け情報'
   programs: 'プログラム'
+  schedule: 'スケジュール'
   staffs: '当日スタッフ募集'
   hall_main: '大ホール'
   hall_sub: '小ホール'
@@ -139,4 +140,4 @@ ja:
   individual_sponsor_program_benefit_1: 'RubyKaigi2011 本編参加チケット 1枚'
   individual_sponsor_program_benefit_2: 'rubykaigi.org にRubyKaigi2011個人スポンサーとしてお名前とリンク先を掲載します(匿名での支援も受け付けます)'
   individual_sponsor_program_benefit_3: 'RubyKaigi2011 公式懇親会への参加特典はありません【昨年から仕様変更】'
-
+  canceled: '講演に関する残念なお知らせ'

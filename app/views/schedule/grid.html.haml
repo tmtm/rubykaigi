@@ -3,7 +3,7 @@
   %link{:href => "/2011/stylesheets/print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}
 #content
   %h1
-    #{t(:programs)}
+    #{t(:schedule)}
   - @timetable.days.each do |date|
     %div
       %h2
@@ -32,7 +32,7 @@
                 - else
                   - (events = rk_session.events).each do |event|
                     %h3
-                      %a.tip{:href => program_path(:id => event._id)}
+                      %a.tip{:href => event_path(:id => event._id)}
                         = event.localize(I18n.locale, :title)
                         %img.fright{:alt => "Permalink", :src => "/2011/images/commonBtnPermalink.png"}
                         - if abstract = event.localize(I18n.locale, :abstract)

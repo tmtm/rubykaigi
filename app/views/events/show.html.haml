@@ -3,7 +3,7 @@
   != render :partial => 'shared/2011/facebook_meta'
 #content
   %h1
-    #{t(:programs)}
+    = @title
   %article
     %h2
       %time{:datetime => @session.start.strftime("%Y-%m-%d") }
@@ -28,9 +28,6 @@
             = @event.localize(I18n.locale, :presenter, :name)
           %p
             = @event.localize(I18n.locale, :presenter, :bio)
-          %p
-            %a.linkMark{:href => "#", :target => "_blank"}
-              http://www.example.com
     %h3.cboth
       #{t(:presentation_material)}
     %p -

@@ -22,7 +22,7 @@ timeslots:
   - start: *end_of_slot3
     end:   &end_of_slot4
       2011-07-18T12:00:00+09:00
-    event_ids: 
+    event_ids:
       - 18S03
       - 18S04
   - start: *end_of_slot4

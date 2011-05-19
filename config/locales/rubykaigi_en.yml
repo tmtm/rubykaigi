@@ -105,6 +105,7 @@ en:
   staffs: '当日スタッフ募集'
   for_attendees: 'For Attendees'
   programs: 'Program'
+  schedule: 'Schedule'
   staffs: '当日スタッフ募集'
   hall_main: 'Main Hall'
   hall_sub: 'Sub Hall'
@@ -138,4 +139,4 @@ en:
   individual_sponsor_program_benefit_1: '1 pass to RubyKaigi 2011.'
   individual_sponsor_program_benefit_2: 'No pass to the official party(you should buy the ticket if want to join the party.'
   individual_sponsor_program_benefit_3: 'A mention of your name and link to your website in the individual sponsor section of RubyKaigi 2011 web site.'
-
+  canceled: 'We have some unfortunate news to announce.'

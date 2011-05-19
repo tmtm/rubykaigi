@@ -1,18 +1,20 @@
---- 
+---
 presenter:
-  name: 
-    en: Paul Elliott
-    ja: 
-  affiliation: 
-    en: Hashrocket
-    ja: 
-  bio: 
-    en: Ruby developer, Rails Consultant, Rocketeer @ Hashrocket, co-host of the Ruby5 podcast, maintainer of mongoid, and creator of fabrication.
-    ja: 
-title: 
-  en: Everyday Mongoid
-  ja: 
-abstract: 
-  en: Mongoid has quickly become the most popular ODM for using MongoDB with Ruby. Mongoid makes it very easy to model certain kinds of data in a much more natural way, but it requires you to look at your data and your application very differently. Using a Document datastore poses a unique set of challenges and this talk will give you the tools you need to understand what it entails and how to interact efficiently with mongoid.
-  ja: 
+  name:
+    en: Yehuda Katz
+    ja:
+  affiliation:
+    en: Strobe Inc.
+    ja:
+  bio:
+    en: "Yehuda Katz is a member of the SproutCore, Ruby on Rails and jQuery Core Teams; during the daytime, he works as Chief Technologist at Strobe. Yehuda is the co-author of the best-selling jQuery in Action, the upcoming Rails 3 in Action, and is a contributor to Ruby in Practice. He spends most of his time hacking on open source―his main projects, along with others, like Thor, Handlebars and Janus―or traveling the world doing evangelism work. He blogs at http://yehudakatz.com and can be found on Twitter as @wycats."
+    ja:
+title:
+  en: "Advancing Net::HTTP"
+  ja:
+abstract:
+  en: "Net::HTTP is a great Ruby HTTP library. In this talk, I will cover some improvements I have made to Net::HTTP in order to add support for nonblocking reads, even in HTTP requests that use gzip, Transfer-Encoding: Chunked and keepalive.
+
+I will also talk about how nonblocking IO and network libraries can be used with a pure-Ruby reactor to enable scoped parallel IO in a single thread, and how we can improve existing Ruby network libraries to enable async operation."
+  ja:
 language: English

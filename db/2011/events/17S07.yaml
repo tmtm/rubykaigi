@@ -1,24 +1,28 @@
 --- 
 presenter:
   name: 
-    en: Kouji Takao
-    ja: "高尾宏治"
+    en: Thomas E Enebo
+    ja: 
   affiliation: 
-    en: "Network Applied Communication Laboratory Ltd. "
-    ja: "株式会社ネットワーク応用通信研究所"
+    en: jruby.org / Engine Yard
+    ja: 
   bio: 
-    en: |-
-      Kouji Takao is one of the commiter of MRI. 
-      He is maintener of Readline of Ruby.
-    ja: "MRIメンテナの一人。担当はReadlineライブラリです。"
+    en: Thomas Enebo has been a practitioner of Java for over a decade and he is the co-lead of the JRuby project. Thomas has also been happily using Ruby since 2001. In addition to working on JRuby, Tom is interested in improving the state of alternative languages on the Java Virtual Machine. Tom is employed working on JRuby full time at Engine Yard.
+    ja: 
 title: 
-  en: MacRuby on Rails
-  ja: "MacRuby on Rails ?MacRubyから見たcRuby?"
+  en: "Java in Ruby: Scripting Java in JRuby"
+  ja: 
 abstract: 
-  en: "TBD: 申し訳ありません。後日、英訳してお送りします。"
-  ja: "2011年3月時点でのMacRubyはRuby処理系としての完成度は低く、Ruby on\n\
-    Railsが到底動作するようには思えない。しかしながら、MacRubyに対して改良\n\
-    に改良を重ねることできっとRailsを動作させることができる（はずである）。\n\n\
-    本発表ではMacRubyでRailsを動作させるために必要だった修正内容とともに、\n\
-    その過程であらためて知ることになったcRubyのすばらしさを説明します。"
-language: Japanese
+  en: |-
+    One major benefit of JRuby is the ability to import Java classes and then use them as if they were POROs (Plain Old Ruby Objects). This feature makes Java fun again. You can pull in legacy code and sculpt an API which fits nicely into your Ruby code. You can access novel or robust Java libraries to bridge a gap in existing Ruby libraries.
+    
+    This talk will:
+    
+        * Show basics of interacting with Java classes from within Ruby
+        * Implementing Java interfaces with Ruby blocks and classes
+        * Point out Gotchas
+        * Give style hints to make Java APIs fit better into the Ruby way
+    
+    By the end of this talk you should be able to effectively consume Java libraries in Ruby in a way that is satisfying and useful.
+  ja: 
+language: English

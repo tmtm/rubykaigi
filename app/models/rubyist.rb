@@ -80,7 +80,7 @@ class Rubyist < ActiveRecord::Base
   # 2011の個人スポンサー用にでっち上げた
   def gravatar_url(size = 42)
     if email.present?
-      "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(email.downcase)}?s=#{size}"
+      "http://www.gravatar.com/avatar/#{Digest::MD5.hexdigest(email.downcase)}?s=#{size}&d=#{CGI.escape('http://rubykaigi.org/images/bow_face.png')}"
     else
       "/images/bow_face.png"
     end
