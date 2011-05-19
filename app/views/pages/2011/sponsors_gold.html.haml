@@ -3,7 +3,7 @@
   %h1
     #{t(:gold_sponsor)}
 
-  - RubyKaigi2011::GoldSponsor.all.each do |sponsor|
+  - RubyKaigi2011::GoldSponsor.all.reject{|s| s.wanted }.each do |sponsor|
     %article
       %h2
         = sponsor.localize(I18n.locale, :name)
