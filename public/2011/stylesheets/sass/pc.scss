@@ -35,8 +35,7 @@ h1 {
 
 .btn { 
   @include btnHover;
-  width: 320px;
-	background: #fff url(/2011/images/commonBtn320x90.png) no-repeat;}
+  width: 320px; }
 
 .btnText90 {
   @include btnHover;
