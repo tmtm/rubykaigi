@@ -1,5 +1,18 @@
 /*--- mix-in ----------------------------------------------*/
 
+@mixin btnHover {
+  a, a.ui-link {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    &:link, &:visited, &:hover, &:active {
+      color: #fff;
+  	  text-decoration:none; } }
+  &:hover, &:active {
+    opacity:0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha( opacity=80 )"; } }
+
 @mixin mark($img) {
   list-style: none;
   background: url("/2011/images/#{$img}") no-repeat top left;

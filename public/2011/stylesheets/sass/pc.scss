@@ -34,13 +34,18 @@ h1 {
     margin-bottom: 20px; } }
 
 .btn a { 
-  display: block;
-  background: #fff; 
+  @include btnHover;
   width: 320px;
-  &:hover img, &:active img {
-    opacity:0.8;
-    filter: alpha(opacity=80);
-    -ms-filter: "alpha( opacity=80 )"; } }
+	background: #fff url(/2011/images/commonBtn320x90.png) no-repeat;}
+
+.btnText90 {
+  @include btnHover;
+	background: #fff url(/2011/images/commonBtn320x90.png) no-repeat;
+	width: 320px;
+	height: 90px;
+	line-height: 90px;
+	text-align: center;
+	font-size: 18px; }
 
 /*--- header ----------------------------------------------*/
 

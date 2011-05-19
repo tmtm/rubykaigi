@@ -1,14 +1,18 @@
 @import "mixin";
 
-.btn a { 
-  display: block;
-  background: #fff; 
+.btn { 
+  @include btnHover;
   width: 280px;
-  margin-bottom: 2px;
-  &:hover img, &:active img {
-    opacity:0.8;
-    filter: alpha(opacity=80);
-    -ms-filter: "alpha( opacity=80 )"; } }
+  margin-bottom: 2px; }
+
+.btnText90 {
+    @include btnHover;
+  	background: #fff url(/2011/images/commonBtn320x90.png) no-repeat;
+  	width: 280px;
+  	line-height: 84px;
+  	text-align: center;
+  	font-size: 16px;
+  	font-weight: bold; }
 
 #content {
   clear: both;
