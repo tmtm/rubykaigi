@@ -6,9 +6,9 @@
     = @title
   %article
     %h2
-      %time{:datetime => @session.start.strftime("%Y-%m-%d") }
-        = l @session.start.to_date, :format => :long
-        = [:start, :end].map{|t| @session.send(t).strftime("%H:%M") }.join("-")
+      %time{:datetime => @session_of_event.start.strftime("%Y-%m-%d") }
+        = l @session_of_event.start.to_date, :format => :long
+        = [:start, :end].map{|t| @session_of_event.send(t).strftime("%H:%M") }.join("-")
         (#{@room.localize(I18n.locale, :name)})
     #abstract
       %h3
