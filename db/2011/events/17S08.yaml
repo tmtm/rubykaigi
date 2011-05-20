@@ -4,7 +4,7 @@ presenter:
     en: Kouji Takao
     ja: "高尾宏治"
   affiliation: 
-    en: "Network Applied Communication Laboratory Ltd. "
+    en: "Network Applied Communication Laboratory Ltd."
     ja: "株式会社ネットワーク応用通信研究所"
   bio: 
     en: |-
@@ -13,7 +13,7 @@ presenter:
     ja: "MRIメンテナの一人。担当はReadlineライブラリです。"
 title: 
   en: MacRuby on Rails
-  ja: "MacRuby on Rails ?MacRubyから見たcRuby?"
+  ja: "MacRuby on Rails 〜MacRubyから見たcRuby〜"
 abstract: 
   en: "TBD: 申し訳ありません。後日、英訳してお送りします。"
   ja: "2011年3月時点でのMacRubyはRuby処理系としての完成度は低く、Ruby on\n\
