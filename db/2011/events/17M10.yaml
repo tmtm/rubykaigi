@@ -1,7 +1,7 @@
 ---
 presenter:
   name:
-    en: Dave Thomas
+    en:
     ja:
   affiliation:
     en: ""
@@ -10,7 +10,7 @@ presenter:
     en: ""
     ja: ""
 title:
-  en: "Keynote"
+  en: "(TBD)"
   ja:
 abstract:
   en: ""
