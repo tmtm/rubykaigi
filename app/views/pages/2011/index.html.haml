@@ -57,9 +57,9 @@
     -#%p.btn
     -#  %a{:href => "/2011/#{current_locale}/advent"}
     -#    %img{:alt => "Advent(アドベント)", :height => "40", :src => "/2011/images/indexBtnAdvent.png", :width => "320", :height => "40"}
-    -#%p.btn
-    -#  %a{:href => "/2011/#{current_locale}/for_attendees#community"}
-    -#    %img{:alt => "Community(コミュニティ)", :src => "/2011/images/indexBtnCommunity.png", :width => "320", :height => "40"}
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/for_attendees#community"}
+        %img{:alt => "Community(コミュニティ)", :src => "/2011/images/indexBtnCommunity.png", :width => "320", :height => "40"}
 #content
   %section#news
     != render 'shared/2011/news_section_on_index'
