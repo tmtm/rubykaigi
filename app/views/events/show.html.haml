@@ -27,6 +27,8 @@
               %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
             %h4
               = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
+            - if affiliation = presenter["affiliation"]
+              %p.affiliation= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, affiliation)
             %p
               = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["bio"])
 
