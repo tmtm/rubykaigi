@@ -1,23 +1,23 @@
 --- 
-presenter:
-  name: 
-    en: Ayumu AIZAWA
-    ja: "相澤 歩"
-  affiliation: 
-    en: Accenture Technology Solutions Corp.
-    ja: "アクセンチュア・テクノロジー・ソリューションズ株式会社"
-  bio: 
-    en: |-
-      Ayumu AIZAWA is system analyst in global consulting firm.
-      He has a wealth of experience around design/development/deploy works of business and technology architecture for
-      large-scale enterprise system integration project as his job. He founded Ruby/Rails activities in his organization
-      since 2009, and is working on that continuously.
-      Also he is a member of RubyKaigi operation team since 2009 privately.
-    ja: |-
-      外資系コンサルティングファーム系列SIer所属のシステムアナリストでクラウド推進チームのソリューションアーキテクト。
-      主に大規模案件の業務とシステムの設計/開発/展開を生業としており特に金融業界の基幹業務に関わることが多い。
-      2009年から社内でRubyの啓蒙活動と技術者の育成をおこなっている。
-      日本Ruby会議2009、2010、2011実行委員。JRuby会議2010実行委員、JRuby会議2011実行委員長。
+presenters:
+  - name: 
+      en: Ayumu AIZAWA
+      ja: "相澤 歩"
+    affiliation: 
+      en: Accenture Technology Solutions Corp.
+      ja: "アクセンチュア・テクノロジー・ソリューションズ株式会社"
+    bio: 
+      en: |-
+        Ayumu AIZAWA is system analyst in global consulting firm.
+        He has a wealth of experience around design/development/deploy works of business and technology architecture for
+        large-scale enterprise system integration project as his job. He founded Ruby/Rails activities in his organization
+        since 2009, and is working on that continuously.
+        Also he is a member of RubyKaigi operation team since 2009 privately.
+      ja: |-
+        外資系コンサルティングファーム系列SIer所属のシステムアナリストでクラウド推進チームのソリューションアーキテクト。
+        主に大規模案件の業務とシステムの設計/開発/展開を生業としており特に金融業界の基幹業務に関わることが多い。
+        2009年から社内でRubyの啓蒙活動と技術者の育成をおこなっている。
+        日本Ruby会議2009、2010、2011実行委員。JRuby会議2010実行委員、JRuby会議2011実行委員長。
 title: 
   en: |-
     Issues of Enterprise Rubyist

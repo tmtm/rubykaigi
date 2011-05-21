@@ -1,14 +1,14 @@
 --- 
-presenter:
-  name: 
-    en: Shugo Maeda
-    ja: "前田 修吾"
-  affiliation: 
-    en: Network Applied Communication Laboratory Ltd.
-    ja: "株式会社ネットワーク応用通信研究所"
-  bio: 
-    en: a Ruby committer
-    ja: "Rubyコミッタ"
+presenters:
+  - name: 
+      en: Shugo Maeda
+      ja: "前田 修吾"
+    affiliation: 
+      en: Network Applied Communication Laboratory Ltd.
+      ja: "株式会社ネットワーク応用通信研究所"
+    bio: 
+      en: a Ruby committer
+      ja: "Rubyコミッタ"
 title: 
   en: How to read JIS X 3017
   ja: "JIS X 3017の読み方"

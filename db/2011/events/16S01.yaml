@@ -1,20 +1,20 @@
 --- 
-presenter:
-  name: 
-    en: Shota Fukumori (sora_h)
-    ja: 
-  affiliation: 
-    en: Team Pasra
-    ja: 
-  bio: 
-    en: |-
-      Youngest Ruby Committer who the most don't know Ruby implementation,
-      and the 3rd grade part-time Junior High School (the 9th grade) student
-      who is interested in Ruby.
-      About me: http://sorah.cosmio.net/
-    ja: "トチギ在住の最近「Rubyの実装をもっとも知らないコミッター」三代目を襲名した新米最年少 Ruby コミッター。\n\
-      現役中3 (※ただし不登校)。Team Pasra ( http://pasra.tk/ ) や Ruby 札幌などで日々ゲームとかRubyとかで遊んでます。\n\
-      詳細: http://sorah.cosmio.net/"
+presenters:
+  - name: 
+      en: Shota Fukumori (sora_h)
+      ja: 
+    affiliation: 
+      en: Team Pasra
+      ja: 
+    bio: 
+      en: |-
+        Youngest Ruby Committer who the most don't know Ruby implementation,
+        and the 3rd grade part-time Junior High School (the 9th grade) student
+        who is interested in Ruby.
+        About me: http://sorah.cosmio.net/
+      ja: "トチギ在住の最近「Rubyの実装をもっとも知らないコミッター」三代目を襲名した新米最年少 Ruby コミッター。\n\
+        現役中3 (※ただし不登校)。Team Pasra ( http://pasra.tk/ ) や Ruby 札幌などで日々ゲームとかRubyとかで遊んでます。\n\
+        詳細: http://sorah.cosmio.net/"
 title: 
   en: Ruby, that community and me.
   ja: "Rubyとそのコミュニティと中学生の私"

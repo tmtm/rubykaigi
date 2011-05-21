@@ -1,14 +1,14 @@
 ---
-presenter:
-  name:
-    en: Matz
-    ja:
-  affiliation:
-    en:
-    ja:
-  bio:
-    en:
-    ja:
+presenters:
+  - name:
+      en: Matz
+      ja:
+    affiliation:
+      en:
+      ja:
+    bio:
+      en:
+      ja:
 title:
   en: "Keynote"
   ja:

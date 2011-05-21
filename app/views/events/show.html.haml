@@ -17,17 +17,19 @@
         = @event.localize(I18n.locale, :abstract)
       != render :partial => 'shared/2011/facebook'
       != render :partial => 'shared/2011/twitter'
-    - if @event.presenter
+    - if @event.presenters
       #speaker
         %h3
           #{t(:speaker)}
-        %div.avatar
-          %a{:href => "#", :target => "_blank"}
-            %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-          %h4
-            = @event.localize(I18n.locale, :presenter, :name)
-          %p
-            = @event.localize(I18n.locale, :presenter, :bio)
+        - @event.presenters.each do |presenter|
+          %div.avatar
+            %a{:href => "#", :target => "_blank"}
+              %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+            %h4
+              = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
+            %p
+              = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["bio"])
+
     -#%h3.cboth
       #{t(:presentation_material)}
     -#%p -

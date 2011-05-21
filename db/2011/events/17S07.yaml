@@ -1,14 +1,24 @@
 --- 
-presenter:
-  name: 
-    en: Thomas E Enebo
-    ja: 
-  affiliation: 
-    en: jruby.org / Engine Yard
-    ja: 
-  bio: 
-    en: Thomas Enebo has been a practitioner of Java for over a decade and he is the co-lead of the JRuby project. Thomas has also been happily using Ruby since 2001. In addition to working on JRuby, Tom is interested in improving the state of alternative languages on the Java Virtual Machine. Tom is employed working on JRuby full time at Engine Yard.
-    ja: 
+presenters:
+  - name: 
+      en: Thomas E Enebo
+      ja: 
+    affiliation: 
+      en: jruby.org / Engine Yard
+      ja: 
+    bio: 
+      en: Thomas Enebo has been a practitioner of Java for over a decade and he is the co-lead of the JRuby project. Thomas has also been happily using Ruby since 2001. In addition to working on JRuby, Tom is interested in improving the state of alternative languages on the Java Virtual Machine. Tom is employed working on JRuby full time at Engine Yard.
+      ja:
+  - name:
+      en: Koichiroo Ohba
+      ja: 大場光一郎
+    affiliation:
+      en:
+      ja:
+    bio:
+      en: "He is developing a cloud platform service with JRuby for his company. A member of JRuby user meetup. He was the organizer of JRubyKaigi 2010 and is a staff of JRubyKaigi 2011."
+      ja: "JRubyを使ってクラウドプラットフォームを開発している。日本JRubyユーザー会でJRubyKaigi 2010実行委員長でJRubyKaigi 2011のスタッフ。"
+
 title: 
   en: "Java in Ruby: Scripting Java in JRuby"
   ja: 
