@@ -22,7 +22,7 @@ module Paypal
       values = {
         :cmd => '_cart',
         :charset => 'utf-8',
-        :lc => "#{I18n.locale.upcase}",
+        :lc => "#{I18n.locale.to_s.upcase}",
         :currency_code => 'JPY',
         :upload => 1,
         :business => Paypal::EncryptedForm.business_email,
