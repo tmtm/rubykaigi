@@ -16,7 +16,7 @@
             Individual Sponsor Link Label: <strong>#{item.link_label.present? ? item.link_label : "(default: name on your account)" }</strong><br />
             Individual Sponsor Link URL: <strong>#{item.link_url.present? ? item.link_url : "(default: website on your account)" }</strong><br />
             <br />
-        %p!= link_to 'Edit Individual Sponsor Options', individual_sponsor_option_orders_path
+        %p!= link_to 'Edit Individual Sponsor Options', individual_sponsor_option_orders_path(:locale => params[:locale])
 
   %h2 #{t('total_price')}
   %p

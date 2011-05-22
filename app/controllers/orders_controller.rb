@@ -6,6 +6,7 @@ class OrdersController < LocaleBaseController
 
   def create
     cart = current_cart
+    locale = params[:locale] || current_locale
     unless cart.all_item_in_stock?
       flash[:error] = "Your cart is including out of stock item(s). Remove item(s) from your cart and retry."
       redirect_to(carts_path) and return
@@ -14,28 +15,29 @@ class OrdersController < LocaleBaseController
     @order.add_line_item_from_cart(cart)
     if @order.individual_sponsor_included? && authenticated? && user.individual_sponsor?
       flash[:error] = "You're already Individual Sponsor of RubyKaigi #{RubyKaigi.latest_year}"
-      redirect_to(carts_path) and return
+      redirect_to(carts_path(:locale => locale)) and return
     end
     if @order.save
       session[:order_id] = @order.id
       if @order.individual_sponsor_included?
-        redirect_to individual_sponsor_option_orders_path
+        redirect_to individual_sponsor_option_orders_path(:locale => locale)
       else
-        redirect_to confirm_orders_path
+        redirect_to confirm_orders_path(:locale => locale)
       end
     else
       flash[:error] = t('flash.order.save.fail')
-      redirect_to carts_path
+      redirect_to carts_path(:locale => locale)
     end
   end
 
   def confirm
     @order = Order.find(session[:order_id])
+    locale = params[:locale] || current_locale
     @paypal_form = Paypal::EncryptedForm.new(@order,
-      returned_orders_url(:locale => params[:locale]), paypal_ipn_url(:secret => Paypal::EncryptedForm.ipn_secret))
+      returned_orders_url(:locale => locale), paypal_ipn_url(:secret => Paypal::EncryptedForm.ipn_secret))
     unless @order
       flash[:error] = t('flash.order.notfound')
-      redirect_to carts_path
+      redirect_to carts_path(:locale => locale)
     end
   end
 
@@ -44,7 +46,7 @@ class OrdersController < LocaleBaseController
     if (opt_params = params[:individual_sponsor_option])
       if update_individual_sponsor_option(opt_params)
         session[:order_id] = @order.id
-        redirect_to confirm_orders_path and return
+        redirect_to confirm_orders_path(:locale => current_locale) and return
       else
         render :individual_sponsor_option
       end

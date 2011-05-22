@@ -24,10 +24,10 @@ class CartsController < LocaleBaseController
       @cart.add_product(product_item)
     rescue Cart::OverProductItemLimitationError
       flash[:error] = "You cannot register such quantity at once(you should set under 4 or we don't have enough stock)."
-      redirect_to(carts_path) and return
+      redirect_to(carts_path(:locale => locale)) and return
     end
 
-    redirect_to carts_path
+    redirect_to carts_path(:locale => locale)
   end
 
   def update
@@ -59,7 +59,7 @@ class CartsController < LocaleBaseController
     cart = current_cart
     product_item = ProductItem.find_by_item_code(params[:product_item_code])
     cart.remove_product(product_item)
-    redirect_to carts_path
+    redirect_to carts_path(:locale => current_locale)
   end
 
 end
