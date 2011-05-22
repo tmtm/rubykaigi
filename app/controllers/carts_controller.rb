@@ -9,14 +9,15 @@ class CartsController < LocaleBaseController
 
   def add_item
     @cart = current_cart
+    locale = params[:locale] || current_locale
     product_item = ProductItem.find_by_item_code(params[:product_item_code])
     unless product_item
       flash[:error] = "ProductItem error"
-      redirect_to(registrations_url(:year => RubyKaigi.latest_year, :locale => current_locale)) and return
+      redirect_to(registrations_url(:year => RubyKaigi.latest_year, :locale => locale)) and return
     end
     if product_item.individual_sponsor? && authenticated? && user.individual_sponsor?
       flash[:error] = "You're already Individual Sponsor of RubyKaigi #{RubyKaigi.latest_year}"
-      redirect_to(registrations_url(:year => RubyKaigi.latest_year, :locale => current_locale)) and return
+      redirect_to(registrations_url(:year => RubyKaigi.latest_year, :locale => locale)) and return
     end
 
     begin
@@ -31,6 +32,7 @@ class CartsController < LocaleBaseController
 
   def update
     @cart = current_cart
+    locale = params[:locale] || current_locale
     new_qty = params[:qty].map {|item_code, qty| [item_code, qty.to_i]}
     new_qty.each do |(item_code, qty)|
       product_item = ProductItem.find_by_item_code(item_code)
@@ -40,7 +42,7 @@ class CartsController < LocaleBaseController
       end
       if product_item.individual_sponsor? && authenticated? && user.individual_sponsor?
         flash[:error] = "You cannot change qty for Individual Sponsor of RubyKaigi #{RubyKaigi.latest_year}"
-        redirect_to(registrations_url(:year => RubyKaigi.latest_year, :locale => current_locale)) and return
+        redirect_to(registrations_url(:year => RubyKaigi.latest_year, :locale => locale)) and return
       end
       begin
         @cart.add_product(product_item, qty)
