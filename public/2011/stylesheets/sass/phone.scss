@@ -49,8 +49,9 @@ img {
   margin-bottom: 2px; }
 
 .btnText90 {
+    a {
+  	  background: #fff url(/2011/images/commonBtn320x90.png) no-repeat; }
     @include btnHover;
-  	background: #fff url(/2011/images/commonBtn320x90.png) no-repeat;
   	width: 280px;
   	line-height: 84px;
   	text-align: center;
