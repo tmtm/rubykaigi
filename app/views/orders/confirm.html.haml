@@ -23,7 +23,7 @@
     <strong>#{number_with_delimiter(@order.price)}</strong> JPY
   <br /><br /><br /><br />
   %p
-    != link_to 'Back to Cart', carts_path
+    != link_to 'Back to Cart', carts_path(:locale => locale)
   %div{:style => 'text-align:right'}
     - form_tag(url_of_paypal_checkout) do
       != hidden_field_tag :cmd, @paypal_form.cmd

@@ -24,7 +24,7 @@
     %p.btn
       != link_to image_tag('/2011/images/registerBtnMixi.png', :alt => 'via mixi'), sessions_path(:openid_identifier => 'http://mixi.jp')
     %p.cleft
-      その他のOpenIDプロバイダはこちら
+      or signin via other OpenID providers:
       != form_tag sessions_path, :method => :get do
         %p
           != text_field_tag :openid_identifier
