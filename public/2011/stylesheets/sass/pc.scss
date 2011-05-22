@@ -278,6 +278,8 @@ a:hover.tip {
 
 /*--- events ----------------------------------------------*/
 
+h1.events_header {
+  font-size: 130%; }
 #events {
   @include clearfix; }
 
