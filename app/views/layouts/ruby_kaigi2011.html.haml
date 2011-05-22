@@ -73,15 +73,63 @@
               %a{:href => "/2011/#{current_locale}/about#prospectus"}
                 #{t(:prospectus)}
             %li
-              %a{:href => "/2011/#{current_locale}/about#press"}
+              %a{:href => "/2011/#{current_locale}/coming_soon"}
                 #{t(:press)}
             %li
-              %a{:href => "/2011/#{current_locale}/about#team"}
+              %a{:href => "/2011/#{current_locale}/coming_soon"}
                 #{t(:team)}
             %li
               %a{:href => "/2011/#{current_locale}/about#photographers"}
                 #{t(:photographers)}
-        -#%div
+          %h2
+            %a{:href => "/2011/#{current_locale}/registration"}
+              #{t(:registration)}
+          %ul
+            %li
+              %a{:href => "/2011/#{current_locale}/registration#tickets"}
+                #{t(:tickets)}
+            %li
+              %a{:href => "/2011/#{current_locale}/registration#party"}
+                #{t(:official_party)}
+          %ul
+            %li
+              %a{:href => "/2011/#{current_locale}/registration#individual_sponsor"}
+                #{t(:individual_sponsor)}
+        %div
+          %h2
+            %a{:href => "/2011/#{current_locale}/sponsors"}
+              #{t(:sponsors)}
+          %ul
+            %li
+              #{t(:ruby_sponsor)}:
+              -#%a{:href => "/2011/#{current_locale}/sponsors_ruby_R01"}
+              %a{:href => "/2011/#{current_locale}/coming_soon"}
+                NaCL
+          %ul
+            %li
+              #{t(:ruby_sponsor)}:
+              -#%a{:href => "/2011/#{current_locale}/sponsors_ruby_R02"}
+              %a{:href => "/2011/#{current_locale}/coming_soon"}
+                リコー
+          %ul
+            %li
+              #{t(:ruby_sponsor)}:
+              -#%a{:href => "/2011/#{current_locale}/sponsors_ruby_R03"}
+              %a{:href => "/2011/#{current_locale}/coming_soon"}
+                Microsoft
+          %ul
+            %li
+              %a{:href => "/2011/#{current_locale}/sponsors_platinum"}
+                #{t(:platinum_sponsor)}
+          %ul
+            %li
+              %a{:href => "/2011/#{current_locale}/sponsors_gold"}
+                #{t(:gold_sponsor)}
+          %ul
+            %li
+              %a{:href => "/2011/#{current_locale}/sponsors#sponsors_registration"}
+                #{t(:sponsors_registration)}
+        %div
           %h2
             %a{:href => "/2011/#{current_locale}/for_attendees"}
               #{t(:for_attendees)}
@@ -89,7 +137,7 @@
             %li
               -#%a{:href => "/2011/#{current_locale}/timetable"}
               %a{:href => "/2011/#{current_locale}/coming_soon"}
-                #{t(:programs)}
+                #{t(:schedule)}
             %li
               #{t(:hall_main)}:
               %a{:href => "/2011/#{current_locale}/coming_soon"} Ustream
@@ -110,7 +158,7 @@
               %a{:href => "/2011/#{current_locale}/coming_soon"}
                 #{t(:floor_guide)}(PDF)
             %li
-              %a{:href => "/2011/#{current_locale}/advent"}
+              %a{:href => "/2011/#{current_locale}/coming_soon"}
                 #{t(:advent)}
             %li
               %a{:href => "/2011/#{current_locale}/for_attendees#community"}
@@ -121,24 +169,6 @@
             %li
               %a{:href => "/2011/#{current_locale}/for_attendees#goodies"}
                 #{t(:goodies)}
-        %div
-          %h2
-            %a{:href => "/2011/#{current_locale}/registration"}
-              #{t(:registration)}
-          %ul
-            %li
-              %a{:href => "/2011/#{current_locale}/registration#tickets"}
-                #{t(:tickets)}
-            %li
-              %a{:href => "/2011/#{current_locale}/registration#party"}
-                #{t(:official_party)}
-          %h2
-            %a{:href => "/2011/#{current_locale}/sponsors"}
-              #{t(:sponsors)}
-          %ul
-            %li
-              %a{:href => "/2011/#{current_locale}/sponsors#sponsors_registration"}
-                #{t(:sponsors_registration)}
         %div
           %h2
             %a{:href => "/2011/#{current_locale}/archives"}

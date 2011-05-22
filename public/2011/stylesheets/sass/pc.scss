@@ -383,7 +383,7 @@ footer {
   clear: both;
   background: url(/2011/images/commonFooterBg.png) top center repeat-x;
   text-decoration: none;
-  padding: 10px;
+  padding: 5px;
   margin-top: 10px;
   font-size: 70%;
   @include clearfix; 
@@ -394,9 +394,10 @@ footer {
       border-right: #5b5c55 1px solid collapse;
       border-left: #5b5c55 1px solid; }
     li {
+      white-space: nowrap;
       @include mark("footerLinkMarkS.png");
       color: #160f0d;
-      margin-left: 5px; }
+      margin-left: 3px; }
     div h2 {
       font-size: 100%;
       background: none;
