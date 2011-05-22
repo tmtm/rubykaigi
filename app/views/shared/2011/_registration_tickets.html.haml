@@ -15,13 +15,13 @@
       != stock_notification(@kaigi)
   != render :partial => 'add_to_cart', :locals => {:item => @kaigi }
   %h3
-    #{t('student_discount_program_detail')}:
+    #{t('free_admission_program_for_students')}:
   %ul.listMark
     %li
-      Instruction(説明):
+      #{t('instruction')}:
       != link_to 'English', 'http://rubykaigi.tdiary.net/20110521.html#p02'
       ,
       != link_to '日本語', 'http://rubykaigi.tdiary.net/20110521.html#p01'
     %li
-      != link_to_if(true, t('student_discount_program_entry_form'), 'http://www.atdot.net/~ko1/file/rubykaigi/2011/students/upload')
+      != link_to_if(true, t('free_admission_program_for_students_entry_form'), 'http://www.atdot.net/~ko1/file/rubykaigi/2011/students/upload')
   -#    -# (#{t("already_at_capacity")})

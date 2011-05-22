@@ -141,3 +141,7 @@ ja:
   individual_sponsor_program_benefit_2: 'rubykaigi.org にRubyKaigi2011個人スポンサーとしてお名前とリンク先を掲載します(匿名での支援も受け付けます)'
   individual_sponsor_program_benefit_3: 'RubyKaigi2011 公式懇親会への参加特典はありません【昨年から仕様変更】'
   canceled: '講演に関する残念なお知らせ'
+  instruction: '説明'
+  free_admission_program_for_students: '学生無料参加制度'
+  free_admission_program_for_students_entry_form: '学生無料参加制度エントリーフォーム'
+
