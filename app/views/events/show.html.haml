@@ -24,7 +24,10 @@
         - @event.presenters.each do |presenter|
           %div.avatar
             %a{:href => "#", :target => "_blank"}
-              %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+              - if presenter['gravatar'].blank?
+                %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+              - else
+                = gravatar_tag(presenter['gravatar'], :size => 32)
             %h4
               = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
             - if affiliation = presenter["affiliation"]
