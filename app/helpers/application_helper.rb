@@ -54,4 +54,10 @@ module ApplicationHelper
     src = user.gravatar_url(size)
     image_tag(src, :alt => user.username, :title => user.username, :size => "#{size}x#{size}", :class => 'icon')
   end
+
+  def gravatar_tag(md5, options={})
+    options = options.symbolize_keys
+    size = options[:size] || 80
+    image_tag 'http://www.gravatar.com/avatar/%s?s=%d' % [md5, size], :width => size, :height => size, :alt => 'avatar'
+  end
 end
