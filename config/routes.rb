@@ -10,6 +10,10 @@ Rubykaigi::Application.routes.draw do
     match 'schedule/grid' => 'schedule#grid'
   end
 
+  scope '/:year', :constraints => {:year => /2\d{3}/} do
+    match 'schedule/all.:format' => 'schedule#all'
+  end
+
   match 'signin', :to => 'sessions#new', :as => 'signin'
   delete 'signout', :to => 'sessions#destroy', :as => 'signout'
   match 'my_tickets', :to => 'tickets#index', :as => "my_tickets"
