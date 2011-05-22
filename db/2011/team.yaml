@@ -65,8 +65,86 @@
       ja: 実行委員
     people:
     - name:
+        en: "Shin'ya ADZUMI"
+        ja: あづみしんや
+      affiliation:
+        en: Nihon Ruby-no-Kai
+        ja: 日本Rubyの会
+    - name:
+        en: Miho SUZUKI
+        ja: すずきみほ
+      affiliation:
+        en: @adzuki34
+        ja:
+    - name:
+        en: Leonard Chin
+        ja: レオ Leonard Chin
+      affiliation:
+        en: Nihon Ruby-no-Kai
+        ja: 日本Rubyの会
+    - name:
+        en: Kyosuke MOROHASHI
+        ja: 諸橋恭介
+      affiliation:
+        en: Rails Tokyo || Eiwa System Management
+        ja: Rails勉強会@東京 || (株)永和システムマネジメント
+    - name:
+        en: Yoji SHIDARA
+        ja: しだらようじ
+      affiliation:
+        en: Ruby Sapporo / Enishi Tech
+        ja: Ruby札幌, 株式会社えにしテック
+    - name:
+        en: Jun OHWADA
+        ja: 大和田純
+      affiliation:
+        en: Ruby Sapporo, Scigineer
+        ja: Ruby札幌, サイジニア株式会社
+    - name:
+        en: Kei SHIRATSUCHI
+        ja: 白土慧
+      affiliation:
+        en: Ruby Sapporo, Scigineer
+        ja: Ruby札幌, サイジニア株式会社
+    - name:
+        en: Naoto TAKAI
+        ja: 高井直人
+      affiliation:
+        en: Akasaka.rb
+        ja:
+    - name:
+        en: Toshiaki KOSHIBA
+        ja: こしば としあき
+      affiliation:
+        en: EC Navi, 4038nullpointer.com
+        ja: 株式会社ECナビ, 4038nullpointer.com
+    - name:
+        en: Sunao TANABE
+        ja: たなべ すなお
+      affiliation:
+        en: Nihon Ruby-no-kai
+        ja: 日本Rubyの会
+    - name:
+        en: Eito KATAGIRI
+        ja: かたぎり えいと
+      affiliation:
+        en: Ruby Tokai
+        ja: Ruby東海
+    - name:
+        en: Tasuo SAKURAI
+        ja: 櫻井達生
+      affiliation:
+        en: Everyleaf
+        ja: 株式会社万葉
+    - name:
+        en: Tadashi SAITO
+        ja: 斎藤ただし
+      affiliation:
         en:
         ja:
+    - name:
+        en: Shyouhei URABE
+        ja: 卜部昌平
       affiliation:
         en:
         ja:
@@ -76,10 +154,16 @@
       ja: 国際化
     people:
     - name:
-        en:
-        ja:
+        en: Adam AKHTAR
+        ja: アクター　アダム
       affiliation:
-        en:
+        en: @robodisco
+        ja:
+    - name:
+        en: Paul Mcmahon
+        ja: マクマホン　ポール
+      affiliation:
+        en: @pwim
         ja:
 - section:
     name:
@@ -87,21 +171,51 @@
       ja: デザイナ
     people:
     - name:
-        en:
-        ja:
+        en: Mayuco Sekiya
+        ja: 関谷繭子
       affiliation:
-        en:
+        en: @mayuco
         ja:
+    - name:
+        en: Norio
+        ja: のりお
+      affiliation:
+        en: Ibaraki Ruby-no-kai
+        ja: 茨城Rubyの会
 - section:
     name:
       en: "KaigiFreaks::ReportTeam"
       ja: "KaigiFreaksレポート班"
     people:
     - name:
-        en:
-        ja:
+        en: Mitsutaka MIMURA
+        ja: 三村益隆
       affiliation:
-        en:
+        en: Eiwa System Management, asakusa.rb
+        ja: 永和システムマネジメント, asakusa.rb
+    - name:
+        en: Masanori SUGAWARA
+        ja: すがわらまさのり
+      affiliation:
+        en: @sugamasao
+        ja:
+    - name:
+        en: Yuki AKAMATSU
+        ja: 赤松祐希
+      affiliation:
+        en: ukstudio
+        ja:
+    - name:
+        en: Yutaro SUGAI
+        ja: 菅井祐太朗
+      affiliation:
+        en: @hokkai7go
+        ja:
+    - name:
+        en: Noriyuki Komatsuzaki
+        ja: 小松崎典之
+      affiliation:
+        en: @oshow
         ja:
 - section:
     name:
@@ -109,10 +223,10 @@
       ja: "KaigiFreaksネットワーク班"
     people:
     - name:
-        en:
-        ja:
+        en: Hidekazu KOIWA
+        ja: 小岩秀和
       affiliation:
-        en:
+        en: @koiwa
         ja:
 - section:
     name:
@@ -120,10 +234,10 @@
       ja: "KaigiFreaks録画配信班"
     people:
     - name:
-        en:
-        ja:
+        en: Ippei Ogiwara
+        ja: 荻原 一平
       affiliation:
-        en:
+        en: @iogi
         ja:
 #- section:
 #    name:
