@@ -1,0 +1,138 @@
+- section:
+    name:
+      en: Chairman
+      ja: 実行委員長
+    people:
+    - name:
+        en: Masayoshi TAKAHASHI
+        ja: 高橋征義
+      affiliation:
+        en: Nihon Ruby-no-Kai, Chairman / tatsu-zine.com
+        ja: 日本Rubyの会会長, 達人出版会
+- section:
+    name:
+      en: Vice Chairman
+      ja: 副実行委員長
+    people:
+    - name:
+        en: Shintaro KAKUTANI
+        ja: 角谷信太郎
+      affiliation:
+        en: Nihon Ruby-no-Kai || Eiwa System Management
+        ja: 日本Rubyの会 || (株)永和システムマネジメント
+- section:
+    name:
+      en: Chief of Operations
+      ja: 運営委員長
+    people:
+    - name:
+        en: Koji SHIMADA
+        ja: 島田浩二
+      affiliation:
+        en: Nihon Ruby-no-Kai / Enishi Tech
+        ja: 日本Rubyの会, 株式会社えにしテック
+- section:
+    name:
+      en: Program Chair
+      ja: プログラム委員長
+    people:
+    - name:
+        en: Koichi SASADA
+        ja: 笹田耕一
+      affiliation:
+        en: Nihon Ruby-no-Kai, The University of Tokyo
+        ja: 日本Rubyの会, 東京大学大学院情報理工学系研究科創造情報学専攻
+- section:
+    name:
+      en: Sponsor Liason
+      ja: スポンサー渉外担当
+    people:
+    - name:
+        en: Ayumu AIZAWA
+        ja: 相澤歩
+      affiliation:
+        en: Nihon Ruby-no-Kai, Akasaka.rb
+        ja: 日本Rubyの会, Akasaka.rb
+    - name:
+        en: Shugo MAEDA
+        ja: 前田修吾
+      affiliation:
+        en: Ruby Association / Network Applied Communication Laboratory
+        ja: Rubyアソシエーション, 株式会社ネットワーク応用通信研究所
+- section:
+    name:
+      en: Organizers
+      ja: 実行委員
+    people:
+    - name:
+        en:
+        ja:
+      affiliation:
+        en:
+        ja:
+- section:
+    name:
+      en: i18n
+      ja: 国際化
+    people:
+    - name:
+        en:
+        ja:
+      affiliation:
+        en:
+        ja:
+- section:
+    name:
+      en: Designer
+      ja: デザイナ
+    people:
+    - name:
+        en:
+        ja:
+      affiliation:
+        en:
+        ja:
+- section:
+    name:
+      en: "KaigiFreaks::ReportTeam"
+      ja: "KaigiFreaksレポート班"
+    people:
+    - name:
+        en:
+        ja:
+      affiliation:
+        en:
+        ja:
+- section:
+    name:
+      en: "KaigiFreaks::NetworkTeam"
+      ja: "KaigiFreaksネットワーク班"
+    people:
+    - name:
+        en:
+        ja:
+      affiliation:
+        en:
+        ja:
+- section:
+    name:
+      en: "KaigiFreaks::RecordingTeam"
+      ja: "KaigiFreaks録画配信班"
+    people:
+    - name:
+        en:
+        ja:
+      affiliation:
+        en:
+        ja:
+#- section:
+#    name:
+#      en: "Staff"
+#      ja: "当日スタッフ"
+#    people:
+#    - name:
+#        en:
+#        ja:
+#      affiliation:
+#        en:
+#        ja:

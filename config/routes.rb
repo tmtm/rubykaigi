@@ -8,6 +8,7 @@ Rubykaigi::Application.routes.draw do
     match 'sponsors_ruby/:id', :to => 'sponsors_ruby#show'
     resources :events, :only => %w(show)
     match 'schedule/grid' => 'schedule#grid'
+    resources :team, :only => %w(index)
   end
 
   scope '/:year', :constraints => {:year => /2\d{3}/} do

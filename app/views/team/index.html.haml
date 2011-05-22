@@ -1,0 +1,19 @@
+- @title = t(:team)
+#content
+  %h1
+    #{t(:team)}
+  .team
+    - @team.each do |section|
+      .section
+        %h2= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, section['section']['name'])
+        - section['section']['people'].each do |person|
+          .avatar
+            %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+            %p
+              %span.name= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, person['name'])
+              %span.affiliation= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, person['affiliation'])
+
+    %h2 rubykaigi.org
+    %p
+      %a{:href => "http://github.com/ruby-no-kai/rubykaigi/contributors"} http://github.com/ruby-no-kai/rubykaigi/contributors
+
