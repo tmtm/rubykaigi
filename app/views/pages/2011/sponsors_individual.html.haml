@@ -8,10 +8,13 @@
         %div.avatar
           - img = img_tag_for_individual_sponsor(sponsor, 42)
           != link_to_if((!sponsor.anonymous? && sponsor.link_url.present?), raw(img), sponsor.link_url)
-          %p{:style => 'vertical-align:middle'}
-            != link_to_if(!sponsor.anonymous? && sponsor.link_url.present?, h(sponsor.link_label), sponsor.link_url, :class => 'linkMark')
-            <br /><br />
-          %hr
+          - if !sponsor.anonymous? && sponsor.link_url.present?
+            %p.linkMark
+              != link_to(h(sponsor.link_label), sponsor.link_url)
+          - else
+            %p
+              #{h(sponsor.link_label)}
+        %hr
     - else
       %div.avatar
         (Not Yet)

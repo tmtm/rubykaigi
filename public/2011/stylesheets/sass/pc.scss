@@ -343,6 +343,18 @@ a:hover.tip {
     float: left;
     margin: 0 20px 20px 0; } }
 
+/*--- sponsors_individual ----------------------------------------------*/
+
+#sponsors_individual {
+  .avatar {
+    p {
+      height: 42px;
+      line-height: 42px;
+      margin: 0 0 0 60px;
+      padding: 5px 5px 0 20px; }
+    .linkMark {
+       background: url("/2011/images/linkMark.png") no-repeat left; } } }
+
 /*--- archives ----------------------------------------------*/
 
 #archives #content {
