@@ -22,7 +22,8 @@ module Paypal
       values = {
         :cmd => '_cart',
         :charset => 'utf-8',
-        :lc => 'JP',
+        :lc => "#{I18n.locale.to_s.upcase}",
+        :"locale.x" => "#{(I18n.locale == :ja ? 'ja_JP' : 'en_US')}",
         :currency_code => 'JPY',
         :upload => 1,
         :business => Paypal::EncryptedForm.business_email,

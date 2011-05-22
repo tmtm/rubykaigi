@@ -1,29 +1,33 @@
 #content
   %h1= rubyist_name @rubyist
 
-  %img.icon{ :alt => "Avator", :title => "Avator Icon Setting Feature is coming soon :<", :src => '/images/bow_face.png', :height => 80 }
-  <br />
+  %article
+    %img.icon{ :alt => "Avator", :title => "Avator Icon Setting Feature is coming soon :<", :src => '/images/bow_face.png', :height => 80 }
+    <br />
 
-  - if @rubyist == user
-    %div (That's you!)
+    - if @rubyist == user
+      %div (That's you!)
 
-  %h2 Website
-  %p
-    - if (website = @rubyist.website).present?
-      != link_to website, website, :rel => 'nofollow me'
-    - else
-      N/A
+    %h2 Website
+    %p
+      - if (website = @rubyist.website).present?
+        != link_to website, website, :rel => 'nofollow me'
+      - else
+        N/A
 
-  %h2 RubyKaigi 2010
-  %ul
-    - if @rubyist.contributions.present?
-      - if @rubyist.individual_sponsor?(2010) && !@rubyist.individual_sponsor.anonymous?
-        %li [Individual Sponsor]
-      - if @rubyist.staff?(2010)
-        %li [Staff]
-      - if @rubyist.attendee?(2010)
-        %li [Attendee]
-      - if @rubyist.party_attendee?(2010)
-        %li [Official Conference Party Attendee]
-    - else
-      %li (Nothing)
+    - (2010..2011).each do |year|
+      %h2
+        RubyKaigi
+        = year
+      %ul.listMark
+        - if @rubyist.contributions.present?
+          - if @rubyist.individual_sponsor?(year) && !@rubyist.individual_sponsor.anonymous?
+            %li [Individual Sponsor]
+          - if @rubyist.staff?(year)
+            %li [Staff]
+          - if @rubyist.attendee?(year)
+            %li [Attendee]
+          - if @rubyist.party_attendee?(year)
+            %li [Official Conference Party Attendee]
+        - else
+          %li (Nothing)

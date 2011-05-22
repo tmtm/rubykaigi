@@ -1,14 +1,14 @@
 --- 
-presenter:
-  name: 
-    en: Makoto Kuwata
-    ja: "桑田誠"
-  affiliation: 
-    en: kuwata-lab.com
-    ja: kuwata-lab.com
-  bio: 
-    en: Programmer.
-    ja: "プログラマー。"
+presenters:
+  - name: 
+      en: Makoto Kuwata
+      ja: "桑田誠"
+    affiliation: 
+      en: kuwata-lab.com
+      ja: kuwata-lab.com
+    bio: 
+      en: Programmer.
+      ja: "プログラマー。"
 title: 
   en: Underlaying Technologies and Techniques behind O/R Mapper
   ja: "O/R Mapperを支える技術"

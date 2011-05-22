@@ -1,15 +1,15 @@
 --- 
-presenter:
-  name: 
-    en: Elise Huard
-    ja: 
-  affiliation: 
-    en: Jabberwocky
-    ja: 
-  bio: 
-    en: "In the last 11 years, Elise’s been rolling through jobs in C, C++, Java, a master in AI, before falling in love with Ruby and going freelance. Her experience in software development have helped her get a firm understanding on what works, what doesn’t, and what will make you cry bloody tears on nights before deadlines.\n\n\
-      She’s a jack of all trades, loves reading, tinkering, food, travel, learning, and people out of the ordinary."
-    ja: 
+presenters:
+  - name: 
+      en: Elise Huard
+      ja: 
+    affiliation: 
+      en: Jabberwocky
+      ja: 
+    bio: 
+      en: "In the last 11 years, Elise’s been rolling through jobs in C, C++, Java, a master in AI, before falling in love with Ruby and going freelance. Her experience in software development have helped her get a firm understanding on what works, what doesn’t, and what will make you cry bloody tears on nights before deadlines.\n\n\
+        She’s a jack of all trades, loves reading, tinkering, food, travel, learning, and people out of the ordinary."
+      ja: 
 title: 
   en: Actors on stage
   ja: 

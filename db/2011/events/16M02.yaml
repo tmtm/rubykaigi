@@ -1,14 +1,14 @@
 ---
-presenter:
-  name:
-    en: "CRuby development team"
-    ja:
-  affiliation:
-    en:
-    ja:
-  bio:
-    en:
-    ja:
+presenters:
+  - name:
+      en: "CRuby development team"
+      ja:
+    affiliation:
+      en:
+      ja:
+    bio:
+      en:
+      ja:
 title:
   en: "Next version of Ruby 1.8 and 1.9"
   ja:

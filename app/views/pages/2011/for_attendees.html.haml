@@ -36,7 +36,6 @@
       %h2
         %a{:name => "schedule"}
           #{t(:schedule)}
-      %p プログラムの内容はこちらからご覧いただけます。
       %p.btn
         -#%a{:href => "/2011/#{current_locale}/schedule/grid"}
         %a{:href => "/2011/#{current_locale}/coming_soon"}
@@ -46,12 +45,11 @@
       %h2
         %a{:name => "live"}
           #{t(:live)}
-      %p イベント開催中は、USTREAMによりライブ中継をしております。
+      %p We'll make live streaming Ruby Kaigi 2011 on ustream.tv.
       %ul.listMark
-        %li 中継品質はベストエフォートです。悪しからずご了承ください。
-        %li KaigiFreaksがお届けします。
-        %li 中継とは別に、後日録画した動画も公開予定です(準備ができ次第、別途アナウンスします)。
-      %p.linkMark
+        %li Recorded videos will be published later (TBA).
+        %li This program is brought you to by KaigiFreaks.
+      %p.linkMarka
         #{t(:hall_main)}:
         %a{:href => "/2011/#{current_locale}/coming_soon"} Ustream
         |
@@ -84,38 +82,12 @@
       %h2
         %a{:name => "advent"}
           #{t(:advent)}
-      %p Ruby会議 2011の会期前に、RubyKaigi Advent Carendar というイベントを予定しています。詳しくは以下をご覧ください。
       %p.btn
-        %a{:href => "/2011/#{current_locale}/advent"}
+        -# %a{:href => "/2011/#{current_locale}/advent"}
+        %a{:href => "/2011/#{current_locale}/coming_soon"}
           %img{:alt => "Advent(アドベント)", :height => "40", :src => "/2011/images/indexBtnAdvent.png", :width => "320", :height => "40"}
     != render :partial => 'shared/2011/back_to_top'
-    %article
-      %h2
-        %a{:name => "community"}
-          #{t(:community)}
-      %h3 海外から参加される方へ
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-      %h3 メーリングリストへの登録方法
-      %p qwikを用いておりますので、下記要領でメールを送信してください。
-      %div.mailPlease
-        %ul.listMark
-          %li To： rubykaigi2011press-ja _at_ qwik.atdot.net
-          %li Cc： ksb.4038.nullpointe.r+rubykaigi2011press_ja _at_ gmail.com
-          %li 件名： Join the list
-          %li
-            本文：
-            %br
-            RubyKaigi2011のメディア・報道社向けメーリングリストに参加します。
-            %br
-            所属： (ご自身の所属組織）
-            %br
-            お名前： (ご自身のお名前）
-      %p ※ メールアドレス中の_at_は@に読み替えてください。
-      %h3 facebookファンページのご案内
-      %p facebookのファンページを用意しました。以下よりご覧いただけます。 
-      %p.btn
-        %a{:href => "http://www.facebook.com/pages/RubyKaigi/204401496251843"}
-          %img{:alt => "Check us out on facebook(facebookをチェック)", :height => "40", :src => "/2011/images/forAttendeesBtnFacebook.png", :width => "320", :height => "40"}
+    != render :partial => 'shared/2011/community'
     != render :partial => 'shared/2011/back_to_top'
     %article#faq
       %h2
@@ -130,4 +102,3 @@
           #{t(:goodies)}
       %p Coming soon...
     != render :partial => 'shared/2011/back_to_top'
-

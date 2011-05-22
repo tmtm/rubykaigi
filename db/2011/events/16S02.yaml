@@ -1,14 +1,14 @@
 --- 
-presenter:
-  name: 
-    en: Takahiro Sunaga
-    ja: "須永高浩"
-  affiliation: 
-    en: The University of Tokyo
-    ja: 
-  bio: 
-    en: Takahiro Sunaga had studied about Logic and Prolog in undergraduate years.He is in master's course of the University of Tokyo now.
-    ja: "学部時代は論理学やProlog関係の研究を行う。東京大学大学院の修士課程在学中。"
+presenters:
+  - name: 
+      en: Takahiro Sunaga
+      ja: "須永高浩"
+    affiliation: 
+      en: The University of Tokyo
+      ja: 
+    bio: 
+      en: Takahiro Sunaga had studied about Logic and Prolog in undergraduate years.He is in master's course of the University of Tokyo now.
+      ja: "学部時代は論理学やProlog関係の研究を行う。東京大学大学院の修士課程在学中。"
 title: 
   en: The Real-time Profiler for Ruby
   ja: "Ruby用のリアルタイムプロファイラ"

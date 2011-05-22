@@ -1,14 +1,14 @@
 --- 
-presenter:
-  name: 
-    en: Yuichi Tateno
-    ja: "舘野祐一"
-  affiliation: 
-    en: COOKPAD Inc.
-    ja: "クックパッド株式会社"
-  bio: 
-    en: an initiator of the Shibuya.js. I belong to asakusa.rb. I like Ruby and  instance_eval method.
-    ja: "Shibuya.js 発起人。浅草.rb 所属。好きな言語は Ruby。好きなメソッドは instance_eval。"
+presenters:
+  - name: 
+      en: Yuichi Tateno
+      ja: "舘野祐一"
+    affiliation: 
+      en: COOKPAD Inc.
+      ja: "クックパッド株式会社"
+    bio: 
+      en: an initiator of the Shibuya.js. I belong to asakusa.rb. I like Ruby and  instance_eval method.
+      ja: "Shibuya.js 発起人。浅草.rb 所属。好きな言語は Ruby。好きなメソッドは instance_eval。"
 title: 
   en: Large-scale web service and operations with Ruby
   ja: "Ruby を利用した大規模ウェブサービスの開発・運用"

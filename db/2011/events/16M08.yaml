@@ -1,16 +1,16 @@
 --- 
-presenter:
-  name: 
-    en: MayumiI EMORI(emorima)
-    ja: "江森 真由美(emorima)"
-  affiliation: 
-    en: KCS Carrot Corp. / Asakusa.rb
-    ja: "株式会社 ケーシーエスキャロット / 浅草.rb"
-  bio: 
-    en: Unit Manager of Development Department, KCS Carrot Corp.
-    ja: "株式会社ケーシーエスキャロット ユニットマネージャ\n\
-    2004年にRubyを使い始め、CGIKitを経て、2005年 Railsを使い始めました。\n\
-    ここ数年は\"mission critical\"なシステム開発をRubyで行っています。"
+presenters:
+  - name: 
+      en: MayumiI EMORI(emorima)
+      ja: "江森 真由美(emorima)"
+    affiliation: 
+      en: KCS Carrot Corp. / Asakusa.rb
+      ja: "株式会社 ケーシーエスキャロット / 浅草.rb"
+    bio: 
+      en: Unit Manager of Development Department, KCS Carrot Corp.
+      ja: "株式会社ケーシーエスキャロット ユニットマネージャ\n\
+      2004年にRubyを使い始め、CGIKitを経て、2005年 Railsを使い始めました。\n\
+      ここ数年は\"mission critical\"なシステム開発をRubyで行っています。"
 title: 
   en: |-
     Critical mission system implemented in Ruby

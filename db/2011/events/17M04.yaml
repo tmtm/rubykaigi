@@ -1,15 +1,15 @@
 --- 
-presenter:
-  name: 
-    en: Yutaka Hara
-    ja: "原　悠"
-  affiliation: 
-    en: Network Applied Communication Laboratory Ltd.
-    ja: "(株)ネットワーク応用通信研究所"
-  bio: 
-    en: Rubyist living in Matsue city. Author of the Japanese book "Making Esoteric Languages with Ruby".
-    ja: "松江市在住のプログラマ。著書「Rubyで作る奇妙なプログラミング言語」、\n\
-      WEB+DB PRESS連載「Ruby in your hands」(全6回)。"
+presenters:
+  - name: 
+      en: Yutaka Hara
+      ja: "原　悠"
+    affiliation: 
+      en: Network Applied Communication Laboratory Ltd.
+      ja: "(株)ネットワーク応用通信研究所"
+    bio: 
+      en: Rubyist living in Matsue city. Author of the Japanese book "Making Esoteric Languages with Ruby".
+      ja: "松江市在住のプログラマ。著書「Rubyで作る奇妙なプログラミング言語」、\n\
+        WEB+DB PRESS連載「Ruby in your hands」(全6回)。"
 title: 
   en: Road to the Ruby Master
   ja: "Rubyマスターへの道"

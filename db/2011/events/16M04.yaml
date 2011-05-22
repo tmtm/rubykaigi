@@ -1,14 +1,14 @@
 --- 
-presenter:
-  name: 
-    en: Corey Donohoe
-    ja: 
-  affiliation: 
-    en: GitHub
-    ja: 
-  bio: 
-    en: Hacker at GitHub
-    ja: 
+presenters:
+  - name: 
+      en: Corey Donohoe
+      ja: 
+    affiliation: 
+      en: GitHub
+      ja: 
+    bio: 
+      en: Hacker at GitHub
+      ja: 
 title: 
   en: Shipping at the Speed of Life
   ja: 

@@ -1,21 +1,21 @@
 --- 
-presenter:
-  name: 
-    en: Akira Matsuda
-    ja: "松田 明"
-  affiliation: 
-    en: Asakusa.rb
-    ja: Asakusa.rb
-  bio: 
-    en: |-
-      A freelance Railer.
-      The founder of a Ruby community "Asakusa.rb" http://asakusa.rubyist.net/
-      Probably the most active Rails core contributor as a Japanese.
-      The author of several unique and useful gem/plugins for Rails 3, such as Kaminari, hocus_pocus, i18n_generators, etc.
-    ja: "フリーランスのRailsプログラマー/コンサルタント。流しのフェロー。\n\
-      地域Rubyコミュニティ\"Asakusa.rb\"発起人。\n\
-      Rails 3.x用次世代ページネーションライブラリ\"Kaminari\"、魔法のRailsアプリ開発支援ツール\"hocus_pocus\"、Railsアプリ国際化支援ジェネレーター\"i18n_generators\"等の作者。\n\
-      書籍『Head First Rails』の監訳者。"
+presenters:
+  - name: 
+      en: Akira Matsuda
+      ja: "松田 明"
+    affiliation: 
+      en: Asakusa.rb
+      ja: Asakusa.rb
+    bio: 
+      en: |-
+        A freelance Railer.
+        The founder of a Ruby community "Asakusa.rb" http://asakusa.rubyist.net/
+        Probably the most active Rails core contributor as a Japanese.
+        The author of several unique and useful gem/plugins for Rails 3, such as Kaminari, hocus_pocus, i18n_generators, etc.
+      ja: "フリーランスのRailsプログラマー/コンサルタント。流しのフェロー。\n\
+        地域Rubyコミュニティ\"Asakusa.rb\"発起人。\n\
+        Rails 3.x用次世代ページネーションライブラリ\"Kaminari\"、魔法のRailsアプリ開発支援ツール\"hocus_pocus\"、Railsアプリ国際化支援ジェネレーター\"i18n_generators\"等の作者。\n\
+        書籍『Head First Rails』の監訳者。"
 title: 
   en: Ruby on Rails that doesn't hurt
   ja: "たのしいRails"

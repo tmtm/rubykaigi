@@ -1,4 +1,4 @@
-- @title = t(:programs)
+- @title = t(:schedule)
 - content_for :head do
   %link{:href => "/2011/stylesheets/print.css", :media => "print", :rel => "stylesheet", :type => "text/css"}
 #content
@@ -32,12 +32,17 @@
                 - else
                   - (events = rk_session.events).each do |event|
                     %h3
-                      %a.tip{:href => event_path(:id => event._id)}
+                      - unless event.hide_link
+                        %a.tip{:href => event_path(:id => event._id)}
+                          = event.localize(I18n.locale, :title)
+                          - unless event.hide_link
+                            %img.fright{:alt => "Permalink", :src => "/2011/images/commonBtnPermalink.png"}
+                      - else
                         = event.localize(I18n.locale, :title)
-                        %img.fright{:alt => "Permalink", :src => "/2011/images/commonBtnPermalink.png"}
+
                         - if abstract = event.localize(I18n.locale, :abstract)
                           %span= abstract
-                    %p
-                      - if event.presenter
-                        = event.localize(I18n.locale, :presenter, :name)
+                    - if event.presenters
+                      - event.presenters.each do |presenter|
+                        %p= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
     != render :partial => 'shared/2011/back_to_top'

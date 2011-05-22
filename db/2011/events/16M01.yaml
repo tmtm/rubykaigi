@@ -1,20 +1,20 @@
 ---
-presenter:
-  name:
-    en: "Aaron Patterson (tenderlove)"
-    ja:
-  affiliation:
-    en: "AT&T Interactive"
-    ja:
-  bio:
-    en: |-
-      When he isn’t ruining people’s lives by writing software like phuby,
-      enterprise, and neversaydie, Aaron can be found writing slightly more
-      useful software like nokogiri. To keep up his Gameboy Lifestyle, Aaron
-      spends his weekdays writing high quality software for ATTi. Be sure to
-      catch him on Karaoke night, where you can watch him sing his favorite
-      smooth rock hits of the 70’s and early 80’s.
-    ja:
+presenters:
+  - name:
+      en: "Aaron Patterson (tenderlove)"
+      ja:
+    affiliation:
+      en: "AT&T Interactive"
+      ja:
+    bio:
+      en: |-
+        When he isn’t ruining people’s lives by writing software like phuby,
+        enterprise, and neversaydie, Aaron can be found writing slightly more
+        useful software like nokogiri. To keep up his Gameboy Lifestyle, Aaron
+        spends his weekdays writing high quality software for ATTi. Be sure to
+        catch him on Karaoke night, where you can watch him sing his favorite
+        smooth rock hits of the 70’s and early 80’s.
+      ja:
 title:
   en: "Ruby Ruined My Life."
   ja:

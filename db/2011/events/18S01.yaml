@@ -1,14 +1,14 @@
 --- 
-presenter:
-  name: 
-    en: ANDO Yasushi
-    ja: "あんどうやすし"
-  affiliation: 
-    en: Seesaa Inc.
-    ja: "シーサー株式会社"
-  bio: 
-    en: ANDO Yasushi is a web developer at Seesaa Inc.
-    ja: "シーサー株式会社で最近はiPhoneアプリやAndroidアプリを開発してます。"
+presenters:
+  - name: 
+      en: ANDO Yasushi
+      ja: "あんどうやすし"
+    affiliation: 
+      en: Seesaa Inc.
+      ja: "シーサー株式会社"
+    bio: 
+      en: ANDO Yasushi is a web developer at Seesaa Inc.
+      ja: "シーサー株式会社で最近はiPhoneアプリやAndroidアプリを開発してます。"
 title: 
   en: Parse.y Famtour
   ja: "parse.yの歩き方"

@@ -6,9 +6,9 @@
     = @title
   %article
     %h2
-      %time{:datetime => @session.start.strftime("%Y-%m-%d") }
-        = l @session.start.to_date, :format => :long
-        = [:start, :end].map{|t| @session.send(t).strftime("%H:%M") }.join("-")
+      %time{:datetime => @session_of_event.start.strftime("%Y-%m-%d") }
+        = l @session_of_event.start.to_date, :format => :long
+        = [:start, :end].map{|t| @session_of_event.send(t).strftime("%H:%M") }.join("-")
         (#{@room.localize(I18n.locale, :name)})
     #abstract
       %h3
@@ -17,19 +17,23 @@
         = @event.localize(I18n.locale, :abstract)
       != render :partial => 'shared/2011/facebook'
       != render :partial => 'shared/2011/twitter'
-    - if @event.presenter
+    - if @event.presenters
       #speaker
         %h3
           #{t(:speaker)}
-        %div.avatar
-          %a{:href => "#", :target => "_blank"}
-            %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-          %h4
-            = @event.localize(I18n.locale, :presenter, :name)
-          %p
-            = @event.localize(I18n.locale, :presenter, :bio)
-    %h3.cboth
+        - @event.presenters.each do |presenter|
+          %div.avatar
+            %a{:href => "#", :target => "_blank"}
+              %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+            %h4
+              = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
+            - if affiliation = presenter["affiliation"]
+              %p.affiliation= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, affiliation)
+            %p
+              = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["bio"])
+
+    -#%h3.cboth
       #{t(:presentation_material)}
-    %p -
+    -#%p -
   != render :partial => 'shared/2011/back_to_top'
 

@@ -1,14 +1,14 @@
 ---
-presenter:
-  name:
-    en: Hidetoshi NAGAI
-    ja: 永井 秀利
-  affiliation:
-    en: Kyushu Institute of Technology / Rubyist Kyushu
-    ja: 九州工業大学 / Rubyist九州
-  bio:
-    en: "Hidetoshi NAGAI is a developer of Ruby/Tk. Ruby is a favorite tool for data processing on his research works (those don't belong to the domain of software engineering)."
-    ja: "永井秀利 (永井＠知能．九工大) は Ruby/Tk の開発者である．Ruby は彼の本業の研究 (ソフトウェア工学の分野ではない) でのデータ処理の際のお気に入りの道具となっている．"
+presenters:
+  - name:
+      en: Hidetoshi NAGAI
+      ja: 永井 秀利
+    affiliation:
+      en: Kyushu Institute of Technology / Rubyist Kyushu
+      ja: 九州工業大学 / Rubyist九州
+    bio:
+      en: "Hidetoshi NAGAI is a developer of Ruby/Tk. Ruby is a favorite tool for data processing on his research work (which doesn't belong to the domain of software engineering)."
+      ja: "永井秀利 (永井＠知能．九工大) は Ruby/Tk の開発者である．Ruby は彼の本業の研究 (ソフトウェア工学の分野ではない) でのデータ処理の際のお気に入りの道具となっている．"
 title:
   en: Improvement of ThreadGroup class and its usage
   ja: ThreadGroupクラスの強化とその利用法

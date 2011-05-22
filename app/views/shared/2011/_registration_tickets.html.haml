@@ -16,14 +16,12 @@
   != render :partial => 'add_to_cart', :locals => {:item => @kaigi }
   %h3
     #{t('student_discount_program_detail')}:
-  -#  (
-  -#  != link_to 'English', 'http://rubykaigi.tdiary.net/20100614.html#p02'
-  -#  ),(
-  -#  != link_to '日本語', 'http://rubykaigi.tdiary.net/20100614.html#p01'
-  -#  )
-  -# %ul.listMark
-  -#  %li
-  -#    != link_to_if(false, t('student_discount_program_entry_form'), 'https://spreadsheets.google.com/viewform?formkey=dEpJSldhXzV6Skp6d0RxQVdWQS1Odnc6MQ')
+  %ul.listMark
+    %li
+      Instruction(説明):
+      != link_to 'English', 'http://rubykaigi.tdiary.net/20110521.html#p02'
+      ,
+      != link_to '日本語', 'http://rubykaigi.tdiary.net/20110521.html#p01'
+    %li
+      != link_to_if(true, t('student_discount_program_entry_form'), 'http://www.atdot.net/~ko1/file/rubykaigi/2011/students/upload')
   -#    -# (#{t("already_at_capacity")})
-  -#  - unless @kaigi.now_on_sale?
-  (In Preparation)
