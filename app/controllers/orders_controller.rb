@@ -69,7 +69,7 @@ class OrdersController < LocaleBaseController
       render_not_found && return
     end
     if Rails.env.production? || Rails.env.staging?
-      redirect_to(:action => 'thanks') && return
+      redirect_to(:action => 'thanks', :locale => params[:locale] || current_locale) && return
     end
 
     pdt = Paypal::Pdt.request(txn_id)
