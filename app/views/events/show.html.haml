@@ -4,7 +4,7 @@
 #content
   %h1
     = @title
-  %article
+  %article#events
     %h2
       %time{:datetime => @session_of_event.start.strftime("%Y-%m-%d") }
         = l @session_of_event.start.to_date, :format => :long

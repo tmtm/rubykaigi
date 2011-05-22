@@ -276,6 +276,11 @@ a:hover.tip {
 * html a:hover.tip span {
   display: none; }
 
+/*--- events ----------------------------------------------*/
+
+#events {
+  @include clearfix; }
+
 /*--- sponsors ----------------------------------------------*/
 
 #sponsors .registration {
