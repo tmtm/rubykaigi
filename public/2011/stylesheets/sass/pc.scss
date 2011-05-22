@@ -144,8 +144,11 @@ h1 {
     @include clearfix; }
   #news,
   #twitter {
+    height: 357px; }
+  #news,
+  #tags,
+  #twitter {
     padding: 5px;
-    height: 357px;
     background: #fff;
     border-top: 5px solid #160f0d;
     overflow: hidden;
@@ -163,7 +166,7 @@ h1 {
     width: 320px;
     float: right;
     ul {
-      margin-bottom: 20px; }
+      margin: 5px; }
     p {
       margin: 0 0 3px 0; } }
   section h2 {

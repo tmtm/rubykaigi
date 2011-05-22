@@ -156,3 +156,14 @@ ol {
 
 .btnInput {
   @include opacity80; }
+
+/*--- index ----------------------------------------------*/
+#index,
+#phone_index {
+  #tags {
+    dl {
+      margin: 5px 0 0 10px; }
+    dt {
+      clear: both;
+      float: left;
+      width: 5em; } } }
