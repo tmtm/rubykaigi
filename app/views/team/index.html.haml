@@ -8,7 +8,11 @@
         %h2= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, section['section']['name'])
         - section['section']['people'].each do |person|
           .avatar
-            %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+            - if person['gravatar'].blank?
+              %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
+            - else
+              = gravatar_tag(person['gravatar'], :size => 32)
+
             %p
               %span.name= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, person['name'])
               %span.affiliation= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, person['affiliation'])

@@ -9,6 +9,7 @@
       affiliation:
         en: Nihon Ruby-no-Kai, Chairman / tatsu-zine.com
         ja: 日本Rubyの会会長, 達人出版会
+      gravatar: 21a4b941766d805333e11c5766be43b4
 - section:
     name:
       en: Vice Chairman
@@ -20,6 +21,7 @@
       affiliation:
         en: Nihon Ruby-no-Kai || Eiwa System Management
         ja: 日本Rubyの会 || (株)永和システムマネジメント
+      gravatar: 63a6bff89d692e21de20868202bc8dde
 - section:
     name:
       en: Chief of Operations
@@ -31,6 +33,7 @@
       affiliation:
         en: Nihon Ruby-no-Kai / Enishi Tech
         ja: 日本Rubyの会, 株式会社えにしテック
+      gravatar: 941b170e5a115a295cccb5f5cdf0a800
 - section:
     name:
       en: Program Chair
@@ -94,6 +97,7 @@
       affiliation:
         en: Ruby Sapporo / Enishi Tech
         ja: Ruby札幌, 株式会社えにしテック
+      gravatar: 817b7699ccbd3a6664de66eee8c2cbd2
     - name:
         en: Jun OHWADA
         ja: 大和田純
