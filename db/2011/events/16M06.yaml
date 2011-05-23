@@ -24,7 +24,15 @@ title:
   ja: |-
     Issues of Enterprise Rubyist　～SIerのなかのRubyistが考えるべきこと～
 abstract: 
-  en: "英訳helpお願いします。"
+  en: |-
+    Lately “Ruby on Rails” is being adapted in many cases as enterprise solutions. That even includes
+    a case of development matters which major IT service providers deal with. 
+    The reason that many companies choose Rails is the expectation toward high productivities and the
+    flexibilities in changing business needs. In many cases of system development project using Rails,
+    however, project management is also the important key to bring success to the project besides the
+    technical viewpoint. 
+    In this session, what should be considered to get success in projects will be discussed from both
+    view points of developers and project managers based on a case in Accenture.
   ja: |-
     近年、業務システムソリューションとしてRuby on Railsの採用が検討されることは珍しくなくなってきており、それは大手の
     システムインテグレーターが手がける開発案件であっても例外ではない。
