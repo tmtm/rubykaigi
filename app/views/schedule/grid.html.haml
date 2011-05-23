@@ -26,23 +26,22 @@
             - rk_sessions.each_with_index do |rk_session, index|
               - next if index != 0 && rk_sessions[index - 1] == rk_session
               - count = rk_sessions.select {|ses| ses == rk_session }.count
-              %td{:colspan => count}
-                - if !rk_session || rk_session.empty?
-                  = '-'
-                - else
-                  - (events = rk_session.events).each do |event|
-                    %h3
-                      - unless event.hide_link
-                        %a.tip{:href => event_path(:id => event._id)}
-                          = event.localize(I18n.locale, :title)
-                          - unless event.hide_link
-                            %img.fright{:alt => "Details", :src => "/2011/images/commonBtnDetails.png"}
-                      - else
-                        = event.localize(I18n.locale, :title)
 
-                        - if abstract = event.localize(I18n.locale, :abstract)
-                          %span= abstract
-                    - if event.presenters
-                      - event.presenters.each do |presenter|
-                        %p= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
+              - klass = (!rk_session || rk_session.empty?) ? "not-applicable" : "session"
+              %td{:colspan => count, :class => klass}
+                - (events = rk_session.events).each do |event|
+                  %h3
+                    - unless event.hide_link
+                      %a.tip{:href => event_path(:id => event._id)}
+                        = event.localize(I18n.locale, :title)
+                        - unless event.hide_link
+                          %img.fright{:alt => "Details", :src => "/2011/images/commonBtnDetails.png"}
+                    - else
+                      = event.localize(I18n.locale, :title)
+
+                      - if abstract = event.localize(I18n.locale, :abstract)
+                        %span= abstract
+                  - if event.presenters
+                    - event.presenters.each do |presenter|
+                      %p= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
     != render :partial => 'shared/2011/back_to_top'

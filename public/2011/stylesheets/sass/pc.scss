@@ -247,6 +247,9 @@ h1 {
     .hours {
       white-space: nowrap;
       background-color: rgba(138, 135, 134, 0.3); }
+    td.not-applicable {
+      background-color: rgba(138, 135, 134, 0.3);
+    }
     .hall {
       width: 400px; } } }
 
