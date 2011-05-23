@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/kakutani/capistrano-notification.git
+  revision: 606fb1ecd22b280b45083b220421768438c89d9f
+  specs:
+    capistrano-notification (0.0.2)
+      capistrano
+      shout-bot
+      validatable
+
 GEM
   remote: http://rubygems.org/
   remote: http://gems.github.com/
@@ -32,7 +41,7 @@ GEM
       activemodel (= 3.0.6)
       activesupport (= 3.0.6)
     activesupport (3.0.6)
-    addressable (2.2.5)
+    addressable (2.2.6)
     ambethia-smtp-tls (1.1.2)
     arel (2.0.9)
     autotest-rails (4.1.0)
@@ -46,10 +55,6 @@ GEM
       net-ssh-gateway (>= 1.0.0)
     capistrano-ext (1.2.1)
       capistrano (>= 1.0.0)
-    capistrano-notification (0.0.2)
-      capistrano
-      shout-bot
-      validatable
     capybara (0.4.1.1)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
@@ -227,7 +232,7 @@ DEPENDENCIES
   autotest-rails
   capistrano
   capistrano-ext
-  capistrano-notification (= 0.0.2)
+  capistrano-notification!
   capybara
   configatron
   cucumber-rails (~> 0.3.2)
