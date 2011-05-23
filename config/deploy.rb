@@ -135,7 +135,7 @@ after 'db:seed_2010', 'deploy:web:enable'
 namespace 'ticket' do
   desc "ticket summary report"
   task "summary", :roles => :app do
-    ticket_summary = capture("cd #{current_path} && RAILS_ENV=#{fetch(:stage, 'staging')} bundle exec rails script/ticket_summary")
+    ticket_summary = capture("cd #{current_path} && RAILS_ENV=#{fetch(:stage, 'staging')} bundle exec rails runner script/ticket_summary")
     puts ticket_summary
   end
 end
