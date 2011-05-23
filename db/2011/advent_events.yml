@@ -16,15 +16,6 @@ tokyurubykaigi03:
   location: "EC Navi Company (Tokyo, Japan)"
   pub_date: '2011-05-20'
 
-asakusarb:
-  name_en: 'Asakusa.rb'
-  name_ja: '浅草.rb'
-  dtstart: '2011-07-12 00:00'
-  dtend: '2011-07-19 23:59'
-  description: "http://qwik.jp/asakusarb/"
-  location: "Asakusa"
-  pub_date: '2011-05-10'
-
 tech_lion02:
   name_en: 'Tech LION vol.2'
   name_ja: 'Tech LION vol.2'
@@ -42,4 +33,3 @@ rubykaigi2011:
   description: "http://rubykaigi.org/2011"
   location: "Nerima Culture Center (Tokyo, Japan)"
   pub_date: '2011-05-01'
-
