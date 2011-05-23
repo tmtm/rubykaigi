@@ -97,7 +97,6 @@ GEM
     gettext (1.93.0)
     gherkin (2.3.5)
       json (>= 1.4.6)
-    god (0.11.0)
     haml (3.0.25)
     hashie (0.2.2)
     highline (1.6.1)
@@ -243,7 +242,6 @@ DEPENDENCIES
   faker
   fastercsv
   gettext (< 2)
-  god
   haml
   hoptoad_notifier (= 2.4.5)
   i18n_generators

@@ -24,8 +24,6 @@ gem 'rails_warden'
 gem 'warden_oauth'
 gem 'warden-openid'
 
-gem 'god'
-
 gem 'ri_cal'
 
 group :development do
