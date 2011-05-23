@@ -34,5 +34,6 @@ end;nil
 puts "-" * 78
 puts " tickets stock summary"
 puts "-" * 78
-puts "RubyKaigi 2010 Kaigi: #{ProductItem.find(1).stock}"
-puts "RubyKaigi 2010 Party: #{ProductItem.find(2).stock}"
+kaigi = RubyKaigi.latest
+puts "RubyKaigi #{kaigi.year} Kaigi: #{ProductItem.kaigi(kaigi.year).rk11.stock}"
+puts "RubyKaigi #{kaigi.year} Party: #{ProductItem.kaigi(kaigi.year).rk11_party.stock}"

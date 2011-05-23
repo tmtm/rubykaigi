@@ -115,7 +115,7 @@ require 'capistrano-notification'
 notification.irc do |irc|
   irc.host    'chat.freenode.net'
   irc.channel '#rubykaigi.org'
-  irc.message "#{local_user} deployed #{application} to #{fetch(:stage, 'staging')}"
+  irc.message { "#{local_user} deployed #{application} to #{deploy_target}" }
 end
 
 after 'deploy:finalize_update', 'bundler:bundle'
@@ -135,7 +135,7 @@ after 'db:seed_2010', 'deploy:web:enable'
 namespace 'ticket' do
   desc "ticket summary report"
   task "summary", :roles => :app do
-    ticket_summary = capture("cd #{current_path} && RAILS_ENV=#{fetch(:stage, 'staging')} script/ticket_summary")
+    ticket_summary = capture("cd #{current_path} && RAILS_ENV=#{fetch(:stage, 'staging')} bundle exec rails script/ticket_summary")
     puts ticket_summary
   end
 end
