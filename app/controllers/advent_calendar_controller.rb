@@ -1,9 +1,9 @@
-class AdventController < LocaleBaseController
+class AdventCalendarController < LocaleBaseController
   layout_for_latest_ruby_kaigi
 
   before_filter :load_events
 
-  # GET /advent
+  # GET /advent_calendar
   def index
     respond_to do |format|
       format.html
