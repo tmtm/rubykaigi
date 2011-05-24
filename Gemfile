@@ -3,12 +3,13 @@ source :rubygems
 source 'http://gems.github.com'
 
 gem 'rails', '3.0.6', :require => nil
+gem 'rake', '~> 0.8.7'
 gem 'jquery-rails', '>= 0.2.6'
 gem 'mysql'
 gem 'configatron'
 gem "ambethia-smtp-tls", :require => "smtp-tls"
 gem "fastercsv"
-gem "hoptoad_notifier", '2.4.5'
+gem "hoptoad_notifier"
 gem 'i18n_generators'
 gem 'haml'
 gem 'fastercsv'
