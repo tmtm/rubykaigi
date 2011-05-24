@@ -35,5 +35,16 @@ puts "-" * 78
 puts " tickets stock summary"
 puts "-" * 78
 kaigi = RubyKaigi.latest
-puts "RubyKaigi #{kaigi.year} Kaigi: #{ProductItem.kaigi(kaigi.year).rk11.stock}"
-puts "RubyKaigi #{kaigi.year} Party: #{ProductItem.kaigi(kaigi.year).rk11_party.stock}"
+puts "RubyKaigi #{kaigi.year} Kaigi: stock: #{ProductItem.kaigi(kaigi.year).rk11.stock}"
+puts "RubyKaigi #{kaigi.year} Party: stock: #{ProductItem.kaigi(kaigi.year).rk11_party.stock}"
+
+is = OrderItem.all(:include => {:order => :paypal_payment_notification}, :conditions => {:product_item_id => ProductItem.find_by_item_code("rk11_individual_sponsor"), "paypal_payment_notifications.payment_status" => "Completed"}).map{|i| ActiveSupport::JSON.decode(i.order.paypal_payment_notification.notified_params_as_json)};is_gross = is.inject(0){|sum,n| sum + Integer(n["mc_gross"])};is_fee = is.inject(0){|sum,n| sum + Integer(n["mc_fee"])};k = ProductItem.kaigi(2011);
+
+def num_with_delim(price)
+ price.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\1,').reverse
+end
+
+puts "RubyKaigi #{kaigi.year} Individual Sponsor:"
+puts "- gross: #{num_with_delim(is_gross)}JPY"
+puts "- fee  : #{num_with_delim(is_fee)}JPY"
+puts "- total: #{num_with_delim(is_gross - is_fee)}JPY"
