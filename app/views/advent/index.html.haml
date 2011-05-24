@@ -21,7 +21,6 @@
               .summary
                 %span{:style => 'font-size:12px;'}= link_to "■", "##{event.id}"
                 #{event.name}
-                = (event.hosted_by.present? ? " (#{event.hosted_by})" : '')
               .time #{l(event.dtstart, :format => :advent_cal)} 〜 #{l(event.dtend, :format => :advent_cal)}
               .location!= event.location
               .url
@@ -29,5 +28,7 @@
                   != auto_link event.url
                 - else
                   (To Be Announced)
+              .hosted_by
+                = (event.hosted_by.present? ? " Hosted By: #{event.hosted_by}" : '')
   != render :partial => "shared/2011/back_to_top"
   != render "about.#{I18n.locale}"
