@@ -1,4 +1,6 @@
 enishitech_cafe:
+  hosted_by_en: 'EnishiTech,Inc.'
+  hosted_by_ja: 'えにしテック'
   name_en: 'EnishiTech Cafe'
   name_ja: 'えにしテックカフェ'
   dtstart: '2011-07-08 19:00'
@@ -8,6 +10,8 @@ enishitech_cafe:
   pub_date: '2011-05-20'
 
 tokyurubykaigi03:
+  hosted_by_en 'TokyuRubyKaigi03 Team'
+  hosted_by_ja 'TokyuRubyKaigi03実行委員会'
   name_en: 'TokyuRubyKaigi03'
   name_ja: 'TokyuRuby会議03'
   dtstart: '2011-05-29 14:30'
@@ -17,6 +21,8 @@ tokyurubykaigi03:
   pub_date: '2011-05-20'
 
 tech_lion02:
+  hosted_by_en:
+  hosted_by_ja:
   name_en: 'Tech LION vol.2'
   name_ja: 'Tech LION vol.2'
   dtstart: '2011-06-17 19:30'
@@ -26,6 +32,8 @@ tech_lion02:
   pub_date: '2011-05-11'
 
 jrubykaigi2011:
+  hosted_by_en:
+  hosted_by_ja:
   name_en: 'JRubyKaigi2011'
   name_ja: 'JRuby会議2011'
   dtstart: '2011-07-15 19:00'
@@ -35,6 +43,8 @@ jrubykaigi2011:
   pub_date: '2011-05-01'
 
 rubykaigi2011:
+  hosted_by_en: 'RubyKaigi 2011 Team'
+  hosted_by_ja: '日本Ruby会議2011実行委員会'
   name_en: 'RubyKaigi2011'
   name_ja: '日本Ruby会議2011'
   dtstart: '2011-07-16 00:00'
