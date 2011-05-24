@@ -2,7 +2,7 @@
   %h1= rubyist_name @rubyist
 
   %article
-    %img.icon{ :alt => "Avator", :title => "Avator Icon Setting Feature is coming soon :<", :src => '/images/bow_face.png', :height => 80 }
+    != img_tag_for_usernavi(@rubyist, 80)
     <br />
 
     - if @rubyist == user
