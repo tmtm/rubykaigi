@@ -122,10 +122,10 @@ after 'deploy:finalize_update', 'bundler:bundle'
 after 'deploy:migrations', 'god:reboot'
 
 namespace 'db' do
-  desc "run RAILS_ENV=#{fetch(:stage, 'staging')} rake db:seed_2010 on rubykaigi.org. sweet :)"
+  desc "run RAILS_ENV=#{fetch(:stage, 'staging')} bundle exec rake db:seed_2010 on rubykaigi.org. sweet :)"
   task 'seed_2010', :roles => :app do
     stage = fetch(:stage, 'staging')
-    run("cd #{current_path} && RAILS_ENV=#{stage} rake db:seed_2010")
+    run("cd #{current_path} && RAILS_ENV=#{stage} bundle exec rake db:seed_2010")
   end
 end
 before 'db:seed_2010', 'deploy'
