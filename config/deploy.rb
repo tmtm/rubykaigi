@@ -115,7 +115,7 @@ require 'capistrano-notification'
 notification.irc do |irc|
   irc.host    'chat.freenode.net'
   irc.channel '#rubykaigi.org'
-  irc.message { "#{local_user} deployed #{application} to #{deploy_target}" }
+  irc.message { "#{local_user} deployed #{application} to #{fetch(:stage, 'staging')}" }
 end
 
 after 'deploy:finalize_update', 'bundler:bundle'
