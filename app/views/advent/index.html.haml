@@ -21,7 +21,7 @@
               .summary
                 %span{:style => 'font-size:12px;'}= link_to "■", "##{event.id}"
                 #{event.name}
-              .time #{l(event.dtstart, :format => :short)} 〜 #{l(event.dtend, :format => :short)}
+              .time #{l(event.dtstart, :format => :advent_cal)} 〜 #{l(event.dtend, :format => :advent_cal)}
               .location!= event.location
               .url
                 - if event.url.present?

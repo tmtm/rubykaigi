@@ -4,3 +4,4 @@ en:
   time:
     formats:
       month: "%B %Y"
+      advent_cal: "%Y/%m/%d %H:%M"

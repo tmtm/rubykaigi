@@ -26,6 +26,7 @@ ja:
       short: "%y/%m/%d %H:%M"
       long: "%Y年%m月%d日(%a) %H時%M分%S秒 %Z"
       month: "%Y年%m月"
+      advent_cal: "%Y/%m/%d %H:%M"
     am: "午前"
     pm: "午後"
 
