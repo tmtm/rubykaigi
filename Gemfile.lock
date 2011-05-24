@@ -1,18 +1,9 @@
-GIT
-  remote: git://github.com/kakutani/capistrano-notification.git
-  revision: 606fb1ecd22b280b45083b220421768438c89d9f
-  specs:
-    capistrano-notification (0.0.2)
-      capistrano
-      shout-bot
-      validatable
-
 GEM
   remote: http://rubygems.org/
   remote: http://gems.github.com/
   specs:
-    SystemTimer (1.2.2)
-    ZenTest (4.4.2)
+    SystemTimer (1.2.3)
+    ZenTest (4.5.0)
     aaronh-chronic (0.3.9)
     abstract (1.0.0)
     actionmailer (3.0.6)
@@ -43,19 +34,23 @@ GEM
     activesupport (3.0.6)
     addressable (2.2.6)
     ambethia-smtp-tls (1.1.2)
-    arel (2.0.9)
+    arel (2.0.10)
     autotest-rails (4.1.0)
       ZenTest
     builder (2.1.2)
-    capistrano (2.5.19)
+    capistrano (2.6.0)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
-      net-ssh-gateway (>= 1.0.0)
+      net-ssh-gateway (>= 1.1.0)
     capistrano-ext (1.2.1)
       capistrano (>= 1.0.0)
-    capybara (0.4.1.1)
+    capistrano-notification (0.1.1)
+      capistrano
+      shout-bot
+      validatable
+    capybara (0.4.1.2)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
       mime-types (>= 1.16)
@@ -65,22 +60,22 @@ GEM
       selenium-webdriver (>= 0.0.27)
       xpath (~> 0.1.3)
     celerity (0.8.9)
-    childprocess (0.1.8)
+    childprocess (0.1.9)
       ffi (~> 1.0.6)
-    configatron (2.6.4)
+    configatron (2.8.0)
       yamler (>= 0.1.0)
     crack (0.1.6)
-    cucumber (0.10.2)
+    cucumber (0.10.3)
       builder (>= 2.1.2)
       diff-lcs (>= 1.1.2)
-      gherkin (>= 2.3.5)
+      gherkin (>= 2.3.8)
       json (>= 1.4.6)
       term-ansicolor (>= 1.0.5)
     cucumber-rails (0.3.2)
       cucumber (>= 0.8.0)
     culerity (0.2.15)
-    daemons (1.1.2)
-    database_cleaner (0.6.6)
+    daemons (1.1.3)
+    database_cleaner (0.6.7)
     delayed_job (2.1.4)
       activesupport (~> 3.0)
       daemons
@@ -92,14 +87,13 @@ GEM
     faker (0.9.5)
       i18n (~> 0.4)
     fastercsv (1.5.4)
-    ffi (1.0.7)
-      rake (>= 0.8.7)
+    ffi (1.0.9)
     gettext (1.93.0)
-    gherkin (2.3.5)
+    gherkin (2.3.9)
       json (>= 1.4.6)
-    haml (3.0.25)
+    haml (3.1.1)
     hashie (0.2.2)
-    highline (1.6.1)
+    highline (1.6.2)
     hoptoad_notifier (2.4.5)
       activesupport
       builder
@@ -107,13 +101,13 @@ GEM
       crack (= 0.1.6)
     i18n (0.5.0)
     i18n_generators (1.0.2)
-    jquery-rails (1.0)
-      rails (~> 3.0)
+    jquery-rails (1.0.7)
+      railties (~> 3.0)
       thor (~> 0.14)
     json (1.5.1)
     json_pure (1.5.1)
     machinist (1.0.6)
-    mail (2.2.16)
+    mail (2.2.19)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
@@ -126,12 +120,12 @@ GEM
     net-sftp (2.0.5)
       net-ssh (>= 2.0.9)
     net-ssh (2.1.4)
-    net-ssh-gateway (1.0.1)
+    net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     nokogiri (1.4.4)
     oauth (0.4.4)
     polyglot (0.3.1)
-    rack (1.2.2)
+    rack (1.2.3)
     rack-google-analytics (0.6.1)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
@@ -148,16 +142,16 @@ GEM
       activesupport (= 3.0.6)
       bundler (~> 1.0)
       railties (= 3.0.6)
-    rails_warden (0.5.2)
-      warden
+    rails_warden (0.5.5)
+      warden (>= 1.0.0)
     railties (3.0.6)
       actionpack (= 3.0.6)
       activesupport (= 3.0.6)
       rake (>= 0.8.7)
       thor (~> 0.14.4)
-    rake (0.8.7)
+    rake (0.9.0)
     redis (2.2.0)
-    redis-objects (0.5.0)
+    redis-objects (0.5.1)
       redis (>= 2.1.1)
     ri_cal (0.8.8)
     rr (1.0.2)
@@ -165,7 +159,7 @@ GEM
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
       rspec-mocks (~> 2.5.0)
-    rspec-core (2.5.1)
+    rspec-core (2.5.2)
     rspec-expectations (2.5.0)
       diff-lcs (~> 1.1.2)
     rspec-mocks (2.5.0)
@@ -176,7 +170,7 @@ GEM
       rspec (~> 2.5.0)
     ruby-openid (2.1.8)
     rubyzip (0.9.4)
-    selenium-webdriver (0.1.4)
+    selenium-webdriver (0.2.0)
       childprocess (>= 0.1.7)
       ffi (>= 1.0.7)
       json_pure
@@ -199,10 +193,10 @@ GEM
       httparty (~> 0.5.0)
       oauth (~> 0.4.1)
       yajl-ruby (~> 0.7.0)
-    tzinfo (0.3.26)
+    tzinfo (0.3.27)
     validatable (1.6.7)
-    warden (1.0.3)
-      rack (>= 1.0.0)
+    warden (1.0.4)
+      rack (>= 1.0)
     warden-openid (0.1.0)
       rack-openid
       warden
@@ -217,7 +211,7 @@ GEM
       aaronh-chronic (>= 0.3.9)
       activesupport (>= 2.3.4)
     will_paginate (2.3.15)
-    xpath (0.1.3)
+    xpath (0.1.4)
       nokogiri (~> 1.3)
     yajl-ruby (0.7.9)
     yamler (0.1.0)
@@ -231,7 +225,7 @@ DEPENDENCIES
   autotest-rails
   capistrano
   capistrano-ext
-  capistrano-notification!
+  capistrano-notification
   capybara
   configatron
   cucumber-rails (~> 0.3.2)

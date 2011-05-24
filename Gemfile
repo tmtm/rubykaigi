@@ -29,7 +29,7 @@ gem 'ri_cal'
 group :development do
   gem 'capistrano', :require => nil
   gem 'capistrano-ext', :require => nil
-  gem 'capistrano-notification', :require => nil, :git => 'git://github.com/kakutani/capistrano-notification.git'
+  gem 'capistrano-notification', :require => nil
   gem 'gettext', '<2' # required by i18n_generators
   gem 'thin', :require => nil
 end
