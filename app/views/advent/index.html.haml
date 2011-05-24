@@ -18,10 +18,15 @@
         %ul
           - events.each do |event|
             %li{:id => event.id, :class => event.today? ? "todays_event" : ""}
-              .summary= link_to event.name, "##{event.id}"
+              .summary
+                %span{:style => 'font-size:12px;'}= link_to "■", "##{event.id}"
+                #{event.name}
               .time #{l(event.dtstart, :format => :short)} 〜 #{l(event.dtend, :format => :short)}
-              .location!= auto_link event.location, :all, :target => "_blank"
-              .description!= auto_link event.description, :all, :target => "_blank"
+              .location!= event.location
+              .url
+                - if event.url.present?
+                  != auto_link event.url
+                - else
+                  (To Be Announced)
   != render :partial => "shared/2011/back_to_top"
   != render "about.#{I18n.locale}"
-

@@ -3,7 +3,7 @@ enishitech_cafe:
   name_ja: 'えにしテックカフェ'
   dtstart: '2011-07-08 19:00'
   dtend: '2011-07-08 21:00'
-  description: ""
+  url: ""
   location: "EnishiTech (Sapporo, Japan)"
   pub_date: '2011-05-20'
 
@@ -12,7 +12,7 @@ tokyurubykaigi03:
   name_ja: 'TokyuRuby会議03'
   dtstart: '2011-05-29 14:30'
   dtend: '2011-05-29 19:30'
-  description: "http://regional.rubykaigi.org/tokyu03"
+  url: "http://regional.rubykaigi.org/tokyu03"
   location: "EC Navi Company (Tokyo, Japan)"
   pub_date: '2011-05-20'
 
@@ -21,7 +21,7 @@ tech_lion02:
   name_ja: 'Tech LION vol.2'
   dtstart: '2011-06-17 19:30'
   dtend: '2011-06-17 22:00'
-  description: "http://www.usptomonokai.jp/techlion"
+  url: "http://www.usptomonokai.jp/techlion"
   location: "Naked Loft (Tokyo, Japan)"
   pub_date: '2011-05-11'
 
@@ -30,6 +30,6 @@ rubykaigi2011:
   name_ja: '日本Ruby会議2011'
   dtstart: '2011-07-16 00:00'
   dtend: '2011-07-19 23:59'
-  description: "http://rubykaigi.org/2011"
+  url: "http://rubykaigi.org/2011"
   location: "Nerima Culture Center (Tokyo, Japan)"
   pub_date: '2011-05-01'
