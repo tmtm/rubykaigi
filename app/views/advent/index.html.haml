@@ -21,6 +21,7 @@
               .summary
                 %span{:style => 'font-size:12px;'}= link_to "■", "##{event.id}"
                 #{event.name}
+                = (event.hosted_by.present? ? " (#{event.hosted_by})" : '')
               .time #{l(event.dtstart, :format => :advent_cal)} 〜 #{l(event.dtend, :format => :advent_cal)}
               .location!= event.location
               .url

@@ -1,6 +1,6 @@
 class AdventEvent
   cattr_reader :raw_events
-  attr_accessor :id, :name, :dtstart, :dtend, :url, :location, :pub_date
+  attr_accessor :id, :name, :dtstart, :dtend, :url, :location, :pub_date, :hosted_by
 
   def initialize(attrs={})
     attrs.symbolize_keys!
@@ -9,6 +9,7 @@ class AdventEvent
     self.dtend    = Time.parse attrs[:dtend]   if attrs[:dtend].present?
     self.pub_date = Time.parse attrs[:pub_date]   if attrs[:pub_date].present?
     self.name    = attrs["name_#{I18n.locale}".intern]
+    self.hosted_by = attrs["hosted_by_#{I18n.locale}".intern]
   end
 
   def today?
