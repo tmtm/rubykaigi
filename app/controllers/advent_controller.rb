@@ -14,11 +14,11 @@ class AdventController < LocaleBaseController
   end
 
   private
-  
+
     def load_events
       AdventEvent.load params[:year]
     end
-  
+
     def events_to_json
       AdventEvent.all.to_json
     end
@@ -28,7 +28,8 @@ class AdventController < LocaleBaseController
         AdventEvent.all.each do |e|
           cal.event do |event|
             event.summary     e.name
-            event.description e.description
+            event.url         e.url
+            event.organizer   e.hosted_by if e.hosted_by.present?
             event.dtstart     e.dtstart
             event.dtend       e.dtstart
             event.location    e.location
@@ -69,16 +70,21 @@ class AdventController < LocaleBaseController
   %a{:href => "#{page_with_link_url}"}= e.name
 .time #{l(e.dtstart, :format => :short)} - #{l(e.dtend, :format => :short)}
 .location= e.location
-.description= e.description
+.url
+  - if e.url.present?
+    %a{:href => e.url, :target => "_blank"}= e.url
+.hosted_by= (e.hosted_by.present? ? " Hosted By: #{e.hosted_by}" : '')
               HAML
             end
             xml.dc:date, e.pub_date
             xml.link page_with_link_url
             xml.foaf:topic do
               xml.ical:Vevent do
-                xml.ical:dtstart,  e.dtstart
-                xml.ical:dtend,    e.dtend
-                xml.ical:location, e.location
+                xml.ical:dtstart,   e.dtstart
+                xml.ical:dtend,     e.dtend
+                xml.ical:location,  e.location
+                xml.ical:url,       e.url
+                xml.ical:organizer, e.hosted_by if e.hosted_by.present?
               end
             end
           end
