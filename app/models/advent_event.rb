@@ -5,9 +5,9 @@ class AdventEvent
   def initialize(attrs={})
     attrs.symbolize_keys!
     self.id, self.url, self.location = attrs[:id], attrs[:url], attrs[:location]
-    self.dtstart  = Time.parse attrs[:dtstart] if attrs[:dtstart].present?
-    self.dtend    = Time.parse attrs[:dtend]   if attrs[:dtend].present?
-    self.pub_date = Time.parse attrs[:pub_date]   if attrs[:pub_date].present?
+    self.dtstart  = Time.zone.parse attrs[:dtstart] if attrs[:dtstart].present?
+    self.dtend    = Time.zone.parse attrs[:dtend]   if attrs[:dtend].present?
+    self.pub_date = Time.zone.parse attrs[:pub_date]   if attrs[:pub_date].present?
     self.name    = attrs["name_#{I18n.locale}".intern]
     self.hosted_by = attrs["hosted_by_#{I18n.locale}".intern]
   end

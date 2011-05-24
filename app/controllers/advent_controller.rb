@@ -30,8 +30,8 @@ class AdventController < LocaleBaseController
             event.summary     e.name
             event.url         e.url
             event.organizer   e.hosted_by if e.hosted_by.present?
-            event.dtstart     e.dtstart
-            event.dtend       e.dtstart
+            event.dtstart     e.dtstart.set_tzid("Asia/Tokyo")
+            event.dtend       e.dtend.set_tzid("Asia/Tokyo")
             event.location    e.location
           end
         end
