@@ -21,8 +21,8 @@ tokyurubykaigi03:
   pub_date: '2011-05-20'
 
 tech_lion02:
-  hosted_by_en:
-  hosted_by_ja:
+  hosted_by_en: 'usptomonokai.jp'
+  hosted_by_ja: 'USP友の会'
   name_en: 'Tech LION vol.2'
   name_ja: 'Tech LION vol.2'
   dtstart: '2011-06-17 19:30'
