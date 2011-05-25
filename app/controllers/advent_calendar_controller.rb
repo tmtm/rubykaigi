@@ -29,7 +29,6 @@ class AdventCalendarController < LocaleBaseController
           cal.event do |event|
             event.summary     e.name
             event.url         e.url
-            event.organizer   e.hosted_by if e.hosted_by.present?
             event.dtstart     e.dtstart.set_tzid("Asia/Tokyo")
             event.dtend       e.dtend.set_tzid("Asia/Tokyo")
             event.location    e.location
@@ -39,7 +38,7 @@ class AdventCalendarController < LocaleBaseController
     end
 
     def events_to_rdf
-      page_url = advent_index_url params[:year], params[:locale]
+      page_url = advent_calendar_index_url params[:year], params[:locale]
       xml = Builder::XmlMarkup.new
       xml.instruct!
       xml.rdf:RDF,   :xmlns        => "http://purl.org/rss/1.0/",
@@ -84,7 +83,6 @@ class AdventCalendarController < LocaleBaseController
                 xml.ical:dtend,     e.dtend
                 xml.ical:location,  e.location
                 xml.ical:url,       e.url
-                xml.ical:organizer, e.hosted_by if e.hosted_by.present?
               end
             end
           end
