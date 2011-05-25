@@ -9,7 +9,7 @@ class AdventCalendarController < LocaleBaseController
       format.html
       format.json { render :json => events_to_json }
       format.ics  { render :text => events_to_ical }
-      format.rdf  { render :xml  => events_to_rdf }
+      format.rss  { render :xml  => events_to_rss }
     end
   end
 
@@ -38,7 +38,7 @@ class AdventCalendarController < LocaleBaseController
       end.to_s
     end
 
-    def events_to_rdf
+    def events_to_rss
       page_url = advent_calendar_index_url params[:year], params[:locale]
       xml = Builder::XmlMarkup.new
       xml.instruct!
