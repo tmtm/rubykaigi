@@ -31,6 +31,7 @@ class AdventCalendarController < LocaleBaseController
             event.url         e.url
             event.dtstart     e.dtstart.set_tzid("Asia/Tokyo")
             event.dtend       e.dtend.set_tzid("Asia/Tokyo")
+            event.description "Hosted by: #{e.hosted_by}" if e.hosted_by.present?
             event.location    e.location
           end
         end
