@@ -16,7 +16,7 @@
         %colgroup.hall
         %colgroup.hall
         %tr
-          %th 時間
+          %th= t :time_span
           - @rooms.each do |room|
             %th
               = room.localize(I18n.locale, :name)
