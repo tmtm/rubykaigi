@@ -36,14 +36,15 @@
                     - unless event.hide_link
                       %a.tip{:href => event_path(:id => event._id)}
                         = event.localize(I18n.locale, :title)
-                        - unless event.hide_link
+                        - if abstract = event.localize(I18n.locale, :abstract)
+                          %span= abstract
                           %img.fright{:alt => "Details", :src => "/2011/images/commonBtnDetails.png"}
                     - else
                       = event.localize(I18n.locale, :title)
-
-                      - if abstract = event.localize(I18n.locale, :abstract)
-                        %span= abstract
+                  - unless event.language.blank?
+                    %p.language
+                      %span= event.language
                   - if event.presenters
                     - event.presenters.each do |presenter|
-                      %p= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
+                      %p.presenter= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
     != render :partial => 'shared/2011/back_to_top'

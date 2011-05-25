@@ -240,8 +240,20 @@ h1 {
   table {
     @include table_border;
     width: 980px;
-    td p {
-    @include mark("programsSpeakerMark.png"); }
+    td {
+      p.presenter {
+        @include mark("programsSpeakerMark.png");
+      }
+      p.language {
+        margin-bottom: 5px;
+        span {
+          padding: 1px;
+          border: 1px solid rgb(22, 15, 13);
+          font-weight: bold;
+          font-size: 60%;
+        }
+      }
+    }
     h3 {
       border-bottom: none; }
     .hours {
@@ -251,12 +263,14 @@ h1 {
       background-color: rgba(138, 135, 134, 0.3);
     }
     .hall {
-      width: 400px; } } }
+      width: 400px; } }
+}
 
-#abstract {
+#abstract, #language {
   float: left;
   width: 540px;
-  margin-right: 10px; }
+  margin-right: 10px;
+}
 #speaker {
   float: right;
   width: 400px; }

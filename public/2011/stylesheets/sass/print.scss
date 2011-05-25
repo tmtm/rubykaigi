@@ -43,7 +43,7 @@ h2 {
     margin: 1px; }
     td {
       font-size: 80%;
-      p {
+      p.presenter {
         @include mark("programsSpeakerMark.png"); }
       h3 {
         border-bottom: none; } }

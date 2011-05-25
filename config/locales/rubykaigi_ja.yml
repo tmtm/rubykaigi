@@ -148,4 +148,5 @@ ja:
   about_rubykaigi_nikki: '日本Ruby会議に関する最新の情報はRubyKaigi日記より配信しております。'
   become_an_individual_sponsor: "個人スポンサーになる"
   become_a_sponsor: "スポンサーになる"
-  time_span: "時間"
+  time_span: '時間'
+  presentation_language: '発表言語'

@@ -15,6 +15,10 @@
         #{t(:abstract)}
       %p
         = @event.localize(I18n.locale, :abstract)
+      - unless @event.language.blank?
+        %h3
+          #{t(:presentation_language)}
+        %p= @event.language
       != render :partial => 'shared/2011/facebook'
       != render :partial => 'shared/2011/twitter'
     - if @event.presenters
