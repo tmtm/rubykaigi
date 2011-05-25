@@ -31,6 +31,17 @@ tech_lion02:
   location: "Naked Loft (Tokyo, Japan)"
   pub_date: '2011-05-11'
 
+ruby_workshop_in_sapporo:
+  hosted_by_en: 'RubySapporo'
+  hosted_by_ja: 'Ruby札幌'
+  name_en: 'Ruby Workshop in Sapporo'
+  name_ja: 'Ruby勉強会@札幌'
+  dtstart: '2011-07-02 13:30'
+  dtend: '2011-07-02 16:30'
+  url: "http://atnd.org/events/16027"
+  location: "Higashi Kumin Center (Sapporo, Japan)"
+  pub_date: '2011-05-20'
+
 jrubykaigi2011:
   hosted_by_en:
   hosted_by_ja:
