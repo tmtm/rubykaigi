@@ -1,7 +1,7 @@
 - @title = t(:advent_calendar)
 - content_for :head do
   %link{:href => "/2011/stylesheets/advent.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}
-  %link{:rel => "alternate", :type => "application/xml", :title => @title, :href => advent_calendar_index_path(params[:year], current_locale, :rss)}
+  %link{:rel => "alternate", :type => "application/rss+xml", :title => @title, :href => advent_calendar_index_path(params[:year], current_locale, :rss)}
 
 #content
   %h1
