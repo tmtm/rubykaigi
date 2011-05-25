@@ -1,21 +1,25 @@
---- 
+---
 presenters:
-  - name: 
+  - name:
       en: Kouji Takao
       ja: "高尾宏治"
-    affiliation: 
+    affiliation:
       en: "Network Applied Communication Laboratory Ltd."
       ja: "株式会社ネットワーク応用通信研究所"
-    bio: 
+    bio:
       en: |-
-        Kouji Takao is one of the commiter of MRI. 
+        Kouji Takao is one of the commiter of MRI.
         He is maintener of Readline of Ruby.
       ja: "MRIメンテナの一人。担当はReadlineライブラリです。"
-title: 
+title:
   en: MacRuby on Rails
   ja: "MacRuby on Rails 〜MacRubyから見たcRuby〜"
-abstract: 
-  en: "TBD: 申し訳ありません。後日、英訳してお送りします。"
+abstract:
+  en: "MacRuby is an implementation of Ruby 1.9 that is directly on top of Mac OS X core technologies. Recently, MacRuby has become viable as a tool for developing useful desktop applications for Mac OS X.
+
+  However, as of March 2011, MacRuby is still missing some functionality that is present in cRuby. Therefore, MacRuby is not able to run Ruby on Rails.
+
+  In my presentation, I will explain how I modified MacRuby to make it a suitable foundation for running Rails. I would also like to explain some of technical intricacies that I discovered along the way."
   ja: "2011年3月時点でのMacRubyはRuby処理系としての完成度は低く、Ruby on\n\
     Railsが到底動作するようには思えない。しかしながら、MacRubyに対して改良\n\
     に改良を重ねることできっとRailsを動作させることができる（はずである）。\n\n\
