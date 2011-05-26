@@ -24,8 +24,6 @@ class AdventEvent
   end
 
   class << self
-    extend ActiveSupport::Memoizable
-
     def load(year)
       @@raw_events ||= YAML.load File.open Rails.root.join('db', year.to_s, 'advent_events.yml'), 'r', &:read
     end
@@ -33,7 +31,6 @@ class AdventEvent
     def all
       raw_events.map{|id, e| new e.merge(:id => id) }.sort_by &:dtstart
     end
-    memoize :all
 
     def by_month
       all.inject(ActiveSupport::OrderedHash.new) do |months, event|
