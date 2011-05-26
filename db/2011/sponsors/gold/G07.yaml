@@ -1,9 +1,10 @@
 ---
-wanted: true
 name:
-  en:
-  ja:
-url:
+  en: R-learning Co., Ltd
+  ja: 株式会社アールラーニング
+url: http://www.r-learning.co.jp/
 pr:
-  en:
-  ja:
+  en: Our company is a system integrator that focun on Ruby on Rails and the android development.we excel in collaboration services development
+  ja: "受託開発や自社サービスにてRuby on Rails、アジャイル開発を採用しており、豊富な実績がございます。\r
+  自社サービス：プッシュ型SNS（UGUISU）,Android（shake）,勤怠管理（新月）\r\n
+  協同運営：Rails技術者認定試験運営委員会"
