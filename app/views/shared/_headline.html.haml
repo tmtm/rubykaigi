@@ -1,9 +1,0 @@
-- headline_entries = HeadlineEntry.recent(current_locale, 5)
-%ul
-  - if headline_entries.empty?
-    %li= t(:no_news)
-  - else
-    - headline_entries.each do |entry|
-      %li
-        %time{:datetime => entry.time.to_date}= entry.time.to_date
-        = link_to h(entry.title), entry.link
