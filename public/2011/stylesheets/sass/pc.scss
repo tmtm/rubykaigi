@@ -147,7 +147,7 @@ h1 {
       padding: 0;
       margin: 0;
       background: none;
-      height: 100px; } 
+      height: 100px; }
     @include clearfix; }
   #news,
   #twitter {
@@ -179,14 +179,6 @@ h1 {
   section h2 {
     padding: 0;
     margin: 0; }
-  #news {
-    ul {
-      margin: 5px 0;
-      padding: 0 0 10px 0;
-      li {
-        @include mark("indexNewsMark.png"); } }
-    time {
-      display: block; } }
   p {
     margin: 0px; }
   #twitter {
@@ -206,7 +198,7 @@ h1 {
   #users .linkMark {
     clear: both;
     margin: 7px 0;
-    display: block; } 
+    display: block; }
   @include clearfix; }
 
 /*--- about ----------------------------------------------*/
@@ -227,9 +219,9 @@ h1 {
 #signin {
   margin-bottom: 30px;
    .btn a {
-     margin: 0 5px 20px 0;    
+     margin: 0 5px 20px 0;
      width: 120px;
-     float: left; } 
+     float: left; }
    input[name=openid_identifier] {
      padding-left: 20px;
      background: #fff url(/images/openid_logo.gif) 2px center no-repeat; } }
@@ -341,7 +333,7 @@ h1.events_header {
     li {
       margin-right: 8px; } }
   #individual {
-    clear: both; 
+    clear: both;
     li {
     margin-right: 4px; } } }
 
@@ -420,7 +412,7 @@ footer {
   padding: 5px;
   margin-top: 10px;
   font-size: 70%;
-  @include clearfix; 
+  @include clearfix;
   nav {
     div {
       float: left;
@@ -438,7 +430,7 @@ footer {
       border-bottom: none;
       margin: 2px 0;
       padding: 0;
-      a { 
+      a {
         @include mark("footerLinkMarkL.png");
         padding-top: 4px;
         font-weight: bold; } }

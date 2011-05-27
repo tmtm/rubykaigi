@@ -1,0 +1,46 @@
+#content
+  %h1
+    %img{:alt => "Date: July16(Sat) - 18(Mon),2011 Venue: Nerima Culture Center(Tokyo, Japan) Keynotes: Yukihiro \"Mats\" Matsumoto, Dave Thomas, Aaron Patterson(a.k.a. tenderlove)", :height => "235", :src => "/2011/images/phoneDetails.png", :width => "300"}
+  .section
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/phone_registration"}
+        %img{:alt => "Registration(チケット購入)", :src => "/2011/images/registrationBtnTickets.png"}
+    %p.btn
+      -#%a{:href => "/2011/#{current_locale}/schedule/grid"}
+      %a{:href => "/2011/#{current_locale}/phone_coming_soon"}
+        %img{:alt => "Programs(プログラム)", :src => "/2011/images/indexBtnPrograms.png"}
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/phone_coming_soon"}
+        %img{:alt => "Access(アクセス)", :src => "/2011/images/indexBtnAccess.png"}
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/phone_coming_soon"}
+        %img{:alt => "Hotel &amp; Travel(宿泊のご案内)", :src => "/2011/images/indexBtnHotelAndTravel.png"}
+    %p.btn
+      %a{:href => "/2011/#{current_locale}/phone_coming_soon", :target => "_blank"}
+        %img{:alt => "Floor Guide(フロアガイド)", :src => "/2011/images/indexBtnFloorGuide.png"}
+  #news
+    %h2
+      %img{:alt => "", :height => "35", :src => "/2011/images/indexNewsHeader.png", :width => "250"}
+    #information
+      = render :partial => 'pages/2011/important_news'
+    = render :partial => 'shared/headline'
+    %p
+      %a{:href => "#"}
+        %img{:alt => "Read more...", :height => "30", :src => "/2011/images/commonReadMore.png", :width => "100"}
+  #tags
+    %h2
+      %img{:alt => "Tags", :height => "35", :src => "/2011/images/indexTagsHeader.png", :width => "250"}
+    %dl
+      %dt Twitter:
+      %dd
+        %a{:href => "http://twitter.com/#search?q=%23rubykaigi"}
+          \#rubykaigi
+      %dt Flickr:
+      %dd
+        %a{:href => "http://www.flickr.com/search/?q=rubykaigi2011&f=hp", :target => "_blank"}
+          rubykaigi2011
+      %dt Blog:
+      %dd
+        %a{:href => "http://b.hatena.ne.jp/t/rubykaigi2011", :target => "_blank"}
+          rubykaigi2011
+

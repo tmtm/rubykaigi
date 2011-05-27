@@ -167,3 +167,24 @@ ol {
       clear: both;
       float: left;
       width: 5em; } } }
+#news {
+  ul {
+    margin: 5px 0;
+    padding: 0 0 10px 0;
+    li {
+      @include mark("indexNewsMark.png"); } }
+  time {
+    display: block; } }
+#information {
+  border-bottom: 1px dotted #999;
+  ul {
+    margin: 5px 0;
+    padding: 0 0 10px 0;
+    li {
+      @include mark("indexInformationMark.png"); }
+      a {
+        color: #e61f19; } }
+  time {
+    color: #e61f19;
+    display: block; } }
+
