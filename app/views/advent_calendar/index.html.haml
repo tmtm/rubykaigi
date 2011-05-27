@@ -7,6 +7,10 @@
   %h1
     #{@title}
   %article
+    %h2
+      #{t('hashtag')}:
+      != link_to '#rk11advent', 'http://twitter.com/search?q=%23rk11advent'
+  %article
     #other_formats
       = link_to "iCal", advent_calendar_index_url(params[:year], current_locale, :ics, :protocol => "webcal")
       = link_to "JSON", advent_calendar_index_path(params[:year], current_locale, :json), :target => "_blank"
@@ -30,5 +34,9 @@
                   (To Be Announced)
               .hosted_by
                 = (event.hosted_by.present? ? " Hosted By: #{event.hosted_by}" : '')
-  != render :partial => "shared/2011/back_to_top"
-  != render "about.#{I18n.locale}"
+  %article
+    %h2
+      %a{:name => "joinus"}
+        #{t(:advent_joinus)}
+    != render "about.#{I18n.locale}"
+    != render :partial => "shared/2011/back_to_top"

@@ -126,7 +126,8 @@ en:
   date_sat: '2011年7月17日(土)'
   date_sun: '2011年7月18日(日)'
   advent: 'Advent Calendar'
-  advent_about: 'About RubyKaigi Advent Calendar 2011'
+  hashtag: 'hashtag'
+  advent_joinus: "How to join 'RubyKaigi Advent Calendar 2011'"
   advent_calendar: 'RubyKaigi Advent Calendar 2011'
   community: 'Community'
   back_to_registration: 'Back to Registration'
