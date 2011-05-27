@@ -15,7 +15,7 @@
         #{t(:abstract)}
       %p
         = @event.localize(I18n.locale, :abstract)
-      - unless @event.language.blank?
+      - if @event.language.present?
         %h3
           #{t(:presentation_language)}
         %p= @event.language
@@ -28,10 +28,10 @@
         - @event.presenters.each do |presenter|
           %div.avatar
             %a{:href => "#", :target => "_blank"}
-              - if presenter['gravatar'].blank?
-                %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
-              - else
+              - if presenter['gravatar'].present?
                 = gravatar_tag(presenter['gravatar'], :size => 32)
+              - else
+                %img{:alt => "", :src => "/2011/images/commonAvatar.png"}
             %h4
               = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
             - if affiliation = presenter["affiliation"]

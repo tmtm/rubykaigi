@@ -41,7 +41,7 @@
                           %img.fright{:alt => "Details", :src => "/2011/images/commonBtnDetails.png"}
                     - else
                       = event.localize(I18n.locale, :title)
-                  - unless event.language.blank?
+                  - if event.language.present?
                     %p.language
                       %span= event.language
                   - if event.presenters
