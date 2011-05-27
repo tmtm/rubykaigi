@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/ctide/ri_cal.git
+  revision: 8f3f73abfcfe4cb80099afc0d72b4693b5ef4776
+  specs:
+    ri_cal (0.8.8)
+
 GEM
   remote: http://rubygems.org/
   remote: http://gems.github.com/
@@ -153,7 +159,6 @@ GEM
     redis (2.2.0)
     redis-objects (0.5.1)
       redis (>= 2.1.1)
-    ri_cal (0.8.8)
     rr (1.0.2)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
@@ -249,7 +254,7 @@ DEPENDENCIES
   rails_warden
   rake (~> 0.8.7)
   redis-objects
-  ri_cal
+  ri_cal!
   rr
   rspec (= 2.5.0)
   rspec-rails (= 2.5.0)

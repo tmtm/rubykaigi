@@ -25,7 +25,7 @@ gem 'rails_warden'
 gem 'warden_oauth'
 gem 'warden-openid'
 
-gem 'ri_cal'
+gem 'ri_cal', :git => "git://github.com/ctide/ri_cal.git"
 
 group :development do
   gem 'capistrano', :require => nil

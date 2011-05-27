@@ -25,6 +25,7 @@ class AdventCalendarController < LocaleBaseController
 
     def events_to_ical
       RiCal.Calendar do |cal|
+        cal.add_x_property 'X-WR-CALNAME', "RubyKaigi AdventCalender #{params[:year]}"
         AdventEvent.all.each do |e|
           cal.event do |event|
             event.summary     e.name
