@@ -58,8 +58,8 @@ rubykaigi2011:
   hosted_by_ja: '日本Ruby会議2011実行委員会'
   name_en: 'RubyKaigi2011'
   name_ja: '日本Ruby会議2011'
-  dtstart: '2011-07-16 00:00'
-  dtend: '2011-07-18 23:59'
+  dtstart: '2011-07-16 10:30'
+  dtend: '2011-07-18 18:30'
   url: "http://rubykaigi.org/2011"
   location: "Nerima Culture Center (Tokyo, Japan)"
   pub_date: '2011-05-01'
