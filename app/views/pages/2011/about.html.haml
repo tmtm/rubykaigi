@@ -10,12 +10,12 @@
       %li
         %a{:href => "/2011/#{current_locale}/about#prospectus"}
           #{t(:rubykaigi2011)} #{t(:prospectus)}
+      %li
+        %a{:href => "/2011/#{current_locale}/about#press"}
+          #{t(:press)}
       -#%li
-      -#  %a{:href => "/2011/#{current_locale}/about#press"}
-      -#    #{t(:press)}
-      -#       %li
-      -#         %a{:href => "/2011/#{current_locale}/about#team"}
-      -#           #{t(:rubykaigi2011)} #{t(:team)}
+      -#  %a{:href => "/2011/#{current_locale}/about#team"}
+      -#  #{t(:rubykaigi2011)} #{t(:team)}
       %li
         %a{:href => "/2011/#{current_locale}/about#photographers"}
           #{t(:photographers)}
@@ -37,33 +37,33 @@
           #{t(:rubykaigi2011)} #{t(:prospectus)}
       != render :partial => 'pages/2011/prospectus'
     != render :partial => 'shared/2011/back_to_top'
-    -#%article
-    -#  %h2
-    -#    %a{:name => "press"}
-    -#      #{t(:press)}
-    -#  %p メディア・報道関係者向けに日本Ruby会議2010についての情報をお伝えするメーリングリストを用意しました。
-    -#  %p 取材についての情報や来場案内などもこちらでお伝えいたしますので、日本Ruby会議2010にご興味のあるメディア・報道関係の方は是非ご参加下さい。
-    -#  %h3 メーリングリストへの登録方法
-    -#  %p qwikを用いておりますので、下記要領でメールを送信してください。
-    -#  %div.mailPlease
-    -#    %ul.listMark
-    -#      %li To： rubykaigi2011press-ja _at_ qwik.atdot.net
-    -#      %li Cc： ksb.4038.nullpointe.r+rubykaigi2011press_ja _at_ gmail.com
-    -#      %li 件名： Join the list
-    -#      %li
-    -#        本文：
-    -#        %br
-    -#        RubyKaigi2011のメディア・報道社向けメーリングリストに参加します。
-    -#        %br
-    -#        所属： (ご自身の所属組織）
-    -#        %br
-    -#        お名前： (ご自身のお名前）
-    -#  %p ※ メールアドレス中の_at_は@に読み替えてください。
-    -#  %h3
-    -#    #{t(:inquiry)}
-    -#  %p 何か不明な点があれば、2011_at_rubykaigi.org までお気軽にお問い合わせください。
-    -#!= render :partial => 'shared/2011/back_to_top'
-    -# render :partial => 'shared/2011/team'
+    %article
+      %h2
+        %a{:name => "press"}
+          #{t(:press)}
+      %p メディア・報道関係者向けに日本Ruby会議2010についての情報をお伝えするメーリングリストを用意しました。
+      %p 取材についての情報や来場案内などもこちらでお伝えいたしますので、日本Ruby会議2010にご興味のあるメディア・報道関係の方は是非ご参加下さい。
+      %h3 メーリングリストへの登録方法
+      %p qwikを用いておりますので、下記要領でメールを送信してください。
+      %div.mailPlease
+        %ul.listMark
+          %li To： rk11press-ja _at_ qwik.atdot.net
+          %li Cc： snoozer.05 _at_ rubykaigi.org
+          %li 件名： Join the list
+          %li
+            本文：
+            %br
+            RubyKaigi2011のメディア・報道社向けメーリングリストに参加します。
+            %br
+            所属： (ご自身の所属組織）
+            %br
+            お名前： (ご自身のお名前）
+      %p ※ メールアドレス中の_at_は@に読み替えてください。
+      %h3
+        #{t(:inquiry)}
+      %p 何か不明な点があれば、2011_at_rubykaigi.org までお気軽にお問い合わせください。
+    != render :partial => 'shared/2011/back_to_top'
+    -#= render :partial => 'shared/2011/team'
     %article#photographers
       %h2
         %a{:name => "photographers"}
