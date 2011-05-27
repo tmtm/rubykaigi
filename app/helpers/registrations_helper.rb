@@ -9,7 +9,7 @@ module RegistrationsHelper
   def stock_notification(item)
     return "" unless item.now_on_sale?
     stock = item.stock
-    if stock < 20
+    if stock < 30
       content_tag :span, :style => 'background:#d5d536;border:1px solid #999;padding: 4px;margin-left:1em' do
         I18n.t('running_out_of_stock')
       end
