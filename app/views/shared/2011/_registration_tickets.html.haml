@@ -13,6 +13,8 @@
     %li
       Price: <strong>#{number_with_delimiter(@kaigi.unit_price)} JPY</strong>
       != stock_notification(@kaigi)
+    %li
+      #{t(:we_will_not_refund)}
   != render :partial => 'add_to_cart', :locals => {:item => @kaigi }
   %h3
     #{t('free_admission_program_for_students')}:

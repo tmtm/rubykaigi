@@ -10,6 +10,8 @@
     %li
       Price: <strong>#{number_with_delimiter(@party.unit_price)} JPY</strong>
       != stock_notification(@party)
+    %li
+      #{t(:we_will_not_refund)}
   != render :partial => 'add_to_cart', :locals => {:item => @party }
   %h3 #{t('student_discount_program')}
   %ul.listMark

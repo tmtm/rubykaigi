@@ -9,6 +9,7 @@
       <strong>#{number_with_delimiter(@individual_sponsor.unit_price)} JPY + #{t('additional_amount_label')}</strong>
       != stock_notification(@individual_sponsor)
     %li= t(:about_payment)
+    %li= t(:we_will_not_refund)
   %h3 #{t(:individual_sponsor_program_benefits)}:
   %ul.listMark
     %li= t(:individual_sponsor_program_benefit_1)
