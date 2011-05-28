@@ -1,0 +1,10 @@
+%ul
+  - headlines = HeadlineEntry.recent(I18n.locale, 10)
+  - if headlines.present?
+    - headlines.each do |e|
+      %li
+        - datetime = l(e.time.to_date, :format => "%Y-%m-%d")
+        %time{:datetime => datetime} #{datetime}
+        != link_to h(e.title), e.link
+  - else
+    %li= t(:no_news)
