@@ -48,3 +48,13 @@ puts "RubyKaigi #{kaigi.year} Individual Sponsor:"
 puts "- gross: #{num_with_delim(is_gross)}JPY"
 puts "- fee  : #{num_with_delim(is_fee)}JPY"
 puts "- total: #{num_with_delim(is_gross - is_fee)}JPY"
+
+puts ""
+puts "residence_country rough summary(rk11 and rk11_indeividual_sponsor):"
+
+residence_country = Paypal::PaymentNotification.where("created_at >=?", Date.parse('2011-01-01')).order("created_at").
+  map{|n| ActiveSupport::JSON.decode(n.notified_params_as_json)}.select{|j| j["payment_status"] == "Completed"}.
+  map{|j| j.keys.grep(/item_number/).map{|k| (j[k] =~ /\Ark11\z/ || j[k] =~ /\Ark11_individual_sponsor\z/)? j : nil}}.flatten.compact.
+  map{|j|j["residence_country"]}.map.group_by{|e|e}.map{|(k,v)| {k => v.size}}.sort_by{|e| e.values[0]}.reverse
+
+p residence_country
