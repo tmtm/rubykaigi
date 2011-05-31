@@ -255,6 +255,18 @@
       affiliation:
         en: @suzuki
         ja:
+    - name:
+        en: Tomoki MAEDA
+        ja: まえだともき
+      affiliation:
+        en: Ruby Sapporo / Antas
+        ja: Ruby札幌, 株式会社アンタス
+    - name:
+        en: Fumitake TANIGUCHI
+        ja: たにぐちふみたけ
+      affiliation:
+        en: Ruby Sapporo, Hokkaido Information University
+        ja: Ruby札幌, 北海道情報大学
 #- section:
 #    name:
 #      en: "Staff"
