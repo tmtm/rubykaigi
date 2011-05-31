@@ -249,6 +249,12 @@
       affiliation:
         en: @iogi
         ja:
+    - name:
+        en: Norio SUZUKI
+        ja: 鈴木則夫
+      affiliation:
+        en: @suzuki
+        ja:
 #- section:
 #    name:
 #      en: "Staff"
