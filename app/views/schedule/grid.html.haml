@@ -42,8 +42,7 @@
                     - else
                       = event.localize(I18n.locale, :title)
                   - if event.language.present?
-                    %p.language
-                      %span= event.language
+                    %p{:class => "language " + event.language}= event.language[0,2].upcase
                   - if event.presenters
                     - event.presenters.each do |presenter|
                       %p.presenter

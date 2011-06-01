@@ -233,14 +233,14 @@ h1 {
     @include table_border;
     width: 980px;
     td {
-      p.language {
+      .language {
+        width: 20px;
+        text-align: center;
         margin-bottom: 5px;
-        span {
-          padding: 1px;
-          border: 1px solid rgb(22, 15, 13);
-          font-weight: bold;
-          font-size: 60%;
-        }
+        padding: 1px;
+        border: 1px solid rgb(22, 15, 13);
+        font-weight: bold;
+        font-size: 60%;
       }
     }
     h3 {
