@@ -233,9 +233,6 @@ h1 {
     @include table_border;
     width: 980px;
     td {
-      p.presenter {
-        @include mark("programsSpeakerMark.png");
-      }
       p.language {
         margin-bottom: 5px;
         span {

@@ -46,5 +46,10 @@
                       %span= event.language
                   - if event.presenters
                     - event.presenters.each do |presenter|
-                      %p.presenter= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
+                      %p.presenter
+                        - if presenter['gravatar'].present?
+                          = gravatar_tag(presenter['gravatar'], :size => 24)
+                        - else
+                          %img{:src => '/images/bow_face.png', :width => 24, :height => 24}
+                        = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
     != render :partial => 'shared/2011/back_to_top'
