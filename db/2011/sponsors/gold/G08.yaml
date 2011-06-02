@@ -4,7 +4,10 @@ name:
   ja: "株式会社アンタス"
 url: "http://antas.jp/"
 pr:
-  en: "ANTAS is a system development company in Sapporo, Japan."
+  en: |-
+    ANTAS is a system development company in Sapporo, Japan.
+
+    We aggressively use Ruby for <a href="http://betsukai.thefareast.asia/" target="_blnak">Portal</a>, <a href="http://imagecruiser.jp/" target="_blnak">ImageCruiser</a>, CMS and so on.
   ja: |-
     アンタスはシステム開発、運用保守、インターネットサービス運営を主業務とする札幌の企業で、特にRubyに力を入れています。
 
