@@ -5,4 +5,7 @@ name:
 url: http://www.clear-code.com/
 pr: 
   en: ClearCode is a high technology company about free software such as Ruby and Mozilla. We'll solve your problem if we can access your code.
-  ja: "クリアコードはRubyやMozilla Firefox/Thunderbirdなどのフリーソフトウェアに関する高い技術力を持った会社です。現在、プログラミングが好きな開発者を1名募集中です。http://www.clear-code.com/recruitment/"
+  ja: |-
+    クリアコードはRubyやMozilla Firefox/Thunderbirdなどのフリーソフトウェアに関する高い技術力を持った会社です。現在、プログラミングが好きな開発者を1名募集中です。
+    <a href="http://www.clear-code.com/recruitment/" target="_blnak">http://www.clear-code.com/recruitment/</a>
+
