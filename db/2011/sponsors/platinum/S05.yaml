@@ -1,9 +1,10 @@
 ---
-wanted: true
 name:
-  en: ""
-  ja: ""
-url:
+  en: "(TBD)"
+  ja: "株式会社スケールアウト"
+url: "http://scaleout.jp/"
 pr:
-  en: ""
-  ja: ""
+  en: |-
+    Scaleout Inc has built a powerful platform designed as ad technology infrastructure using Ruby on Rails!
+  ja: |-
+    株式会社スケールアウトは、門前仲町からほど近い富岡八幡宮の近くで1日に数10億アクセスをカジュアルに捌く広告配信システムScaleAdsの開発を行っており、広くエンジニアを募集しています!
