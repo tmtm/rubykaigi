@@ -39,6 +39,7 @@ h2 {
     @include table_border;
     width: 980px;
     * {
+    vertical-align: top;
     padding: 1px;
     margin: 1px; }
     td {
