@@ -99,5 +99,11 @@
       %h2
         %a{:name => "goodies"}
           #{t(:goodies)}
-      %p Coming soon...
+      %h3
+        #{t(:official_logo)} 
+      %p.fleft
+        %a{:href => '/2011/goodies/official-logo-set.zip', :class => 'linkMark'} 
+          Download(EPS and SVG)
+      %p
+        %img{:alt => "#{t(:official_logo)}", :src => '/2011/images/forAttendeesGoodiesLogoThumb.png'}
     != render :partial => 'shared/2011/back_to_top'
