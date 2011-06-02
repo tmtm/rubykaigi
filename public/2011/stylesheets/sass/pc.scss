@@ -233,27 +233,25 @@ h1 {
     @include table_border;
     width: 980px;
     td {
-      .language {
-        width: 20px;
-        text-align: center;
-        margin-bottom: 5px;
-        padding: 1px;
-        border: 1px solid rgb(22, 15, 13);
-        font-weight: bold;
-        font-size: 60%;
-      }
-    }
+      @include language; }
+    .presenter {
+      margin-left: 30px;
+      clear: both;
+      li {
+        list-style: none; }
+      img {
+        border: 1px solid #b9b7b6; } }
     h3 {
-      border-bottom: none; }
+      border: none;
+      margin: 0 0 0 30px;
+      padding-top: 5px; }
     .hours {
       white-space: nowrap;
       background-color: rgba(138, 135, 134, 0.3); }
-    td.not-applicable {
-      background-color: rgba(138, 135, 134, 0.3);
-    }
+    .not-applicable {
+      background-color: rgba(138, 135, 134, 0.3); }
     .hall {
-      width: 400px; } }
-}
+      width: 400px; } } }
 
 #abstract, #language {
   float: left;

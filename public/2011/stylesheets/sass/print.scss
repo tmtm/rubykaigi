@@ -30,9 +30,9 @@ h2 {
     margin: 3px; } }
 
 #programs {
-  .backToTop,
-  .tip span,
-  .fright {
+  .backToTop, 
+  .btnDetails,
+  .tip span {
     display: none; }
   table {
     page-break-after: always; 
@@ -42,9 +42,11 @@ h2 {
     padding: 1px;
     margin: 1px; }
     td {
+      @include language;
       font-size: 80%;
-      p.presenter {
-        @include mark("programsSpeakerMark.png"); }
+      .presenter {
+        li {
+          list-style: none; } }
       h3 {
         border-bottom: none; } }
     .hours {

@@ -74,3 +74,20 @@
     border: 1px solid #8a8786;
     border-collapse: collapse; }
   }
+
+@mixin language {
+      .language {
+        float: left;
+        background: #160f0d;
+        color: #fff;
+        width: 24px;
+        height: 24px;
+        line-height: 24px;
+        border: 1px solid #b9b7b6;
+        text-align: center;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 60%; }
+      .Japanese {
+        background: #fff;
+        color: #160f0d; } } 

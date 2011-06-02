@@ -32,23 +32,27 @@
               - klass = (!rk_session || rk_session.empty?) ? "not-applicable" : "session"
               %td{:colspan => count, :class => klass}
                 - (events = rk_session.events).each do |event|
+                  - if event.language.present?
+                    %p{:class => "language " + event.language}= event.language[0,2].upcase
                   %h3
                     - unless event.hide_link
                       %a.tip{:href => event_path(:id => event._id)}
                         = event.localize(I18n.locale, :title)
                         - if abstract = event.localize(I18n.locale, :abstract)
                           %span= abstract
-                          %img.fright{:alt => "Details", :src => "/2011/images/commonBtnDetails.png"}
                     - else
                       = event.localize(I18n.locale, :title)
-                  - if event.language.present?
-                    %p{:class => "language " + event.language}= event.language[0,2].upcase
                   - if event.presenters
                     - event.presenters.each do |presenter|
-                      %p.presenter
-                        - if presenter['gravatar'].present?
-                          = gravatar_tag(presenter['gravatar'], :size => 24)
-                        - else
-                          %img{:src => '/images/bow_face.png', :width => 24, :height => 24}
-                        = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
+                      %ul.presenter
+                        %li
+                          - if presenter['gravatar'].present?
+                            = gravatar_tag(presenter['gravatar'], :size => 24)
+                          - else
+                            %img{:src => '/images/bow_face.png', :width => 24, :height => 24}
+                          = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["name"])
+                    - unless event.hide_link
+                      .right.btnDetails
+                        %a{:href => event_path(:id => event._id)}
+                          %img{:alt => "Details", :src => "/2011/images/commonBtnDetails.png"}
     != render :partial => 'shared/2011/back_to_top'
