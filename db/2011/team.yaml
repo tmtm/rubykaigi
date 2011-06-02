@@ -179,11 +179,12 @@
       ja: デザイナ
     people:
     - name:
-        en: Mayuco Sekiya
+        en: Mayuko SEKIYA
         ja: 関谷繭子
       affiliation:
-        en: @mayuco
-        ja:
+        en: @mayuco / Enishi Tech
+        ja: @mayuco / 株式会社えにしテック
+      gravatar: 00575484b5d4489619bfc52e9775ee3b
     - name:
         en: Norio
         ja: のりお
