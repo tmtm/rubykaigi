@@ -1,9 +1,11 @@
 ---
-wanted: true
 name:
-  en:
-  ja:
-url:
+  en: ANTAS, Inc.
+  ja: "株式会社アンタス"
+url: "http://antas.jp/"
 pr:
-  en:
-  ja:
+  en: "ANTAS is a system development company in Sapporo, Japan."
+  ja: |-
+    アンタスはシステム開発、運用保守、インターネットサービス運営を主業務とする札幌の企業で、特にRubyに力を入れています。
+
+    地域口コミポータル<a href="http://betsukai.thefareast.asia/" target="_blnak">LOHABUU</a>や、画像検索エンジン<a href="http://imagecruiser.jp/" target="_blank">ImageCruiser</a>、自社CMSパッケージなどRailsベースの開発実績が豊富にあります。
