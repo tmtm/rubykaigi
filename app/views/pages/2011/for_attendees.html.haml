@@ -101,9 +101,16 @@
           #{t(:goodies)}
       %h3
         #{t(:official_logo)} 
-      %p.fleft
-        %a{:href => '/2011/goodies/official-logo-set.zip', :class => 'linkMark'} 
-          Download(EPS and SVG)
+      .download
+        %p
+          %a{:href => '/2011/goodies/official-logo-set.zip', :class => 'linkMark'} 
+            Download(EPS and SVG)
+        %p.author
+          Author:norio,
+          URL:
+          %a{ :href => "http://twitter.com/norio", :target => "_blank"}> http://twitter.com/norio
+          , License:
+          %a{ :href => "http://creativecommons.org/licenses/by/3.0/", :rel => "license", :target => "_blank"}> CC-by-3.0
       %p
         %img{:alt => "#{t(:official_logo)}", :src => '/2011/images/forAttendeesGoodiesLogoThumb.png'}
     != render :partial => 'shared/2011/back_to_top'
