@@ -378,6 +378,26 @@ h1.events_header {
     .linkMark {
        background: url("/2011/images/linkMark.png") no-repeat left; } } }
 
+/*--- index ----------------------------------------------*/
+
+#for_attendees {
+  #goodies {
+    h3 {
+      clear: both; }
+    .download {
+      margin: 0 10px 0 0;
+      width: 400px;
+      float: left; }
+    .author {
+      text-align: right;
+      font-size: 60%; }
+    dl {
+      margin-bottom: 20px; }
+    dd {
+      margin: 0 0 5px 0; }
+    dt {
+      float: right; } } }
+
 /*--- archives ----------------------------------------------*/
 
 #archives #content {
@@ -448,3 +468,4 @@ footer {
       text-decoration: underline;
       img {
         text-decoration: none; } } } }
+
