@@ -1,0 +1,28 @@
+---
+presenters:
+  - name:
+      en: KOSAKI Motohiro
+      ja: "小崎資広"
+    affiliation:
+      en: Fujitsu
+      ja: "富士通"
+    bio:
+      en: I'm Linux kernel developer and Ruby commiter. I'm interest performance improvement and platform depended issue fixing.
+      ja: "Rubyコミッタ。世界的にもめずらしいLinuxカーネル開発者とのデュアルクラス。IOとかロックのようなRuby言語知らなくてもハックできるあたりに主に生息している。最近「Rubyをもっとも知らないコミッタ」の称号を奪われてしょんぼりしているらしい"
+title:
+  en: CRuby lock design improvement and why it sucks
+  ja: "CRubyのロックデザインの解説および改善案について"
+abstract:
+  en: |-
+    Many people believe Ruby 1.9 is faster than 1.8.
+    But it's not always true. More unfortunately,
+    recent cpu improvement bring some new issue to CRuby lock implementation.
+    This presentation try to figure the issue of a lock
+    design in CRuby and talk an advance plan.
+  ja: |-
+    Ruby 1.9ではネイティブスレッドの採用とそれによる高速化が喧伝されてきたが、
+    場合によっては有効に動かない時がある。
+    また Core i7等の近年のCPUの性能特性と相性の悪いアルゴリズムを採用している箇所があり、
+    新しいハードウェアを買うと悲しい思いをすることがありうる。
+    本発表では、CRubyのGVL(Global VM Lock)とMutex.lock メソッドの問題点、および改善案について解説する
+language: Japanese
