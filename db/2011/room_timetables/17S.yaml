@@ -55,6 +55,9 @@ timeslots:
   - start: *end_of_slot9
     end:   &end_of_slot10
       2011-07-17T17:10:00+09:00
+    event_ids:
+      - 17S09
+      - 17S10
   - start: *end_of_slot10
     end:   &end_of_slot11
       2011-07-17T17:20:00+09:00

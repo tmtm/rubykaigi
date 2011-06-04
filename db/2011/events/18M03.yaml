@@ -1,12 +1,12 @@
---- 
+---
 presenters:
-  - name: 
+  - name:
       en: Koji Shimada
       ja: "島田 浩二"
-    affiliation: 
+    affiliation:
       en: EnishiTech Inc., RubySapporo, Nihon Ruby-no-kai
       ja: "株式会社えにしテック、Ruby札幌、日本Rubyの会"
-    bio: 
+    bio:
       en: "Koji Shimada (Enishi Tech Inc.)\n\
         The President & CEO of Enishi Tech Inc., board member of Nihon Ruby-no-kai(Japan Ruby Group) and Founder of RubySapporo.\n\
         Wrote the book \"Ruby逆引きレシピ\" (with other authors, published by SHOEISHA) and translated Neal Ford's \"ProductiveProgrammer\" into Japanese (supervisor, The Japanese version, \"プロダクティブ・プログラマ\" was published by O'Reilly Japan)."
@@ -14,12 +14,29 @@ presenters:
         株式会社えにしテック代表取締役。日本Rubyの会理事。Ruby札幌主宰。\n\
         著書は『Ruby逆引きレシピ』(共著、翔泳社)、『プロダクティブ・プログラマ』(監訳、オライリージャパン)"
     gravatar: 941b170e5a115a295cccb5f5cdf0a800
-title: 
-  en: The Way of Life like Ruby
-  ja: 
-abstract: 
-  en: Help.(maniaimasenndesita...)
-  ja: "私は Ruby ともっと仲良くなりたいと思ったときに、まず Ruby札幌の活動を始めることから始めました。そしてコミュニティというものをもっと良く知りたいと思ったときに、RubyKaigi2007の当日スタッフに応募することから始めました。\n\
-    そうして一つずつ自分のできることをしていった結果、札幌 Ruby 会議という場には全国からさまざまな Rubyist がやってきていただけるようになり、公私ともども Ruby ともとても仲の良い暮らしができるようになりました。\n\
-    本セッションは、そうした私自身の経験を通して、地方で悶々と暮らしている Rubyist が \"Ruby のように生きる\" 生き方についての材料を提供できればと思います。"
+  - name:
+      en: TOSHIAKI Koshiba
+      ja: "こしば としあき"
+    affiliation:
+      en: "株式会社ECナビ|TokyoRubyKaigi05 Chairman"
+      ja: "株式会社ECナビ|東京Ruby会議05実行委員長"
+    bio:
+      en: "Software Engineer. like: Excel, Ruby, UML, DFD, Agile Development, Project Facilitation"
+      ja: "ソフトウェアエンジニア。好きなもの: Excel, Ruby, UML, DFD, アジャイルなソフトウェア開発を進める事, プロジェクトファシリテーション"
+  - name:
+      en: Kakutani Shintaro
+      ja: "角谷 信太郎"
+    affiliation:
+      en: Nihon Ruby-no-kai(Japan Ruby Group), Eiwa System Management, Inc.
+      ja: "日本Rubyの会, (株)永和システムマネジメント"
+    bio:
+      en: "Kakutani Shintaro is a just another strong Ruby proponent, chief programmer in Eiwa System Management, Inc and board member of Nihon Ruby-no-kai(Japan Ruby Group). He is one of the organizers of RubyKaigi since 2006. He have translated some english technical book into japanese: \"Agile Samurai\"(supervisor), \"Agile Estimating and Planning\"(co-translator), \"Interface Oriented Design\"(supervisor), \"Practices of an Agile Developer\"(co-supervisor) and \"From Java to Ruby\"(translator)."
+      ja: "ただのRuby厨。(株)永和システムマネジメントサービスプロバイディング事業部チーフプログラマ。日本Rubyの会理事。RubyKaigiの運営を2006年からやってます。著書は『アジャイルな見積りと計画づくり』(共同翻訳)、『インターフェイス指向設計』(監訳)、『アジャイルプラクティス』(共同監訳)、『JavaからRubyへ』(翻訳)。最新刊の『The Agile Samurai』(監訳)が RubyKaigi 2011 の頃には出版されているはず。"
+    gravatar: 63a6bff89d692e21de20868202bc8dde
+title:
+  en: "All About RubyKaigi Ecosystem"
+  ja: "All About RubyKaigi Ecosystem"
+abstract:
+  en: "(TBA)"
+  ja: "(TBA)"
 language: Japanese

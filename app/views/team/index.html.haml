@@ -2,7 +2,7 @@
 #content
   %h1
     #{t(:team)}
-  .team
+  %article#team
     - @team.each do |section|
       .section
         %h2= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, section['section']['name'])
