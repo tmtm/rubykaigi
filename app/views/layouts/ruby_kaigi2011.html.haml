@@ -45,18 +45,26 @@
     #global
       %nav
         %ul
-          %li.informations
+          %li
             %a{:href => "/2011/#{current_locale}/about"}
-              #{t(:about)}
-          %li.registration
+              %span
+                #{t(:about)}
+              %img{:src => "/2011/images/commonGlobalNavInformations.png"}
+          %li
             %a{:href => "/2011/#{current_locale}/registration"}
-              #{t(:registration)}
-          %li.forAttendees
+              %span
+                #{t(:registration)}
+              %img{:src => "/2011/images/commonGlobalNavRegister.png"}
+          %li
             %a{:href => "/2011/#{current_locale}/for_attendees"}
-              #{t(:for_attendees)}
-          %li.sponsors
+              %span
+                #{t(:for_attendees)}
+              %img{:src => "/2011/images/commonGlobalNavForAttendees.png"}
+          %li
             %a{:href => "/2011/#{current_locale}/sponsors"}
-              #{t(:sponsors)}
+              %span
+                #{t(:sponsors)}
+              %img{:src => "/2011/images/commonGlobalNavSponsors.png"}
     != render_flashes
     != yield
     %footer

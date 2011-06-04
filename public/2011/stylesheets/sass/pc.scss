@@ -96,20 +96,18 @@ h1 {
   nav {
     width: 980px;
     margin: 0 auto; }
-  li {
+  ul li {
     float: left;
     display: block;
-    height: 60px;
-    padding-left: 70px;
-    line-height: 60px; }
-  .informations {
-    background: url(/2011/images/commonGlobalNavInformations.png) top left no-repeat; }
-  .registration {
-    background: url(/2011/images/commonGlobalNavRegister.png) top left no-repeat; }
-  .forAttendees {
-    background: url(/2011/images/commonGlobalNavForAttendees.png) top left no-repeat; }
-  .sponsors {
-    background: url(/2011/images/commonGlobalNavSponsors.png) top left no-repeat; } }
+    margin: 0;
+    padding: 0;
+    background: none;
+    a {
+      span {
+        display: block; 
+        float: right; }
+      height: 60px;
+      line-height: 60px; } } }
 
 /*--- others ----------------------------------------------*/
 
