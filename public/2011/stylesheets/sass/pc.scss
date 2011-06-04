@@ -201,6 +201,10 @@ h1 {
     display: block; }
   @include clearfix; }
 
+  .galleryview li {
+    list-style-type: none;
+  }
+
 /*--- about ----------------------------------------------*/
 
 #about {
