@@ -64,21 +64,13 @@
       %h2
         %a{:name => "access"}
           #{t(:access)}
-      %p
-        - if I18n.locale.to_s == 'ja'
-          %span= link_to t(:neribun_with_location), 'http://www.neribun.or.jp/web/02_seat/n_index_02.html'
-          %span= link_to '地図', 'http://maps.google.co.jp/maps/ms?ie=UTF8&brcurrent=3,0x6018ed0919f73af7:0x7c22c5fa95e45acb,0&hl=ja&source=embed&msa=0&msid=111740698347778329061.000481ccda497fef7135d&ll=35.738701,139.654073&spn=0.003483,0.004281&z=17'
-        - else
-          %span= t(:neribun_with_location)
-          %span= link_to 'Website (in Japanese)', 'http://www.neribun.or.jp/web/02_seat/n_index_02.html'
-          |
-          %span= link_to 'Map', 'http://maps.google.co.jp/maps/ms?ie=UTF8&brcurrent=3,0x6018ed0919f73af7:0x7c22c5fa95e45acb,0&hl=en&source=embed&msa=0&msid=111740698347778329061.000481ccda497fef7135d&ll=35.738701,139.654073&spn=0.003483,0.004281&z=17'
+      != render :partial => 'pages/2011/for_attendees_access'
     != render :partial => 'shared/2011/back_to_top'
     %article#hotel_and_travel
       %h2
         %a{:name => "hotel_and_travel"}
           #{t(:hotel_and_travel)}
-      %p Coming soon...
+      != render :partial => 'pages/2011/for_attendees_hotel_and_travel'
     != render :partial => 'shared/2011/back_to_top'
     %article#floor_guide
       %h2
