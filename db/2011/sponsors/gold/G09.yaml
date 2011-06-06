@@ -1,9 +1,10 @@
 ---
-wanted: true
 name:
-  en:
-  ja:
-url:
+  en: Tatsu-zine Publishing Inc.
+  ja: "株式会社達人出版会"
+url: "http://tatsu-zine.com/"
 pr:
-  en:
-  ja:
+  en: |-
+    Tatsu-zine Publishing is Japanese ebook publisher like PragProg or Peepcode. If you want to sell your Ruby-related documents, contact me!:)
+  ja: |-
+    達人出版会は技術系電子書籍を制作・販売しています。Rails3やWindows向けRubyはもちろん、CucumberやG1GCなど、普通の出版社さんでは扱わないようなテーマでも出版します。原稿絶賛募集中！あと正直スポンサーやってられるほど儲かってないのでどんどん買ってください！
