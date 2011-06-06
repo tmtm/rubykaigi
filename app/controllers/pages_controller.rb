@@ -19,6 +19,7 @@ class PagesController < LocaleBaseController
       end
       return
     when "2011"
+      @body_id = params[:page_name]
       begin
         if params[:page_name] =~ /^phone/
           render :template => "pages/2011/#{params[:page_name]}", :layout => "ruby_kaigi2011_phone"

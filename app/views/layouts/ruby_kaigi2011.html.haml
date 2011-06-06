@@ -19,7 +19,7 @@
     /[if lte IE 8]
       %script{:src => "/2011/javascripts/html5.js", :type => "text/javascript"}
     != yield :head
-  %body{:id => params[:page_name]}
+  %body{:id => @body_id}
     #topBar
       %nav
         - if authenticated?

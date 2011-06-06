@@ -8,7 +8,7 @@ class ScheduleController < LocaleBaseController
   def grid
     @timetable = RubyKaigi2011::Timetable.new
     @rooms = RubyKaigi2011::Room.all
-    params[:page_name] = 'programs'
+    @body_id = 'schedule'
   end
 
   def details
