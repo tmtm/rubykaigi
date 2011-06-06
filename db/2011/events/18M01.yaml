@@ -29,6 +29,7 @@ presenters:
     bio:
       en:
       ja:
+    gravatar: 77a29c830c1974513a335accf5cf41a1
 title:
   en: Ruby-no-kai Itself and Some Related Projects.
   ja: "一般社団法人日本Rubyの会と関連プロジェクト報告(るびま,るりま)"
