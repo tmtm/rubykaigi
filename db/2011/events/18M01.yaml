@@ -7,8 +7,8 @@ presenters:
       en: Tatsu-zine,Inc., Nihon Ruby-no-kai(Japan Ruby Group)
       ja: "(株)達人出版会, 日本Rubyの会"
     bio:
-      en: "(TBA)"
-      ja: "(TBA)"
+      en: "(To Be Announced)"
+      ja: "(To Be Announced)"
     gravatar:
   - name:
       en: okkez
@@ -32,6 +32,6 @@ title:
   en: Ruby-no-kai Itself and Some Related Projects.
   ja: "一般社団法人日本Rubyの会と関連プロジェクト報告(るびま,るりま)"
 abstract:
-  en: "(TBA)"
-  ja: "(TBA)"
+  en: "(To Be Announced)"
+  ja: "(To Be Announced)"
 language: Japanese
