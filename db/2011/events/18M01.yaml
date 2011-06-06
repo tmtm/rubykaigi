@@ -25,6 +25,9 @@ presenters:
     affiliation:
       en: ""
       ja: ""
+    bio:
+      en:
+      ja:
 title:
   en: Ruby-no-kai Itself and Some Related Projects.
   ja: "一般社団法人日本Rubyの会と関連プロジェクト報告(るびま,るりま)"
