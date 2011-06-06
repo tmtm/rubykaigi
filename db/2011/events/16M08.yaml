@@ -11,7 +11,8 @@ presenters:
       ja: "株式会社ケーシーエスキャロット ユニットマネージャ\n\
       2004年にRubyを使い始め、CGIKitを経て、2005年 Railsを使い始めました。\n\
       ここ数年は\"mission critical\"なシステム開発をRubyで行っています。"
-title: 
+    gravatar: 5c72a69ad460347a01aa05de9915c3e0
+title:
   en: |-
     Critical mission system implemented in Ruby
   ja: |-
