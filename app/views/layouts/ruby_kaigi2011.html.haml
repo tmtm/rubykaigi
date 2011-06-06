@@ -36,7 +36,7 @@
             %li!= link_to "#{t(:signin)}", signin_path
         %a{:name => "top"}
       %p#topBarLogo
-        %a{:href => "/"}
+        %a{:href => "/2011/#{locale}"}
           %img{:alt => "RubyKaigi2011(日本Ruby会議2011)", :height => "80", :src => "/2011/images/commonLogo.png", :width => "260"}
       %p#topBarLang
         != link_to 'English', :locale => 'en', :page_name => params[:page_name]
