@@ -9,6 +9,7 @@ presenters:
     bio:
       en:
       ja:
+    gravatar: 0ec4920185b657a03edf01fff96b4e9b
 title:
   en: "Keynote"
   ja:
