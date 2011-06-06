@@ -6,3 +6,7 @@ every 1.hour do
   rake 'headline:fetch'
   rake 'twitter:wash_whale'
 end
+
+every 5.minutes do
+  command 'touch ' + File.join(path, *%w{tmp restart.txt})
+end
