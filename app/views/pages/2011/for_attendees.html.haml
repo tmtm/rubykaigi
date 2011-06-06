@@ -49,7 +49,7 @@
       %ul.listMark
         %li Recorded videos will be published later (TBA).
         %li This program is brought you to by KaigiFreaks.
-      %p.linkMarka
+      %p.linkMark
         #{t(:hall_main)}:
         %a{:href => "/2011/#{current_locale}/coming_soon"} Ustream
         |
@@ -64,13 +64,13 @@
       %h2
         %a{:name => "access"}
           #{t(:access)}
-      %p Coming soon...
+      != render :partial => 'pages/2011/for_attendees_access'
     != render :partial => 'shared/2011/back_to_top'
     %article#hotel_and_travel
       %h2
         %a{:name => "hotel_and_travel"}
           #{t(:hotel_and_travel)}
-      %p Coming soon...
+      != render :partial => 'pages/2011/for_attendees_hotel_and_travel'
     != render :partial => 'shared/2011/back_to_top'
     %article#floor_guide
       %h2
