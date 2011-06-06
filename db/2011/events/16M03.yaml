@@ -9,7 +9,8 @@ presenters:
     bio:
       en: an initiator of the Shibuya.js. I belong to asakusa.rb. I like Ruby and  instance_eval method.
       ja: "Shibuya.js 発起人。浅草.rb 所属。好きな言語は Ruby。好きなメソッドは instance_eval。"
-title: 
+    gravatar: 2997ec7879942bd0415690c85731e328
+title:
   en: Large-scale web service and operations with Ruby
   ja: "Ruby を利用した大規模ウェブサービスの開発・運用"
 abstract:
