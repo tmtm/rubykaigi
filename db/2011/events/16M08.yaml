@@ -1,12 +1,12 @@
---- 
+---
 presenters:
-  - name: 
+  - name:
       en: MayumiI EMORI(emorima)
       ja: "江森 真由美(emorima)"
-    affiliation: 
+    affiliation:
       en: KCS Carrot Corp. / Asakusa.rb
       ja: "株式会社 ケーシーエスキャロット / 浅草.rb"
-    bio: 
+    bio:
       en: Unit Manager of Development Department, KCS Carrot Corp.
       ja: "株式会社ケーシーエスキャロット ユニットマネージャ\n\
       2004年にRubyを使い始め、CGIKitを経て、2005年 Railsを使い始めました。\n\
@@ -16,7 +16,7 @@ title:
     Critical mission system implemented in Ruby
   ja: |-
     Rubyで作った "critical mission" システムについて
-abstract: 
+abstract:
   en: |-
     In this lecture, I will introduce the effective points
     and the problems which I'd been in the face of,
