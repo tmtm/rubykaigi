@@ -11,6 +11,14 @@ class ScheduleController < LocaleBaseController
     params[:page_name] = 'programs'
   end
 
+  def details
+    timetable = RubyKaigi2011::Timetable.new
+    @event = RubyKaigi2011::Event.find(params[:id])
+    room_timetable = timetable.room_timetable_contains_event(@event)
+    @session_of_event = room_timetable.session_contains_event(@event)
+    @room = RubyKaigi2011::Room.find(room_timetable.room_id)
+  end
+
   def all
     @schedule = RubyKaigi2011::Timetable.new
     respond_to do |format|

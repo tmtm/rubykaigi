@@ -6,8 +6,8 @@ Rubykaigi::Application.routes.draw do
     match 'phone_registration', :to => 'registrations#phone_index'
     resources :advent_calendar, :only => %w(index)
     match 'sponsors_ruby/:id', :to => 'sponsors_ruby#show'
-    resources :events, :only => %w(show)
     match 'schedule/grid' => 'schedule#grid'
+    match 'schedule/details/:id' => 'schedule#details', :as => 'schedule_details'
     resources :team, :only => %w(index)
   end
 
