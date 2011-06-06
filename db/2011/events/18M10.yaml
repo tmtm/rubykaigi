@@ -1,8 +1,8 @@
 ---
 presenters:
   - name:
-      en: Matz
-      ja:
+      en: Yukihiro "Matz" Matsumoto
+      ja: まつもとゆきひろ
     affiliation:
       en:
       ja:
@@ -16,4 +16,4 @@ title:
 abstract:
   en:
   ja:
-language:
+language: Japanese
