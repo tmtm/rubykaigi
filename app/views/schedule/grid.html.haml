@@ -9,7 +9,7 @@
     %div
       %h2
         %time{:datetime => date.strftime('%Y-%m-%d')}
-          = l date
+          = l date, :format => :schedule_grid
       %table
         %colgroup.hours
         %colgroup.hall

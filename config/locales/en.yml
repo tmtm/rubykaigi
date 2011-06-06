@@ -5,3 +5,6 @@ en:
     formats:
       month: "%B %Y"
       advent_cal: "%Y/%m/%d %H:%M"
+  date:
+    formats:
+      schedule_grid: "%Y/%m/%d(%a)"
