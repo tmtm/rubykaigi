@@ -1,5 +1,5 @@
 %ul
-  - headlines = HeadlineEntry.recent(I18n.locale, 10)
+  - headlines = HeadlineEntry.recent(I18n.locale, 5)
   - if headlines.present?
     - headlines.each do |e|
       %li
