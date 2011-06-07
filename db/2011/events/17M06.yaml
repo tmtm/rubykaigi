@@ -9,7 +9,8 @@ presenters:
     bio:
       en: Ruby/Rails Programmer. Love TDD/BDD.
       ja: "SIerでRuby/Railsプログラマーをやっています。TDD(BDD)が好きです。"
-title: 
+    gravatar: 70e13d9877054026fda46d5a5b53a236
+title:
   en: 5 years know-how of RSpec driven Rails app. development.
   ja:
 abstract:
