@@ -1,7 +1,27 @@
 %p= t(:neribun_with_location)
 
-%p.linkMark
-  %a{:href => "http://maps.google.co.jp/maps/ms?ie=UTF8&brcurrent=3,0x6018ed0919f73af7:0x7c22c5fa95e45acb,0&hl=en&source=embed&msa=0&msid=111740698347778329061.000481ccda497fef7135d&ll=35.738701,139.654073&spn=0.003483,0.004281&z=17", :target => "_blank"} Map
+%p
+  %a.linkMark{:href => "http://maps.google.co.jp/maps/ms?ie=UTF8&brcurrent=3,0x6018ed0919f73af7:0x7c22c5fa95e45acb,0&hl=en&source=embed&msa=0&msid=111740698347778329061.000481ccda497fef7135d&ll=35.738701,139.654073&spn=0.003483,0.004281&z=17", :target => "_blank"} Map
 
-%p.linkMark
-  %a{:href => 'http://www.neribun.or.jp/'} Official website (in Japanese)
+%p
+  The nearest station is
+  %a{ :href => 'http://en.wikipedia.org/wiki/Nerima_Station', :target => '_blank' } Nerima Station
+  that is served by Ikebukuro and Yurakucho line (of Seibu Railway) and Oedo like (of Toei Subway). We recommend you to use Ikebukuro line to get Nerima Station from
+  %a{ :href => 'http://en.wikipedia.org/wiki/Ikebukuro_Station', :target => '_blank' } Ikebukuro station.
+  It takes about 10 minutes.
+
+%h3
+  How to get
+  %a{ :href => 'http://en.wikipedia.org/wiki/Ikebukuro_Station', :target => '_blank' } Ikebukuro Station
+%ul.listMark
+  %li From Tokyo Station: Take Marunouchi like of Tokyo Metoro. Exit Ikebukuro Station. Walk to Ikebukuro Station of Seibu Railway.
+  %li
+    From Haneda Airport: Use expressway bus (such as
+    %a{ :href => 'http://www.limousinebus.co.jp/en/', :target => '_blank' } Airport Limousine
+    or
+    %a{ :href => 'http://hanedabus.jp/timetable_e.htm', :target => '_blank' } Keihin Kyuko Bus
+    ) to Ikebukuro Statation East #1 Exit. Walk to Ikebukuro Station of Seibu Railway.
+  %li
+    From Narita Airport: Use expressway bus (such as
+    %a{ :href => 'http://www.limousinebus.co.jp/en/', :target => '_blank' } Airport Limousine
+    ) to Hotel Metropolitan Tokyo or Sunshine City Prince Hotel. Walk to Ikebukuro Station of Seibu Railway.
