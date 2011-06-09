@@ -1,9 +1,11 @@
 ---
-wanted: true
 name:
-  en:
-  ja:
-url:
+  en: Langrich Inc.
+  ja: "ラングリッチ"
+url: "http://langrich.com/"
 pr:
-  en:
-  ja:
+  en: |-
+    Langrich is a ESL company for Japanese students. It has been expanding its business and we expect even higher growth rate this year. We need more competent engineer to meet the demand from our students.
+  ja: |-
+    ラングリッチは、フィリピンに拠点を置く、オンライン英会話サービスです。ウェブサイトの開発に力を入れており、英語力のある開発者を募集しています。
+   
