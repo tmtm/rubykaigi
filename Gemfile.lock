@@ -67,6 +67,7 @@ GEM
       ffi (~> 1.0.6)
     configatron (2.8.1)
       yamler (>= 0.1.0)
+    configuration (1.2.0)
     crack (0.1.6)
     cucumber (0.10.7)
       builder (>= 2.1.2)
@@ -112,6 +113,9 @@ GEM
       thor (~> 0.14)
     json (1.5.2)
     json_pure (1.5.2)
+    launchy (0.4.0)
+      configuration (>= 0.0.5)
+      rake (>= 0.8.1)
     machinist (1.0.6)
     mail (2.2.19)
       activesupport (>= 2.3.6)
@@ -293,10 +297,12 @@ DEPENDENCIES
   hoptoad_notifier
   i18n_generators
   jquery-rails (>= 0.2.6)
+  launchy
   machinist
   moro-miso
   mysql
   nokogiri
+  oa-oauth
   omniauth (>= 0.2.6)
   rack-google-analytics (= 0.6.1)
   rails (= 3.0.6)

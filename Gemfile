@@ -26,6 +26,7 @@ gem 'rails_warden'
 gem 'warden_oauth'
 gem 'warden-openid'
 gem 'omniauth', '>= 0.2.6'
+gem 'oa-oauth', :require => "omniauth/oauth"
 
 gem 'ri_cal', :git => "git://github.com/ctide/ri_cal.git"
 
@@ -55,4 +56,5 @@ group :test, :cucumber do
   gem 'nokogiri'
   gem 'steak', :group => :development
   gem 'capybara', :group => :development
+  gem 'launchy'
 end
