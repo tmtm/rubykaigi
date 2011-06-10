@@ -13,8 +13,8 @@
         %li
           Website:
           %br
-          %a.linkMark{:href => sponsor.url, :target => "_blank"}
-            = sponsor.url
+          %a.linkMark{:href => sponsor.localize(I18n.locale, :url), :target => "_blank"}
+            = sponsor.localize(I18n.locale, :url)
     %p
       Network Applied Communication Laboratory (NaCl) delivers system development solutions utilizing open source software. NaCl drives the Ruby programming language with Ruby creator and NaCl fellow, Yukihiro "Matz" Matsumoto.
   != render :partial => 'shared/2011/back_to_top'

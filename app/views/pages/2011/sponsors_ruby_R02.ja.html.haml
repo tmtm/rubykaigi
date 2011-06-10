@@ -12,8 +12,8 @@
         %li
           Website:
           %br
-          %a.linkMark{:href => sponsor.url, :target => "_blank"}
-            = sponsor.url
+          %a.linkMark{:href => sponsor.localize(I18n.locale, :url), :target => "_blank"}
+            = sponsor.localize(I18n.locale, :url)
     %h3 quanpの紹介
     %p
       高性能な技術を、より使いやすく。リコーは画像機器を中心とした製品開発やサービスの提供に加え、それらを組み合わせたオフィスソリューションの提供へと事業領域を拡大しています。そうした新規事業の一つとして“quanp”を展開中。

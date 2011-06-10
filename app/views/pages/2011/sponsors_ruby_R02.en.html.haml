@@ -12,8 +12,8 @@
         %li
           Website:
           %br
-          %a.linkMark{:href => sponsor.url, :target => "_blank"}
-            = sponsor.url
+          %a.linkMark{:href => sponsor.localize(I18n.locale, :url), :target => "_blank"}
+            = sponsor.localize(I18n.locale, :url)
     %h3 Introduction to quanp
     %p
       High-performance technology, easier to use. In addition to Ricoh product development and services that focus on imaging equipment, Ricoh is expanding its business scope to provide a combination of office solutions. One of these new businesses being developed is "quanp."

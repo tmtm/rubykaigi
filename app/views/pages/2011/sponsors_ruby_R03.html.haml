@@ -12,8 +12,8 @@
         %li
           Website:
           %br
-          %a.linkMark{:href => sponsor.url, :target => "_blank"}
-            = sponsor.url
+          %a.linkMark{:href => sponsor.localize(I18n.locale, :url), :target => "_blank"}
+            = sponsor.localize(I18n.locale, :url)
     %div.cboth
       = sponsor.localize(I18n.locale, :pr)
   != render :partial => 'shared/2011/back_to_top'
