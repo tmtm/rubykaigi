@@ -237,6 +237,7 @@ GEM
     steak (2.0.0)
       capybara (>= 1.0.0)
       rspec-rails (>= 2.5.0)
+    tapp (1.0.0)
     term-ansicolor (1.0.5)
     thin (1.2.11)
       daemons (>= 1.0.9)
@@ -316,6 +317,7 @@ DEPENDENCIES
   sass
   spork
   steak
+  tapp
   thin
   twitter (= 0.9.8)
   warden-openid
