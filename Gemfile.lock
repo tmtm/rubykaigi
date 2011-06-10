@@ -193,8 +193,6 @@ GEM
       activesupport (= 3.0.6)
       bundler (~> 1.0)
       railties (= 3.0.6)
-    rails_warden (0.5.5)
-      warden (>= 1.0.0)
     railties (3.0.6)
       actionpack (= 3.0.6)
       activesupport (= 3.0.6)
@@ -253,14 +251,6 @@ GEM
       yajl-ruby (~> 0.7.0)
     tzinfo (0.3.28)
     validatable (1.6.7)
-    warden (1.0.4)
-      rack (>= 1.0)
-    warden-openid (0.1.0)
-      rack-openid
-      warden
-    warden_oauth (0.1.1)
-      oauth
-      warden (>= 0.8.1)
     webrat (0.7.3)
       nokogiri (>= 1.2.0)
       rack (>= 1.0)
@@ -307,7 +297,6 @@ DEPENDENCIES
   omniauth (>= 0.2.6)
   rack-google-analytics (= 0.6.1)
   rails (= 3.0.6)
-  rails_warden
   rake (~> 0.8.7)
   redis-objects
   ri_cal!
@@ -320,8 +309,6 @@ DEPENDENCIES
   tapp
   thin
   twitter (= 0.9.8)
-  warden-openid
-  warden_oauth
   webrat
   whenever (= 0.6.7)
   will_paginate
