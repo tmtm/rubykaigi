@@ -158,6 +158,10 @@ ol {
 .btnInput {
   @include opacity80; }
 
+#flashMessage {
+  width: 940px;
+  margin: 0 auto; }
+
 /*--- index ----------------------------------------------*/
 #index,
 #phone_index {

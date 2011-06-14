@@ -1,3 +1,5 @@
+@import "mixin";
+
 .fieldWithErrors {
   padding: 2px;
   background-color: red;
@@ -31,23 +33,26 @@
   list-style: square; }
 
 #flash {
+  @include opacity(95);
   position: absolute;
   top: 200px;
   margin: 0 auto;
-  width: 960px;
+  width: 600px;
   font-size: 18px;
-  color: black; }
+  color: #fff; }
+  span {
+    color: #fff; }
   #flash .error {
-    background: #ffcccc;
-    border: 3px solid red;
+    border: 5px solid #c2300e;
+    background: #f23c12;
     padding: 30px; }
   #flash .warning {
-    background: #fee37a;
-    border: 3px solid #fd9b5b;
+    border: 5px solid #bea30e;
+    background: #eecc11;
     padding: 30px; }
   #flash .notice {
-    background: #cbf285;
-    border: 3px solid #3cab09;
+    border: 5px solid #308907;
+    background: #3cab09;
     padding: 30px; }
 
 form dl dt {

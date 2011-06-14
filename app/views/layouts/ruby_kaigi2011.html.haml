@@ -65,7 +65,8 @@
               %span
                 #{t(:sponsors)}
               %img{:src => "/2011/images/commonGlobalNavSponsors.png"}
-    != render_flashes
+    #flashMessage
+      != render_flashes
     != yield
     %footer
       %nav

@@ -3,9 +3,10 @@
     %span #{flash_message}
 
 :javascript
+  function fout() {
+    $('#flash').fadeOut('slow');
+  }
   $(document).ready(function() {
     $('#flash').fadeIn('slow');
-    $('#flash').click(function() {
-      $('#flash').fadeOut('slow');
-    });
-    });
+    setTimeout('fout()', 3000);
+  });
