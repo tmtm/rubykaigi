@@ -1,3 +1,5 @@
+@import "mixin";
+
 #advent_events ul {
   list-style: none;
   padding: 0;
@@ -22,9 +24,16 @@
       color: #160f0d;
     }
     .time {
-      font-size: 0.8em;
-      margin: 0 0 0 1em;
-      padding-top: 0.8em;
+      font-family: 'Oswald', arial, serif; 
+      letter-spacing: 1px;
+      @include radius(20,20,20,20);
+      @include box_shadow(-1,-1,0.5,'#453f3d');
+      width: 350px;
+      color: #fff;
+      text-align: center;
+      margin: 7px;
+      padding: 5px;
+      background :#a29f9e;
     }
     .location {
       font-size: 0.8em;
