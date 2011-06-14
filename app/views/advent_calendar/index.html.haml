@@ -23,8 +23,9 @@
           - events.each do |event|
             %li{:id => event.id, :class => event.today? ? "todays_event" : ""}
               .summary
-                %span{:style => 'font-size:12px;'}= link_to "■", "##{event.id}"
-                #{event.name}
+                %span{:style => 'font-size:12px;'}
+                  %a{:name => "##{event.id}"}
+                    #{event.name}
               .time #{l(event.dtstart, :format => :advent_cal)} 〜 #{l(event.dtend, :format => :advent_cal)}
               .location!= event.location
               .url
