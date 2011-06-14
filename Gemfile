@@ -12,6 +12,7 @@ gem "fastercsv"
 gem "hoptoad_notifier"
 gem 'i18n_generators'
 gem 'haml'
+gem 'sass'
 gem 'fastercsv'
 gem 'whenever', '0.6.7', :require => false
 gem 'delayed_job'
