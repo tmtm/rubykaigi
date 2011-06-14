@@ -1,9 +1,10 @@
 ---
-wanted: true
 name:
-  en:
-  ja:
-url:
+  en: Cuon Inc.
+  ja: "株式会社Cuon（クオン）"
+url: "http://www.cuon.co.jp/"
 pr:
-  en:
-  ja:
+  en: |-
+    Cuon Inc. has specialized in business systems by Ruby on Rails. We have designed and developed agilely the business value for our clients. 
+  ja: |-
+    弊社は、Ruby on Railsによる業務システム開発が得意な会社です。お客様が価値を感じるシステムのために、迅速な開発を行っています。
