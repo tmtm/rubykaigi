@@ -11,6 +11,12 @@ class PaypalController < ApplicationController
       return
     end
 
+    unless (params[:payment_status] == "Completed")
+      logging_ipn_params("ipn params (payment_status: #{params[:payment_status]})")
+      render :nothing => true, :status => 200
+      return
+    end
+
     unless (order = Order.find_by_invoice_code(params["invoice"]))
       logging_ipn_params("ipn params (order not found)")
       render :nothing => true, :status => 200
