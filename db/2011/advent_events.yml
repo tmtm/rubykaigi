@@ -172,4 +172,25 @@ rspec_sapporo_07:
   dtend: '2011-06-20 21:00'
   url: "http://qwik.jp/RubySapporo/The_RSpec_Book_Reading_Sapporo_07.html"
   location: '粋 Laboratory (Sapporo, Japan) [<a href="http://maps.google.co.jp/maps?q=%E7%B2%8B+Laboratory&ie=UTF8&hl=ja&brcurrent=3,0x5f0b299b45607ae1:0x850628b2828d8342,0&ll=43.058337,141.349883&spn=0.001521,0.001912&z=19">Map</a>]'
+
+asakusacruising2011:
+  hosted_by_en: 'Asakusa.rb'
+  hosted_by_ja: 'Asakusa.rb'
+  name_en: 'Asakusa Cruising 2011'
+  name_ja: 'Asakusa Cruising 2011'
+  dtstart: '2011-07-12 10:00'
+  dtend: '2011-07-12 19:00'
+  url: "http://qwik.jp/asakusarb/hack113.html"
+  location: "Taito-ku, Asakusa"
+  pub_date: '2011-06-16'
+
+rubyhackingnight:
+  hosted_by_en: 'Asakusa.rb'
+  hosted_by_ja: 'Asakusa.rb'
+  name_en: 'Ruby Hacking Night w/ Asakusa.rb'
+  name_ja: 'Ruby Hacking Night w/ Asakusa.rb'
+  dtstart: '2011-07-19 19:00'
+  dtend: '2011-07-19 22:00'
+  url: "http://qwik.jp/asakusarb/hack114.html"
+  location: "To Be Determined. We're looking for nice place to hold our meetup :)"
   pub_date: '2011-06-16'
