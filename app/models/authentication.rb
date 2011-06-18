@@ -35,7 +35,7 @@ class Authentication < ActiveRecord::Base
   end
 
   def self.encrypt_password(identifier, password)
-    encripter = OmniAuth::Strategies::Password.new(nil, Rubykaigi::Application.config.secret_token)
+    encripter = OmniAuth::Strategies::Password.new(nil, configatron.password_secret)
     encripter.encrypt(identifier, password)
   end
 end
