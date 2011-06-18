@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-require File.dirname(__FILE__) + '/../spec_helper'
+require 'spec_helper'
 
 describe PagesController do
   context "page does not found" do
@@ -29,7 +29,7 @@ describe PagesController do
     it 'should render static file' do
       %w{2009 2010}.each do |year|
         get :show, {:year => year, :page_name => 'index', :locale => 'ja'}
-        response.status.should == '200 OK'
+        response.status.should == 200
         response.should render_template("public/#{year}/ja/index.html")
       end
     end

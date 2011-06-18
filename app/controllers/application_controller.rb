@@ -15,6 +15,7 @@ class ApplicationController < ActionController::Base
 
   class << self
     private
+
     def layout_for_latest_ruby_kaigi
       layout proc{|c| "ruby_kaigi#{RubyKaigi.latest_year}" }
     end
@@ -22,10 +23,20 @@ class ApplicationController < ActionController::Base
 
   private
 
-  def login_required
-    return true if authenticated?
+  def user
+    @user ||= Rubyist.find_by_id session[:user_id]
+  end
 
-    session[:return_to] = request.request_uri
+  def authenticated?
+    user.present?
+  end
+
+  helper_method :authenticated?, :user
+
+  def login_required
+    return true if user
+
+    session[:return_to] = request.fullpath
     redirect_to signin_path
     false
   end
@@ -74,7 +85,6 @@ class ApplicationController < ActionController::Base
   def render_unprocessable
     render(:status => 422, :file => 'public/422.html')
   end
-
 
   # XXX duplicated in application_helper.rb
   def current_locale

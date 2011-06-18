@@ -5,6 +5,7 @@ class Rubyist < ActiveRecord::Base
 
   has_many :contributions
   has_many :tickets
+  has_many :authentications
 
   validates_uniqueness_of :username
   validates_format_of :username, :with => /^[a-zA-Z0-9_-]+$/, :message => I18n.t('should_be_alphabetical')
@@ -12,14 +13,20 @@ class Rubyist < ActiveRecord::Base
 
   validates_format_of :website, :with => URI.regexp(%w(http https)), :allow_blank => true
 
-  validates_uniqueness_of :twitter_user_id, :allow_nil => true
-  validates_uniqueness_of :identity_url, :allow_nil => true
-
   validates_inclusion_of :avatar_type, :in => %w(default twitter gravatar)
 
-  attr_protected :twitter_user_id, :identity_url
+  value :twitter_profile, :key => "#{TwitterProfile::PREFIX}/\#{uid}", :marshal => true
 
-  value :twitter_profile, :key => "#{TwitterProfile::PREFIX}/\#{twitter_user_id}", :marshal => true
+  def password_authentication
+    authentications.where(:provider => 'password').last
+  end
+
+  def self.new_with_omniauth(auth)
+    self.new :username  => auth[:user_info][:nickname],
+             :full_name => auth[:user_info][:name],
+             :email     => auth[:user_info][:email],
+             :authentications => [Authentication.new(auth.slice(:provider, :uid))]
+  end
 
   def to_param
     username
@@ -95,5 +102,4 @@ class Rubyist < ActiveRecord::Base
   def __attendee?(kaigi_year)
     contribution_types_of(kaigi_year).include?('attendee')
   end
-
 end

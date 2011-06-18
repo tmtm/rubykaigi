@@ -5,7 +5,7 @@ source 'http://gems.github.com'
 gem 'rails', '3.0.6', :require => nil
 gem 'rake', '~> 0.8.7'
 gem 'jquery-rails', '>= 0.2.6'
-gem 'mysql'
+gem 'mysql2', '~> 0.2.7'
 gem 'configatron'
 gem "ambethia-smtp-tls", :require => "smtp-tls"
 gem "fastercsv"
@@ -22,9 +22,8 @@ gem 'redis-objects', :require => 'redis/objects'
 gem 'SystemTimer'
 gem 'twitter', '0.9.8'
 
-gem 'rails_warden'
-gem 'warden_oauth'
-gem 'warden-openid'
+gem 'omniauth', '>= 0.2.6'
+gem 'tapp'
 
 gem 'ri_cal', :git => "git://github.com/ctide/ri_cal.git"
 
@@ -37,8 +36,8 @@ group :development do
 end
 
 group :test, :cucumber do
-  gem 'rspec', '2.5.0'
-  gem 'rspec-rails', '2.5.0', :group => :development
+  gem 'rspec'
+  gem 'rspec-rails', :group => :development
   gem 'rr'
   gem 'machinist', :require => 'machinist/active_record'
   gem 'faker'
@@ -54,4 +53,5 @@ group :test, :cucumber do
   gem 'nokogiri'
   gem 'steak', :group => :development
   gem 'capybara', :group => :development
+  gem 'launchy'
 end

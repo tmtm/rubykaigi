@@ -12,6 +12,10 @@ Rubyist.blueprint do
   username
 end
 
+Authentication.blueprint do
+  provider { 'twitter' }
+end
+
 Rubyist.blueprint :invalid do
   username { '' }
 end

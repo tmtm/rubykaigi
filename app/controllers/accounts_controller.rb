@@ -1,21 +1,18 @@
 class AccountsController < ApplicationController
-  verify :session => :params_from_authenticator, :only => %w(new create), :redirect_to => :new_sessions_path
+  verify :session => :params_from_authenticator, :only => %w(new create), :redirect_to => :signin_path
 
   layout_for_latest_ruby_kaigi
 
   def new
-    @rubyist = Rubyist.new(session[:params_from_authenticator]) do |r|
-      r.twitter_user_id, r.identity_url = session[:params_from_authenticator].values_at(:twitter_user_id, :identity_url)
-    end
+    @rubyist = Rubyist.new_with_omniauth(session[:params_from_authenticator])
   end
 
   def create
-    @rubyist = Rubyist.new(params[:rubyist]) do |r|
-      r.twitter_user_id, r.identity_url = session[:params_from_authenticator].values_at(:twitter_user_id, :identity_url)
-    end
+    @rubyist = Rubyist.new_with_omniauth(session[:params_from_authenticator])
+    @rubyist.attributes = params[:rubyist]
 
     if @rubyist.save
-      self.user = @rubyist
+      session[:user_id] = @rubyist.id
       session.delete(:params_from_authenticator)
 
       redirect_to session.delete(:return_to) || root_path
@@ -31,12 +28,21 @@ class AccountsController < ApplicationController
   end
 
   def update
-    if user.update_attributes(params[:rubyist])
+    password_auth = user.password_authentication
+
+    Rubyist.transaction do
+      user.update_attributes! params[:rubyist]
+
+      if password_auth && params[:password]
+        password_auth.change_password! params.slice(:current_password, :password, :password_confirmation)
+      end
+
       flash[:notice] = 'Your settings have been saved.'
       redirect_to edit_account_path
-    else
-      @rubyist = user
-      render :edit
     end
+  rescue ActiveRecord::RecordInvalid
+    @rubyist = user
+    @rubyist.errors.merge! password_auth.errors if password_auth
+    render :edit
   end
 end

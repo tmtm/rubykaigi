@@ -10,7 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110202151624) do
+ActiveRecord::Schema.define(:version => 20110612025747) do
+
+  create_table "authentications", :force => true do |t|
+    t.string   "provider",   :null => false
+    t.string   "uid",        :null => false
+    t.integer  "rubyist_id", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "authentications", ["provider", "uid"], :name => "index_authentications_on_provider_and_uid"
+  add_index "authentications", ["rubyist_id", "provider"], :name => "index_authentications_on_rubyist_id_and_provider"
 
   create_table "contributions", :force => true do |t|
     t.integer  "rubyist_id",        :null => false

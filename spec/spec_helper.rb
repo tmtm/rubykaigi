@@ -43,7 +43,7 @@ Spork.prefork do
     config.use_instantiated_fixtures  = false
     config.include EmailSpec::Helpers
     config.include EmailSpec::Matchers
-    config.include WardenHelperMethods
+    config.include AuthHelperMethods
 
     config.global_fixtures = :ruby_kaigis
 
@@ -75,6 +75,8 @@ Spork.prefork do
       DatabaseCleaner.clean
     end
   end
+
+  OmniAuth.config.test_mode = true
 end
 
 Spork.each_run do
