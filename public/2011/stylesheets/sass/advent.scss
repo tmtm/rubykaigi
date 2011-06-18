@@ -17,8 +17,10 @@
     }
     .summary {
       background-color: rgba(138, 135, 134, 0.3);
-      font-weight: bold;
       border-bottom: 1px dotted #999;
+    }
+    .summary a {
+      font-weight: bold;
     }
     .summary a:hover{
       color: #160f0d;
