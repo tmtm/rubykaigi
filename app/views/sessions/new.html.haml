@@ -23,6 +23,8 @@
       != link_to image_tag('/2011/images/registerBtnYahooJapan.png', :alt => 'via Yahoo!JAPAN'), "/auth/open_id?openid_url=http://yahoo.co.jp"
     %p.btn
       != link_to image_tag('/2011/images/registerBtnMixi.png', :alt => 'via mixi'), "/auth/open_id?openid_url=http://mixi.jp"
+    %p.btn
+      != link_to image_tag('/2011/images/registerBtnGithub.png', :alt => 'via github'), "/auth/github"
     %p.cleft
       or signin via other OpenID providers:
       != form_tag "/auth/open_id", :method => :get do
