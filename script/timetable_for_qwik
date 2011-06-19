@@ -1,0 +1,41 @@
+require File.dirname(__FILE__) + '/../config/boot'
+
+def presenters(event)
+  return ' ' if event.nil?
+  return ' ' if event.presenters.to_a.empty?
+  event.presenters.map { |pr|
+    RubyKaigi2011::Localizer.value_for_locale(:ja, pr["name"])
+  }.join(',')
+end
+
+def title(event)
+  return ' ' if event.nil?
+  title = event.localize(:ja, :title)
+  title.nil? ? ' ' : title
+end
+
+timetable = RubyKaigi2011::Timetable.new
+rooms = RubyKaigi2011::Room.all
+
+timetable.days.each do |date|
+  puts "** #{date.strftime('%Y-%m-%d')}\n"
+
+  puts "|大ホール| | |小ホール| | |"
+  puts "|タイトル|発表者|担当者|タイトル|発表者|担当者|"
+  timetable.periods_on(date).each_cons(2) do |start_at,end_at|
+    time = "''#{start_at.strftime("%H:%M")}-#{end_at.strftime("%H:%M")}''"
+
+    puts "|#{time}| | |#{time}| | |"
+    sessions = rooms.map{|r| timetable.room_timetable_at(date,r.room_id).session_at(start_at)}
+    sub_events = sessions.last.events
+    sessions.first.events.each_with_index do |main_event,index|
+      results = ''
+      main_presenters = presenters(main_event)
+      results << "|#{title(main_event)}|#{main_presenters}| |"
+
+      sub_presenters = presenters(sub_events[index])
+      results << "#{title(sub_events[index])}|#{sub_presenters}| |"
+      puts results
+    end
+  end
+end
