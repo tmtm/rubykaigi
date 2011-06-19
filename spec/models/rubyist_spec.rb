@@ -46,4 +46,12 @@ describe Rubyist do
     subject { Rubyist.make_unsaved(:username => 'まつもとゆきひろ').tap(&:valid?) }
     its(:errors) { should be_invalid(:username) }
   end
+
+  context '大文字小文字を無視すると同一のユーザ名' do
+    let!(:first)  { Rubyist.make(:username => 'hibariya') }
+    let!(:second) { Rubyist.make_unsaved(:username => 'Hibariya') }
+
+    it { second.should_not be_valid }
+    it { second.tap(&:valid?).errors[:username].should_not be_blank }
+  end
 end

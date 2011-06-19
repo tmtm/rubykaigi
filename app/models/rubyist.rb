@@ -7,7 +7,7 @@ class Rubyist < ActiveRecord::Base
   has_many :tickets
   has_many :authentications
 
-  validates_uniqueness_of :username
+  validates_uniqueness_of :username, :case_sensitive => false
   validates_format_of :username, :with => /^[a-zA-Z0-9_-]+$/, :message => I18n.t('should_be_alphabetical')
   validates_exclusion_of :username, :in => %w(new edit)
 
