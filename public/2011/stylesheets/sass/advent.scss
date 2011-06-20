@@ -53,8 +53,9 @@
   }
 
   li.todays_event .summary {
-    background-color: rgba(20, 20, 20, 0.8);
-    color: rgba(255, 255, 255, 0.8);
+    background: #e61f19;
+    a {
+      color: #fff; }
   }
 }
 
