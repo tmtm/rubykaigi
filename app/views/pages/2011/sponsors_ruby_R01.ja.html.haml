@@ -7,15 +7,15 @@
     %h2
       = sponsor.localize(I18n.locale, :name)
     %img#logo{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/#{sponsor._id}.png"}
-    %img{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/nacl_pht01.png", :width => 410}
     #profile
+      %img{:alt => sponsor.localize(I18n.locale, :name), :src => "/2011/sponsors/nacl_pht01.png", :width => 410}
       %ul.listMark
         %li
           Website:
           %br
           %a.linkMark{:href => sponsor.localize(I18n.locale, :url), :target => "_blank"}
             = sponsor.localize(I18n.locale, :url)
-    %h3 世界と競い、未来を拓く
+    %h3.cboth 世界と競い、未来を拓く
     %p
       ソースコードを公開して誰でも自由に利用できるようにし、利用者や他の開発者からのフィードバックを取り入れながら進化を続ける、それがオープンソースソフトウェア（OSS）です。 株式会社ネットワーク応用研究所（NaCl）では、単にOSSを利用するだけではなく、オブジェクト指向言語Rubyの開発者であるまつもとゆきひろ をはじめ、多くの社員がOSSの開発に貢献し、 OSSを利用したシステム開発では先進的な実績を残しています。
     %h3 ＜Ruby、Ruby on Railsに関する取り組み＞
