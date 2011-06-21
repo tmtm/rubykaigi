@@ -221,8 +221,8 @@ rspec_sapporo_08:
 amagasakirb:
   hosted_by_en: 'amagasaki.rb'
   hosted_by_ja: 'amagasaki.rb'
-  name_en: 'Coders at Work 読書会 #1'
-  name_ja: 'Coders at Work Reading #1'
+  name_en: 'Coders at Work Reading #1'
+  name_ja: 'Coders at Work 読書会 #1'
   dtstart: '2011-07-02 13:00'
   dtend: '2011-07-02 17:00'
   url: "http://www.cuzic.com/coders-at-work"
