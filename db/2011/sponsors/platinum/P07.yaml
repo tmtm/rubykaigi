@@ -3,8 +3,8 @@ name:
   en: "salesforce.com, inc."
   ja: "株式会社セールスフォース・ドットコム"
 url:
-  en: "http://www.salesforce.com/"
-  ja: "http://www.salesforce.com/jp/"
+  en: "http://www.heroku.com/"
+  ja: "http://www.heroku.com/"
 pr:
   en: |-
     Salesforce.com is cloud services provider, recently merged Heroku which is advanced and productive PaaS for Ruby and Node.js. We support Ruby in enterprise and activities of Mr. Matz.To improve it, we plan to release a cloud database named "<a href="http://database.com" target="_blank">Database.com</a>" in this year. It has Social functionality and modern authentication like OAuth. SOAP and REST also work to access it. Please try it and fun!
