@@ -250,3 +250,14 @@ photo_exhibition_rubykaigi:
   url: 'http://www.junkudo.co.jp/tenpo/shop-ikebukuro.html#event'
   location: 'ジュンク堂書店　池袋本店 6F [<a href="http://www.junkudo.co.jp/tenpo/shop-ikebukuro.html">Map</a>]'
   pub_date: '2011-06-24'
+
+tkbb_rubykaigi:
+  hosted_by_en: 'Tokyo Bouldering Bu (#tkbb)'
+  hosted_by_ja: '東京ボルダリング部 (#tkbb)'
+  name_en: 'Tokyo Bouldering RubyKaigi'
+  name_ja: '東京ボルダリングRuby会議'
+  dtstart: '2011-07-10 19:00'
+  dtend: '2011-07-10 21:00'
+  url: 'http://atnd.org/events/17309'
+  location: 'Rhino and Bird [<a href="http://www.rhino-bird.com/">URL</a>]'
+  pub_date: '2011-06-24'
