@@ -1,0 +1,18 @@
+--- 
+presenters:
+  - name: 
+      en: Naohisa Goto
+      ja: "後藤 直久"
+    affiliation: 
+      en: Research Institute for Microbial Diseases, Osaka University
+      ja: "大阪大学微生物病研究所附属遺伝情報実験センター"
+    bio: 
+      en: "#TODO"
+      ja: "#TODO"
+title: 
+  en: BioRuby -- bioinformatics library
+  ja: "BioRuby -- 生物情報科学用ライブラリ"
+abstract: 
+  en: "#TODO"
+  ja: "#TODO"
+language: Japanese

@@ -1,0 +1,18 @@
+--- 
+presenters:
+  - name: 
+      en: Ryoichi SEKIGUCHI
+      ja: "関口 亮一"
+    affiliation: 
+      en: 株式会社ディー・エヌ・エー
+      ja: DeNA Co., Ltd.
+    bio: 
+      en: "#TODO"
+      ja: "#TODO"
+title: 
+  en: The technology behind rubykaigi.org
+  ja: "rubykaigi.orgを支える技術"
+abstract: 
+  en: "#TODO"
+  ja: "#TODO"
+language: Japanese

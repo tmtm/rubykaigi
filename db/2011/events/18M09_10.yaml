@@ -1,0 +1,18 @@
+--- 
+presenters:
+  - name: 
+      en: Hiromu Shioya
+      ja: "塩谷啓"
+    affiliation: 
+      en: DWANGO Co., Ltd / tobe-tobe
+      ja: "株式会社ドワンゴ / 東京Basic Technology勉強会"
+    bio: 
+      en: "#TODO"
+      ja: "#TODO"
+title: 
+  en: "pebbles: A namespace for joke gems"
+  ja: "pebbles: rubygemsにおけるジョークモジュールの名前空間について"
+abstract: 
+  en: "#TODO"
+  ja: "#TODO"
+language: Japanese

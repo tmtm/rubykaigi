@@ -1,0 +1,18 @@
+--- 
+presenters:
+  - name: 
+      en: Hidetoshi Yoshimoto
+      ja: "吉本任利"
+    affiliation: 
+      en: Mercury Brain Systems co. ltd.
+      ja: "(株)マーキュリー・ブレイン・システムズ"
+    bio: 
+      en: "#TODO"
+      ja: "#TODO"
+title: 
+  en: ActiveLdap works with Rails3.1 now!
+  ja: "ActiveLdap が Rails3.1 で動くようになったよ。"
+abstract: 
+  en: "#TODO"
+  ja: "#TODO"
+language: Japanese

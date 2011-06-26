@@ -1,0 +1,18 @@
+--- 
+presenters:
+  - name: 
+      en: Kenta Murata
+      ja: "村田賢太"
+    affiliation: 
+      en: GeneticLab Co., Ltd.
+      ja: "株式会社ジェネティックラボ"
+    bio: 
+      en: "#TODO"
+      ja: "#TODO"
+title: 
+  en: The world without the literal notation for floating-point numbers.
+  ja: "浮動小数点数リテラルが無い世界"
+abstract: 
+  en: "#TODO"
+  ja: "#TODO"
+language: Japanese

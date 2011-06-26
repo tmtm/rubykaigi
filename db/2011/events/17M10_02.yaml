@@ -1,0 +1,18 @@
+--- 
+presenters:
+  - name: 
+      en: Yoshihara Haruka
+      ja: "吉原陽香"
+    affiliation: 
+      en: Faculty of Engineering, Tokyo University of Agriculture and Technology.
+      ja: "東京農工大学 工学府 情報工学専攻 並木研究室"
+    bio: 
+      en: " I'm a student in master's course and belong to Namiki Laboratory in Tokyo University of Agriculture and Technology. I develop the OS wrote by Ruby."
+      ja: "東京農工大学、並木研所属の修士２年生です。Rubyで書くOSの研究をしています。"
+title: 
+  en: Operating System made by Ruby
+  ja: "RubyでつくるOS"
+abstract: 
+  em: "I build \"RubyOS\". Almost all parts of the OS will be wrote by Ruby and works in x86 architecture. Now, my ruby 1.9 interpreter(except some parts) works directly on x86 without OS, and ruby code run on this. I will show the demo that irb-like program is running on my Ruby interpreter."
+  ja: "基本的にすべてRubyで書いてx86で動くOSをつくろうとしています。Ruby1.9の処理系の大体の部分をハードウェアの上で直接動くようにして、その上でRubyスクリプトを動かしています。とりあえず、その処理系上で動くirbもどきは作ってみたので、その動画をお見せしたいと思います。"
+language: Japanese

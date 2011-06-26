@@ -1,0 +1,18 @@
+--- 
+presenters:
+  - name: 
+      en: Tomoyuki Chikanaga
+      ja: "近永智之"
+    affiliation: 
+      en: Yokohama.rb
+      ja: Yokohama.rb
+    bio: 
+      en: "Writer of ruby trunk changes (daily summary of changes in CRuby's repository in Japanese). CRuby committer."
+      ja: "ruby trunk changes (CRuby のコミットを毎日解説するブログ)を更新しています。 CRuby のコミッターでもあります。"
+title: 
+  en: ruby trunk changes - Statistics Edition
+  ja: "ruby trunk changes 統計版"
+abstract: 
+  en: "In this presentation, I will show the statistic analysis of changes in CRuby's repository in last 11 month based on categorizing them. I will reveal the reality of CRuby's development: How many bugfixs and enhancements are committed, etc..."
+  ja: "約1年間の CRuby のリポジトリへのコミットをその内容で分類して解析の結果を発表します。CRuby のリポジトリの日々の変更のうち、バグ修正や新機能の追加の割合はどうなのか、など CRuby 開発の実態を明らかにします。"
+language: Japanese

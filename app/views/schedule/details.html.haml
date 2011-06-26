@@ -14,6 +14,13 @@
         #{t(:abstract)}
       %p
         = @event.localize(I18n.locale, :abstract)
+        - if @event.sub_events
+          %ol
+            - @event.sub_events.each do |sub_event|
+              %li
+                #{sub_event.localize(I18n.locale, :title)},
+                = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, sub_event.presenters.first["name"])
+                (#{RubyKaigi2011::Localizer.value_for_locale(I18n.locale, sub_event.presenters.first["affiliation"])})
       - if @event.language.present?
         %h3
           #{t(:presentation_language)}
@@ -37,7 +44,6 @@
               %p.affiliation= RubyKaigi2011::Localizer.value_for_locale(I18n.locale, affiliation)
             %p
               = RubyKaigi2011::Localizer.value_for_locale(I18n.locale, presenter["bio"])
-
     -#%h3.cboth
       #{t(:presentation_material)}
     -#%p -

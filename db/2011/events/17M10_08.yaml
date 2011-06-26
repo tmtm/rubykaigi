@@ -1,0 +1,18 @@
+--- 
+presenters:
+  - name: 
+      en: Masafui Oyamada
+      ja: "小山田昌史"
+    affiliation: 
+      en: "ClearCode Inc. / University of Tsukuba"
+      ja: "株式会社クリアコード / 筑波大学"
+    bio: 
+      en: "#TODO"
+      ja: "#TODO"
+title: 
+  en: Rios Proxy - A Proxy Framework for Command Line Interfaces
+  ja: "Rios Proxy - コマンドラインインタフェースのためのプロキシフレームワーク"
+abstract: 
+  en: "#TODO"
+  ja: "#TODO"
+language: Japanese

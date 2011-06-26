@@ -1,0 +1,18 @@
+--- 
+presenters:
+  - name: 
+      en: niku
+      ja: "ヽ（´・肉・｀）ノ"
+    affiliation: 
+      en: Ruby Sapporo
+      ja: Ruby札幌
+    bio: 
+      en: "#TODO"
+      ja: "#TODO"
+title: 
+  en: "how to use more convenient \"rurema\""
+  ja: "るりまを便利に使う方法"
+abstract: 
+  en: "#TODO"
+  ja: "#TODO"
+language: Japanese

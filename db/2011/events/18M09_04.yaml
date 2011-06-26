@@ -1,0 +1,17 @@
+--- 
+presenters:
+  - name: 
+      en: Yuumi Yoshida
+      ja: "吉田裕美"
+    affiliation: 
+      en: EY-Office inc.
+    bio: 
+      en: "#TODO"
+      ja: "#TODO"
+title: 
+  en: More Ruby for a newcomer programmers
+  ja: "新人教育に、もっとRubyを！"
+abstract: 
+  en: "#TODO"
+  ja: "#TODO"
+language: Japanese

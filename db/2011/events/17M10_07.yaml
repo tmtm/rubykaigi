@@ -1,0 +1,17 @@
+--- 
+presenters:
+  - name: 
+      en: Youhei Kondou
+      ja: "こんどうようへい"
+    affiliation: 
+      en: "http://phosphor-escence.blogspot.com/"
+    bio: 
+      en: "#TODO"
+      ja: "#TODO"
+title: 
+  en: "Yet Another \"ASP.NET MVC 3 vs. Ruby on Rails 3\""
+  ja: "別の \"ASP.NET MVC 3 vs. Ruby on Rails 3\""
+abstract: 
+  en: "#TODO"
+  ja: "#TODO"
+language: Japanese
